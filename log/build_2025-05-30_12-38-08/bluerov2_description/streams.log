@@ -1,0 +1,51 @@
+[0.011s] Invoking command in '/home/luca002/proj_ws/build/bluerov2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/bluerov2_description -- -j16 -l16
+[0.041s] Invoked command in '/home/luca002/proj_ws/build/bluerov2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/bluerov2_description -- -j16 -l16
+[0.047s] Invoking command in '/home/luca002/proj_ws/build/bluerov2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/bluerov2_description
+[0.052s] -- Install configuration: ""
+[0.053s] -- Execute custom install script
+[0.053s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/environment/resource_paths.dsv
+[0.053s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/launch/manual.yaml
+[0.053s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/launch/state_publisher_launch.py
+[0.054s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/launch/upload_bluerov2_launch.py
+[0.054s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/launch/world_launch.py
+[0.054s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/meshes/bluerov2_noprop.dae
+[0.054s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/meshes/bluerov2_propccw.dae
+[0.054s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/meshes/bluerov2_propccw.ive
+[0.054s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/meshes/bluerov2_propcw.dae
+[0.054s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/meshes/bluerov2_propcw.ive
+[0.054s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/meshes/ping360_sonar.dae
+[0.054s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/bluerov2.xacro
+[0.054s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/demo_world.sdf
+[0.054s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/hydrodynamics.xacro
+[0.054s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/sensors.xacro
+[0.054s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/README.md
+[0.054s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/all_sensor_snippets.xacro
+[0.054s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/camera_snippets.xacro
+[0.055s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/chemical_concentration_snippets.xacro
+[0.055s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/common.urdf.xacro
+[0.055s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/dvl_snippets.xacro
+[0.055s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/gps_sensor_snippets.xacro
+[0.055s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/imu_snippets.xacro
+[0.055s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/magnetometer_snippets.xacro
+[0.055s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/pose_3d_snippets.xacro
+[0.055s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/pressure_snippets.xacro
+[0.055s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/rpt_snippets.xacro
+[0.055s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/sonar_snippets.xacro
+[0.055s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/stereo_snippets.xacro
+[0.055s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/urdf/thrusters.xacro
+[0.055s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/ament_index/resource_index/package_run_dependencies/bluerov2_description
+[0.056s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/ament_index/resource_index/parent_prefix_path/bluerov2_description
+[0.056s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/environment/ament_prefix_path.sh
+[0.056s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/environment/ament_prefix_path.dsv
+[0.056s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/environment/path.sh
+[0.056s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/environment/path.dsv
+[0.056s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/local_setup.bash
+[0.056s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/local_setup.sh
+[0.056s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/local_setup.zsh
+[0.056s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/local_setup.dsv
+[0.056s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/package.dsv
+[0.062s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/ament_index/resource_index/packages/bluerov2_description
+[0.062s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/cmake/bluerov2_descriptionConfig.cmake
+[0.062s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/cmake/bluerov2_descriptionConfig-version.cmake
+[0.062s] -- Up-to-date symlink: /home/luca002/proj_ws/install/bluerov2_description/share/bluerov2_description/package.xml
+[0.063s] Invoked command in '/home/luca002/proj_ws/build/bluerov2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/bluerov2_description

@@ -1,0 +1,46 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/luca002/proj_ws/build/bluerov2_control
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/launch/cascaded_pids_launch.py
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/launch/rviz_launch.py
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/launch/sliding_mode_launch.py
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/launch/wrench_launch.py
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/config/anchors.yaml
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/config/bluerov2.rviz
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/config/cascaded_pid.yaml
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/config/manual.yaml
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/config/sliding_mode.yaml
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/config/thruster_manager.yaml
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/config/tilt.yaml
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/ament_index/resource_index/package_run_dependencies/bluerov2_control
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/ament_index/resource_index/parent_prefix_path/bluerov2_control
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/environment/ament_prefix_path.sh
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/environment/ament_prefix_path.dsv
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/environment/path.sh
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/environment/path.dsv
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/local_setup.bash
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/local_setup.sh
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/local_setup.zsh
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/local_setup.dsv
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/package.dsv
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/ament_index/resource_index/packages/bluerov2_control
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/cmake/bluerov2_controlConfig.cmake
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/cmake/bluerov2_controlConfig-version.cmake
+-- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/package.xml

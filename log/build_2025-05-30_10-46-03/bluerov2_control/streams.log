@@ -1,0 +1,52 @@
+[0.008s] Invoking command in '/home/luca002/proj_ws/build/bluerov2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/luca002/proj_ws/src/bluerov2/bluerov2_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install/bluerov2_control
+[0.076s] -- The C compiler identification is GNU 13.3.0
+[0.135s] -- The CXX compiler identification is GNU 13.3.0
+[0.148s] -- Detecting C compiler ABI info
+[0.207s] -- Detecting C compiler ABI info - done
+[0.215s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.215s] -- Detecting C compile features
+[0.215s] -- Detecting C compile features - done
+[0.222s] -- Detecting CXX compiler ABI info
+[0.286s] -- Detecting CXX compiler ABI info - done
+[0.293s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.293s] -- Detecting CXX compile features
+[0.293s] -- Detecting CXX compile features - done
+[0.299s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.402s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.458s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.569s] -- Configuring done (0.5s)
+[0.571s] -- Generating done (0.0s)
+[0.572s] -- Build files have been written to: /home/luca002/proj_ws/build/bluerov2_control
+[0.577s] Invoked command in '/home/luca002/proj_ws/build/bluerov2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/luca002/proj_ws/src/bluerov2/bluerov2_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install/bluerov2_control
+[0.578s] Invoking command in '/home/luca002/proj_ws/build/bluerov2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/bluerov2_control -- -j16 -l16
+[0.609s] Invoked command in '/home/luca002/proj_ws/build/bluerov2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/bluerov2_control -- -j16 -l16
+[0.610s] Invoking command in '/home/luca002/proj_ws/build/bluerov2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/bluerov2_control
+[0.616s] -- Install configuration: ""
+[0.616s] -- Execute custom install script
+[0.617s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/launch/cascaded_pids_launch.py
+[0.623s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/launch/rviz_launch.py
+[0.629s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/launch/sliding_mode_launch.py
+[0.634s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/launch/wrench_launch.py
+[0.640s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/config/anchors.yaml
+[0.645s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/config/bluerov2.rviz
+[0.650s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/config/cascaded_pid.yaml
+[0.655s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/config/manual.yaml
+[0.660s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/config/sliding_mode.yaml
+[0.665s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/config/thruster_manager.yaml
+[0.670s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/config/tilt.yaml
+[0.676s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/ament_index/resource_index/package_run_dependencies/bluerov2_control
+[0.681s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/ament_index/resource_index/parent_prefix_path/bluerov2_control
+[0.686s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/environment/ament_prefix_path.sh
+[0.691s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/environment/ament_prefix_path.dsv
+[0.696s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/environment/path.sh
+[0.701s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/environment/path.dsv
+[0.707s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/local_setup.bash
+[0.713s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/local_setup.sh
+[0.721s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/local_setup.zsh
+[0.727s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/local_setup.dsv
+[0.733s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/package.dsv
+[0.738s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/ament_index/resource_index/packages/bluerov2_control
+[0.743s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/cmake/bluerov2_controlConfig.cmake
+[0.749s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/cmake/bluerov2_controlConfig-version.cmake
+[0.755s] -- Symlinking: /home/luca002/proj_ws/install/bluerov2_control/share/bluerov2_control/package.xml
+[0.762s] Invoked command in '/home/luca002/proj_ws/build/bluerov2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/bluerov2_control

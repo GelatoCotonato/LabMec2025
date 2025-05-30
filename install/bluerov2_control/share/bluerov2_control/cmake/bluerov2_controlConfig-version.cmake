@@ -1,0 +1,1 @@
+/home/luca002/proj_ws/build/bluerov2_control/ament_cmake_core/bluerov2_controlConfig-version.cmake
