@@ -14,3 +14,6 @@ gz service -s /world/simple_baylands/create --reqtype gz.msgs.EntityFactory --re
 link per aggiungere sensore: https://gazebosim.org/docs/harmonic/sensors/
 
 esempio utile per prendere i modelli: https://github.com/osrf/vrx.git
+
+guida per creare un maritime vehicle passo dopo passo : https://gazebosim.org/api/sim/8/tutorials.html
+
