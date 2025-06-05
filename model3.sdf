@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="rcboat">
+    <link name="base_link">
+      <!-- Aggiunte proprietà inerziali (massa e inerzia) -->
+      <inertial>
+        <pose>-0.1 0 -0.05 0 0 0</pose>
+        <mass>40</mass>
+        <inertia>
+          <ixx>33.50</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>36.51</iyy>
+          <iyz>0</iyz>
+          <izz>38.90</izz>
+        </inertia>
+      </inertial>
+
+      <self_collide>false</self_collide>
+      <enable_wind>false</enable_wind>
+      <gravity>true</gravity>
+
+      <collision name="collision">
+        <pose>0 0 0 0 0 0</pose> <!-- collision sotto -->
+        <geometry>
+          <box>
+            <size>1.0 0.4 0.3</size> <!-- Adatta le dimensioni al tuo modello -->
+          </box>
+        </geometry>
+      </collision>
+
+      <!-- Elementi visivi rimangono invariati -->
+      <visual name= "Propeller_visual">
+        <geometry>
+          <mesh>
+            <uri>file:///home/gelatocotonato/proj_mec/src/models/boat/meshes/rcboat.dae</uri>
+            <submesh>
+              <name>Propeller</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>file:///home/gelatocotonato/proj_mec/src/models/boat/materials/textures/Boat_Albedo.png</albedo_map>
+              <normal_map>file:///home/gelatocotonato/proj_mec/src/models/boat/materials/textures/Boat_Normal.png</normal_map>
+              <metalness_map>file:///home/gelatocotonato/proj_mec/src/models/boat/materials/textures/Boat_Metalness.png</metalness_map>
+              <roughness_map>file:///home/gelatocotonato/proj_mec/src/models/boat/materials/textures/Boat_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Thruster_visual">
+        <geometry>
+          <mesh>
+            <uri>file:///home/gelatocotonato/proj_mec/src/models/boat/meshes/rcboat.dae</uri>
+            <submesh>
+              <name>Thruster</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>file:///home/gelatocotonato/proj_mec/src/models/boat/materials/textures/Boat_Albedo.png</albedo_map>
+              <normal_map>file:///home/gelatocotonato/proj_mec/src/models/boat/materials/textures/Boat_Normal.png</normal_map>
+              <metalness_map>file:///home/gelatocotonato/proj_mec/src/models/boat/materials/textures/Boat_Metalness.png</metalness_map>
+              <roughness_map>file:///home/gelatocotonato/proj_mec/src/models/boat/materials/textures/Boat_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Rudder_visual">
+        <geometry>
+          <mesh>
+            <uri>file:///home/gelatocotonato/proj_mec/src/models/boat/meshes/rcboat.dae</uri>
+            <submesh>
+              <name>Rudder</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>file:///home/gelatocotonato/proj_mec/src/models/boat/materials/textures/Boat_Albedo.png</albedo_map>
+              <normal_map>file:///home/gelatocotonato/proj_mec/src/models/boat/materials/textures/Boat_Normal.png</normal_map>
+              <metalness_map>file:///home/gelatocotonato/proj_mec/src/models/boat/materials/textures/Boat_Metalness.png</metalness_map>
+              <roughness_map>file:///home/gelatocotonato/proj_mec/src/models/boat/materials/textures/Boat_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Boat_visual">
+        <geometry>
+          <mesh>
+            <uri>file:///home/gelatocotonato/proj_mec/src/models/boat/meshes/rcboat.dae</uri>
+            <submesh>
+              <name>Boat</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>file:///home/gelatocotonato/proj_mec/src/models/boat/materials/textures/Boat_Albedo.png</albedo_map>
+              <normal_map>file:///home/gelatocotonato/proj_mec/src/models/boat/materials/textures/Boat_Normal.png</normal_map>
+              <metalness_map>file:///home/gelatocotonato/proj_mec/src/models/boat/materials/textures/Boat_Metalness.png</metalness_map>
+              <roughness_map>file:///home/gelatocotonato/proj_mec/src/models/boat/materials/textures/Boat_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
