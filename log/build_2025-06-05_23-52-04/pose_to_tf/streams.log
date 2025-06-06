@@ -1,0 +1,61 @@
+[0.013s] Invoking command in '/home/luca002/proj_ws/build/pose_to_tf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/luca002/proj_ws/src/pose_to_tf -DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install
+[0.070s] -- The C compiler identification is GNU 13.3.0
+[0.112s] -- The CXX compiler identification is GNU 13.3.0
+[0.123s] -- Detecting C compiler ABI info
+[0.188s] -- Detecting C compiler ABI info - done
+[0.194s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.194s] -- Detecting C compile features
+[0.195s] -- Detecting C compile features - done
+[0.204s] -- Detecting CXX compiler ABI info
+[0.274s] -- Detecting CXX compiler ABI info - done
+[0.286s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.287s] -- Detecting CXX compile features
+[0.287s] -- Detecting CXX compile features - done
+[0.292s] -- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[0.436s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.655s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.670s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.685s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.704s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.773s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.777s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.842s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.857s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.874s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.133s] -- Configuring done (1.1s)
+[1.146s] -- Generating done (0.0s)
+[1.150s] -- Build files have been written to: /home/luca002/proj_ws/build/pose_to_tf
+[1.162s] Invoked command in '/home/luca002/proj_ws/build/pose_to_tf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/luca002/proj_ws/src/pose_to_tf -DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install
+[1.163s] Invoking command in '/home/luca002/proj_ws/build/pose_to_tf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/pose_to_tf -- -j16 -l16
+[1.211s] [ 50%] [32mBuilding CXX object CMakeFiles/pose_to_tf.dir/src/pose_to_tf.cpp.o[0m
+[1.211s] [ 50%] [32mBuilding CXX object CMakeFiles/pose_with_covariance.dir/src/pose_with_covariance.cpp.o[0m
+[16.097s] [ 75%] [32m[1mLinking CXX executable pose_with_covariance[0m
+[16.444s] [100%] [32m[1mLinking CXX executable pose_to_tf[0m
+[17.958s] [100%] Built target pose_with_covariance
+[18.421s] [100%] Built target pose_to_tf
+[18.466s] Invoked command in '/home/luca002/proj_ws/build/pose_to_tf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/pose_to_tf -- -j16 -l16
+[18.466s] Invoking command in '/home/luca002/proj_ws/build/pose_to_tf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/pose_to_tf
+[18.493s] -- Install configuration: ""
+[18.493s] -- Installing: /home/luca002/proj_ws/install/share/pose_to_tf/params
+[18.493s] -- Installing: /home/luca002/proj_ws/install/share/pose_to_tf/params/ekf.yaml
+[18.495s] -- Installing: /home/luca002/proj_ws/install/lib/pose_to_tf/pose_to_tf
+[18.527s] -- Set non-toolchain portion of runtime path of "/home/luca002/proj_ws/install/lib/pose_to_tf/pose_to_tf" to ""
+[18.527s] -- Installing: /home/luca002/proj_ws/install/lib/pose_to_tf/pose_with_covariance
+[18.545s] -- Set non-toolchain portion of runtime path of "/home/luca002/proj_ws/install/lib/pose_to_tf/pose_with_covariance" to ""
+[18.545s] -- Installing: /home/luca002/proj_ws/install/share/ament_index/resource_index/package_run_dependencies/pose_to_tf
+[18.546s] -- Installing: /home/luca002/proj_ws/install/share/ament_index/resource_index/parent_prefix_path/pose_to_tf
+[18.546s] -- Installing: /home/luca002/proj_ws/install/share/pose_to_tf/environment/ament_prefix_path.sh
+[18.546s] -- Installing: /home/luca002/proj_ws/install/share/pose_to_tf/environment/ament_prefix_path.dsv
+[18.547s] -- Installing: /home/luca002/proj_ws/install/share/pose_to_tf/environment/path.sh
+[18.547s] -- Installing: /home/luca002/proj_ws/install/share/pose_to_tf/environment/path.dsv
+[18.547s] -- Installing: /home/luca002/proj_ws/install/share/pose_to_tf/local_setup.bash
+[18.548s] -- Installing: /home/luca002/proj_ws/install/share/pose_to_tf/local_setup.sh
+[18.548s] -- Installing: /home/luca002/proj_ws/install/share/pose_to_tf/local_setup.zsh
+[18.548s] -- Installing: /home/luca002/proj_ws/install/share/pose_to_tf/local_setup.dsv
+[18.549s] -- Installing: /home/luca002/proj_ws/install/share/pose_to_tf/package.dsv
+[18.549s] -- Installing: /home/luca002/proj_ws/install/share/ament_index/resource_index/packages/pose_to_tf
+[18.549s] -- Installing: /home/luca002/proj_ws/install/share/pose_to_tf/cmake/ament_cmake_export_dependencies-extras.cmake
+[18.549s] -- Installing: /home/luca002/proj_ws/install/share/pose_to_tf/cmake/pose_to_tfConfig.cmake
+[18.550s] -- Installing: /home/luca002/proj_ws/install/share/pose_to_tf/cmake/pose_to_tfConfig-version.cmake
+[18.554s] -- Installing: /home/luca002/proj_ws/install/share/pose_to_tf/package.xml
+[18.560s] Invoked command in '/home/luca002/proj_ws/build/pose_to_tf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/pose_to_tf

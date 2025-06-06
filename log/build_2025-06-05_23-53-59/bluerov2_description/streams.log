@@ -1,0 +1,54 @@
+[0.016s] Invoking command in '/home/luca002/proj_ws/build/bluerov2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/bluerov2_description -- -j16 -l16
+[0.050s] Invoked command in '/home/luca002/proj_ws/build/bluerov2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/bluerov2_description -- -j16 -l16
+[0.051s] Invoking command in '/home/luca002/proj_ws/build/bluerov2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/bluerov2_description
+[0.057s] -- Install configuration: ""
+[0.058s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/environment/resource_paths.dsv
+[0.058s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/launch
+[0.058s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/launch/manual.yaml
+[0.058s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/launch/upload_bluerov2_launch.py
+[0.058s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/launch/world_launch.py
+[0.058s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/launch/state_publisher_launch.py
+[0.058s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/meshes
+[0.058s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/meshes/bluerov2_propccw.dae
+[0.058s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/meshes/ping360_sonar.dae
+[0.059s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/meshes/bluerov2_noprop.dae
+[0.059s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/meshes/bluerov2_propcw.ive
+[0.059s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/meshes/bluerov2_propcw.dae
+[0.059s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/meshes/bluerov2_propccw.ive
+[0.059s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf
+[0.059s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/thrusters.xacro
+[0.059s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/hydrodynamics.xacro
+[0.059s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/sensors.xacro
+[0.059s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/bluerov2.xacro
+[0.059s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets
+[0.059s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/README.md
+[0.059s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/stereo_snippets.xacro
+[0.059s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/magnetometer_snippets.xacro
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/dvl_snippets.xacro
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/all_sensor_snippets.xacro
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/camera_snippets.xacro
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/imu_snippets.xacro
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/pressure_snippets.xacro
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/rpt_snippets.xacro
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/gps_sensor_snippets.xacro
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/pose_3d_snippets.xacro
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/common.urdf.xacro
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/chemical_concentration_snippets.xacro
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/sonar_snippets.xacro
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/demo_world.sdf
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/ament_index/resource_index/package_run_dependencies/bluerov2_description
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/ament_index/resource_index/parent_prefix_path/bluerov2_description
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/environment/ament_prefix_path.sh
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/environment/ament_prefix_path.dsv
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/environment/path.sh
+[0.060s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/environment/path.dsv
+[0.061s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/local_setup.bash
+[0.061s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/local_setup.sh
+[0.061s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/local_setup.zsh
+[0.061s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/local_setup.dsv
+[0.061s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/package.dsv
+[0.061s] -- Up-to-date: /home/luca002/proj_ws/install/share/ament_index/resource_index/packages/bluerov2_description
+[0.061s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/cmake/bluerov2_descriptionConfig.cmake
+[0.061s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/cmake/bluerov2_descriptionConfig-version.cmake
+[0.061s] -- Up-to-date: /home/luca002/proj_ws/install/share/bluerov2_description/package.xml
+[0.075s] Invoked command in '/home/luca002/proj_ws/build/bluerov2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/bluerov2_description

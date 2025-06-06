@@ -1,0 +1,67 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/luca002/proj_ws/build/bluerov2_description
+-- Install configuration: ""
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/environment/resource_paths.dsv
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/launch
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/launch/manual.yaml
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/launch/upload_bluerov2_launch.py
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/launch/world_launch.py
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/launch/state_publisher_launch.py
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/meshes
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/meshes/bluerov2_propccw.dae
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/meshes/ping360_sonar.dae
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/meshes/bluerov2_noprop.dae
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/meshes/bluerov2_propcw.ive
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/meshes/bluerov2_propcw.dae
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/meshes/bluerov2_propccw.ive
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/thrusters.xacro
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/hydrodynamics.xacro
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/sensors.xacro
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/bluerov2.xacro
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/README.md
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/stereo_snippets.xacro
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/magnetometer_snippets.xacro
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/dvl_snippets.xacro
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/all_sensor_snippets.xacro
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/camera_snippets.xacro
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/imu_snippets.xacro
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/pressure_snippets.xacro
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/rpt_snippets.xacro
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/gps_sensor_snippets.xacro
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/pose_3d_snippets.xacro
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/common.urdf.xacro
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/chemical_concentration_snippets.xacro
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/snippets/sonar_snippets.xacro
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/urdf/demo_world.sdf
+-- Installing: /home/luca002/proj_ws/install/share/ament_index/resource_index/package_run_dependencies/bluerov2_description
+-- Installing: /home/luca002/proj_ws/install/share/ament_index/resource_index/parent_prefix_path/bluerov2_description
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/environment/ament_prefix_path.sh
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/environment/ament_prefix_path.dsv
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/environment/path.sh
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/environment/path.dsv
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/local_setup.bash
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/local_setup.sh
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/local_setup.zsh
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/local_setup.dsv
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/package.dsv
+-- Installing: /home/luca002/proj_ws/install/share/ament_index/resource_index/packages/bluerov2_description
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/cmake/bluerov2_descriptionConfig.cmake
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/cmake/bluerov2_descriptionConfig-version.cmake
+-- Installing: /home/luca002/proj_ws/install/share/bluerov2_description/package.xml

@@ -1,0 +1,149 @@
+[0.021s] Invoking command in '/home/luca002/proj_ws/build/vrx_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/luca002/proj_ws/src/vrx/vrx_urdf/vrx_gazebo -DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install
+[0.085s] -- The C compiler identification is GNU 13.3.0
+[0.129s] -- The CXX compiler identification is GNU 13.3.0
+[0.141s] -- Detecting C compiler ABI info
+[0.203s] -- Detecting C compiler ABI info - done
+[0.210s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.211s] -- Detecting C compile features
+[0.211s] -- Detecting C compile features - done
+[0.218s] -- Detecting CXX compiler ABI info
+[0.288s] -- Detecting CXX compiler ABI info - done
+[0.295s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.295s] -- Detecting CXX compile features
+[0.296s] -- Detecting CXX compile features - done
+[0.299s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.416s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.697s] -- Configuring done (0.7s)
+[0.700s] -- Generating done (0.0s)
+[0.702s] -- Build files have been written to: /home/luca002/proj_ws/build/vrx_gazebo
+[0.710s] Invoked command in '/home/luca002/proj_ws/build/vrx_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/luca002/proj_ws/src/vrx/vrx_urdf/vrx_gazebo -DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install
+[0.711s] Invoking command in '/home/luca002/proj_ws/build/vrx_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/vrx_gazebo -- -j16 -l16
+[0.757s] Built target ament_cmake_python_copy_vrx_gazebo
+[0.914s] running egg_info
+[0.915s] creating vrx_gazebo.egg-info
+[0.930s] writing vrx_gazebo.egg-info/PKG-INFO
+[0.930s] writing dependency_links to vrx_gazebo.egg-info/dependency_links.txt
+[0.930s] writing top-level names to vrx_gazebo.egg-info/top_level.txt
+[0.930s] writing manifest file 'vrx_gazebo.egg-info/SOURCES.txt'
+[0.977s] reading manifest file 'vrx_gazebo.egg-info/SOURCES.txt'
+[0.977s] writing manifest file 'vrx_gazebo.egg-info/SOURCES.txt'
+[1.003s] Built target ament_cmake_python_build_vrx_gazebo_egg
+[1.014s] Invoked command in '/home/luca002/proj_ws/build/vrx_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/vrx_gazebo -- -j16 -l16
+[1.015s] Invoking command in '/home/luca002/proj_ws/build/vrx_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/vrx_gazebo
+[1.023s] -- Install configuration: ""
+[1.023s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/environment/resource_paths.dsv
+[1.023s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/environment/resource_paths.sh
+[1.023s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models
+[1.023s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/3d_lidar
+[1.023s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/3d_lidar/model.sdf
+[1.023s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/3d_lidar/mesh
+[1.023s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/3d_lidar/mesh/3d_Lidar_Normal.png
+[1.023s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/3d_lidar/mesh/3d_Lidar_Albedo.png
+[1.023s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/3d_lidar/mesh/3d_Lidar_Metalness.png
+[1.024s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/3d_lidar/mesh/3d_Lidar_Roughness.png
+[1.024s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/3d_lidar/mesh/3d_lidar.png
+[1.024s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/3d_lidar/mesh/3d_lidar.dae
+[1.024s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/3d_lidar/model.config
+[1.024s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/cpu_cases
+[1.024s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/cpu_cases/model.sdf
+[1.024s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/cpu_cases/mesh
+[1.024s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/cpu_cases/mesh/cpu_cases_Metalness.png
+[1.024s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/cpu_cases/mesh/cpu_cases.dae
+[1.024s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/cpu_cases/mesh/cpu_cases_Albedo.png
+[1.027s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/cpu_cases/mesh/cpu_cases_Roughness.png
+[1.029s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/cpu_cases/mesh/cpu_cases_Normal.png
+[1.031s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/cpu_cases/mesh/cpu_cases.png
+[1.035s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/cpu_cases/model.config
+[1.035s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/ball_shooter
+[1.035s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/ball_shooter/meshes
+[1.035s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/ball_shooter/meshes/ball_shooter_launcher.dae
+[1.035s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/ball_shooter/meshes/Launcher_BaseColor.png
+[1.036s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/ball_shooter/meshes/Launcher_Albedo.png
+[1.036s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/ball_shooter/meshes/ball_shooter_base.dae
+[1.037s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/ball_shooter/materials
+[1.037s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/ball_shooter/materials/Textures
+[1.037s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/ball_shooter/materials/Textures/Launcher_Normal.png
+[1.037s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/ball_shooter/materials/Textures/Launcher_Roughness.png
+[1.037s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/ball_shooter/materials/Textures/Launcher_Albedo.png
+[1.038s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/ball_shooter/materials/Textures/Launcher_Metalness.png
+[1.038s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/ball_shooter/model.sdf
+[1.038s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/ball_shooter/model.config
+[1.038s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/battery
+[1.038s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/battery/model.sdf
+[1.038s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/battery/mesh
+[1.038s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/battery/mesh/battery.png
+[1.042s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/battery/mesh/battery_Roughness.png
+[1.043s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/battery/mesh/battery_Albedo.png
+[1.046s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/battery/mesh/battery_Normal.png
+[1.048s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/battery/mesh/battery.dae
+[1.048s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/battery/mesh/battery_Metalness.png
+[1.048s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/battery/model.config
+[1.048s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/mono_camera
+[1.048s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/mono_camera/model.sdf
+[1.048s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/mono_camera/mesh
+[1.048s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/mono_camera/mesh/mono_camera_Metalness.png
+[1.049s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/mono_camera/mesh/mono_camera.png
+[1.049s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/mono_camera/mesh/mono_camera.dae
+[1.049s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/mono_camera/mesh/mono_camera_Roughness.png
+[1.049s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/mono_camera/mesh/mono_camera_Normal.png
+[1.049s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/mono_camera/mesh/mono_camera_Albedo.png
+[1.049s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/mono_camera/model.config
+[1.049s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/sensor_post
+[1.049s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/sensor_post/model.sdf
+[1.049s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/sensor_post/mesh
+[1.049s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/sensor_post/mesh/sensor_post_arm.dae
+[1.049s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/sensor_post/mesh/sensor_post.png
+[1.050s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/sensor_post/mesh/sensor_post.dae
+[1.050s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/sensor_post/model.config
+[1.050s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/blue_projectile
+[1.050s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/blue_projectile/model.sdf
+[1.050s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/models/blue_projectile/model.config
+[1.050s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/launch
+[1.050s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/launch/rviz.launch.py
+[1.050s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/launch/generate_wamv.launch.py
+[1.050s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/config
+[1.050s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/config/rviz_vrx_final.rviz
+[1.050s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/config/rviz_vrx_rsp.rviz
+[1.050s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/config/wamv_config
+[1.050s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/config/wamv_config/example_component_config.yaml
+[1.050s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/config/wamv_config/thruster_compliance
+[1.050s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/config/wamv_config/thruster_compliance/numeric.yaml
+[1.050s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/config/wamv_config/thruster_compliance/bounding_boxes.yaml
+[1.050s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/config/wamv_config/example_thruster_config.yaml
+[1.051s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/config/wamv_config/component_compliance
+[1.051s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/config/wamv_config/component_compliance/numeric.yaml
+[1.051s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/config/wamv_config/component_compliance/bounding_boxes.yaml
+[1.051s] -- Installing: /home/luca002/proj_ws/install/lib/vrx_gazebo/generate_wamv.py
+[1.051s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/environment/pythonpath.sh
+[1.051s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/environment/pythonpath.dsv
+[1.051s] -- Installing: /home/luca002/proj_ws/install/lib/python3.12/site-packages/vrx_gazebo-1.3.0-py3.12.egg-info
+[1.051s] -- Installing: /home/luca002/proj_ws/install/lib/python3.12/site-packages/vrx_gazebo-1.3.0-py3.12.egg-info/dependency_links.txt
+[1.051s] -- Installing: /home/luca002/proj_ws/install/lib/python3.12/site-packages/vrx_gazebo-1.3.0-py3.12.egg-info/PKG-INFO
+[1.051s] -- Installing: /home/luca002/proj_ws/install/lib/python3.12/site-packages/vrx_gazebo-1.3.0-py3.12.egg-info/top_level.txt
+[1.051s] -- Installing: /home/luca002/proj_ws/install/lib/python3.12/site-packages/vrx_gazebo-1.3.0-py3.12.egg-info/SOURCES.txt
+[1.051s] -- Installing: /home/luca002/proj_ws/install/lib/python3.12/site-packages/vrx_gazebo
+[1.051s] -- Installing: /home/luca002/proj_ws/install/lib/python3.12/site-packages/vrx_gazebo/compliance.py
+[1.051s] -- Installing: /home/luca002/proj_ws/install/lib/python3.12/site-packages/vrx_gazebo/configure_wamv.py
+[1.051s] -- Installing: /home/luca002/proj_ws/install/lib/python3.12/site-packages/vrx_gazebo/utils.py
+[1.051s] -- Installing: /home/luca002/proj_ws/install/lib/python3.12/site-packages/vrx_gazebo/__init__.py
+[1.083s] Listing '/home/luca002/proj_ws/install/lib/python3.12/site-packages/vrx_gazebo'...
+[1.083s] Compiling '/home/luca002/proj_ws/install/lib/python3.12/site-packages/vrx_gazebo/__init__.py'...
+[1.083s] Compiling '/home/luca002/proj_ws/install/lib/python3.12/site-packages/vrx_gazebo/compliance.py'...
+[1.084s] Compiling '/home/luca002/proj_ws/install/lib/python3.12/site-packages/vrx_gazebo/configure_wamv.py'...
+[1.084s] Compiling '/home/luca002/proj_ws/install/lib/python3.12/site-packages/vrx_gazebo/utils.py'...
+[1.088s] -- Installing: /home/luca002/proj_ws/install/share/ament_index/resource_index/package_run_dependencies/vrx_gazebo
+[1.088s] -- Installing: /home/luca002/proj_ws/install/share/ament_index/resource_index/parent_prefix_path/vrx_gazebo
+[1.089s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/environment/ament_prefix_path.sh
+[1.089s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/environment/ament_prefix_path.dsv
+[1.089s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/environment/path.sh
+[1.089s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/environment/path.dsv
+[1.089s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/local_setup.bash
+[1.089s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/local_setup.sh
+[1.089s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/local_setup.zsh
+[1.089s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/local_setup.dsv
+[1.089s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/package.dsv
+[1.089s] -- Installing: /home/luca002/proj_ws/install/share/ament_index/resource_index/packages/vrx_gazebo
+[1.089s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/cmake/vrx_gazeboConfig.cmake
+[1.090s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/cmake/vrx_gazeboConfig-version.cmake
+[1.090s] -- Installing: /home/luca002/proj_ws/install/share/vrx_gazebo/package.xml
+[1.092s] Invoked command in '/home/luca002/proj_ws/build/vrx_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/vrx_gazebo

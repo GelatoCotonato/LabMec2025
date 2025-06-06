@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/luca002/proj_ws/build/pose_to_tf/pose_to_tf" "/home/luca002/proj_ws/build/pose_to_tf/pose_with_covariance" "TARGETS" "pose_to_tf" "pose_with_covariance" "DESTINATION" "lib/pose_to_tf")

@@ -1,1 +1,0 @@
-/home/luca002/proj_ws/src/bluerov2/bluerov2_control/launch/sliding_mode_launch.py

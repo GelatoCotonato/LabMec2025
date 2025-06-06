@@ -635,5 +635,22 @@
       </message>
     </plugin>
 
+    <include>
+      <uri>model://wam-v</uri>
+      <name>wam-V</name>
+      <pose>-532 162 0 0 0 1</pose>
+    </include>
+    
+    <include>
+      <uri>model://lidar</uri>
+      <name>wam_lidar</name>
+      <pose relative_to="wam-V::base_link">0.75 0 1.3 0 0 0</pose>
+    </include>
+    
+    <joint name="lidar_joint" type="fixed">
+      <parent>wam-V::base_link</parent>
+      <child>wam_lidar::lidar_link</child>
+    </joint>
+
   </world>
 </sdf>
