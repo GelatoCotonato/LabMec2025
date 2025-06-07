@@ -1,0 +1,1 @@
+/home/luca002/proj_ws/build/vrx_gz/ament_cmake_core/vrx_gzConfig.cmake

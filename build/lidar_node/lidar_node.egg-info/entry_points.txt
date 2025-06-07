@@ -1,0 +1,2 @@
+[console_scripts]
+python_sub = lidar_node.sub:main

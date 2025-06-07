@@ -1,0 +1,418 @@
+[0.147s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.147s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7b68b5a8dcd0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b68b5a8d910>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b68b5a8d910>>, mixin_verb=('build',))
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.184s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/luca002/proj_ws'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extensions ['colcon_pkg']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extensions ['ros']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'ros'
+[0.206s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_interface' with type 'ros.ament_cmake' and name 'custom_interface'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_node) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_node) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_node) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_node) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_node) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_node) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_node) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_node) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_node) by extension 'ros'
+[0.206s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lidar_node' with type 'ros.ament_python' and name 'lidar_node'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ignore_ament_install'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['colcon_pkg']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'colcon_pkg'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['colcon_meta']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'colcon_meta'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['ros']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ros'
+[0.207s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_pubsub' with type 'ros.ament_python' and name 'py_pubsub'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_node) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_node) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_node) by extension 'ignore_ament_install'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_node) by extensions ['colcon_pkg']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_node) by extension 'colcon_pkg'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_node) by extensions ['colcon_meta']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_node) by extension 'colcon_meta'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_node) by extensions ['ros']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_node) by extension 'ros'
+[0.208s] DEBUG:colcon.colcon_core.package_identification:Package 'src/python_node' with type 'ros.ament_python' and name 'python_node'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'ignore_ament_install'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['colcon_pkg']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'colcon_pkg'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['colcon_meta']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'colcon_meta'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['ros']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'ros'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['cmake', 'python']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'cmake'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'python'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['python_setup_py']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'python_setup_py'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'ignore_ament_install'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extensions ['colcon_pkg']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'colcon_pkg'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extensions ['colcon_meta']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'colcon_meta'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extensions ['ros']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'ros'
+[0.209s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx/vrx_gz' with type 'ros.ament_cmake' and name 'vrx_gz'
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.226s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/luca002/ex_ws/install
+[0.226s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/luca002/ros_ws/install
+[0.228s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 405 installed packages in /opt/ros/jazzy
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.270s] DEBUG:colcon.colcon_core.verb:Building package 'custom_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luca002/proj_ws/build/custom_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luca002/proj_ws/install/custom_interface', 'merge_install': False, 'path': '/home/luca002/proj_ws/src/custom_interface', 'symlink_install': True, 'test_result_base': None}
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'lidar_node' build argument 'cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'lidar_node' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'lidar_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'lidar_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'lidar_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'lidar_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'lidar_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'lidar_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'lidar_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.270s] DEBUG:colcon.colcon_core.verb:Building package 'lidar_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luca002/proj_ws/build/lidar_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luca002/proj_ws/install/lidar_node', 'merge_install': False, 'path': '/home/luca002/proj_ws/src/lidar_node', 'symlink_install': True, 'test_result_base': None}
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_clean_cache' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_clean_first' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_force_configure' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'ament_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'catkin_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.271s] DEBUG:colcon.colcon_core.verb:Building package 'py_pubsub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luca002/proj_ws/build/py_pubsub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luca002/proj_ws/install/py_pubsub', 'merge_install': False, 'path': '/home/luca002/proj_ws/src/py_pubsub', 'symlink_install': True, 'test_result_base': None}
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'python_node' build argument 'cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'python_node' build argument 'cmake_target' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'python_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'python_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'python_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'python_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'python_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'python_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'python_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.271s] DEBUG:colcon.colcon_core.verb:Building package 'python_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luca002/proj_ws/build/python_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luca002/proj_ws/install/python_node', 'merge_install': False, 'path': '/home/luca002/proj_ws/src/python_node', 'symlink_install': True, 'test_result_base': None}
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_target' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_clean_cache' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_clean_first' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_force_configure' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'ament_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'catkin_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.271s] DEBUG:colcon.colcon_core.verb:Building package 'vrx_gz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luca002/proj_ws/build/vrx_gz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luca002/proj_ws/install/vrx_gz', 'merge_install': False, 'path': '/home/luca002/proj_ws/src/vrx/vrx_gz', 'symlink_install': True, 'test_result_base': None}
+[0.271s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.272s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.272s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/luca002/proj_ws/src/custom_interface' with build type 'ament_cmake'
+[0.272s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/luca002/proj_ws/src/custom_interface'
+[0.274s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.275s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.275s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.278s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/luca002/proj_ws/src/lidar_node' with build type 'ament_python'
+[0.278s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_node', 'ament_prefix_path')
+[0.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/lidar_node/share/lidar_node/hook/ament_prefix_path.ps1'
+[0.279s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/lidar_node/share/lidar_node/hook/ament_prefix_path.dsv'
+[0.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/lidar_node/share/lidar_node/hook/ament_prefix_path.sh'
+[0.279s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.279s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.282s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/luca002/proj_ws/src/py_pubsub' with build type 'ament_python'
+[0.282s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_pubsub', 'ament_prefix_path')
+[0.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/py_pubsub/share/py_pubsub/hook/ament_prefix_path.ps1'
+[0.283s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/py_pubsub/share/py_pubsub/hook/ament_prefix_path.dsv'
+[0.283s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/py_pubsub/share/py_pubsub/hook/ament_prefix_path.sh'
+[0.283s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.283s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.287s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/luca002/proj_ws/src/python_node' with build type 'ament_python'
+[0.287s] Level 1:colcon.colcon_core.shell:create_environment_hook('python_node', 'ament_prefix_path')
+[0.287s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/python_node/share/python_node/hook/ament_prefix_path.ps1'
+[0.287s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/python_node/share/python_node/hook/ament_prefix_path.dsv'
+[0.288s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/python_node/share/python_node/hook/ament_prefix_path.sh'
+[0.288s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.288s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.291s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/luca002/proj_ws/src/vrx/vrx_gz' with build type 'ament_cmake'
+[0.291s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/luca002/proj_ws/src/vrx/vrx_gz'
+[0.291s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.291s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.297s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luca002/proj_ws/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/luca002/proj_ws/src/custom_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install/custom_interface
+[0.450s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/luca002/proj_ws/src/lidar_node'
+[0.450s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.450s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.604s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/luca002/proj_ws/src/py_pubsub'
+[0.604s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.604s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.758s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/luca002/proj_ws/src/python_node'
+[0.758s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.758s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.766s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luca002/proj_ws/build/vrx_gz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/luca002/proj_ws/src/vrx/vrx_gz -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install/vrx_gz
+[1.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luca002/proj_ws/build/python_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/luca002/proj_ws/build/python_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luca002/proj_ws/install/python_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luca002/proj_ws/build/python_node/build --no-deps symlink_data
+[1.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luca002/proj_ws/build/py_pubsub': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/luca002/proj_ws/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luca002/proj_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luca002/proj_ws/build/py_pubsub/build --no-deps symlink_data
+[1.475s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luca002/proj_ws/build/lidar_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/luca002/proj_ws/build/lidar_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luca002/proj_ws/install/lidar_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luca002/proj_ws/build/lidar_node/build --no-deps symlink_data
+[2.082s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_node', 'pythonpath_develop')
+[2.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/build/lidar_node/share/lidar_node/hook/pythonpath_develop.ps1'
+[2.083s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luca002/proj_ws/build/lidar_node' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/luca002/proj_ws/build/lidar_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luca002/proj_ws/install/lidar_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luca002/proj_ws/build/lidar_node/build --no-deps symlink_data
+[2.083s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/build/lidar_node/share/lidar_node/hook/pythonpath_develop.dsv'
+[2.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/build/lidar_node/share/lidar_node/hook/pythonpath_develop.sh'
+[2.087s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/lidar_node' for CMake module files
+[2.088s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/lidar_node' for CMake config files
+[2.088s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/lidar_node/lib'
+[2.089s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/lidar_node/bin'
+[2.089s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/lidar_node/lib/pkgconfig/lidar_node.pc'
+[2.089s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/lidar_node/lib/python3.12/site-packages'
+[2.089s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_node', 'pythonpath')
+[2.089s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/lidar_node/share/lidar_node/hook/pythonpath.ps1'
+[2.090s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/lidar_node/share/lidar_node/hook/pythonpath.dsv'
+[2.090s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/lidar_node/share/lidar_node/hook/pythonpath.sh'
+[2.090s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/lidar_node/bin'
+[2.090s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lidar_node)
+[2.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/lidar_node/share/lidar_node/package.ps1'
+[2.091s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luca002/proj_ws/install/lidar_node/share/lidar_node/package.dsv'
+[2.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/lidar_node/share/lidar_node/package.sh'
+[2.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/lidar_node/share/lidar_node/package.bash'
+[2.093s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/lidar_node/share/lidar_node/package.zsh'
+[2.094s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luca002/proj_ws/install/lidar_node/share/colcon-core/packages/lidar_node)
+[2.094s] Level 1:colcon.colcon_core.shell:create_environment_hook('python_node', 'pythonpath_develop')
+[2.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/build/python_node/share/python_node/hook/pythonpath_develop.ps1'
+[2.095s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luca002/proj_ws/build/python_node' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/luca002/proj_ws/build/python_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luca002/proj_ws/install/python_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luca002/proj_ws/build/python_node/build --no-deps symlink_data
+[2.095s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/build/python_node/share/python_node/hook/pythonpath_develop.dsv'
+[2.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/build/python_node/share/python_node/hook/pythonpath_develop.sh'
+[2.095s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/python_node' for CMake module files
+[2.096s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/python_node' for CMake config files
+[2.096s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/python_node/lib'
+[2.096s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/python_node/bin'
+[2.096s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/python_node/lib/pkgconfig/python_node.pc'
+[2.096s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/python_node/lib/python3.12/site-packages'
+[2.096s] Level 1:colcon.colcon_core.shell:create_environment_hook('python_node', 'pythonpath')
+[2.096s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/python_node/share/python_node/hook/pythonpath.ps1'
+[2.097s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/python_node/share/python_node/hook/pythonpath.dsv'
+[2.097s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/python_node/share/python_node/hook/pythonpath.sh'
+[2.097s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/python_node/bin'
+[2.097s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(python_node)
+[2.097s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/python_node/share/python_node/package.ps1'
+[2.098s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luca002/proj_ws/install/python_node/share/python_node/package.dsv'
+[2.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/python_node/share/python_node/package.sh'
+[2.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/python_node/share/python_node/package.bash'
+[2.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/python_node/share/python_node/package.zsh'
+[2.099s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luca002/proj_ws/install/python_node/share/colcon-core/packages/python_node)
+[2.100s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_pubsub', 'pythonpath_develop')
+[2.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/build/py_pubsub/share/py_pubsub/hook/pythonpath_develop.ps1'
+[2.101s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luca002/proj_ws/build/py_pubsub' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/luca002/proj_ws/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luca002/proj_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luca002/proj_ws/build/py_pubsub/build --no-deps symlink_data
+[2.101s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/build/py_pubsub/share/py_pubsub/hook/pythonpath_develop.dsv'
+[2.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/build/py_pubsub/share/py_pubsub/hook/pythonpath_develop.sh'
+[2.101s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/py_pubsub' for CMake module files
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/py_pubsub' for CMake config files
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/py_pubsub/lib'
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/py_pubsub/bin'
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/py_pubsub/lib/pkgconfig/py_pubsub.pc'
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/py_pubsub/lib/python3.12/site-packages'
+[2.102s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_pubsub', 'pythonpath')
+[2.102s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/py_pubsub/share/py_pubsub/hook/pythonpath.ps1'
+[2.103s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/py_pubsub/share/py_pubsub/hook/pythonpath.dsv'
+[2.103s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/py_pubsub/share/py_pubsub/hook/pythonpath.sh'
+[2.103s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/py_pubsub/bin'
+[2.103s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(py_pubsub)
+[2.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/py_pubsub/share/py_pubsub/package.ps1'
+[2.104s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luca002/proj_ws/install/py_pubsub/share/py_pubsub/package.dsv'
+[2.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/py_pubsub/share/py_pubsub/package.sh'
+[2.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/py_pubsub/share/py_pubsub/package.bash'
+[2.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/py_pubsub/share/py_pubsub/package.zsh'
+[2.105s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luca002/proj_ws/install/py_pubsub/share/colcon-core/packages/py_pubsub)
+[2.774s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luca002/proj_ws/build/vrx_gz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/luca002/proj_ws/src/vrx/vrx_gz -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install/vrx_gz
+[2.776s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luca002/proj_ws/build/vrx_gz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/vrx_gz -- -j16 -l16
+[2.980s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luca002/proj_ws/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/luca002/proj_ws/src/custom_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install/custom_interface
+[2.981s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luca002/proj_ws/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/custom_interface -- -j16 -l16
+[4.924s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luca002/proj_ws/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/custom_interface -- -j16 -l16
+[4.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luca002/proj_ws/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/custom_interface
+[5.506s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interface)
+[5.506s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luca002/proj_ws/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/custom_interface
+[5.506s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/custom_interface' for CMake module files
+[5.507s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/custom_interface' for CMake config files
+[5.508s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'cmake_prefix_path')
+[5.508s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.ps1'
+[5.508s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.dsv'
+[5.509s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.sh'
+[5.509s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/custom_interface/lib'
+[5.509s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'ld_library_path_lib')
+[5.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.ps1'
+[5.510s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.dsv'
+[5.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.sh'
+[5.510s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/custom_interface/bin'
+[5.511s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/custom_interface/lib/pkgconfig/custom_interface.pc'
+[5.511s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/custom_interface/lib/python3.12/site-packages'
+[5.511s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'pythonpath')
+[5.511s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/pythonpath.ps1'
+[5.511s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/pythonpath.dsv'
+[5.512s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/pythonpath.sh'
+[5.512s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/custom_interface/bin'
+[5.512s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/package.ps1'
+[5.513s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/package.dsv'
+[5.513s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/package.sh'
+[5.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/package.bash'
+[5.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/package.zsh'
+[5.514s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luca002/proj_ws/install/custom_interface/share/colcon-core/packages/custom_interface)
+[5.515s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interface)
+[5.515s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/custom_interface' for CMake module files
+[5.516s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/custom_interface' for CMake config files
+[5.516s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'cmake_prefix_path')
+[5.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.ps1'
+[5.517s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.dsv'
+[5.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.sh'
+[5.518s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/custom_interface/lib'
+[5.518s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'ld_library_path_lib')
+[5.518s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.ps1'
+[5.518s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.dsv'
+[5.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.sh'
+[5.519s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/custom_interface/bin'
+[5.519s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/custom_interface/lib/pkgconfig/custom_interface.pc'
+[5.519s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/custom_interface/lib/python3.12/site-packages'
+[5.519s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'pythonpath')
+[5.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/pythonpath.ps1'
+[5.520s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/pythonpath.dsv'
+[5.520s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/hook/pythonpath.sh'
+[5.520s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/custom_interface/bin'
+[5.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/package.ps1'
+[5.521s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/package.dsv'
+[5.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/package.sh'
+[5.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/package.bash'
+[5.522s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/custom_interface/share/custom_interface/package.zsh'
+[5.522s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luca002/proj_ws/install/custom_interface/share/colcon-core/packages/custom_interface)
+[19.386s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luca002/proj_ws/build/vrx_gz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/vrx_gz -- -j16 -l16
+[19.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luca002/proj_ws/build/vrx_gz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/vrx_gz
+[20.918s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_gz)
+[20.918s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/vrx_gz' for CMake module files
+[20.918s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luca002/proj_ws/build/vrx_gz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/vrx_gz
+[20.919s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/vrx_gz' for CMake config files
+[20.919s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'cmake_prefix_path')
+[20.919s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/cmake_prefix_path.ps1'
+[20.919s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/cmake_prefix_path.dsv'
+[20.919s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/cmake_prefix_path.sh'
+[20.920s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/vrx_gz/lib'
+[20.920s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'ld_library_path_lib')
+[20.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/ld_library_path_lib.ps1'
+[20.920s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/ld_library_path_lib.dsv'
+[20.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/ld_library_path_lib.sh'
+[20.921s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/vrx_gz/bin'
+[20.921s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/vrx_gz/lib/pkgconfig/vrx_gz.pc'
+[20.921s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages'
+[20.921s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'pythonpath')
+[20.921s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/pythonpath.ps1'
+[20.921s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/pythonpath.dsv'
+[20.921s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/pythonpath.sh'
+[20.922s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/vrx_gz/bin'
+[20.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/package.ps1'
+[20.922s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/package.dsv'
+[20.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/package.sh'
+[20.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/package.bash'
+[20.923s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/package.zsh'
+[20.923s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luca002/proj_ws/install/vrx_gz/share/colcon-core/packages/vrx_gz)
+[20.923s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_gz)
+[20.923s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/vrx_gz' for CMake module files
+[20.923s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/vrx_gz' for CMake config files
+[20.924s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'cmake_prefix_path')
+[20.924s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/cmake_prefix_path.ps1'
+[20.924s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/cmake_prefix_path.dsv'
+[20.924s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/cmake_prefix_path.sh'
+[20.924s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/vrx_gz/lib'
+[20.924s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'ld_library_path_lib')
+[20.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/ld_library_path_lib.ps1'
+[20.925s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/ld_library_path_lib.dsv'
+[20.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/ld_library_path_lib.sh'
+[20.925s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/vrx_gz/bin'
+[20.925s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/vrx_gz/lib/pkgconfig/vrx_gz.pc'
+[20.925s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages'
+[20.925s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'pythonpath')
+[20.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/pythonpath.ps1'
+[20.926s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/pythonpath.dsv'
+[20.926s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/hook/pythonpath.sh'
+[20.926s] Level 1:colcon.colcon_core.environment:checking '/home/luca002/proj_ws/install/vrx_gz/bin'
+[20.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/package.ps1'
+[20.927s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/package.dsv'
+[20.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/package.sh'
+[20.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/package.bash'
+[20.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/package.zsh'
+[20.928s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luca002/proj_ws/install/vrx_gz/share/colcon-core/packages/vrx_gz)
+[20.928s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[20.928s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[20.928s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[20.928s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[20.933s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[20.933s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[20.933s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[20.951s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[20.951s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/luca002/proj_ws/install/local_setup.ps1'
+[20.952s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/luca002/proj_ws/install/_local_setup_util_ps1.py'
+[20.954s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/luca002/proj_ws/install/setup.ps1'
+[20.955s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/luca002/proj_ws/install/local_setup.sh'
+[20.956s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/luca002/proj_ws/install/_local_setup_util_sh.py'
+[20.956s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/luca002/proj_ws/install/setup.sh'
+[20.958s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/luca002/proj_ws/install/local_setup.bash'
+[20.958s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/luca002/proj_ws/install/setup.bash'
+[20.959s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/luca002/proj_ws/install/local_setup.zsh'
+[20.960s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/luca002/proj_ws/install/setup.zsh'

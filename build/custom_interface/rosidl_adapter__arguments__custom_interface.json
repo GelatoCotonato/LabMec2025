@@ -1,0 +1,7 @@
+{
+  "package_name": "custom_interface",
+  "non_idl_tuples": [
+    "/home/luca002/proj_ws/src/custom_interface:msg/CustomMsg.msg",
+    "/home/luca002/proj_ws/src/custom_interface:srv/CustomSrv.srv"
+  ]
+}

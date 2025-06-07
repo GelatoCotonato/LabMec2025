@@ -1,0 +1,9 @@
+[
+  {
+    ros_topic_name: "/lidar_ros",
+    gz_topic_name: "/lidar_topic",  # Replace with your Gazebo topic
+    ros_type_name: "sensor_msgs/msg/LaserScan",
+    gz_type_name: "gz.msgs.LaserScan",
+    direction: "gz_to_ros"
+  }
+]

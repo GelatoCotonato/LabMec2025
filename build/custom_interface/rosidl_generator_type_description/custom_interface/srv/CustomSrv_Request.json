@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "custom_interface/srv/CustomSrv_Request",
+      "fields": [
+        {
+          "name": "start",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "custom_interface/srv/CustomSrv_Request",
+      "hash_string": "RIHS01_bcb8731b563fc6b43e60b29e63f9838c79ca0583ef94d6e88192585c0723b634"
+    }
+  ]
+}

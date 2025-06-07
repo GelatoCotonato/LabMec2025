@@ -1,0 +1,13 @@
+{
+  "package_name": "custom_interface",
+  "output_dir": "/home/luca002/proj_ws/build/custom_interface/rosidl_generator_type_description/custom_interface",
+  "idl_tuples": [
+    "/home/luca002/proj_ws/build/custom_interface/rosidl_adapter/custom_interface:msg/CustomMsg.idl",
+    "/home/luca002/proj_ws/build/custom_interface/rosidl_adapter/custom_interface:srv/CustomSrv.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}
