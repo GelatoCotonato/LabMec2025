@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "custom_interface/srv/detail/custom_srv__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
-#include "custom_interface/srv/detail/custom_srv__struct.h"
 #include "custom_interface/srv/detail/custom_srv__type_support.h"
+#include "custom_interface/srv/detail/custom_srv__functions.h"
+#include "custom_interface/srv/detail/custom_srv__struct.h"
 
 #ifdef __cplusplus
 extern "C"

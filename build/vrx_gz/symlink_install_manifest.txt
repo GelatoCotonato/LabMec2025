@@ -32,10 +32,12 @@
 /home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages/vrx_gz/bridges.py
 /home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages/vrx_gz/launch.py
 /home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages/vrx_gz/model.py
+/home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages/vrx_gz/monitor_sim.py
 /home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages/vrx_gz/payload_bridges.py
 /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/config/roboboat.yaml
 /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/config/wamv.yaml
 /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/launch/competition.launch.py
+/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/launch/mylaunch.py
 /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/launch/spawn.launch.py
 /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/launch/spawn_config.launch.py
 /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/launch/usv_joy_teleop.py
@@ -234,7 +236,7 @@
 /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/worlds/demo_world1.sdf
 /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/worlds/myworld.sdf
 /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/worlds/simple_baylands.sdf
-/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/worlds/sydney.sdf
+/home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/worlds/sydney.world
 /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/worlds/sydney_regatta.sdf
 /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/worlds/wworld.sdf
 /home/luca002/proj_ws/install/vrx_gz/share/ament_index/resource_index/package_run_dependencies/vrx_gz

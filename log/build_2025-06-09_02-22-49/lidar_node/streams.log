@@ -1,0 +1,24 @@
+[0.949s] Invoking command in '/home/luca002/proj_ws/build/lidar_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/luca002/proj_ws/build/lidar_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luca002/proj_ws/install/lidar_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luca002/proj_ws/build/lidar_node/build --no-deps symlink_data
+[1.183s] running develop
+[1.329s] running egg_info
+[1.329s] creating lidar_node.egg-info
+[1.344s] writing lidar_node.egg-info/PKG-INFO
+[1.344s] writing dependency_links to lidar_node.egg-info/dependency_links.txt
+[1.344s] writing entry points to lidar_node.egg-info/entry_points.txt
+[1.344s] writing requirements to lidar_node.egg-info/requires.txt
+[1.345s] writing top-level names to lidar_node.egg-info/top_level.txt
+[1.345s] writing manifest file 'lidar_node.egg-info/SOURCES.txt'
+[1.373s] reading manifest file 'lidar_node.egg-info/SOURCES.txt'
+[1.374s] writing manifest file 'lidar_node.egg-info/SOURCES.txt'
+[1.418s] running build_ext
+[1.418s] Creating /home/luca002/proj_ws/install/lidar_node/lib/python3.12/site-packages/lidar-node.egg-link (link to .)
+[1.418s] Installing python_sub script to /home/luca002/proj_ws/install/lidar_node/lib/lidar_node
+[1.418s] 
+[1.418s] Installed /home/luca002/proj_ws/build/lidar_node
+[1.418s] running symlink_data
+[1.419s] creating /home/luca002/proj_ws/install/lidar_node/share/ament_index
+[1.419s] creating /home/luca002/proj_ws/install/lidar_node/share/ament_index/resource_index
+[1.419s] creating /home/luca002/proj_ws/install/lidar_node/share/ament_index/resource_index/packages
+[1.419s] symbolically linking /home/luca002/proj_ws/build/lidar_node/resource/lidar_node -> /home/luca002/proj_ws/install/lidar_node/share/ament_index/resource_index/packages
+[1.419s] symbolically linking /home/luca002/proj_ws/build/lidar_node/package.xml -> /home/luca002/proj_ws/install/lidar_node/share/lidar_node
+[1.476s] Invoked command in '/home/luca002/proj_ws/build/lidar_node' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/luca002/proj_ws/build/lidar_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luca002/proj_ws/install/lidar_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luca002/proj_ws/build/lidar_node/build --no-deps symlink_data

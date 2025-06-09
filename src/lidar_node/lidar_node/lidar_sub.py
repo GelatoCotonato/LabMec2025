@@ -4,7 +4,7 @@ import gz.msgs as msgs
 # topic su cui pubblicare i comandi
 topic_pub = "/cmd_vel"
 # topic da cui leggere i dati LIDAR (modifica se serve)
-topic_sub = "/lidar_topic"
+topic_sub = "/lidar"
 
 node = transport.Node()
 

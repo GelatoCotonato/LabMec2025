@@ -1,0 +1,292 @@
+[0.484s] Invoking command in '/home/luca002/proj_ws/build/vrx_gz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luca002/proj_ws/install/python_node:/home/luca002/proj_ws/install/py_pubsub:/home/luca002/proj_ws/install/lidar_node:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/vrx_gz -- -j16 -l16
+[0.543s] [  4%] Built target Waves
+[0.543s] [  8%] Built target ScoringPlugin
+[0.558s] [  8%] Built target ament_cmake_python_symlink_vrx_gz
+[0.594s] [ 12%] Built target LightBuoyPlugin
+[0.594s] [ 16%] Built target PerceptionScoringPlugin
+[0.602s] [ 33%] Built target AcousticTrackingScoringPlugin
+[0.603s] [ 33%] Built target AcousticPerceptionScoringPlugin
+[0.606s] [ 33%] Built target BallShooterPlugin
+[0.607s] [ 37%] Built target AcousticPingerPlugin
+[0.608s] [ 41%] Built target ScanDockScoringPlugin
+[0.608s] [ 45%] Built target GymkhanaScoringPlugin
+[0.612s] [ 50%] Built target SimpleHydrodynamics
+[0.615s] [ 56%] Built target WayfindingScoringPlugin
+[0.615s] [ 60%] Built target USVWind
+[0.616s] [ 64%] Built target NavigationScoringPlugin
+[0.616s] [ 68%] Built target PublisherPlugin
+[0.617s] [ 75%] Built target StationkeepingScoringPlugin
+[0.618s] [ 79%] Built target Surface
+[0.622s] [ 83%] Built target PlacardPlugin
+[0.639s] [ 87%] Built target WildlifeScoringPlugin
+[0.640s] [ 91%] Built target WaveVisual
+[0.641s] [100%] Built target PolyhedraBuoyancyDrag
+[0.828s] running egg_info
+[0.847s] writing vrx_gz.egg-info/PKG-INFO
+[0.847s] writing dependency_links to vrx_gz.egg-info/dependency_links.txt
+[0.847s] writing top-level names to vrx_gz.egg-info/top_level.txt
+[0.900s] reading manifest file 'vrx_gz.egg-info/SOURCES.txt'
+[0.901s] writing manifest file 'vrx_gz.egg-info/SOURCES.txt'
+[0.924s] [100%] Built target ament_cmake_python_build_vrx_gz_egg
+[0.934s] Invoked command in '/home/luca002/proj_ws/build/vrx_gz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luca002/proj_ws/install/python_node:/home/luca002/proj_ws/install/py_pubsub:/home/luca002/proj_ws/install/lidar_node:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/vrx_gz -- -j16 -l16
+[0.935s] Invoking command in '/home/luca002/proj_ws/build/vrx_gz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luca002/proj_ws/install/python_node:/home/luca002/proj_ws/install/py_pubsub:/home/luca002/proj_ws/install/lidar_node:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/vrx_gz
+[0.942s] -- Install configuration: ""
+[0.942s] -- Execute custom install script
+[0.942s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/environment/resource_paths.dsv
+[0.942s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/environment/resource_paths.sh
+[0.942s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libWaves.so
+[0.943s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libPolyhedraBuoyancyDrag.so
+[0.943s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libScoringPlugin.so
+[0.943s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libStationkeepingScoringPlugin.so
+[0.943s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libWayfindingScoringPlugin.so
+[0.943s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libAcousticPerceptionScoringPlugin.so
+[0.943s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libAcousticTrackingScoringPlugin.so
+[0.943s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libAcousticPingerPlugin.so
+[0.944s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libBallShooterPlugin.so
+[0.944s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libLightBuoyPlugin.so
+[0.944s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libNavigationScoringPlugin.so
+[0.944s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libGymkhanaScoringPlugin.so
+[0.944s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libPerceptionScoringPlugin.so
+[0.944s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libPlacardPlugin.so
+[0.944s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libPublisherPlugin.so
+[0.944s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libScanDockScoringPlugin.so
+[0.944s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libSimpleHydrodynamics.so
+[0.944s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libSurface.so
+[0.945s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libUSVWind.so
+[0.945s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libWaveVisual.so
+[0.945s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/libWildlifeScoringPlugin.so
+[0.945s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/environment/pythonpath.sh
+[0.945s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/environment/pythonpath.dsv
+[0.945s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages/vrx_gz-0.0.0-py3.12.egg-info/PKG-INFO
+[0.945s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages/vrx_gz-0.0.0-py3.12.egg-info/SOURCES.txt
+[0.945s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages/vrx_gz-0.0.0-py3.12.egg-info/dependency_links.txt
+[0.945s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages/vrx_gz-0.0.0-py3.12.egg-info/top_level.txt
+[0.946s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages/vrx_gz/__init__.py
+[0.946s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages/vrx_gz/bridge.py
+[0.946s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages/vrx_gz/bridges.py
+[0.946s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages/vrx_gz/launch.py
+[0.946s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages/vrx_gz/model.py
+[0.946s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages/vrx_gz/monitor_sim.py
+[0.946s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages/vrx_gz/payload_bridges.py
+[0.946s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/config/roboboat.yaml
+[0.946s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/config/wamv.yaml
+[0.947s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/launch/competition.launch.py
+[0.947s] -- Symlinking: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/launch/mylaunch.py
+[0.956s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/launch/spawn.launch.py
+[0.956s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/launch/spawn_config.launch.py
+[0.956s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/launch/usv_joy_teleop.py
+[0.956s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/launch/vrx_environment.launch.py
+[0.958s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/3d_lidar/mesh/3d_Lidar_Albedo.png
+[0.958s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/3d_lidar/mesh/3d_Lidar_Metalness.png
+[0.958s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/3d_lidar/mesh/3d_Lidar_Normal.png
+[0.958s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/3d_lidar/mesh/3d_Lidar_Roughness.png
+[0.958s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/3d_lidar/mesh/3d_lidar.dae
+[0.958s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/3d_lidar/mesh/3d_lidar.png
+[0.958s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/3d_lidar/model.config
+[0.958s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/3d_lidar/model.sdf
+[0.958s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/articulated_platform/model.config
+[0.958s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/articulated_platform/model.sdf
+[0.958s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/ball_shooter/materials/Textures/Launcher_Albedo.png
+[0.959s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/ball_shooter/materials/Textures/Launcher_Metalness.png
+[0.959s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/ball_shooter/materials/Textures/Launcher_Normal.png
+[0.959s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/ball_shooter/materials/Textures/Launcher_Roughness.png
+[0.959s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/ball_shooter/meshes/Launcher_Albedo.png
+[0.959s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/ball_shooter/meshes/Launcher_BaseColor.png
+[0.959s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/ball_shooter/meshes/ball_shooter_base.dae
+[0.959s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/ball_shooter/meshes/ball_shooter_launcher.dae
+[0.959s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/ball_shooter/model.config
+[0.959s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/ball_shooter/model.sdf
+[0.959s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/battery/mesh/battery.dae
+[0.959s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/battery/mesh/battery.png
+[0.959s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/battery/mesh/battery_Albedo.png
+[0.959s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/battery/mesh/battery_Metalness.png
+[0.959s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/battery/mesh/battery_Normal.png
+[0.960s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/battery/mesh/battery_Roughness.png
+[0.960s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/battery/model.config
+[0.960s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/battery/model.sdf
+[0.960s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/blue_projectile/model.config
+[0.960s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/blue_projectile/model.sdf
+[0.960s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/boat/materials/textures/Boat_Albedo.png
+[0.960s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/boat/materials/textures/Boat_Metalness.png
+[0.960s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/boat/materials/textures/Boat_Normal.png
+[0.960s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/boat/materials/textures/Boat_Roughness.png
+[0.960s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/boat/materials/textures/lidar_3d_v1.png
+[0.960s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/boat/meshes/rcboat.dae
+[0.960s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/boat/model.config
+[0.960s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/boat/model.sdf
+[0.960s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/boat/oldmodel/mmodel.sdf
+[0.960s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/boat/thumbnails/boat/1.png
+[0.961s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/boat/thumbnails/boat/2.png
+[0.961s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/boat/thumbnails/boat/3.png
+[0.961s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/boat/thumbnails/boat/4.png
+[0.961s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/boat/thumbnails/boat/5.png
+[0.961s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/coast_waves/materials/programs/GerstnerWaves_fs_330.glsl
+[0.961s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/coast_waves/materials/programs/GerstnerWaves_vs_330.glsl
+[0.961s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/coast_waves/materials/textures/skybox_lowres.dds
+[0.961s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/coast_waves/materials/textures/wave_normals.dds
+[0.961s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/coast_waves/meshes/waterlow.dae
+[0.961s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/coast_waves/model.config
+[0.961s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/coast_waves/model.sdf
+[0.961s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/cpu_cases/mesh/cpu_cases.dae
+[0.961s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/cpu_cases/mesh/cpu_cases.png
+[0.961s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/cpu_cases/mesh/cpu_cases_Albedo.png
+[0.962s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/cpu_cases/mesh/cpu_cases_Metalness.png
+[0.962s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/cpu_cases/mesh/cpu_cases_Normal.png
+[0.962s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/cpu_cases/mesh/cpu_cases_Roughness.png
+[0.962s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/cpu_cases/model.config
+[0.962s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/cpu_cases/model.sdf
+[0.962s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/dock_2022/model.config
+[0.962s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/dock_2022/model.sdf
+[0.962s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/dock_2022_base/model.config
+[0.962s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/dock_2022_base/model.sdf
+[0.962s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/dock_block_4x4/mesh/DockCubes_Albedo.png
+[0.962s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/dock_block_4x4/mesh/DockCubes_Metalness.png
+[0.962s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/dock_block_4x4/mesh/DockCubes_Normal.png
+[0.962s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/dock_block_4x4/mesh/DockCubes_Roughness.png
+[0.962s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/dock_block_4x4/mesh/dock_block_4x4.dae
+[0.962s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/dock_block_4x4/model.config
+[0.963s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/dock_block_4x4/model.sdf
+[0.963s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/entrance_exit/model.config
+[0.963s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/entrance_exit/model.sdf
+[0.963s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/lidar/materials/textures/lidar_3d_v1.png
+[0.963s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/lidar/meshes/lidar_3d_v1.dae
+[0.963s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/lidar/meshes/lidar_3d_v1.png
+[0.963s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/lidar/model.config
+[0.963s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/lidar/model.sdf
+[0.963s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/lidar/thumbnails/1.png
+[0.963s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/lidar/thumbnails/2.png
+[0.963s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/lidar/thumbnails/3.png
+[0.963s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/lidar/thumbnails/4.png
+[0.963s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/lidar/thumbnails/5.png
+[0.963s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/mono_camera/mesh/mono_camera.dae
+[0.963s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/mono_camera/mesh/mono_camera.png
+[0.964s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/mono_camera/mesh/mono_camera_Albedo.png
+[0.964s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/mono_camera/mesh/mono_camera_Metalness.png
+[0.964s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/mono_camera/mesh/mono_camera_Normal.png
+[0.964s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/mono_camera/mesh/mono_camera_Roughness.png
+[0.964s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/mono_camera/model.config
+[0.964s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/mono_camera/model.sdf
+[0.964s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/obstacle_course/model.config
+[0.964s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/obstacle_course/model.sdf
+[0.964s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/placard_2022/materials/textures/Placard.png
+[0.964s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/placard_2022/meshes/placard_2022.dae
+[0.964s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/placard_2022/model.config
+[0.964s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/placard_2022/model.sdf
+[0.964s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/platform/model.config
+[0.964s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/platform/model.sdf
+[0.965s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat01/materials/scripts/model.material
+[0.965s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat01/materials/textures/Boat01_Albedo.png
+[0.965s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat01/materials/textures/Boat01_Metallic.png
+[0.965s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat01/materials/textures/Boat01_Normal.png
+[0.965s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat01/materials/textures/Boat01_Roughness.png
+[0.965s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat01/materials/textures/Thruster_Albedo.png
+[0.965s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat01/materials/textures/Thruster_Roughness.png
+[0.965s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat01/meshes/housing.dae
+[0.965s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat01/meshes/mount.dae
+[0.965s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat01/meshes/prop.dae
+[0.965s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat01/meshes/roboboat01.dae
+[0.965s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat01/model.config
+[0.965s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat01/model.sdf
+[0.965s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat02/materials/scripts/model.material
+[0.965s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat02/materials/textures/Boat02_Albedo.png
+[0.966s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat02/materials/textures/Boat02_Metallic.png
+[0.966s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat02/materials/textures/Boat02_Normal.png
+[0.966s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat02/materials/textures/Boat02_Roughness.png
+[0.966s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat02/meshes/roboboat02.dae
+[0.966s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat02/model.config
+[0.966s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat02/model.sdf
+[0.966s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat_cpubox/materials/textures/DryBox_Albedo.png
+[0.966s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat_cpubox/materials/textures/DryBox_Roughness.png
+[0.966s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat_cpubox/meshes/drybox.dae
+[0.966s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat_cpubox/model.config
+[0.966s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/roboboat_cpubox/model.sdf
+[0.966s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_bgr/model.config
+[0.966s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_bgr/model.sdf
+[0.966s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_bgy/model.config
+[0.967s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_bgy/model.sdf
+[0.967s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_gbr/model.config
+[0.967s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_gbr/model.sdf
+[0.967s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_rbg/model.config
+[0.967s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_rbg/model.sdf
+[0.967s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_rgb/mesh/LightTower_Albedo.png
+[0.967s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_rgb/mesh/LightTower_Metalness.png
+[0.967s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_rgb/mesh/LightTower_Normal.png
+[0.967s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_rgb/mesh/LightTower_Opacity.png
+[0.967s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_rgb/mesh/LightTower_Roughness.png
+[0.967s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_rgb/mesh/robotx_light_buoy.dae
+[0.967s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_rgb/model.config
+[0.967s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_rgb/model.sdf
+[0.967s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_rgy/model.config
+[0.967s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_rgy/model.sdf
+[0.968s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_ybr/model.config
+[0.968s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_ybr/model.sdf
+[0.968s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_ygb/model.config
+[0.968s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_ygb/model.sdf
+[0.968s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_yrg/model.config
+[0.968s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/robotx_light_buoy_yrg/model.sdf
+[0.968s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/sensor_post/mesh/sensor_post.dae
+[0.968s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/sensor_post/mesh/sensor_post.png
+[0.968s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/sensor_post/mesh/sensor_post_arm.dae
+[0.968s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/sensor_post/model.config
+[0.968s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/sensor_post/model.sdf
+[0.968s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/short_course_2023_phase3_1/model.config
+[0.968s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/short_course_2023_phase3_1/model.sdf
+[0.968s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/short_course_2023_phase3_2/model.config
+[0.969s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/short_course_2023_phase3_2/model.sdf
+[0.969s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/short_navigation_course_0/model.config
+[0.969s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/short_navigation_course_0/model.sdf
+[0.969s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/short_navigation_course_1/model.config
+[0.969s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/short_navigation_course_1/model.sdf
+[0.969s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/short_navigation_course_2/model.config
+[0.969s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/short_navigation_course_2/model.sdf
+[0.969s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/short_navigation_course_3/model.config
+[0.969s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/short_navigation_course_3/model.sdf
+[0.969s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/short_navigation_course_4/model.config
+[0.969s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/short_navigation_course_4/model.sdf
+[0.970s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/short_navigation_course_5/model.config
+[0.970s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/short_navigation_course_5/model.sdf
+[0.970s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/symbol_triangle/mesh/triangle.dae
+[0.970s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/symbol_triangle/model.config
+[0.970s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/symbol_triangle/model.sdf
+[0.970s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/tripod/meshes/legs.dae
+[0.970s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/tripod/meshes/ring.dae
+[0.970s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/tripod/model.config
+[0.970s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/tripod/model.sdf
+[0.971s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/vessel/materials/textures/Boat01_Albedo.jpg
+[0.971s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/vessel/materials/textures/Boat01_Normal.jpg
+[0.971s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/vessel/materials/textures/Boat01_Roughness.jpg
+[0.971s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/vessel/meshes/Boat01.dae
+[0.971s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/vessel/model.config
+[0.971s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/vessel/model.sdf
+[0.971s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/vessel/thumbnails/1.png
+[0.971s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/wam-v/meshes/WAM-V-Base.dae
+[0.971s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/wam-v/meshes/WamV.png
+[0.971s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/wam-v/meshes/engine.dae
+[0.971s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/wam-v/meshes/propeller.dae
+[0.971s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/wam-v/model.config
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/models/wam-v/model.sdf
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/worlds/boat_world.world
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/worlds/dave_bimanual_example.world
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/worlds/demo_world1.sdf
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/worlds/myworld.sdf
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/worlds/simple_baylands.sdf
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/worlds/sydney.world
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/worlds/sydney_regatta.sdf
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/worlds/wworld.sdf
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/ament_index/resource_index/package_run_dependencies/vrx_gz
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/ament_index/resource_index/parent_prefix_path/vrx_gz
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/environment/ament_prefix_path.sh
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/environment/ament_prefix_path.dsv
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/environment/path.sh
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/environment/path.dsv
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/local_setup.bash
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/local_setup.sh
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/local_setup.zsh
+[0.972s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/local_setup.dsv
+[0.972s] -- Symlinking: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/package.dsv
+[0.980s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/ament_index/resource_index/packages/vrx_gz
+[0.980s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/cmake/vrx_gzConfig.cmake
+[0.980s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/cmake/vrx_gzConfig-version.cmake
+[0.980s] -- Up-to-date symlink: /home/luca002/proj_ws/install/vrx_gz/share/vrx_gz/package.xml
+[1.013s] Listing '/home/luca002/proj_ws/install/vrx_gz/lib/python3.12/site-packages/vrx_gz'...
+[1.026s] Invoked command in '/home/luca002/proj_ws/build/vrx_gz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luca002/proj_ws/install/python_node:/home/luca002/proj_ws/install/py_pubsub:/home/luca002/proj_ws/install/lidar_node:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/vrx_gz

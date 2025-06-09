@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./src/vrx/vrx_gz/src"
+    ]
+}

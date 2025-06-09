@@ -1,0 +1,18 @@
+[1.110s] Invoking command in '/home/luca002/proj_ws/build/py_pubsub': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/luca002/proj_ws/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luca002/proj_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luca002/proj_ws/build/py_pubsub/build --no-deps symlink_data
+[1.336s] running develop
+[1.477s] running egg_info
+[1.491s] writing py_pubsub.egg-info/PKG-INFO
+[1.491s] writing dependency_links to py_pubsub.egg-info/dependency_links.txt
+[1.492s] writing entry points to py_pubsub.egg-info/entry_points.txt
+[1.492s] writing requirements to py_pubsub.egg-info/requires.txt
+[1.492s] writing top-level names to py_pubsub.egg-info/top_level.txt
+[1.521s] reading manifest file 'py_pubsub.egg-info/SOURCES.txt'
+[1.521s] writing manifest file 'py_pubsub.egg-info/SOURCES.txt'
+[1.564s] running build_ext
+[1.564s] Creating /home/luca002/proj_ws/install/py_pubsub/lib/python3.12/site-packages/py-pubsub.egg-link (link to .)
+[1.564s] Installing listener script to /home/luca002/proj_ws/install/py_pubsub/lib/py_pubsub
+[1.564s] Installing talker script to /home/luca002/proj_ws/install/py_pubsub/lib/py_pubsub
+[1.565s] 
+[1.565s] Installed /home/luca002/proj_ws/build/py_pubsub
+[1.565s] running symlink_data
+[1.602s] Invoked command in '/home/luca002/proj_ws/build/py_pubsub' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/luca002/proj_ws/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luca002/proj_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luca002/proj_ws/build/py_pubsub/build --no-deps symlink_data
