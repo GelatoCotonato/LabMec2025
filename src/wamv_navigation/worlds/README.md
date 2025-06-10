@@ -1,0 +1,1 @@
+Questa cartella contiene i mondi (in sdf) che si possono lanciare

@@ -61,12 +61,12 @@ namespace wamv_gazebo
   ///
   /// <task_info_topic>: Optional parameter (string type)
   /// containing the ROS topic name to publish the task stats. The default
-  /// topic name is /vrx/task/info .
+  /// topic name is /wamv_gazebo/task/info .
   ///
   /// <contact_debug_topic>: Optional parameter (string type)
   /// containing the ROS topic name to
   /// publish every instant a collision with the wamv is happening.
-  /// Default is /vrx/debug/contact.
+  /// Default is /wamv_gazebo/debug/contact.
   ///
   /// <per_plugin_exit_on_completion>: Specifies whether to shut down after
   /// completion, for this specific plugin.
@@ -101,10 +101,10 @@ namespace wamv_gazebo
   /// Here's an example:
   /// <plugin
   ///   filename="libScoringPlugin.so"
-  ///   name="vrx::ScoringPlugin">
+  ///   name="wamv_gazebo::ScoringPlugin">
   ///   <vehicle>wamv</vehicle>
   ///   <task_name>my_task</task_name>
-  ///   <task_info_topic>/vrx/task/info</task_info_topic>
+  ///   <task_info_topic>/wamv_gazebo/task/info</task_info_topic>
   ///   <initial_state_duration>10</initial_state_duration>
   ///   <ready_state_duration>10</ready_state_duration>
   ///   <running_state_duration>300</running_state_duration>

@@ -1,0 +1,471 @@
+[0.000000] (-) TimerEvent: {}
+[0.000356] (wamv_gazebo) JobQueued: {'identifier': 'wamv_gazebo', 'dependencies': OrderedDict()}
+[0.000381] (wamv_gazebo) JobStarted: {'identifier': 'wamv_gazebo'}
+[0.006422] (wamv_gazebo) JobProgress: {'identifier': 'wamv_gazebo', 'progress': 'cmake'}
+[0.007008] (wamv_gazebo) JobProgress: {'identifier': 'wamv_gazebo', 'progress': 'build'}
+[0.007545] (wamv_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/luca002/proj_ws/build/wamv_gazebo', '--', '-j16', '-l16'], 'cwd': '/home/luca002/proj_ws/build/wamv_gazebo', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib:/home/luca002/proj_ws/install/wamv_gazebo/lib:/opt/ros//lib:', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models:/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/worlds:/home/luca002/proj_ws/src/wamv_gazebo/models', 'USER': 'luca002', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/luca002/ros_ws/install/velodyne_laserscan/lib:/home/luca002/ros_ws/install/thruster_manager/lib:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/luca002/ros_ws/install/dynamixel_sdk/lib:/home/luca002/nav2_ws/install/nav2_straightline_planner/lib:/home/luca002/proj_ws/install/wamv_gazebo/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/luca002', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.100.3', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2285', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2573', 'BUNDLED_DEBUGPY_PATH': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '9967', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/luca002/proj_ws/install:/home/luca002/ros_ws/install:/home/luca002/nav2_ws/install:/home/luca002/ex_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luca002', 'JOURNAL_STREAM': '9:20973', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'luca002', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/luca002/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/luca002/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/luca002/.local/bin:/home/luca002/.local/bin:/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/luke:@/tmp/.ICE-unix/2517,unix/luke:/tmp/.ICE-unix/2517', 'INVOCATION_ID': '8a27847e38a24e188ae88b105cd982a6', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-4163fee7d3074f91.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.FZAO72', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-672260eb09.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '22', 'AMENT_PREFIX_PATH': '/home/luca002/ros_ws/install/velodyne_laserscan:/home/luca002/ros_ws/install/turtlebot3_description:/home/luca002/ros_ws/install/turtlebot3_cartographer:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/nav2_common:/home/luca002/ros_ws/install/mec_mobile_description:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/home/luca002/nav2_ws/install/nav2_straightline_planner:/home/luca002/ex_ws/install/mec_mobile:/home/luca002/ex_ws/install/mec_mobile_description:/home/luca002/proj_ws/install/wamv_gazebo:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/opt/ros/jazzy/share', 'GJS_DEBUG_OUTPUT': 'stderr', 'GSK_RENDERER': 'gl', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/luca002/proj_ws/build/wamv_gazebo', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luca002/ros_ws/install/nav2_common/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/luca002/ros_ws/install/velodyne_laserscan:/home/luca002/ros_ws/install/turtlebot3_description:/home/luca002/ros_ws/install/turtlebot3_cartographer:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/nav2_common:/home/luca002/ros_ws/install/mec_mobile_description:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/home/luca002/nav2_ws/install/nav2_straightline_planner:/home/luca002/ex_ws/install/mec_mobile:/home/luca002/ex_ws/install/mec_mobile_description:/home/luca002/proj_ws/install/wamv_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.052495] (wamv_gazebo) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/Waves.dir/src/Wavefield.cc.o\x1b[0m\n'}
+[0.052783] (wamv_gazebo) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_symlink_wamv_gazebo\n'}
+[0.053806] (wamv_gazebo) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/ScoringPlugin.dir/src/ScoringPlugin.cc.o\x1b[0m\n'}
+[0.099905] (-) TimerEvent: {}
+[0.200179] (-) TimerEvent: {}
+[0.224660] (wamv_gazebo) StdoutLine: {'line': b'running egg_info\n'}
+[0.241909] (wamv_gazebo) StdoutLine: {'line': b'writing wamv_gazebo.egg-info/PKG-INFO\n'}
+[0.242188] (wamv_gazebo) StdoutLine: {'line': b'writing dependency_links to wamv_gazebo.egg-info/dependency_links.txt\n'}
+[0.242303] (wamv_gazebo) StdoutLine: {'line': b'writing top-level names to wamv_gazebo.egg-info/top_level.txt\n'}
+[0.293910] (wamv_gazebo) StdoutLine: {'line': b"reading manifest file 'wamv_gazebo.egg-info/SOURCES.txt'\n"}
+[0.294424] (wamv_gazebo) StdoutLine: {'line': b"writing manifest file 'wamv_gazebo.egg-info/SOURCES.txt'\n"}
+[0.300318] (-) TimerEvent: {}
+[0.326559] (wamv_gazebo) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_wamv_gazebo_egg\n'}
+[0.400444] (-) TimerEvent: {}
+[0.500801] (-) TimerEvent: {}
+[0.601257] (-) TimerEvent: {}
+[0.701542] (-) TimerEvent: {}
+[0.801912] (-) TimerEvent: {}
+[0.902368] (-) TimerEvent: {}
+[1.002798] (-) TimerEvent: {}
+[1.103241] (-) TimerEvent: {}
+[1.203563] (-) TimerEvent: {}
+[1.303966] (-) TimerEvent: {}
+[1.404274] (-) TimerEvent: {}
+[1.504592] (-) TimerEvent: {}
+[1.604891] (-) TimerEvent: {}
+[1.705277] (-) TimerEvent: {}
+[1.805641] (-) TimerEvent: {}
+[1.906024] (-) TimerEvent: {}
+[2.006429] (-) TimerEvent: {}
+[2.106790] (-) TimerEvent: {}
+[2.207121] (-) TimerEvent: {}
+[2.307458] (-) TimerEvent: {}
+[2.407920] (-) TimerEvent: {}
+[2.508191] (-) TimerEvent: {}
+[2.608515] (-) TimerEvent: {}
+[2.708916] (-) TimerEvent: {}
+[2.809290] (-) TimerEvent: {}
+[2.909679] (-) TimerEvent: {}
+[2.960502] (wamv_gazebo) StdoutLine: {'line': b'[  6%] \x1b[32m\x1b[1mLinking CXX shared library libWaves.so\x1b[0m\n'}
+[3.009833] (-) TimerEvent: {}
+[3.110249] (-) TimerEvent: {}
+[3.138446] (wamv_gazebo) StdoutLine: {'line': b'[  6%] Built target Waves\n'}
+[3.166917] (wamv_gazebo) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/PolyhedraBuoyancyDrag.dir/src/PolyhedraBuoyancyDrag.cc.o\x1b[0m\n'}
+[3.210380] (-) TimerEvent: {}
+[3.310711] (-) TimerEvent: {}
+[3.411053] (-) TimerEvent: {}
+[3.511445] (-) TimerEvent: {}
+[3.611951] (-) TimerEvent: {}
+[3.713027] (-) TimerEvent: {}
+[3.813585] (-) TimerEvent: {}
+[3.913949] (-) TimerEvent: {}
+[4.014296] (-) TimerEvent: {}
+[4.114755] (-) TimerEvent: {}
+[4.176583] (wamv_gazebo) StdoutLine: {'line': b'[ 10%] \x1b[32m\x1b[1mLinking CXX shared library libScoringPlugin.so\x1b[0m\n'}
+[4.214915] (-) TimerEvent: {}
+[4.315377] (-) TimerEvent: {}
+[4.389897] (wamv_gazebo) StdoutLine: {'line': b'[ 10%] Built target ScoringPlugin\n'}
+[4.415563] (-) TimerEvent: {}
+[4.428816] (wamv_gazebo) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking CXX shared library libAcousticPingerPlugin.so\x1b[0m\n'}
+[4.429071] (wamv_gazebo) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/NavigationScoringPlugin.dir/src/NavigationScoringPlugin.cc.o\x1b[0m\n'}
+[4.429169] (wamv_gazebo) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/PlacardPlugin.dir/src/PlacardPlugin.cc.o\x1b[0m\n'}
+[4.429646] (wamv_gazebo) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/LightBuoyPlugin.dir/src/LightBuoyPlugin.cc.o\x1b[0m\n'}
+[4.429810] (wamv_gazebo) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/Surface.dir/src/Surface.cc.o\x1b[0m\n'}
+[4.429903] (wamv_gazebo) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking CXX shared library libSimpleHydrodynamics.so\x1b[0m\n'}
+[4.429973] (wamv_gazebo) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking CXX shared library libBallShooterPlugin.so\x1b[0m\n'}
+[4.430148] (wamv_gazebo) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o\x1b[0m\n'}
+[4.437221] (wamv_gazebo) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/AcousticTrackingScoringPlugin.dir/src/AcousticTrackingScoringPlugin.cc.o\x1b[0m\n'}
+[4.437788] (wamv_gazebo) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/GymkhanaScoringPlugin.dir/src/GymkhanaScoringPlugin.cc.o\x1b[0m\n'}
+[4.439814] (wamv_gazebo) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/WayfindingScoringPlugin.dir/src/WayfindingScoringPlugin.cc.o\x1b[0m\n'}
+[4.439961] (wamv_gazebo) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/PerceptionScoringPlugin.dir/src/PerceptionScoringPlugin.cc.o\x1b[0m\n'}
+[4.443939] (wamv_gazebo) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/StationkeepingScoringPlugin.dir/src/StationkeepingScoringPlugin.cc.o\x1b[0m\n'}
+[4.444208] (wamv_gazebo) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/AcousticPerceptionScoringPlugin.dir/src/AcousticPerceptionScoringPlugin.cc.o\x1b[0m\n'}
+[4.444301] (wamv_gazebo) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/ScanDockScoringPlugin.dir/src/ScanDockScoringPlugin.cc.o\x1b[0m\n'}
+[4.519098] (-) TimerEvent: {}
+[4.619875] (-) TimerEvent: {}
+[4.720575] (-) TimerEvent: {}
+[4.821186] (-) TimerEvent: {}
+[4.840073] (wamv_gazebo) StdoutLine: {'line': b'[ 43%] Built target SimpleHydrodynamics\n'}
+[4.921610] (-) TimerEvent: {}
+[4.940264] (wamv_gazebo) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libUSVWind.so\x1b[0m\n'}
+[5.021941] (-) TimerEvent: {}
+[5.125526] (-) TimerEvent: {}
+[5.186826] (wamv_gazebo) StdoutLine: {'line': b'[ 47%] Built target AcousticPingerPlugin\n'}
+[5.225763] (-) TimerEvent: {}
+[5.320217] (wamv_gazebo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o\x1b[0m\n'}
+[5.329076] (-) TimerEvent: {}
+[5.429976] (-) TimerEvent: {}
+[5.531907] (-) TimerEvent: {}
+[5.573317] (wamv_gazebo) StdoutLine: {'line': b'[ 52%] Built target BallShooterPlugin\n'}
+[5.636273] (-) TimerEvent: {}
+[5.703216] (wamv_gazebo) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/WildlifeScoringPlugin.dir/src/WildlifeScoringPlugin.cc.o\x1b[0m\n'}
+[5.736450] (-) TimerEvent: {}
+[5.837235] (-) TimerEvent: {}
+[5.898111] (wamv_gazebo) StdoutLine: {'line': b'[ 56%] Built target USVWind\n'}
+[5.937402] (-) TimerEvent: {}
+[6.039942] (-) TimerEvent: {}
+[6.140303] (-) TimerEvent: {}
+[6.240696] (-) TimerEvent: {}
+[6.341145] (-) TimerEvent: {}
+[6.442243] (-) TimerEvent: {}
+[6.546241] (-) TimerEvent: {}
+[6.647187] (-) TimerEvent: {}
+[6.753467] (-) TimerEvent: {}
+[6.855519] (-) TimerEvent: {}
+[6.958046] (-) TimerEvent: {}
+[7.061046] (-) TimerEvent: {}
+[7.161768] (-) TimerEvent: {}
+[7.266867] (-) TimerEvent: {}
+[7.367480] (-) TimerEvent: {}
+[7.468490] (-) TimerEvent: {}
+[7.570249] (-) TimerEvent: {}
+[7.671710] (-) TimerEvent: {}
+[7.778431] (-) TimerEvent: {}
+[7.886907] (-) TimerEvent: {}
+[7.987630] (-) TimerEvent: {}
+[8.089637] (-) TimerEvent: {}
+[8.190705] (-) TimerEvent: {}
+[8.291150] (-) TimerEvent: {}
+[8.398943] (-) TimerEvent: {}
+[8.499381] (-) TimerEvent: {}
+[8.599824] (-) TimerEvent: {}
+[8.700296] (-) TimerEvent: {}
+[8.801277] (-) TimerEvent: {}
+[8.902956] (-) TimerEvent: {}
+[9.003541] (-) TimerEvent: {}
+[9.103941] (-) TimerEvent: {}
+[9.204311] (-) TimerEvent: {}
+[9.304709] (-) TimerEvent: {}
+[9.405130] (-) TimerEvent: {}
+[9.506957] (-) TimerEvent: {}
+[9.607407] (-) TimerEvent: {}
+[9.707898] (-) TimerEvent: {}
+[9.717457] (wamv_gazebo) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libPublisherPlugin.so\x1b[0m\n'}
+[9.808040] (-) TimerEvent: {}
+[9.908473] (-) TimerEvent: {}
+[10.009957] (-) TimerEvent: {}
+[10.114960] (-) TimerEvent: {}
+[10.215779] (-) TimerEvent: {}
+[10.278349] (wamv_gazebo) StdoutLine: {'line': b'[ 58%] Built target PublisherPlugin\n'}
+[10.317103] (-) TimerEvent: {}
+[10.422120] (-) TimerEvent: {}
+[10.522942] (-) TimerEvent: {}
+[10.623781] (-) TimerEvent: {}
+[10.649042] (wamv_gazebo) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libLightBuoyPlugin.so\x1b[0m\n'}
+[10.724021] (-) TimerEvent: {}
+[10.825590] (-) TimerEvent: {}
+[10.927822] (-) TimerEvent: {}
+[11.029375] (-) TimerEvent: {}
+[11.130301] (-) TimerEvent: {}
+[11.232728] (-) TimerEvent: {}
+[11.273972] (wamv_gazebo) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libGymkhanaScoringPlugin.so\x1b[0m\n'}
+[11.274640] (wamv_gazebo) StdoutLine: {'line': b'[ 62%] Built target LightBuoyPlugin\n'}
+[11.295604] (wamv_gazebo) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libPolyhedraBuoyancyDrag.so\x1b[0m\n'}
+[11.333394] (-) TimerEvent: {}
+[11.434435] (-) TimerEvent: {}
+[11.522467] (wamv_gazebo) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libSurface.so\x1b[0m\n'}
+[11.535118] (-) TimerEvent: {}
+[11.636879] (-) TimerEvent: {}
+[11.740405] (-) TimerEvent: {}
+[11.834117] (wamv_gazebo) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libPlacardPlugin.so\x1b[0m\n'}
+[11.842696] (-) TimerEvent: {}
+[11.899710] (wamv_gazebo) StdoutLine: {'line': b'[ 68%] Built target GymkhanaScoringPlugin\n'}
+[11.943034] (-) TimerEvent: {}
+[11.968888] (wamv_gazebo) StdoutLine: {'line': b'[ 72%] Built target PolyhedraBuoyancyDrag\n'}
+[12.043263] (-) TimerEvent: {}
+[12.143904] (-) TimerEvent: {}
+[12.223648] (wamv_gazebo) StdoutLine: {'line': b'[ 72%] Built target Surface\n'}
+[12.244140] (-) TimerEvent: {}
+[12.336630] (wamv_gazebo) StdoutLine: {'line': b'[ 72%] Built target PlacardPlugin\n'}
+[12.344308] (-) TimerEvent: {}
+[12.444860] (-) TimerEvent: {}
+[12.545271] (-) TimerEvent: {}
+[12.645658] (-) TimerEvent: {}
+[12.746147] (-) TimerEvent: {}
+[12.846823] (-) TimerEvent: {}
+[12.947526] (-) TimerEvent: {}
+[13.048120] (-) TimerEvent: {}
+[13.148885] (-) TimerEvent: {}
+[13.249598] (-) TimerEvent: {}
+[13.350303] (-) TimerEvent: {}
+[13.450807] (-) TimerEvent: {}
+[13.551539] (-) TimerEvent: {}
+[13.652214] (-) TimerEvent: {}
+[13.752811] (-) TimerEvent: {}
+[13.853186] (-) TimerEvent: {}
+[13.953527] (-) TimerEvent: {}
+[13.986350] (wamv_gazebo) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libPerceptionScoringPlugin.so\x1b[0m\n'}
+[14.053642] (-) TimerEvent: {}
+[14.105428] (wamv_gazebo) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libAcousticPerceptionScoringPlugin.so\x1b[0m\n'}
+[14.153929] (-) TimerEvent: {}
+[14.202873] (wamv_gazebo) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libAcousticTrackingScoringPlugin.so\x1b[0m\n'}
+[14.244112] (wamv_gazebo) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libStationkeepingScoringPlugin.so\x1b[0m\n'}
+[14.254279] (-) TimerEvent: {}
+[14.353340] (wamv_gazebo) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library libWayfindingScoringPlugin.so\x1b[0m\n'}
+[14.354299] (-) TimerEvent: {}
+[14.454981] (-) TimerEvent: {}
+[14.555982] (-) TimerEvent: {}
+[14.611643] (wamv_gazebo) StdoutLine: {'line': b'[ 83%] Built target PerceptionScoringPlugin\n'}
+[14.623249] (wamv_gazebo) StdoutLine: {'line': b'[ 85%] Built target AcousticPerceptionScoringPlugin\n'}
+[14.656144] (-) TimerEvent: {}
+[14.756836] (-) TimerEvent: {}
+[14.772358] (wamv_gazebo) StdoutLine: {'line': b'[ 87%] Built target AcousticTrackingScoringPlugin\n'}
+[14.851811] (wamv_gazebo) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking CXX shared library libWildlifeScoringPlugin.so\x1b[0m\n'}
+[14.856978] (-) TimerEvent: {}
+[14.860465] (wamv_gazebo) StdoutLine: {'line': b'[ 93%] Built target StationkeepingScoringPlugin\n'}
+[14.860728] (wamv_gazebo) StdoutLine: {'line': b'[ 93%] Built target WayfindingScoringPlugin\n'}
+[14.927421] (wamv_gazebo) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX shared library libNavigationScoringPlugin.so\x1b[0m\n'}
+[14.957069] (-) TimerEvent: {}
+[15.057535] (-) TimerEvent: {}
+[15.158263] (-) TimerEvent: {}
+[15.199723] (wamv_gazebo) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX shared library libScanDockScoringPlugin.so\x1b[0m\n'}
+[15.200090] (wamv_gazebo) StdoutLine: {'line': b'[ 97%] Built target NavigationScoringPlugin\n'}
+[15.200151] (wamv_gazebo) StdoutLine: {'line': b'[ 97%] Built target WildlifeScoringPlugin\n'}
+[15.229386] (wamv_gazebo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libWaveVisual.so\x1b[0m\n'}
+[15.258497] (-) TimerEvent: {}
+[15.358972] (-) TimerEvent: {}
+[15.459553] (-) TimerEvent: {}
+[15.495086] (wamv_gazebo) StdoutLine: {'line': b'[100%] Built target ScanDockScoringPlugin\n'}
+[15.505136] (wamv_gazebo) StdoutLine: {'line': b'[100%] Built target WaveVisual\n'}
+[15.516213] (wamv_gazebo) CommandEnded: {'returncode': 0}
+[15.516987] (wamv_gazebo) JobProgress: {'identifier': 'wamv_gazebo', 'progress': 'install'}
+[15.525311] (wamv_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/luca002/proj_ws/build/wamv_gazebo'], 'cwd': '/home/luca002/proj_ws/build/wamv_gazebo', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib:/home/luca002/proj_ws/install/wamv_gazebo/lib:/opt/ros//lib:', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models:/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/worlds:/home/luca002/proj_ws/src/wamv_gazebo/models', 'USER': 'luca002', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/luca002/ros_ws/install/velodyne_laserscan/lib:/home/luca002/ros_ws/install/thruster_manager/lib:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/luca002/ros_ws/install/dynamixel_sdk/lib:/home/luca002/nav2_ws/install/nav2_straightline_planner/lib:/home/luca002/proj_ws/install/wamv_gazebo/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/luca002', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.100.3', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2285', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2573', 'BUNDLED_DEBUGPY_PATH': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '9967', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/luca002/proj_ws/install:/home/luca002/ros_ws/install:/home/luca002/nav2_ws/install:/home/luca002/ex_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luca002', 'JOURNAL_STREAM': '9:20973', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'luca002', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/luca002/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/luca002/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/luca002/.local/bin:/home/luca002/.local/bin:/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/luke:@/tmp/.ICE-unix/2517,unix/luke:/tmp/.ICE-unix/2517', 'INVOCATION_ID': '8a27847e38a24e188ae88b105cd982a6', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-4163fee7d3074f91.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.FZAO72', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-672260eb09.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '22', 'AMENT_PREFIX_PATH': '/home/luca002/ros_ws/install/velodyne_laserscan:/home/luca002/ros_ws/install/turtlebot3_description:/home/luca002/ros_ws/install/turtlebot3_cartographer:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/nav2_common:/home/luca002/ros_ws/install/mec_mobile_description:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/home/luca002/nav2_ws/install/nav2_straightline_planner:/home/luca002/ex_ws/install/mec_mobile:/home/luca002/ex_ws/install/mec_mobile_description:/home/luca002/proj_ws/install/wamv_gazebo:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/opt/ros/jazzy/share', 'GJS_DEBUG_OUTPUT': 'stderr', 'GSK_RENDERER': 'gl', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/luca002/proj_ws/build/wamv_gazebo', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luca002/ros_ws/install/nav2_common/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/luca002/ros_ws/install/velodyne_laserscan:/home/luca002/ros_ws/install/turtlebot3_description:/home/luca002/ros_ws/install/turtlebot3_cartographer:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/nav2_common:/home/luca002/ros_ws/install/mec_mobile_description:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/home/luca002/nav2_ws/install/nav2_straightline_planner:/home/luca002/ex_ws/install/mec_mobile:/home/luca002/ex_ws/install/mec_mobile_description:/home/luca002/proj_ws/install/wamv_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[15.532530] (wamv_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.532903] (wamv_gazebo) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[15.533101] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/resource_paths.dsv\n'}
+[15.533207] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/resource_paths.sh\n'}
+[15.533458] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libWaves.so\n'}
+[15.533670] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libPolyhedraBuoyancyDrag.so\n'}
+[15.533880] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libScoringPlugin.so\n'}
+[15.534112] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libStationkeepingScoringPlugin.so\n'}
+[15.534327] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libWayfindingScoringPlugin.so\n'}
+[15.534490] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libAcousticPerceptionScoringPlugin.so\n'}
+[15.534676] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libAcousticTrackingScoringPlugin.so\n'}
+[15.534923] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libAcousticPingerPlugin.so\n'}
+[15.535027] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libBallShooterPlugin.so\n'}
+[15.535105] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libLightBuoyPlugin.so\n'}
+[15.535179] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libNavigationScoringPlugin.so\n'}
+[15.535252] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libGymkhanaScoringPlugin.so\n'}
+[15.535324] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libPerceptionScoringPlugin.so\n'}
+[15.535398] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libPlacardPlugin.so\n'}
+[15.535470] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libPublisherPlugin.so\n'}
+[15.535542] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libScanDockScoringPlugin.so\n'}
+[15.535629] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libSimpleHydrodynamics.so\n'}
+[15.535712] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libSurface.so\n'}
+[15.535768] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libUSVWind.so\n'}
+[15.535835] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libWaveVisual.so\n'}
+[15.535921] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libWildlifeScoringPlugin.so\n'}
+[15.536020] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/pythonpath.sh\n'}
+[15.536105] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/pythonpath.dsv\n'}
+[15.536373] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[15.536435] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[15.536493] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[15.536553] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[15.536935] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/__init__.py\n'}
+[15.537069] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/bridge.py\n'}
+[15.537165] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/bridges.py\n'}
+[15.537235] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/launch.py\n'}
+[15.537284] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/model.py\n'}
+[15.537329] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/monitor_sim.py\n'}
+[15.537386] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/payload_bridges.py\n'}
+[15.537497] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/config/wamv.yaml\n'}
+[15.537864] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/__init__.py\n'}
+[15.537930] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/__pycache__/bridge.cpython-312.pyc\n'}
+[15.537992] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/bridge.py\n'}
+[15.538048] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/competition.launch.py\n'}
+[15.538095] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/mylaunch.py\n'}
+[15.538187] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/spawn.launch.py\n'}
+[15.538232] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/spawn_config.launch.py\n'}
+[15.538292] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/usv_joy_teleop.py\n'}
+[15.538340] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/vrx_environment.launch.py\n'}
+[15.546532] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/3d_lidar/mesh/3d_Lidar_Albedo.png\n'}
+[15.546815] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/3d_lidar/mesh/3d_Lidar_Metalness.png\n'}
+[15.546914] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/3d_lidar/mesh/3d_Lidar_Normal.png\n'}
+[15.546974] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/3d_lidar/mesh/3d_Lidar_Roughness.png\n'}
+[15.547020] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/3d_lidar/mesh/3d_lidar.dae\n'}
+[15.547068] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/3d_lidar/mesh/3d_lidar.png\n'}
+[15.547113] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/3d_lidar/model.config\n'}
+[15.547158] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/3d_lidar/model.sdf\n'}
+[15.547210] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/articulated_platform/model.config\n'}
+[15.547256] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/articulated_platform/model.sdf\n'}
+[15.547330] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/materials/Textures/Launcher_Albedo.png\n'}
+[15.547378] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/materials/Textures/Launcher_Metalness.png\n'}
+[15.547424] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/materials/Textures/Launcher_Normal.png\n'}
+[15.547468] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/materials/Textures/Launcher_Roughness.png\n'}
+[15.547512] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/meshes/Launcher_Albedo.png\n'}
+[15.547556] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/meshes/Launcher_BaseColor.png\n'}
+[15.547621] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/meshes/ball_shooter_base.dae\n'}
+[15.547666] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/meshes/ball_shooter_launcher.dae\n'}
+[15.547711] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/model.config\n'}
+[15.547757] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/model.sdf\n'}
+[15.547801] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/battery/mesh/battery.dae\n'}
+[15.547872] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/battery/mesh/battery.png\n'}
+[15.547933] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/battery/mesh/battery_Albedo.png\n'}
+[15.547992] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/battery/mesh/battery_Metalness.png\n'}
+[15.548037] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/battery/mesh/battery_Normal.png\n'}
+[15.548081] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/battery/mesh/battery_Roughness.png\n'}
+[15.548124] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/battery/model.config\n'}
+[15.548179] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/battery/model.sdf\n'}
+[15.548246] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/blue_projectile/model.config\n'}
+[15.548289] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/blue_projectile/model.sdf\n'}
+[15.548334] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/materials/textures/Boat_Albedo.png\n'}
+[15.548380] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/materials/textures/Boat_Metalness.png\n'}
+[15.548442] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/materials/textures/Boat_Normal.png\n'}
+[15.548492] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/materials/textures/Boat_Roughness.png\n'}
+[15.548537] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/materials/textures/lidar_3d_v1.png\n'}
+[15.548585] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/meshes/rcboat.dae\n'}
+[15.548648] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/model.config\n'}
+[15.548697] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/model.sdf\n'}
+[15.548763] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/oldmodel/mmodel.sdf\n'}
+[15.548825] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/thumbnails/boat/1.png\n'}
+[15.548916] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/thumbnails/boat/2.png\n'}
+[15.548966] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/thumbnails/boat/3.png\n'}
+[15.549050] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/thumbnails/boat/4.png\n'}
+[15.549118] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/thumbnails/boat/5.png\n'}
+[15.549174] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/programs/GerstnerWaves_fs_330.glsl\n'}
+[15.549221] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/programs/GerstnerWaves_vs_330.glsl\n'}
+[15.549277] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/textures/skybox_lowres.dds\n'}
+[15.549339] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/textures/wave_normals.dds\n'}
+[15.549392] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/meshes/waterlow.dae\n'}
+[15.549451] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/model.config\n'}
+[15.549511] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/model.sdf\n'}
+[15.549577] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/cpu_cases/mesh/cpu_cases.dae\n'}
+[15.549641] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/cpu_cases/mesh/cpu_cases.png\n'}
+[15.549688] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/cpu_cases/mesh/cpu_cases_Albedo.png\n'}
+[15.549750] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/cpu_cases/mesh/cpu_cases_Metalness.png\n'}
+[15.549797] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/cpu_cases/mesh/cpu_cases_Normal.png\n'}
+[15.549865] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/cpu_cases/mesh/cpu_cases_Roughness.png\n'}
+[15.549930] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/cpu_cases/model.config\n'}
+[15.549976] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/cpu_cases/model.sdf\n'}
+[15.550036] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_2022/model.config\n'}
+[15.550097] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_2022/model.sdf\n'}
+[15.550158] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_2022_base/model.config\n'}
+[15.550218] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_2022_base/model.sdf\n'}
+[15.550280] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block_4x4/mesh/DockCubes_Albedo.png\n'}
+[15.550351] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block_4x4/mesh/DockCubes_Metalness.png\n'}
+[15.550396] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block_4x4/mesh/DockCubes_Normal.png\n'}
+[15.550441] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block_4x4/mesh/DockCubes_Roughness.png\n'}
+[15.550504] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block_4x4/mesh/dock_block_4x4.dae\n'}
+[15.550550] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block_4x4/model.config\n'}
+[15.550615] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block_4x4/model.sdf\n'}
+[15.550671] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/entrance_exit/model.config\n'}
+[15.550716] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/entrance_exit/model.sdf\n'}
+[15.550778] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/materials/textures/lidar_3d_v1.png\n'}
+[15.550825] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/meshes/lidar_3d_v1.dae\n'}
+[15.550894] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/meshes/lidar_3d_v1.png\n'}
+[15.550961] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/model.config\n'}
+[15.551007] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/model.sdf\n'}
+[15.551069] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/thumbnails/1.png\n'}
+[15.551115] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/thumbnails/2.png\n'}
+[15.551175] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/thumbnails/3.png\n'}
+[15.551241] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/thumbnails/4.png\n'}
+[15.551290] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/thumbnails/5.png\n'}
+[15.551351] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mono_camera/mesh/mono_camera.dae\n'}
+[15.551398] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mono_camera/mesh/mono_camera.png\n'}
+[15.551459] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mono_camera/mesh/mono_camera_Albedo.png\n'}
+[15.551504] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mono_camera/mesh/mono_camera_Metalness.png\n'}
+[15.551565] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mono_camera/mesh/mono_camera_Normal.png\n'}
+[15.551609] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mono_camera/mesh/mono_camera_Roughness.png\n'}
+[15.551671] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mono_camera/model.config\n'}
+[15.551716] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mono_camera/model.sdf\n'}
+[15.551775] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/placard_2022/materials/textures/Placard.png\n'}
+[15.551832] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/placard_2022/meshes/placard_2022.dae\n'}
+[15.551895] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/placard_2022/model.config\n'}
+[15.551949] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/placard_2022/model.sdf\n'}
+[15.552006] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/platform/model.config\n'}
+[15.552060] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/platform/model.sdf\n'}
+[15.552119] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/materials/scripts/model.material\n'}
+[15.552208] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/materials/textures/Boat01_Albedo.png\n'}
+[15.552257] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/materials/textures/Boat01_Metallic.png\n'}
+[15.552334] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/materials/textures/Boat01_Normal.png\n'}
+[15.552380] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/materials/textures/Boat01_Roughness.png\n'}
+[15.552438] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/materials/textures/Thruster_Albedo.png\n'}
+[15.552495] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/materials/textures/Thruster_Roughness.png\n'}
+[15.552578] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/meshes/housing.dae\n'}
+[15.552626] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/meshes/mount.dae\n'}
+[15.552706] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/meshes/prop.dae\n'}
+[15.552763] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/meshes/roboboat01.dae\n'}
+[15.552810] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/model.config\n'}
+[15.552877] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/model.sdf\n'}
+[15.552937] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat02/materials/scripts/model.material\n'}
+[15.553001] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat02/materials/textures/Boat02_Albedo.png\n'}
+[15.553047] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat02/materials/textures/Boat02_Metallic.png\n'}
+[15.553104] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat02/materials/textures/Boat02_Normal.png\n'}
+[15.553156] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat02/materials/textures/Boat02_Roughness.png\n'}
+[15.553212] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat02/meshes/roboboat02.dae\n'}
+[15.553274] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat02/model.config\n'}
+[15.553332] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat02/model.sdf\n'}
+[15.553384] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat_cpubox/materials/textures/DryBox_Albedo.png\n'}
+[15.553440] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat_cpubox/materials/textures/DryBox_Roughness.png\n'}
+[15.553498] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat_cpubox/meshes/drybox.dae\n'}
+[15.553555] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat_cpubox/model.config\n'}
+[15.553612] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat_cpubox/model.sdf\n'}
+[15.553674] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_bgr/model.config\n'}
+[15.553735] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_bgr/model.sdf\n'}
+[15.553795] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_bgy/model.config\n'}
+[15.553864] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_bgy/model.sdf\n'}
+[15.553929] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_gbr/model.config\n'}
+[15.553995] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_gbr/model.sdf\n'}
+[15.554058] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_rbg/model.config\n'}
+[15.554123] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_rbg/model.sdf\n'}
+[15.554188] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_rgb/mesh/LightTower_Albedo.png\n'}
+[15.554253] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_rgb/mesh/LightTower_Metalness.png\n'}
+[15.554309] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_rgb/mesh/LightTower_Normal.png\n'}
+[15.554377] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_rgb/mesh/LightTower_Opacity.png\n'}
+[15.554427] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_rgb/mesh/LightTower_Roughness.png\n'}
+[15.554490] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_rgb/mesh/robotx_light_buoy.dae\n'}
+[15.554560] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_rgb/model.config\n'}
+[15.554608] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_rgb/model.sdf\n'}
+[15.554665] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_rgy/model.config\n'}
+[15.554715] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_rgy/model.sdf\n'}
+[15.554786] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_ybr/model.config\n'}
+[15.554834] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_ybr/model.sdf\n'}
+[15.554897] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_ygb/model.config\n'}
+[15.554944] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_ygb/model.sdf\n'}
+[15.555006] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_yrg/model.config\n'}
+[15.555055] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/robotx_light_buoy_yrg/model.sdf\n'}
+[15.555128] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/sensor_post/mesh/sensor_post.dae\n'}
+[15.555194] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/sensor_post/mesh/sensor_post.png\n'}
+[15.555240] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/sensor_post/mesh/sensor_post_arm.dae\n'}
+[15.555285] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/sensor_post/model.config\n'}
+[15.555349] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/sensor_post/model.sdf\n'}
+[15.555393] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/symbol_triangle/mesh/triangle.dae\n'}
+[15.555438] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/symbol_triangle/model.config\n'}
+[15.555498] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/symbol_triangle/model.sdf\n'}
+[15.555545] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/tripod/model.config\n'}
+[15.555605] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/tripod/model.sdf\n'}
+[15.555662] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel/materials/textures/Boat01_Albedo.jpg\n'}
+[15.555707] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel/materials/textures/Boat01_Normal.jpg\n'}
+[15.555768] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel/materials/textures/Boat01_Roughness.jpg\n'}
+[15.555820] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel/meshes/Boat01.dae\n'}
+[15.555879] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel/model.config\n'}
+[15.555936] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel/model.sdf\n'}
+[15.555981] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel/thumbnails/1.png\n'}
+[15.556041] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wam-v/meshes/WAM-V-Base.dae\n'}
+[15.556085] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wam-v/meshes/WamV.png\n'}
+[15.556142] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wam-v/meshes/engine.dae\n'}
+[15.556199] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wam-v/meshes/legs.dae\n'}
+[15.556257] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wam-v/meshes/lidar_3d_v1.dae\n'}
+[15.556320] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wam-v/meshes/lidar_3d_v1.png\n'}
+[15.556365] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wam-v/meshes/propeller.dae\n'}
+[15.556422] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wam-v/meshes/ring.dae\n'}
+[15.556485] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wam-v/model.config\n'}
+[15.556529] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wam-v/model.sdf\n'}
+[15.556817] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/worlds/sydney.sdf\n'}
+[15.556941] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo\n'}
+[15.557039] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/ament_index/resource_index/parent_prefix_path/wamv_gazebo\n'}
+[15.557140] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/ament_prefix_path.sh\n'}
+[15.557228] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/ament_prefix_path.dsv\n'}
+[15.557315] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/path.sh\n'}
+[15.557405] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/path.dsv\n'}
+[15.557483] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/local_setup.bash\n'}
+[15.557561] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/local_setup.sh\n'}
+[15.557640] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/local_setup.zsh\n'}
+[15.557717] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/local_setup.dsv\n'}
+[15.557776] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/package.dsv\n'}
+[15.559606] (-) TimerEvent: {}
+[15.566679] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/ament_index/resource_index/packages/wamv_gazebo\n'}
+[15.566800] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/cmake/wamv_gazeboConfig.cmake\n'}
+[15.566865] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/cmake/wamv_gazeboConfig-version.cmake\n'}
+[15.566930] (wamv_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/package.xml\n'}
+[15.604222] (wamv_gazebo) StdoutLine: {'line': b"Listing '/home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo'...\n"}
+[15.610185] (wamv_gazebo) CommandEnded: {'returncode': 0}
+[15.626907] (wamv_gazebo) JobEnded: {'identifier': 'wamv_gazebo', 'rc': 0}
+[15.627449] (-) EventReactorShutdown: {}

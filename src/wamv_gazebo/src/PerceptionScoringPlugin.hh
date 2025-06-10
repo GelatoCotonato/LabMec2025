@@ -49,7 +49,7 @@ namespace wamv_gazebo
   ///
   /// <landmark_topic>: Optional parameter. Specify the topic to which the
   ///   plugin subscribes for receiving identification and localization msgs.
-  ///   Default is "/vrx/perception/landmark".
+  ///   Default is "/wamv_gazebo/perception/landmark".
   ///
   /// Here's an example of a valid SDF:
   ///

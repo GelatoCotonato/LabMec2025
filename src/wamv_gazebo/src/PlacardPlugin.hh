@@ -45,7 +45,7 @@ namespace wamv_gazebo
 ///              <visual>: A visual displaying a shape.
 ///
 /// Here's an example:
-///   <plugin name="vrx::PlacardPlugin" filename="libPlacardPlugin.so">
+///   <plugin name="wamv_gazebo::PlacardPlugin" filename="libPlacardPlugin.so">
 ///     <shape>triangle</shape>
 ///     <color>red</color>
 ///     <visuals>
@@ -55,7 +55,7 @@ namespace wamv_gazebo
 ///       <visual>dock_2018_placard1::visual_triangle</visual>
 ///     </visuals>
 ///     <shuffle>true</shuffle>
-///     <robot_namespace>vrx</robot_namespace>
+///     <robot_namespace>wamv_gazebo</robot_namespace>
 ///     <shuffle_topic>dock/placard/shuffle</shuffle_topic>
 ///   </plugin>
 class PlacardPlugin

@@ -72,7 +72,7 @@ namespace wamv_gazebo
   ///                    </buoyancy>
   ///
   /// ## Example
-  /// <plugin name="vrx::PolyhedraBuoyancyDrag"
+  /// <plugin name="wamv_gazebo::PolyhedraBuoyancyDrag"
   ///         filename="libPolyhedraBuoyancyDrag.so">
   ///   <fluid_density>1000</fluid_density>
   ///   <fluid_level>0.0</fluid_level>

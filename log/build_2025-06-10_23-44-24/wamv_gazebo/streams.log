@@ -1,0 +1,30 @@
+[0.011s] Invoking command in '/home/luca002/proj_ws/build/wamv_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/wamv_gazebo -- -j16 -l16
+[0.061s] [  4%] Built target ScoringPlugin
+[0.061s] [  4%] Built target ament_cmake_python_symlink_wamv_gazebo
+[0.063s] [  8%] Built target Waves
+[0.094s] [ 12%] Built target AcousticPingerPlugin
+[0.095s] [ 16%] Built target LightBuoyPlugin
+[0.095s] [ 20%] Built target PerceptionScoringPlugin
+[0.095s] [ 25%] Built target BallShooterPlugin
+[0.096s] [ 29%] Built target PlacardPlugin
+[0.096s] [ 33%] Built target GymkhanaScoringPlugin
+[0.097s] [ 39%] Built target AcousticTrackingScoringPlugin
+[0.097s] [ 43%] Built target PublisherPlugin
+[0.097s] [ 50%] Built target WayfindingScoringPlugin
+[0.097s] [ 58%] Built target PolyhedraBuoyancyDrag
+[0.098s] [ 64%] Built target StationkeepingScoringPlugin
+[0.102s] [ 68%] Built target NavigationScoringPlugin
+[0.103s] [ 72%] Built target SimpleHydrodynamics
+[0.103s] [ 79%] Built target AcousticPerceptionScoringPlugin
+[0.104s] [ 83%] Built target ScanDockScoringPlugin
+[0.121s] [ 87%] Built target USVWind
+[0.121s] [ 91%] Built target Surface
+[0.124s] [ 95%] Built target WildlifeScoringPlugin
+[0.125s] [100%] Built target WaveVisual
+[0.255s] running egg_info
+[0.270s] writing wamv_gazebo.egg-info/PKG-INFO
+[0.270s] writing dependency_links to wamv_gazebo.egg-info/dependency_links.txt
+[0.271s] writing top-level names to wamv_gazebo.egg-info/top_level.txt
+[0.316s] reading manifest file 'wamv_gazebo.egg-info/SOURCES.txt'
+[0.316s] writing manifest file 'wamv_gazebo.egg-info/SOURCES.txt'
+[0.335s] [100%] Built target ament_cmake_python_build_wamv_gazebo_egg

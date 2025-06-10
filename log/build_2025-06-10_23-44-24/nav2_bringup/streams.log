@@ -1,0 +1,10 @@
+[0.016s] Invoking command in '/home/luca002/proj_ws/build/nav2_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/luca002/proj_ws/src/wamv_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install/nav2_bringup
+[0.024s] [33mCMake Warning:
+[0.024s]   Ignoring extra path from command line:
+[0.024s] 
+[0.024s]    "/home/luca002/proj_ws/src/wamv_bringup"
+[0.024s] 
+[0.024s] [0m
+[0.024s] [0mCMake Error: The source directory "/home/luca002/proj_ws/src/wamv_bringup" does not appear to contain CMakeLists.txt.
+[0.024s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.026s] Invoked command in '/home/luca002/proj_ws/build/nav2_bringup' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/luca002/proj_ws/src/wamv_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install/nav2_bringup

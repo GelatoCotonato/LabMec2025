@@ -47,7 +47,7 @@ namespace wamv_gazebo
   ///      side of the vessel.
   ///
   /// Here's an example:
-  /// <plugin name="vrx::NavigationScoringPlugin"
+  /// <plugin name="wamv_gazebo::NavigationScoringPlugin"
   ///         filename="libnavigationScoringPlugin.so">
   ///   <vehicle>wamv</vehicle>
   ///   <task_name>navigation_scoring_plugin</task_name>

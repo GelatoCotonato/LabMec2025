@@ -36,7 +36,7 @@ namespace wamv_gazebo
   /// <enable_color_checker>: Optional parameter to turn off color checker
   /// service. Default is true.
   /// <color_sequence_topic>: Optional parameter with the topic used to
-  /// receive the color submission. Default is "/vrx/scan_dock/color_sequence".
+  /// receive the color submission. Default is "/wamv_gazebo/scan_dock/color_sequence".
   /// <color_1>: Expected 1st color of the sequence (RED, GREEN, BLUE, YELLOW).
   /// <color_2>: Expected 2nd color of the sequence (RED, GREEN, BLUE, YELLOW).
   /// <color_3>: Expected 3rd color of the sequence (RED, GREEN, BLUE, YELLOW).
@@ -72,7 +72,7 @@ namespace wamv_gazebo
   ///     <bonus_points>: The points awarded for hitting this target.
   ///
   /// Here's an example:
-  /// <plugin name="vrx::ScanDockScoringPlugin"
+  /// <plugin name="wamv_gazebo::ScanDockScoringPlugin"
   ///               filename="libScanDockScoringPlugin.so">
   ///   <!-- Parameters for scoring_plugin -->
   ///   <vehicle>wamv</vehicle>
@@ -80,10 +80,10 @@ namespace wamv_gazebo
   ///   <initial_state_duration>3</initial_state_duration>
   ///   <ready_state_duration>3</ready_state_duration>
   ///   <running_state_duration>300</running_state_duration>
-  ///   <release_topic>/vrx/release</release_topic>
+  ///   <release_topic>/wamv_gazebo/release</release_topic>
   ///
   ///   <!-- Color sequence checker -->
-  ///   <color_sequence_topic>/vrx/scan_dock_deliver/color_sequence</color_sequence_topic>
+  ///   <color_sequence_topic>/wamv_gazebo/scan_dock_deliver/color_sequence</color_sequence_topic>
   ///   <color_1>red</color_1>
   ///   <color_2>green</color_2>
   ///   <color_3>blue</color_3>
@@ -93,27 +93,27 @@ namespace wamv_gazebo
   ///   <bays>
   ///     <bay>
   ///       <name>bay1</name>
-  ///       <internal_activation_topic>/vrx/dock_2022/bay_1/contain</internal_activation_topic>
-  ///       <external_activation_topic>/vrx/dock_2022/bay_1_external/contain</external_activation_topic>
-  ///       <symbol_topic>/vrx/dock_2022_placard1/symbol</symbol_topic>
+  ///       <internal_activation_topic>/wamv_gazebo/dock_2022/bay_1/contain</internal_activation_topic>
+  ///       <external_activation_topic>/wamv_gazebo/dock_2022/bay_1_external/contain</external_activation_topic>
+  ///       <symbol_topic>/wamv_gazebo/dock_2022_placard1/symbol</symbol_topic>
   ///       <min_dock_time>10.0</min_dock_time>
   ///       <correct_dock>False</correct_dock>
   ///       <symbol>red_rectangle</symbol>
   ///     </bay>
   ///     <bay>
   ///       <name>bay2</name>
-  ///       <internal_activation_topic>/vrx/dock_2022/bay_2/contain</internal_activation_topic>
-  ///       <external_activation_topic>/vrx/dock_2022/bay_2_external/contain</external_activation_topic>
-  ///       <symbol_topic>/vrx/dock_2022_placard2/symbol</symbol_topic>
+  ///       <internal_activation_topic>/wamv_gazebo/dock_2022/bay_2/contain</internal_activation_topic>
+  ///       <external_activation_topic>/wamv_gazebo/dock_2022/bay_2_external/contain</external_activation_topic>
+  ///       <symbol_topic>/wamv_gazebo/dock_2022_placard2/symbol</symbol_topic>
   ///       <min_dock_time>10.0</min_dock_time>
   ///       <correct_dock>True</correct_dock>
   ///       <symbol>blue_triangle</symbol>
   ///     </bay>
   ///     <bay>
   ///       <name>bay3</name>
-  ///       <internal_activation_topic>/vrx/dock_2022/bay_3/contain</internal_activation_topic>
-  ///       <external_activation_topic>/vrx/dock_2022/bay_3_external/contain</external_activation_topic>
-  ///       <symbol_topic>/vrx/dock_2022_placard3/symbol</symbol_topic>
+  ///       <internal_activation_topic>/wamv_gazebo/dock_2022/bay_3/contain</internal_activation_topic>
+  ///       <external_activation_topic>/wamv_gazebo/dock_2022/bay_3_external/contain</external_activation_topic>
+  ///       <symbol_topic>/wamv_gazebo/dock_2022_placard3/symbol</symbol_topic>
   ///       <min_dock_time>10.0</min_dock_time>
   ///       <correct_dock>False</correct_dock>
   ///       <symbol>yellow_circle</symbol>
@@ -123,31 +123,31 @@ namespace wamv_gazebo
   ///   <targets>
   ///     <!-- Placard #1 -->
   ///     <target>
-  ///       <topic>vrx/dock_2022_placard1_big_hole/contain</topic>
+  ///       <topic>wamv_gazebo/dock_2022_placard1_big_hole/contain</topic>
   ///       <bonus_points>5</bonus_points>
   ///     </target>
   ///     <target>
-  ///       <topic>vrx/dock_2022_placard1_small_hole/contain</topic>
+  ///       <topic>wamv_gazebo/dock_2022_placard1_small_hole/contain</topic>
   ///       <bonus_points>10</bonus_points>
   ///     </target>
 
   ///     <!-- Placard #2 -->
   ///     <target>
-  ///       <topic>vrx/dock_2022_placard2_big_hole/contain</topic>
+  ///       <topic>wamv_gazebo/dock_2022_placard2_big_hole/contain</topic>
   ///       <bonus_points>5</bonus_points>
   ///     </target>
   ///     <target>
-  ///       <topic>vrx/dock_2022_placard2_small_hole/contain</topic>
+  ///       <topic>wamv_gazebo/dock_2022_placard2_small_hole/contain</topic>
   ///       <bonus_points>10</bonus_points>
   ///     </target>
 
   ///     <!-- Placard #3 -->
   ///     <target>
-  ///       <topic>vrx/dock_2022_placard3_big_hole/contain</topic>
+  ///       <topic>wamv_gazebo/dock_2022_placard3_big_hole/contain</topic>
   ///       <bonus_points>5</bonus_points>
   ///     </target>
   ///     <target>
-  ///       <topic>vrx/dock_2022_placard3_small_hole/contain</topic>
+  ///       <topic>wamv_gazebo/dock_2022_placard3_small_hole/contain</topic>
   ///       <bonus_points>10</bonus_points>
   ///     </target>
   ///   </targets>

@@ -1,0 +1,29 @@
+[  4%] Built target ScoringPlugin
+[  4%] Built target ament_cmake_python_symlink_wamv_gazebo
+[  8%] Built target Waves
+[ 12%] Built target AcousticPingerPlugin
+[ 16%] Built target LightBuoyPlugin
+[ 20%] Built target PerceptionScoringPlugin
+[ 25%] Built target BallShooterPlugin
+[ 29%] Built target PlacardPlugin
+[ 33%] Built target GymkhanaScoringPlugin
+[ 39%] Built target AcousticTrackingScoringPlugin
+[ 43%] Built target PublisherPlugin
+[ 50%] Built target WayfindingScoringPlugin
+[ 58%] Built target PolyhedraBuoyancyDrag
+[ 64%] Built target StationkeepingScoringPlugin
+[ 68%] Built target NavigationScoringPlugin
+[ 72%] Built target SimpleHydrodynamics
+[ 79%] Built target AcousticPerceptionScoringPlugin
+[ 83%] Built target ScanDockScoringPlugin
+[ 87%] Built target USVWind
+[ 91%] Built target Surface
+[ 95%] Built target WildlifeScoringPlugin
+[100%] Built target WaveVisual
+running egg_info
+writing wamv_gazebo.egg-info/PKG-INFO
+writing dependency_links to wamv_gazebo.egg-info/dependency_links.txt
+writing top-level names to wamv_gazebo.egg-info/top_level.txt
+reading manifest file 'wamv_gazebo.egg-info/SOURCES.txt'
+writing manifest file 'wamv_gazebo.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_wamv_gazebo_egg

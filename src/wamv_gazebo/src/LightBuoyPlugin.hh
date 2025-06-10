@@ -36,7 +36,7 @@ namespace wamv_gazebo
   ///
   /// The plugin should be inside a <visual> element.
   /// Here's an example:
-  ///   <plugin name="vrx::LightBuoyPlugin" filename="libLightBuoyPlugin.so">
+  ///   <plugin name="wamv_gazebo::LightBuoyPlugin" filename="libLightBuoyPlugin.so">
   ///     <color_1>red</color_1>
   ///     <color_2>green</color_2>
   ///     <color_3>blue</color_3>

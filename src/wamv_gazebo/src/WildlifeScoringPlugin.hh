@@ -37,10 +37,10 @@ namespace wamv_gazebo
   /// * Optional parameters
   ///
   /// <topic_prefix>: The topic prefix used to publish an animal pose.
-  ///                 Defaults to "/vrx/wildlife/animal". The final topic will
+  ///                 Defaults to "/wamv_gazebo/wildlife/animal". The final topic will
   ///                 be constructed by appending a numeric index
   ///                 starting from 0, followed by "/pose".
-  ///                 E.g. of final topic: "/vrx/wildfile/animal0/pose"
+  ///                 E.g. of final topic: "/wamv_gazebo/wildfile/animal0/pose"
   ///                 Note that this topic will be advertised for each animal.
   ///
   /// <publication_frequency>: How many messages per second are published with
@@ -60,7 +60,7 @@ namespace wamv_gazebo
   /// Here's an example:
   /// <plugin
   ///   filename="libWildlifeScoringPlugin.so"
-  ///   name="vrx::WildlifeScoringPlugin">
+  ///   name="wamv_gazebo::WildlifeScoringPlugin">
   ///
   ///   <!-- Common parameters -->
   ///   <vehicle>wamv</vehicle>
@@ -87,7 +87,7 @@ namespace wamv_gazebo
   ///   </buoys>
   ///   <engagement_distance>10.0</engagement_distance>
   ///   <time_bonus>30.0</time_bonus>
-  ///   <topic_prefix>/vrx/wildlife/animal</topic_prefix>
+  ///   <topic_prefix>/wamv_gazebo/wildlife/animal</topic_prefix>
   /// <plugin>
   class WildlifeScoringPlugin : public ScoringPlugin
   {

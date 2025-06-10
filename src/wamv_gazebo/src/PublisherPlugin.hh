@@ -46,8 +46,8 @@ namespace wamv_gazebo
   ///     `gz topic` for publishing messages.
   ///
   /// ## Example
-  /// <plugin filename="libPublisherPlugin.so" name="vrx::PublisherPlugin">
-  ///   <message type="gz.msgs.Param" topic="/vrx/wavefield/parameters"
+  /// <plugin filename="libPublisherPlugin.so" name="wamv_gazebo::PublisherPlugin">
+  ///   <message type="gz.msgs.Param" topic="/wamv_gazebo/wavefield/parameters"
   ///            at="0.0" every="2.0">
   ///     params {
   ///       key: "amplitude"

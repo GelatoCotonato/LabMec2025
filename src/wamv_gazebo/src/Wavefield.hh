@@ -145,7 +145,7 @@ namespace wamv_gazebo
   ///
   /// ## Example (secondary mode)
   /// <wavefield>
-  ///   <topic>/vrx/wavefield/parameters</topic>
+  ///   <topic>/wamv_gazebo/wavefield/parameters</topic>
   /// </wavefield>
   class Wavefield
   {
