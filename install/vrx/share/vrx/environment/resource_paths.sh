@@ -1,1 +1,0 @@
-/home/luca002/proj_ws/src/vrx/hooks/resource_paths.sh

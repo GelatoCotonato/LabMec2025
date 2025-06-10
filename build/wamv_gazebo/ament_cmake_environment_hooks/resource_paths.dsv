@@ -1,0 +1,4 @@
+prepend-non-duplicate;GZ_SIM_RESOURCE_PATH;/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/worlds
+prepend-non-duplicate;GZ_SIM_RESOURCE_PATH;/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models
+prepend-non-duplicate;GZ_SIM_SYSTEM_PLUGIN_PATH;/home/luca002/proj_ws/install/wamv_gazebo/lib
+prepend-non-duplicate;LD_LIBRARY_PATH;/home/luca002/proj_ws/install/wamv_gazebo/lib

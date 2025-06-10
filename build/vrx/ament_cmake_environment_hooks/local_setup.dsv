@@ -1,5 +1,0 @@
-source;share/vrx/environment/ament_prefix_path.sh
-source;share/vrx/environment/path.sh
-source;share/vrx/environment/pythonpath.sh
-source;share/vrx/environment/resource_paths.sh
-source;share/vrx/environment/resource_paths.dsv

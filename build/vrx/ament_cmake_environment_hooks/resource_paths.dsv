@@ -1,4 +1,0 @@
-prepend-non-duplicate;GZ_SIM_RESOURCE_PATH;/home/luca002/proj_ws/install/vrx/share/vrx/worlds
-prepend-non-duplicate;GZ_SIM_RESOURCE_PATH;/home/luca002/proj_ws/install/vrx/share/vrx/models
-prepend-non-duplicate;GZ_SIM_SYSTEM_PLUGIN_PATH;/home/luca002/proj_ws/install/vrx/lib
-prepend-non-duplicate;LD_LIBRARY_PATH;/home/luca002/proj_ws/install/vrx/lib
