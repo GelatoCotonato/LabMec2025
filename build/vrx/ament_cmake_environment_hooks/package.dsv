@@ -1,0 +1,4 @@
+source;share/vrx/local_setup.bash
+source;share/vrx/local_setup.dsv
+source;share/vrx/local_setup.sh
+source;share/vrx/local_setup.zsh

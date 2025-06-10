@@ -1,0 +1,1 @@
+/home/luca002/proj_ws/build/vrx/ament_cmake_environment_hooks/local_setup.sh

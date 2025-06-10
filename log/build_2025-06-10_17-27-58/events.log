@@ -1,0 +1,877 @@
+[0.000000] (-) TimerEvent: {}
+[0.000225] (vrx) JobQueued: {'identifier': 'vrx', 'dependencies': OrderedDict()}
+[0.000549] (vrx) JobStarted: {'identifier': 'vrx'}
+[0.007255] (vrx) JobProgress: {'identifier': 'vrx', 'progress': 'cmake'}
+[0.007581] (vrx) Command: {'cmd': ['/usr/bin/cmake', '/home/luca002/proj_ws/src/vrx', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install/vrx'], 'cwd': '/home/luca002/proj_ws/build/vrx', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib:/opt/ros//lib:', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/home/luca002/proj_ws/src/vrx/models', 'USER': 'luca002', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/luca002/ros_ws/install/velodyne_laserscan/lib:/home/luca002/ros_ws/install/thruster_manager/lib:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/luca002/ros_ws/install/dynamixel_sdk/lib:/home/luca002/nav2_ws/install/nav2_straightline_planner/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/luca002', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.100.3', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '9534', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '9837', 'BUNDLED_DEBUGPY_PATH': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '66847', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/luca002/ros_ws/install:/home/luca002/nav2_ws/install:/home/luca002/ex_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luca002', 'JOURNAL_STREAM': '9:48590', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'luca002', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/luca002/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/luca002/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/luca002/.local/bin:/home/luca002/.local/bin:/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/luke:@/tmp/.ICE-unix/9800,unix/luke:/tmp/.ICE-unix/9800', 'INVOCATION_ID': 'ee36172fb58848ba8bc85a59ab789fd8', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-4163fee7d3074f91.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.QYL372', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-672260eb09.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '22', 'AMENT_PREFIX_PATH': '/home/luca002/ros_ws/install/velodyne_laserscan:/home/luca002/ros_ws/install/turtlebot3_description:/home/luca002/ros_ws/install/turtlebot3_cartographer:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/nav2_common:/home/luca002/ros_ws/install/mec_mobile_description:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/home/luca002/nav2_ws/install/nav2_straightline_planner:/home/luca002/ex_ws/install/mec_mobile:/home/luca002/ex_ws/install/mec_mobile_description:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/opt/ros/jazzy/share', 'GJS_DEBUG_OUTPUT': 'stderr', 'GSK_RENDERER': 'gl', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/luca002/proj_ws/build/vrx', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luca002/ros_ws/install/nav2_common/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/luca002/ros_ws/install/velodyne_laserscan:/home/luca002/ros_ws/install/turtlebot3_description:/home/luca002/ros_ws/install/turtlebot3_cartographer:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/nav2_common:/home/luca002/ros_ws/install/mec_mobile_description:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/home/luca002/nav2_ws/install/nav2_straightline_planner:/home/luca002/ex_ws/install/mec_mobile:/home/luca002/ex_ws/install/mec_mobile_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.051081] (vrx) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.091376] (vrx) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.099842] (-) TimerEvent: {}
+[0.102908] (vrx) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.172044] (vrx) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.178310] (vrx) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.178477] (vrx) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.178769] (vrx) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.186156] (vrx) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199927] (-) TimerEvent: {}
+[0.263239] (vrx) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.270533] (vrx) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.270794] (vrx) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.271194] (vrx) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.278545] (vrx) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.300020] (-) TimerEvent: {}
+[0.400245] (-) TimerEvent: {}
+[0.405610] (vrx) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.463657] (vrx) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.500342] (-) TimerEvent: {}
+[0.506991] (vrx) StdoutLine: {'line': b'-- Looking for gz-sim8 -- found version 8.9.0\n'}
+[0.513006] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sim8\n'}
+[0.514457] (vrx) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.7.0\n'}
+[0.514609] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of sdformat14\n'}
+[0.519868] (vrx) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[0.531945] (vrx) StdoutLine: {'line': b'--   Found tinyxml2, version 10.0.0\n'}
+[0.559949] (vrx) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[0.560193] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[0.561754] (vrx) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.561874] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[0.563128] (vrx) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.563300] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[0.563346] (vrx) StdoutLine: {'line': b'-- Searching for <gz-utils2> component [cli]\n'}
+[0.565695] (vrx) StdoutLine: {'line': b'-- Looking for gz-utils2-cli -- found version 2.2.1\n'}
+[0.565774] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2-cli\n'}
+[0.568074] (vrx) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[0.568289] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[0.568454] (vrx) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.568705] (vrx) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [loader]\n'}
+[0.570440] (vrx) StdoutLine: {'line': b'-- Looking for gz-plugin2-loader -- found version 2.0.4\n'}
+[0.570543] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-loader\n'}
+[0.571054] (vrx) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [register]\n'}
+[0.572821] (vrx) StdoutLine: {'line': b'-- Looking for gz-plugin2-register -- found version 2.0.4\n'}
+[0.572937] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-register\n'}
+[0.574937] (vrx) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.4.1\n'}
+[0.575062] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13\n'}
+[0.600453] (-) TimerEvent: {}
+[0.674116] (vrx) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.21.12") \n'}
+[0.683893] (vrx) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[0.687561] (vrx) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[0.697203] (vrx) StdoutLine: {'line': b'--   Found libzmq, version 4.3.5\n'}
+[0.700530] (-) TimerEvent: {}
+[0.726154] (vrx) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[0.730316] (vrx) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[0.739860] (vrx) StdoutLine: {'line': b'--   Found uuid, version 2.39.3\n'}
+[0.761583] (vrx) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[0.761830] (vrx) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.763528] (vrx) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[0.763606] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-msgs10\n'}
+[0.778822] (vrx) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.779033] (vrx) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[0.784697] (vrx) StdoutLine: {'line': b'-- Searching for <gz-transport13> component [log]\n'}
+[0.786124] (vrx) StdoutLine: {'line': b'-- Looking for gz-transport13-log -- found version 13.4.1\n'}
+[0.786258] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13-log\n'}
+[0.786615] (vrx) StdoutLine: {'line': b'-- Searching for <gz-transport13> component [parameters]\n'}
+[0.787958] (vrx) StdoutLine: {'line': b'-- Looking for gz-transport13-parameters -- found version 13.4.1\n'}
+[0.788124] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13-parameters\n'}
+[0.788838] (vrx) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[0.790395] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[0.790478] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[0.790833] (vrx) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.791239] (vrx) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.792603] (vrx) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.793617] (vrx) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[0.798398] (vrx) StdoutLine: {'line': b'-- Searching for <gz-common5> component [av]\n'}
+[0.800026] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5-av -- found version 5.7.1\n'}
+[0.800138] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-av\n'}
+[0.800604] (-) TimerEvent: {}
+[0.804087] (vrx) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[0.817208] (vrx) StdoutLine: {'line': b'--   Found libswscale, version 7.5.100\n'}
+[0.840010] (vrx) StdoutLine: {'line': b'-- Found SWSCALE: TRUE  \n'}
+[0.843763] (vrx) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[0.854153] (vrx) StdoutLine: {'line': b'--   Found libavdevice, version 60.3.100\n'}
+[0.884236] (vrx) StdoutLine: {'line': b'-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") \n'}
+[0.887640] (vrx) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[0.897920] (vrx) StdoutLine: {'line': b'--   Found libavformat, version 60.16.100\n'}
+[0.900695] (-) TimerEvent: {}
+[0.923368] (vrx) StdoutLine: {'line': b'-- Found AVFORMAT: TRUE  \n'}
+[0.927426] (vrx) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[0.937907] (vrx) StdoutLine: {'line': b'--   Found libavcodec, version 60.31.102\n'}
+[0.961938] (vrx) StdoutLine: {'line': b'-- Found AVCODEC: TRUE  \n'}
+[0.965264] (vrx) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[0.975121] (vrx) StdoutLine: {'line': b'--   Found libavutil, version 58.29.100\n'}
+[0.997709] (vrx) StdoutLine: {'line': b'-- Found AVUTIL: TRUE  \n'}
+[0.998136] (vrx) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[0.999928] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5-events -- found version 5.7.1\n'}
+[1.000058] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-events\n'}
+[1.000284] (vrx) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.000711] (vrx) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[1.000760] (-) TimerEvent: {}
+[1.002363] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5-graphics -- found version 5.7.1\n'}
+[1.002435] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-graphics\n'}
+[1.002681] (vrx) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.006781] (vrx) StdoutLine: {'line': b'-- Found GzAssimp: TRUE (found version "5.3.0") \n'}
+[1.007182] (vrx) StdoutLine: {'line': b'-- Searching for <gz-common5> component [io]\n'}
+[1.009099] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5-io -- found version 5.7.1\n'}
+[1.009242] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-io\n'}
+[1.009615] (vrx) StdoutLine: {'line': b'-- Searching for <gz-common5> component [profiler]\n'}
+[1.011221] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5-profiler -- found version 5.7.1\n'}
+[1.011311] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-profiler\n'}
+[1.013271] (vrx) StdoutLine: {'line': b'-- Looking for gz-fuel_tools9 -- found version 9.1.1\n'}
+[1.013377] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-fuel_tools9\n'}
+[1.074390] (vrx) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "8.5.0")  \n'}
+[1.082428] (vrx) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[1.092617] (vrx) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[1.100876] (-) TimerEvent: {}
+[1.119219] (vrx) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[1.134296] (vrx) StdoutLine: {'line': b"-- Checking for module 'yaml-0.1'\n"}
+[1.145327] (vrx) StdoutLine: {'line': b'--   Found yaml-0.1, version 0.2.5\n'}
+[1.168030] (vrx) StdoutLine: {'line': b'-- Found YAML: TRUE  \n'}
+[1.171749] (vrx) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[1.183188] (vrx) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[1.200979] (-) TimerEvent: {}
+[1.205214] (vrx) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[1.205502] (vrx) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.205891] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.206073] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.206372] (vrx) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.206529] (vrx) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.206633] (vrx) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.214845] (vrx) StdoutLine: {'line': b'-- Searching for <gz-common5> component [testing]\n'}
+[1.216786] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5-testing -- found version 5.7.1\n'}
+[1.216908] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-testing\n'}
+[1.217818] (vrx) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.218070] (vrx) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.219923] (vrx) StdoutLine: {'line': b'-- Looking for gz-gui8 -- found version 8.4.0\n'}
+[1.220033] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-gui8\n'}
+[1.239900] (vrx) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.240115] (vrx) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.240351] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.240614] (vrx) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.240921] (vrx) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.4.1\n'}
+[1.242501] (vrx) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.2\n'}
+[1.242623] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering8\n'}
+[1.242875] (vrx) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.242993] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[1.243228] (vrx) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.243337] (vrx) StdoutLine: {'line': b'-- Searching for <gz-math7> component [eigen3]\n'}
+[1.244984] (vrx) StdoutLine: {'line': b'-- Looking for gz-math7-eigen3 -- found version 7.5.2\n'}
+[1.245102] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7-eigen3\n'}
+[1.252431] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.252504] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.252720] (vrx) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.252851] (vrx) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.252898] (vrx) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.258375] (vrx) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[1.258488] (vrx) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[1.258531] (vrx) StdoutLine: {'line': b'-- Searching for <gz-common5> component [geospatial]\n'}
+[1.259958] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5-geospatial -- found version 5.7.1\n'}
+[1.260050] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-geospatial\n'}
+[1.260293] (vrx) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.260584] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.261280] (vrx) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.261346] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[1.261571] (vrx) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.261681] (vrx) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [all]\n'}
+[1.263033] (vrx) StdoutLine: {'line': b'-- Looking for all libraries of gz-plugin2 -- found version 2.0.4\n'}
+[1.263385] (vrx) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.263927] (vrx) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.273511] (vrx) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL \n'}
+[1.274553] (vrx) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.291120] (vrx) StdoutLine: {'line': b'-- Looking for gz-physics7 -- found version 7.5.0\n'}
+[1.291197] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7\n'}
+[1.291413] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.291689] (vrx) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.291935] (vrx) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.292192] (vrx) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.292941] (vrx) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [heightmap]\n'}
+[1.294166] (vrx) StdoutLine: {'line': b'-- Looking for gz-physics7-heightmap -- found version 7.5.0\n'}
+[1.294234] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-heightmap\n'}
+[1.294508] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.294904] (vrx) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [mesh]\n'}
+[1.296026] (vrx) StdoutLine: {'line': b'-- Looking for gz-physics7-mesh -- found version 7.5.0\n'}
+[1.296141] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-mesh\n'}
+[1.296395] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.296678] (vrx) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [sdf]\n'}
+[1.297798] (vrx) StdoutLine: {'line': b'-- Looking for gz-physics7-sdf -- found version 7.5.0\n'}
+[1.297886] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-sdf\n'}
+[1.298127] (vrx) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.7.0\n'}
+[1.299736] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.299844] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8\n'}
+[1.301025] (-) TimerEvent: {}
+[1.317272] (vrx) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.317464] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.317761] (vrx) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.4.1\n'}
+[1.318103] (vrx) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.2\n'}
+[1.318320] (vrx) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.318582] (vrx) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.7.0\n'}
+[1.319051] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [air_pressure]\n'}
+[1.320349] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-air_pressure -- found version 8.2.2\n'}
+[1.320500] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-air_pressure\n'}
+[1.320925] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [air_speed]\n'}
+[1.322206] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-air_speed -- found version 8.2.2\n'}
+[1.322359] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-air_speed\n'}
+[1.322756] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [altimeter]\n'}
+[1.323944] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-altimeter -- found version 8.2.2\n'}
+[1.324100] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-altimeter\n'}
+[1.324499] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [imu]\n'}
+[1.325677] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-imu -- found version 8.2.2\n'}
+[1.325814] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-imu\n'}
+[1.326227] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [force_torque]\n'}
+[1.327374] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-force_torque -- found version 8.2.2\n'}
+[1.327480] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-force_torque\n'}
+[1.327886] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [logical_camera]\n'}
+[1.328954] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-logical_camera -- found version 8.2.2\n'}
+[1.329064] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-logical_camera\n'}
+[1.329468] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [magnetometer]\n'}
+[1.330510] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-magnetometer -- found version 8.2.2\n'}
+[1.330576] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-magnetometer\n'}
+[1.331001] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [navsat]\n'}
+[1.332056] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-navsat -- found version 8.2.2\n'}
+[1.332159] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-navsat\n'}
+[1.332547] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [dvl]\n'}
+[1.333590] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-dvl -- found version 8.2.2\n'}
+[1.333672] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-dvl\n'}
+[1.333954] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.334063] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8\n'}
+[1.349919] (vrx) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.350115] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.350392] (vrx) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.4.1\n'}
+[1.350678] (vrx) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.2\n'}
+[1.351028] (vrx) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.351303] (vrx) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.7.0\n'}
+[1.351444] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rendering]\n'}
+[1.352624] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-rendering -- found version 8.2.2\n'}
+[1.352724] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-rendering\n'}
+[1.353593] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rendering]\n'}
+[1.353644] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [lidar]\n'}
+[1.354677] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-lidar -- found version 8.2.2\n'}
+[1.354779] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-lidar\n'}
+[1.355045] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.355434] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [gpu_lidar]\n'}
+[1.356535] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-gpu_lidar -- found version 8.2.2\n'}
+[1.356624] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-gpu_lidar\n'}
+[1.356883] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.357294] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [camera]\n'}
+[1.358383] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-camera -- found version 8.2.2\n'}
+[1.358448] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-camera\n'}
+[1.358703] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.359120] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [boundingbox_camera]\n'}
+[1.360184] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-boundingbox_camera -- found version 8.2.2\n'}
+[1.360266] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-boundingbox_camera\n'}
+[1.360644] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [segmentation_camera]\n'}
+[1.361693] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-segmentation_camera -- found version 8.2.2\n'}
+[1.361773] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-segmentation_camera\n'}
+[1.362163] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [depth_camera]\n'}
+[1.363236] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-depth_camera -- found version 8.2.2\n'}
+[1.363312] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-depth_camera\n'}
+[1.363558] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.363966] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rgbd_camera]\n'}
+[1.365006] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-rgbd_camera -- found version 8.2.2\n'}
+[1.365117] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-rgbd_camera\n'}
+[1.365363] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.365781] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [thermal_camera]\n'}
+[1.366823] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-thermal_camera -- found version 8.2.2\n'}
+[1.366934] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-thermal_camera\n'}
+[1.367188] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.367610] (vrx) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [wide_angle_camera]\n'}
+[1.368665] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8-wide_angle_camera -- found version 8.2.2\n'}
+[1.368745] (vrx) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-wide_angle_camera\n'}
+[1.369497] (vrx) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.2\n'}
+[1.369733] (vrx) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.370002] (vrx) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.386431] (vrx) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.386652] (vrx) StdoutLine: {'line': b'-- Looking for gz-fuel_tools9 -- found version 9.1.1\n'}
+[1.386939] (vrx) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.387211] (vrx) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.387473] (vrx) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.4.1\n'}
+[1.387738] (vrx) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.388013] (vrx) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.2\n'}
+[1.388284] (vrx) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.388566] (vrx) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.388871] (vrx) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.7.0\n'}
+[1.391763] (vrx) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[1.401153] (-) TimerEvent: {}
+[1.431160] (vrx) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.446087] (vrx) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.462199] (vrx) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.480608] (vrx) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.501248] (-) TimerEvent: {}
+[1.601450] (-) TimerEvent: {}
+[1.667083] (vrx) StdoutLine: {'line': b'-- Configuring done (1.6s)\n'}
+[1.701551] (-) TimerEvent: {}
+[1.756265] (vrx) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[1.772722] (vrx) StdoutLine: {'line': b'-- Build files have been written to: /home/luca002/proj_ws/build/vrx\n'}
+[1.787329] (vrx) CommandEnded: {'returncode': 0}
+[1.787851] (vrx) JobProgress: {'identifier': 'vrx', 'progress': 'build'}
+[1.788348] (vrx) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/luca002/proj_ws/build/vrx', '--', '-j16', '-l16'], 'cwd': '/home/luca002/proj_ws/build/vrx', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib:/opt/ros//lib:', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/home/luca002/proj_ws/src/vrx/models', 'USER': 'luca002', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/luca002/ros_ws/install/velodyne_laserscan/lib:/home/luca002/ros_ws/install/thruster_manager/lib:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/luca002/ros_ws/install/dynamixel_sdk/lib:/home/luca002/nav2_ws/install/nav2_straightline_planner/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/luca002', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.100.3', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '9534', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '9837', 'BUNDLED_DEBUGPY_PATH': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '66847', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/luca002/ros_ws/install:/home/luca002/nav2_ws/install:/home/luca002/ex_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luca002', 'JOURNAL_STREAM': '9:48590', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'luca002', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/luca002/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/luca002/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/luca002/.local/bin:/home/luca002/.local/bin:/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/luke:@/tmp/.ICE-unix/9800,unix/luke:/tmp/.ICE-unix/9800', 'INVOCATION_ID': 'ee36172fb58848ba8bc85a59ab789fd8', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-4163fee7d3074f91.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.QYL372', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-672260eb09.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '22', 'AMENT_PREFIX_PATH': '/home/luca002/ros_ws/install/velodyne_laserscan:/home/luca002/ros_ws/install/turtlebot3_description:/home/luca002/ros_ws/install/turtlebot3_cartographer:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/nav2_common:/home/luca002/ros_ws/install/mec_mobile_description:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/home/luca002/nav2_ws/install/nav2_straightline_planner:/home/luca002/ex_ws/install/mec_mobile:/home/luca002/ex_ws/install/mec_mobile_description:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/opt/ros/jazzy/share', 'GJS_DEBUG_OUTPUT': 'stderr', 'GSK_RENDERER': 'gl', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/luca002/proj_ws/build/vrx', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luca002/ros_ws/install/nav2_common/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/luca002/ros_ws/install/velodyne_laserscan:/home/luca002/ros_ws/install/turtlebot3_description:/home/luca002/ros_ws/install/turtlebot3_cartographer:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/nav2_common:/home/luca002/ros_ws/install/mec_mobile_description:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/home/luca002/nav2_ws/install/nav2_straightline_planner:/home/luca002/ex_ws/install/mec_mobile:/home/luca002/ex_ws/install/mec_mobile_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[1.801800] (-) TimerEvent: {}
+[1.833509] (vrx) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/Waves.dir/src/Wavefield.cc.o\x1b[0m\n'}
+[1.833700] (vrx) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/ScoringPlugin.dir/src/ScoringPlugin.cc.o\x1b[0m\n'}
+[1.841343] (vrx) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_symlink_vrx\n'}
+[1.901912] (-) TimerEvent: {}
+[2.002281] (-) TimerEvent: {}
+[2.023030] (vrx) StdoutLine: {'line': b'running egg_info\n'}
+[2.023978] (vrx) StdoutLine: {'line': b'creating vrx.egg-info\n'}
+[2.040632] (vrx) StdoutLine: {'line': b'writing vrx.egg-info/PKG-INFO\n'}
+[2.040883] (vrx) StdoutLine: {'line': b'writing dependency_links to vrx.egg-info/dependency_links.txt\n'}
+[2.040990] (vrx) StdoutLine: {'line': b'writing top-level names to vrx.egg-info/top_level.txt\n'}
+[2.041078] (vrx) StdoutLine: {'line': b"writing manifest file 'vrx.egg-info/SOURCES.txt'\n"}
+[2.090191] (vrx) StdoutLine: {'line': b"reading manifest file 'vrx.egg-info/SOURCES.txt'\n"}
+[2.090614] (vrx) StdoutLine: {'line': b"writing manifest file 'vrx.egg-info/SOURCES.txt'\n"}
+[2.102394] (-) TimerEvent: {}
+[2.116503] (vrx) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_vrx_egg\n'}
+[2.202535] (-) TimerEvent: {}
+[2.302885] (-) TimerEvent: {}
+[2.403263] (-) TimerEvent: {}
+[2.503883] (-) TimerEvent: {}
+[2.604432] (-) TimerEvent: {}
+[2.704739] (-) TimerEvent: {}
+[2.805036] (-) TimerEvent: {}
+[2.905355] (-) TimerEvent: {}
+[3.005627] (-) TimerEvent: {}
+[3.105866] (-) TimerEvent: {}
+[3.206134] (-) TimerEvent: {}
+[3.306449] (-) TimerEvent: {}
+[3.406931] (-) TimerEvent: {}
+[3.507482] (-) TimerEvent: {}
+[3.607985] (-) TimerEvent: {}
+[3.708522] (-) TimerEvent: {}
+[3.808973] (-) TimerEvent: {}
+[3.909343] (-) TimerEvent: {}
+[4.009632] (-) TimerEvent: {}
+[4.109936] (-) TimerEvent: {}
+[4.210274] (-) TimerEvent: {}
+[4.310625] (-) TimerEvent: {}
+[4.411060] (-) TimerEvent: {}
+[4.511508] (-) TimerEvent: {}
+[4.611736] (-) TimerEvent: {}
+[4.711974] (-) TimerEvent: {}
+[4.787012] (vrx) StdoutLine: {'line': b'[  6%] \x1b[32m\x1b[1mLinking CXX shared library libWaves.so\x1b[0m\n'}
+[4.812084] (-) TimerEvent: {}
+[4.912317] (-) TimerEvent: {}
+[4.953842] (vrx) StdoutLine: {'line': b'[  6%] Built target Waves\n'}
+[4.972127] (vrx) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/PolyhedraBuoyancyDrag.dir/src/PolyhedraBuoyancyDrag.cc.o\x1b[0m\n'}
+[4.972304] (vrx) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/PolyhedraBuoyancyDrag.dir/src/ShapeVolume.cc.o\x1b[0m\n'}
+[4.972358] (vrx) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/PolyhedraBuoyancyDrag.dir/src/PolyhedronVolume.cc.o\x1b[0m\n'}
+[5.012428] (-) TimerEvent: {}
+[5.112856] (-) TimerEvent: {}
+[5.213661] (-) TimerEvent: {}
+[5.313906] (-) TimerEvent: {}
+[5.414244] (-) TimerEvent: {}
+[5.514626] (-) TimerEvent: {}
+[5.615200] (-) TimerEvent: {}
+[5.715707] (-) TimerEvent: {}
+[5.816020] (-) TimerEvent: {}
+[5.916334] (-) TimerEvent: {}
+[6.016615] (-) TimerEvent: {}
+[6.057428] (vrx) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking CXX shared library libScoringPlugin.so\x1b[0m\n'}
+[6.116742] (-) TimerEvent: {}
+[6.217057] (-) TimerEvent: {}
+[6.235786] (vrx) StdoutLine: {'line': b'[ 14%] Built target ScoringPlugin\n'}
+[6.261864] (vrx) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/PlacardPlugin.dir/src/PlacardPlugin.cc.o\x1b[0m\n'}
+[6.262275] (vrx) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o\x1b[0m\n'}
+[6.262410] (vrx) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/LightBuoyPlugin.dir/src/LightBuoyPlugin.cc.o\x1b[0m\n'}
+[6.262491] (vrx) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/WayfindingScoringPlugin.dir/src/WayfindingScoringPlugin.cc.o\x1b[0m\n'}
+[6.262611] (vrx) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/AcousticTrackingScoringPlugin.dir/src/AcousticTrackingScoringPlugin.cc.o\x1b[0m\n'}
+[6.262682] (vrx) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/BallShooterPlugin.dir/src/BallShooterPlugin.cc.o\x1b[0m\n'}
+[6.262779] (vrx) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/ScanDockScoringPlugin.dir/src/ScanDockScoringPlugin.cc.o\x1b[0m\n'}
+[6.263980] (vrx) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/NavigationScoringPlugin.dir/src/NavigationScoringPlugin.cc.o\x1b[0m\n'}
+[6.264126] (vrx) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/AcousticPerceptionScoringPlugin.dir/src/AcousticPerceptionScoringPlugin.cc.o\x1b[0m\n'}
+[6.264215] (vrx) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/SimpleHydrodynamics.dir/src/SimpleHydrodynamics.cc.o\x1b[0m\n'}
+[6.264294] (vrx) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/GymkhanaScoringPlugin.dir/src/GymkhanaScoringPlugin.cc.o\x1b[0m\n'}
+[6.264371] (vrx) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/PerceptionScoringPlugin.dir/src/PerceptionScoringPlugin.cc.o\x1b[0m\n'}
+[6.264449] (vrx) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/AcousticPingerPlugin.dir/src/AcousticPingerPlugin.cc.o\x1b[0m\n'}
+[6.264539] (vrx) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/StationkeepingScoringPlugin.dir/src/StationkeepingScoringPlugin.cc.o\x1b[0m\n'}
+[6.319002] (-) TimerEvent: {}
+[6.420020] (-) TimerEvent: {}
+[6.435948] (vrx) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/StationkeepingScoringPlugin.dir/src/WaypointMarkers.cc.o\x1b[0m\n'}
+[6.520148] (-) TimerEvent: {}
+[6.621173] (-) TimerEvent: {}
+[6.724619] (-) TimerEvent: {}
+[6.825385] (-) TimerEvent: {}
+[6.925906] (-) TimerEvent: {}
+[7.029652] (-) TimerEvent: {}
+[7.131004] (-) TimerEvent: {}
+[7.231621] (-) TimerEvent: {}
+[7.332110] (-) TimerEvent: {}
+[7.432754] (-) TimerEvent: {}
+[7.534120] (-) TimerEvent: {}
+[7.637092] (-) TimerEvent: {}
+[7.740786] (-) TimerEvent: {}
+[7.841311] (-) TimerEvent: {}
+[7.941845] (-) TimerEvent: {}
+[8.042885] (-) TimerEvent: {}
+[8.143359] (-) TimerEvent: {}
+[8.243793] (-) TimerEvent: {}
+[8.345197] (-) TimerEvent: {}
+[8.450056] (-) TimerEvent: {}
+[8.550949] (-) TimerEvent: {}
+[8.651439] (-) TimerEvent: {}
+[8.753115] (-) TimerEvent: {}
+[8.857136] (-) TimerEvent: {}
+[8.957721] (-) TimerEvent: {}
+[9.058182] (-) TimerEvent: {}
+[9.159092] (-) TimerEvent: {}
+[9.261440] (-) TimerEvent: {}
+[9.363949] (-) TimerEvent: {}
+[9.464516] (-) TimerEvent: {}
+[9.566053] (-) TimerEvent: {}
+[9.670285] (-) TimerEvent: {}
+[9.771152] (-) TimerEvent: {}
+[9.871853] (-) TimerEvent: {}
+[9.974038] (-) TimerEvent: {}
+[10.074640] (-) TimerEvent: {}
+[10.177357] (-) TimerEvent: {}
+[10.281995] (-) TimerEvent: {}
+[10.383911] (-) TimerEvent: {}
+[10.484420] (-) TimerEvent: {}
+[10.584891] (-) TimerEvent: {}
+[10.689013] (-) TimerEvent: {}
+[10.789545] (-) TimerEvent: {}
+[10.890051] (-) TimerEvent: {}
+[10.991479] (-) TimerEvent: {}
+[11.092019] (-) TimerEvent: {}
+[11.195271] (-) TimerEvent: {}
+[11.295872] (-) TimerEvent: {}
+[11.396470] (-) TimerEvent: {}
+[11.497995] (-) TimerEvent: {}
+[11.598468] (-) TimerEvent: {}
+[11.699929] (-) TimerEvent: {}
+[11.800346] (-) TimerEvent: {}
+[11.900772] (-) TimerEvent: {}
+[12.002933] (-) TimerEvent: {}
+[12.103360] (-) TimerEvent: {}
+[12.204453] (-) TimerEvent: {}
+[12.304995] (-) TimerEvent: {}
+[12.405635] (-) TimerEvent: {}
+[12.506237] (-) TimerEvent: {}
+[12.613066] (-) TimerEvent: {}
+[12.713904] (-) TimerEvent: {}
+[12.737911] (vrx) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX shared library libLightBuoyPlugin.so\x1b[0m\n'}
+[12.814082] (-) TimerEvent: {}
+[12.907014] (vrx) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libPublisherPlugin.so\x1b[0m\n'}
+[12.914383] (-) TimerEvent: {}
+[13.028111] (-) TimerEvent: {}
+[13.134304] (-) TimerEvent: {}
+[13.238012] (-) TimerEvent: {}
+[13.294768] (vrx) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/WayfindingScoringPlugin.dir/src/WaypointMarkers.cc.o\x1b[0m\n'}
+[13.338182] (-) TimerEvent: {}
+[13.375593] (vrx) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libPolyhedraBuoyancyDrag.so\x1b[0m\n'}
+[13.439036] (-) TimerEvent: {}
+[13.540955] (-) TimerEvent: {}
+[13.644995] (-) TimerEvent: {}
+[13.662963] (vrx) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libGymkhanaScoringPlugin.so\x1b[0m\n'}
+[13.745161] (-) TimerEvent: {}
+[13.803351] (vrx) StdoutLine: {'line': b'[ 56%] Built target PublisherPlugin\n'}
+[13.830948] (vrx) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/AcousticTrackingScoringPlugin.dir/src/WaypointMarkers.cc.o\x1b[0m\n'}
+[13.845334] (-) TimerEvent: {}
+[13.848713] (vrx) StdoutLine: {'line': b'[ 58%] Built target LightBuoyPlugin\n'}
+[13.903790] (vrx) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/Surface.dir/src/Surface.cc.o\x1b[0m\n'}
+[13.945573] (-) TimerEvent: {}
+[14.047185] (-) TimerEvent: {}
+[14.136086] (vrx) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libSimpleHydrodynamics.so\x1b[0m\n'}
+[14.137036] (vrx) StdoutLine: {'line': b'[ 62%] Built target PolyhedraBuoyancyDrag\n'}
+[14.147334] (-) TimerEvent: {}
+[14.187960] (vrx) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/USVWind.dir/src/USVWind.cc.o\x1b[0m\n'}
+[14.229308] (vrx) StdoutLine: {'line': b'[ 64%] Built target GymkhanaScoringPlugin\n'}
+[14.247216] (vrx) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/AcousticPerceptionScoringPlugin.dir/src/WaypointMarkers.cc.o\x1b[0m\n'}
+[14.247630] (-) TimerEvent: {}
+[14.349156] (-) TimerEvent: {}
+[14.449715] (-) TimerEvent: {}
+[14.553673] (-) TimerEvent: {}
+[14.574166] (vrx) StdoutLine: {'line': b'[ 66%] Built target SimpleHydrodynamics\n'}
+[14.635971] (vrx) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o\x1b[0m\n'}
+[14.653831] (-) TimerEvent: {}
+[14.754390] (-) TimerEvent: {}
+[14.855039] (-) TimerEvent: {}
+[14.955555] (-) TimerEvent: {}
+[15.058919] (-) TimerEvent: {}
+[15.159477] (-) TimerEvent: {}
+[15.260358] (-) TimerEvent: {}
+[15.361362] (-) TimerEvent: {}
+[15.465621] (-) TimerEvent: {}
+[15.509088] (vrx) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libPlacardPlugin.so\x1b[0m\n'}
+[15.565867] (-) TimerEvent: {}
+[15.670873] (-) TimerEvent: {}
+[15.771604] (-) TimerEvent: {}
+[15.874062] (-) TimerEvent: {}
+[15.974659] (-) TimerEvent: {}
+[16.078924] (-) TimerEvent: {}
+[16.179345] (-) TimerEvent: {}
+[16.184021] (vrx) StdoutLine: {'line': b'[ 70%] Built target PlacardPlugin\n'}
+[16.271021] (vrx) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/WildlifeScoringPlugin.dir/src/WildlifeScoringPlugin.cc.o\x1b[0m\n'}
+[16.279472] (-) TimerEvent: {}
+[16.379890] (-) TimerEvent: {}
+[16.482040] (-) TimerEvent: {}
+[16.582618] (-) TimerEvent: {}
+[16.688031] (-) TimerEvent: {}
+[16.763915] (vrx) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libAcousticPingerPlugin.so\x1b[0m\n'}
+[16.788218] (-) TimerEvent: {}
+[16.892295] (-) TimerEvent: {}
+[16.984052] (vrx) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libPerceptionScoringPlugin.so\x1b[0m\n'}
+[16.992510] (-) TimerEvent: {}
+[17.096336] (-) TimerEvent: {}
+[17.190313] (vrx) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libNavigationScoringPlugin.so\x1b[0m\n'}
+[17.196494] (-) TimerEvent: {}
+[17.296929] (-) TimerEvent: {}
+[17.361462] (vrx) StdoutLine: {'line': b'[ 79%] Built target AcousticPingerPlugin\n'}
+[17.397654] (-) TimerEvent: {}
+[17.498912] (-) TimerEvent: {}
+[17.602249] (-) TimerEvent: {}
+[17.674271] (vrx) StdoutLine: {'line': b'[ 79%] Built target NavigationScoringPlugin\n'}
+[17.702364] (-) TimerEvent: {}
+[17.734601] (vrx) StdoutLine: {'line': b'[ 79%] Built target PerceptionScoringPlugin\n'}
+[17.802502] (-) TimerEvent: {}
+[17.902876] (-) TimerEvent: {}
+[17.997799] (vrx) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libStationkeepingScoringPlugin.so\x1b[0m\n'}
+[18.002995] (-) TimerEvent: {}
+[18.103359] (-) TimerEvent: {}
+[18.203891] (-) TimerEvent: {}
+[18.293483] (vrx) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library libBallShooterPlugin.so\x1b[0m\n'}
+[18.304022] (-) TimerEvent: {}
+[18.347121] (vrx) StdoutLine: {'line': b'[ 83%] Built target StationkeepingScoringPlugin\n'}
+[18.404179] (-) TimerEvent: {}
+[18.504655] (-) TimerEvent: {}
+[18.605304] (-) TimerEvent: {}
+[18.625436] (vrx) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libScanDockScoringPlugin.so\x1b[0m\n'}
+[18.653418] (vrx) StdoutLine: {'line': b'[ 85%] Built target BallShooterPlugin\n'}
+[18.705419] (-) TimerEvent: {}
+[18.805944] (-) TimerEvent: {}
+[18.906472] (-) TimerEvent: {}
+[18.912184] (vrx) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX shared library libWayfindingScoringPlugin.so\x1b[0m\n'}
+[18.912600] (vrx) StdoutLine: {'line': b'[ 87%] Built target ScanDockScoringPlugin\n'}
+[18.976617] (vrx) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking CXX shared library libAcousticTrackingScoringPlugin.so\x1b[0m\n'}
+[19.006597] (-) TimerEvent: {}
+[19.107015] (-) TimerEvent: {}
+[19.205651] (vrx) StdoutLine: {'line': b'[ 89%] Built target WayfindingScoringPlugin\n'}
+[19.207120] (-) TimerEvent: {}
+[19.257928] (vrx) StdoutLine: {'line': b'[ 89%] Built target AcousticTrackingScoringPlugin\n'}
+[19.307225] (-) TimerEvent: {}
+[19.407525] (-) TimerEvent: {}
+[19.507995] (-) TimerEvent: {}
+[19.586915] (vrx) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX shared library libAcousticPerceptionScoringPlugin.so\x1b[0m\n'}
+[19.608075] (-) TimerEvent: {}
+[19.708340] (-) TimerEvent: {}
+[19.808744] (-) TimerEvent: {}
+[19.826613] (vrx) StdoutLine: {'line': b'[ 91%] Built target AcousticPerceptionScoringPlugin\n'}
+[19.859040] (vrx) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX shared library libSurface.so\x1b[0m\n'}
+[19.908873] (-) TimerEvent: {}
+[20.009331] (-) TimerEvent: {}
+[20.072352] (vrx) StdoutLine: {'line': b'[ 93%] Built target Surface\n'}
+[20.109424] (-) TimerEvent: {}
+[20.209684] (-) TimerEvent: {}
+[20.309962] (-) TimerEvent: {}
+[20.410327] (-) TimerEvent: {}
+[20.510691] (-) TimerEvent: {}
+[20.610940] (-) TimerEvent: {}
+[20.711194] (-) TimerEvent: {}
+[20.811466] (-) TimerEvent: {}
+[20.911757] (-) TimerEvent: {}
+[21.012012] (-) TimerEvent: {}
+[21.112351] (-) TimerEvent: {}
+[21.212781] (-) TimerEvent: {}
+[21.313050] (-) TimerEvent: {}
+[21.413295] (-) TimerEvent: {}
+[21.513520] (-) TimerEvent: {}
+[21.613761] (-) TimerEvent: {}
+[21.714119] (-) TimerEvent: {}
+[21.814417] (-) TimerEvent: {}
+[21.914829] (-) TimerEvent: {}
+[22.015057] (-) TimerEvent: {}
+[22.065339] (vrx) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX shared library libUSVWind.so\x1b[0m\n'}
+[22.115174] (-) TimerEvent: {}
+[22.138753] (vrx) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX shared library libWildlifeScoringPlugin.so\x1b[0m\n'}
+[22.215301] (-) TimerEvent: {}
+[22.277873] (vrx) StdoutLine: {'line': b'[ 97%] Built target USVWind\n'}
+[22.315402] (-) TimerEvent: {}
+[22.321621] (vrx) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libWaveVisual.so\x1b[0m\n'}
+[22.368260] (vrx) StdoutLine: {'line': b'[100%] Built target WildlifeScoringPlugin\n'}
+[22.415519] (-) TimerEvent: {}
+[22.515758] (-) TimerEvent: {}
+[22.535160] (vrx) StdoutLine: {'line': b'[100%] Built target WaveVisual\n'}
+[22.546260] (vrx) CommandEnded: {'returncode': 0}
+[22.546829] (vrx) JobProgress: {'identifier': 'vrx', 'progress': 'install'}
+[22.553596] (vrx) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/luca002/proj_ws/build/vrx'], 'cwd': '/home/luca002/proj_ws/build/vrx', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib:/opt/ros//lib:', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/home/luca002/proj_ws/src/vrx/models', 'USER': 'luca002', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/luca002/ros_ws/install/velodyne_laserscan/lib:/home/luca002/ros_ws/install/thruster_manager/lib:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/luca002/ros_ws/install/dynamixel_sdk/lib:/home/luca002/nav2_ws/install/nav2_straightline_planner/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/luca002', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.100.3', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '9534', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '9837', 'BUNDLED_DEBUGPY_PATH': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '66847', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/luca002/ros_ws/install:/home/luca002/nav2_ws/install:/home/luca002/ex_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luca002', 'JOURNAL_STREAM': '9:48590', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'luca002', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/luca002/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/luca002/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/luca002/.local/bin:/home/luca002/.local/bin:/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/luke:@/tmp/.ICE-unix/9800,unix/luke:/tmp/.ICE-unix/9800', 'INVOCATION_ID': 'ee36172fb58848ba8bc85a59ab789fd8', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-4163fee7d3074f91.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.QYL372', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-672260eb09.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '22', 'AMENT_PREFIX_PATH': '/home/luca002/ros_ws/install/velodyne_laserscan:/home/luca002/ros_ws/install/turtlebot3_description:/home/luca002/ros_ws/install/turtlebot3_cartographer:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/nav2_common:/home/luca002/ros_ws/install/mec_mobile_description:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/home/luca002/nav2_ws/install/nav2_straightline_planner:/home/luca002/ex_ws/install/mec_mobile:/home/luca002/ex_ws/install/mec_mobile_description:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/opt/ros/jazzy/share', 'GJS_DEBUG_OUTPUT': 'stderr', 'GSK_RENDERER': 'gl', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/luca002/proj_ws/build/vrx', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luca002/ros_ws/install/nav2_common/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/luca002/ros_ws/install/velodyne_laserscan:/home/luca002/ros_ws/install/turtlebot3_description:/home/luca002/ros_ws/install/turtlebot3_cartographer:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/nav2_common:/home/luca002/ros_ws/install/mec_mobile_description:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/home/luca002/nav2_ws/install/nav2_straightline_planner:/home/luca002/ex_ws/install/mec_mobile:/home/luca002/ex_ws/install/mec_mobile_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[22.559178] (vrx) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.559500] (vrx) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[22.559670] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/environment/resource_paths.dsv\n'}
+[22.568660] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/environment/resource_paths.sh\n'}
+[22.575367] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libWaves.so\n'}
+[22.581735] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libPolyhedraBuoyancyDrag.so\n'}
+[22.588266] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libScoringPlugin.so\n'}
+[22.594735] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libStationkeepingScoringPlugin.so\n'}
+[22.602880] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libWayfindingScoringPlugin.so\n'}
+[22.609666] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libAcousticPerceptionScoringPlugin.so\n'}
+[22.615838] (-) TimerEvent: {}
+[22.615938] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libAcousticTrackingScoringPlugin.so\n'}
+[22.621984] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libAcousticPingerPlugin.so\n'}
+[22.627893] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libBallShooterPlugin.so\n'}
+[22.636243] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libLightBuoyPlugin.so\n'}
+[22.643213] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libNavigationScoringPlugin.so\n'}
+[22.650076] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libGymkhanaScoringPlugin.so\n'}
+[22.656516] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libPerceptionScoringPlugin.so\n'}
+[22.663569] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libPlacardPlugin.so\n'}
+[22.671112] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libPublisherPlugin.so\n'}
+[22.677826] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libScanDockScoringPlugin.so\n'}
+[22.684096] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libSimpleHydrodynamics.so\n'}
+[22.690204] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libSurface.so\n'}
+[22.697489] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libUSVWind.so\n'}
+[22.704903] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libWaveVisual.so\n'}
+[22.711213] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/libWildlifeScoringPlugin.so\n'}
+[22.715910] (-) TimerEvent: {}
+[22.717676] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/environment/pythonpath.sh\n'}
+[22.724018] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/environment/pythonpath.dsv\n'}
+[22.731910] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[22.740149] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[22.746919] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[22.752963] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[22.767968] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx/__init__.py\n'}
+[22.775441] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx/bridge.py\n'}
+[22.781791] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx/bridges.py\n'}
+[22.787702] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx/launch.py\n'}
+[22.793460] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx/model.py\n'}
+[22.799705] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx/monitor_sim.py\n'}
+[22.807479] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx/payload_bridges.py\n'}
+[22.814326] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/config/wamv.yaml\n'}
+[22.815967] (-) TimerEvent: {}
+[22.821030] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/launch/__init__.py\n'}
+[22.827496] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/launch/__pycache__/bridge.cpython-312.pyc\n'}
+[22.834342] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/launch/bridge.py\n'}
+[22.841961] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/launch/competition.launch.py\n'}
+[22.849359] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/launch/mylaunch.py\n'}
+[22.855715] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/launch/spawn.launch.py\n'}
+[22.861691] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/launch/spawn_config.launch.py\n'}
+[22.869726] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/launch/usv_joy_teleop.py\n'}
+[22.876645] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/launch/vrx_environment.launch.py\n'}
+[22.891044] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/3d_lidar/mesh/3d_Lidar_Albedo.png\n'}
+[22.897568] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/3d_lidar/mesh/3d_Lidar_Metalness.png\n'}
+[22.905033] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/3d_lidar/mesh/3d_Lidar_Normal.png\n'}
+[22.912189] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/3d_lidar/mesh/3d_Lidar_Roughness.png\n'}
+[22.916048] (-) TimerEvent: {}
+[22.918440] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/3d_lidar/mesh/3d_lidar.dae\n'}
+[22.924829] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/3d_lidar/mesh/3d_lidar.png\n'}
+[22.930981] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/3d_lidar/model.config\n'}
+[22.938846] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/3d_lidar/model.sdf\n'}
+[22.946325] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/articulated_platform/model.config\n'}
+[22.953006] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/articulated_platform/model.sdf\n'}
+[22.959228] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/ball_shooter/materials/Textures/Launcher_Albedo.png\n'}
+[22.967025] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/ball_shooter/materials/Textures/Launcher_Metalness.png\n'}
+[22.974875] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/ball_shooter/materials/Textures/Launcher_Normal.png\n'}
+[22.981361] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/ball_shooter/materials/Textures/Launcher_Roughness.png\n'}
+[22.987635] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/ball_shooter/meshes/Launcher_Albedo.png\n'}
+[22.993550] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/ball_shooter/meshes/Launcher_BaseColor.png\n'}
+[23.002113] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/ball_shooter/meshes/ball_shooter_base.dae\n'}
+[23.009259] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/ball_shooter/meshes/ball_shooter_launcher.dae\n'}
+[23.015801] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/ball_shooter/model.config\n'}
+[23.016107] (-) TimerEvent: {}
+[23.022146] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/ball_shooter/model.sdf\n'}
+[23.028141] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/battery/mesh/battery.dae\n'}
+[23.037060] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/battery/mesh/battery.png\n'}
+[23.044409] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/battery/mesh/battery_Albedo.png\n'}
+[23.050970] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/battery/mesh/battery_Metalness.png\n'}
+[23.057064] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/battery/mesh/battery_Normal.png\n'}
+[23.063268] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/battery/mesh/battery_Roughness.png\n'}
+[23.071386] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/battery/model.config\n'}
+[23.078078] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/battery/model.sdf\n'}
+[23.084236] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/blue_projectile/model.config\n'}
+[23.089903] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/blue_projectile/model.sdf\n'}
+[23.095654] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/boat/materials/textures/Boat_Albedo.png\n'}
+[23.104641] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/boat/materials/textures/Boat_Metalness.png\n'}
+[23.111474] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/boat/materials/textures/Boat_Normal.png\n'}
+[23.116202] (-) TimerEvent: {}
+[23.117652] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/boat/materials/textures/Boat_Roughness.png\n'}
+[23.124564] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/boat/materials/textures/lidar_3d_v1.png\n'}
+[23.131677] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/boat/meshes/rcboat.dae\n'}
+[23.139915] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/boat/model.config\n'}
+[23.146633] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/boat/model.sdf\n'}
+[23.152731] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/boat/oldmodel/mmodel.sdf\n'}
+[23.158715] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/boat/thumbnails/boat/1.png\n'}
+[23.166342] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/boat/thumbnails/boat/2.png\n'}
+[23.173765] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/boat/thumbnails/boat/3.png\n'}
+[23.179922] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/boat/thumbnails/boat/4.png\n'}
+[23.187067] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/boat/thumbnails/boat/5.png\n'}
+[23.194568] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/coast_waves/materials/programs/GerstnerWaves_fs_330.glsl\n'}
+[23.202664] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/coast_waves/materials/programs/GerstnerWaves_vs_330.glsl\n'}
+[23.209286] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/coast_waves/materials/textures/skybox_lowres.dds\n'}
+[23.215353] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/coast_waves/materials/textures/wave_normals.dds\n'}
+[23.216276] (-) TimerEvent: {}
+[23.221412] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/coast_waves/meshes/waterlow.dae\n'}
+[23.227251] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/coast_waves/model.config\n'}
+[23.235571] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/coast_waves/model.sdf\n'}
+[23.243059] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/cpu_cases/mesh/cpu_cases.dae\n'}
+[23.250182] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/cpu_cases/mesh/cpu_cases.png\n'}
+[23.256672] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/cpu_cases/mesh/cpu_cases_Albedo.png\n'}
+[23.263868] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/cpu_cases/mesh/cpu_cases_Metalness.png\n'}
+[23.271854] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/cpu_cases/mesh/cpu_cases_Normal.png\n'}
+[23.278571] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/cpu_cases/mesh/cpu_cases_Roughness.png\n'}
+[23.284708] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/cpu_cases/model.config\n'}
+[23.290441] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/cpu_cases/model.sdf\n'}
+[23.297348] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/dock_2022/model.config\n'}
+[23.304635] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/dock_2022/model.sdf\n'}
+[23.311386] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/dock_2022_base/model.config\n'}
+[23.316374] (-) TimerEvent: {}
+[23.318238] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/dock_2022_base/model.sdf\n'}
+[23.324501] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/dock_block_4x4/mesh/DockCubes_Albedo.png\n'}
+[23.332270] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/dock_block_4x4/mesh/DockCubes_Metalness.png\n'}
+[23.340321] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/dock_block_4x4/mesh/DockCubes_Normal.png\n'}
+[23.347299] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/dock_block_4x4/mesh/DockCubes_Roughness.png\n'}
+[23.353542] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/dock_block_4x4/mesh/dock_block_4x4.dae\n'}
+[23.360003] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/dock_block_4x4/model.config\n'}
+[23.367555] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/dock_block_4x4/model.sdf\n'}
+[23.374311] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/entrance_exit/model.config\n'}
+[23.380871] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/entrance_exit/model.sdf\n'}
+[23.387530] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/lidar/materials/textures/lidar_3d_v1.png\n'}
+[23.394234] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/lidar/meshes/lidar_3d_v1.dae\n'}
+[23.402008] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/lidar/meshes/lidar_3d_v1.png\n'}
+[23.408312] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/lidar/model.config\n'}
+[23.414313] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/lidar/model.sdf\n'}
+[23.416452] (-) TimerEvent: {}
+[23.420901] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/lidar/thumbnails/1.png\n'}
+[23.429081] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/lidar/thumbnails/2.png\n'}
+[23.439334] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/lidar/thumbnails/3.png\n'}
+[23.447380] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/lidar/thumbnails/4.png\n'}
+[23.456311] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/lidar/thumbnails/5.png\n'}
+[23.468366] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/mono_camera/mesh/mono_camera.dae\n'}
+[23.479357] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/mono_camera/mesh/mono_camera.png\n'}
+[23.491097] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/mono_camera/mesh/mono_camera_Albedo.png\n'}
+[23.502545] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/mono_camera/mesh/mono_camera_Metalness.png\n'}
+[23.514283] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/mono_camera/mesh/mono_camera_Normal.png\n'}
+[23.516595] (-) TimerEvent: {}
+[23.527237] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/mono_camera/mesh/mono_camera_Roughness.png\n'}
+[23.538312] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/mono_camera/model.config\n'}
+[23.548634] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/mono_camera/model.sdf\n'}
+[23.559775] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/obstacle_course/model.config\n'}
+[23.570555] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/obstacle_course/model.sdf\n'}
+[23.580606] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/placard_2022/materials/textures/Placard.png\n'}
+[23.591437] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/placard_2022/meshes/placard_2022.dae\n'}
+[23.601063] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/placard_2022/model.config\n'}
+[23.611794] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/placard_2022/model.sdf\n'}
+[23.616765] (-) TimerEvent: {}
+[23.622608] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/platform/model.config\n'}
+[23.633785] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/platform/model.sdf\n'}
+[23.644726] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat01/materials/scripts/model.material\n'}
+[23.655464] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat01/materials/textures/Boat01_Albedo.png\n'}
+[23.665293] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat01/materials/textures/Boat01_Metallic.png\n'}
+[23.673062] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat01/materials/textures/Boat01_Normal.png\n'}
+[23.680068] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat01/materials/textures/Boat01_Roughness.png\n'}
+[23.687777] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat01/materials/textures/Thruster_Albedo.png\n'}
+[23.698686] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat01/materials/textures/Thruster_Roughness.png\n'}
+[23.708884] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat01/meshes/housing.dae\n'}
+[23.716879] (-) TimerEvent: {}
+[23.719269] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat01/meshes/mount.dae\n'}
+[23.730582] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat01/meshes/prop.dae\n'}
+[23.740787] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat01/meshes/roboboat01.dae\n'}
+[23.751011] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat01/model.config\n'}
+[23.762459] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat01/model.sdf\n'}
+[23.772754] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat02/materials/scripts/model.material\n'}
+[23.781065] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat02/materials/textures/Boat02_Albedo.png\n'}
+[23.788030] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat02/materials/textures/Boat02_Metallic.png\n'}
+[23.794459] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat02/materials/textures/Boat02_Normal.png\n'}
+[23.802756] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat02/materials/textures/Boat02_Roughness.png\n'}
+[23.809908] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat02/meshes/roboboat02.dae\n'}
+[23.816596] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat02/model.config\n'}
+[23.816925] (-) TimerEvent: {}
+[23.824292] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat02/model.sdf\n'}
+[23.835147] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat_cpubox/materials/textures/DryBox_Albedo.png\n'}
+[23.845481] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat_cpubox/materials/textures/DryBox_Roughness.png\n'}
+[23.852963] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat_cpubox/meshes/drybox.dae\n'}
+[23.860612] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat_cpubox/model.config\n'}
+[23.870790] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/roboboat_cpubox/model.sdf\n'}
+[23.880547] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_bgr/model.config\n'}
+[23.889771] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_bgr/model.sdf\n'}
+[23.899548] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_bgy/model.config\n'}
+[23.909581] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_bgy/model.sdf\n'}
+[23.917097] (-) TimerEvent: {}
+[23.919412] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_gbr/model.config\n'}
+[23.929033] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_gbr/model.sdf\n'}
+[23.938610] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_rbg/model.config\n'}
+[23.948882] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_rbg/model.sdf\n'}
+[23.958682] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_rgb/mesh/LightTower_Albedo.png\n'}
+[23.967212] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_rgb/mesh/LightTower_Metalness.png\n'}
+[23.978259] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_rgb/mesh/LightTower_Normal.png\n'}
+[23.988090] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_rgb/mesh/LightTower_Opacity.png\n'}
+[23.999278] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_rgb/mesh/LightTower_Roughness.png\n'}
+[24.009125] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_rgb/mesh/robotx_light_buoy.dae\n'}
+[24.017256] (-) TimerEvent: {}
+[24.019046] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_rgb/model.config\n'}
+[24.029496] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_rgb/model.sdf\n'}
+[24.039430] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_rgy/model.config\n'}
+[24.049440] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_rgy/model.sdf\n'}
+[24.060050] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_ybr/model.config\n'}
+[24.070065] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_ybr/model.sdf\n'}
+[24.079715] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_ygb/model.config\n'}
+[24.086896] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_ygb/model.sdf\n'}
+[24.095360] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_yrg/model.config\n'}
+[24.102043] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/robotx_light_buoy_yrg/model.sdf\n'}
+[24.108468] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/sensor_post/mesh/sensor_post.dae\n'}
+[24.114443] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/sensor_post/mesh/sensor_post.png\n'}
+[24.117313] (-) TimerEvent: {}
+[24.120518] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/sensor_post/mesh/sensor_post_arm.dae\n'}
+[24.128666] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/sensor_post/model.config\n'}
+[24.135514] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/sensor_post/model.sdf\n'}
+[24.142419] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/short_course_2023_phase3_1/model.config\n'}
+[24.149606] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/short_course_2023_phase3_1/model.sdf\n'}
+[24.156223] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/short_course_2023_phase3_2/model.config\n'}
+[24.163478] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/short_course_2023_phase3_2/model.sdf\n'}
+[24.170614] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/short_navigation_course_0/model.config\n'}
+[24.176838] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/short_navigation_course_0/model.sdf\n'}
+[24.182825] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/short_navigation_course_1/model.config\n'}
+[24.189832] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/short_navigation_course_1/model.sdf\n'}
+[24.197964] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/short_navigation_course_2/model.config\n'}
+[24.205151] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/short_navigation_course_2/model.sdf\n'}
+[24.211923] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/short_navigation_course_3/model.config\n'}
+[24.217412] (-) TimerEvent: {}
+[24.218339] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/short_navigation_course_3/model.sdf\n'}
+[24.225150] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/short_navigation_course_4/model.config\n'}
+[24.233484] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/short_navigation_course_4/model.sdf\n'}
+[24.240241] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/short_navigation_course_5/model.config\n'}
+[24.247481] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/short_navigation_course_5/model.sdf\n'}
+[24.254134] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/symbol_triangle/mesh/triangle.dae\n'}
+[24.261543] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/symbol_triangle/model.config\n'}
+[24.268421] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/symbol_triangle/model.sdf\n'}
+[24.275119] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/tripod/model.config\n'}
+[24.281716] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/tripod/model.sdf\n'}
+[24.287665] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/vessel/materials/textures/Boat01_Albedo.jpg\n'}
+[24.294781] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/vessel/materials/textures/Boat01_Normal.jpg\n'}
+[24.302113] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/vessel/materials/textures/Boat01_Roughness.jpg\n'}
+[24.308609] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/vessel/meshes/Boat01.dae\n'}
+[24.314629] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/vessel/model.config\n'}
+[24.317491] (-) TimerEvent: {}
+[24.320436] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/vessel/model.sdf\n'}
+[24.326330] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/vessel/thumbnails/1.png\n'}
+[24.334161] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/wam-v/meshes/WAM-V-Base.dae\n'}
+[24.342092] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/wam-v/meshes/WamV.png\n'}
+[24.349612] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/wam-v/meshes/engine.dae\n'}
+[24.356502] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/wam-v/meshes/legs.dae\n'}
+[24.364085] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/wam-v/meshes/lidar_3d_v1.dae\n'}
+[24.370880] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/wam-v/meshes/lidar_3d_v1.png\n'}
+[24.377224] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/wam-v/meshes/propeller.dae\n'}
+[24.383641] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/wam-v/meshes/ring.dae\n'}
+[24.390122] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/wam-v/model.config\n'}
+[24.397472] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/models/wam-v/model.sdf\n'}
+[24.412762] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/worlds/sydney.sdf\n'}
+[24.417580] (-) TimerEvent: {}
+[24.419188] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/ament_index/resource_index/package_run_dependencies/vrx\n'}
+[24.426478] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/ament_index/resource_index/parent_prefix_path/vrx\n'}
+[24.433884] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/environment/ament_prefix_path.sh\n'}
+[24.440662] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/environment/ament_prefix_path.dsv\n'}
+[24.447975] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/environment/path.sh\n'}
+[24.454546] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/environment/path.dsv\n'}
+[24.462757] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/local_setup.bash\n'}
+[24.472995] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/local_setup.sh\n'}
+[24.481136] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/local_setup.zsh\n'}
+[24.488059] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/local_setup.dsv\n'}
+[24.494447] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/package.dsv\n'}
+[24.500650] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/ament_index/resource_index/packages/vrx\n'}
+[24.507288] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/cmake/vrxConfig.cmake\n'}
+[24.513897] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/cmake/vrxConfig-version.cmake\n'}
+[24.517661] (-) TimerEvent: {}
+[24.520317] (vrx) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/vrx/share/vrx/package.xml\n'}
+[24.578571] (vrx) StdoutLine: {'line': b"Listing '/home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx'...\n"}
+[24.578706] (vrx) StdoutLine: {'line': b"Compiling '/home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx/__init__.py'...\n"}
+[24.578752] (vrx) StdoutLine: {'line': b"Compiling '/home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx/bridge.py'...\n"}
+[24.578795] (vrx) StdoutLine: {'line': b"Compiling '/home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx/bridges.py'...\n"}
+[24.578846] (vrx) StdoutLine: {'line': b"Compiling '/home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx/launch.py'...\n"}
+[24.578888] (vrx) StdoutLine: {'line': b"Compiling '/home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx/model.py'...\n"}
+[24.578929] (vrx) StdoutLine: {'line': b"Compiling '/home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx/monitor_sim.py'...\n"}
+[24.578970] (vrx) StdoutLine: {'line': b"Compiling '/home/luca002/proj_ws/install/vrx/lib/python3.12/site-packages/vrx/payload_bridges.py'...\n"}
+[24.584198] (vrx) CommandEnded: {'returncode': 0}
+[24.603784] (vrx) JobEnded: {'identifier': 'vrx', 'rc': 0}
+[24.604244] (-) EventReactorShutdown: {}
