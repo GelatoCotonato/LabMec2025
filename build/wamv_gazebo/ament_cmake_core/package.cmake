@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "wamv_gazebo")
 set(wamv_gazebo_VERSION "0.0.0")
-set(wamv_gazebo_MAINTAINER "Luca Barbieri <emailprogramming02@gmail.com>")
+set(wamv_gazebo_MAINTAINER "Luca Barbieri <emailprogramming02@gmail.com>, Lorenzo Graceffa <graceffalorenzo@gmail.com>")
 set(wamv_gazebo_BUILD_DEPENDS "ament_cmake_python" "std_msgs")
 set(wamv_gazebo_BUILDTOOL_DEPENDS "ament_cmake")
 set(wamv_gazebo_BUILD_EXPORT_DEPENDS )

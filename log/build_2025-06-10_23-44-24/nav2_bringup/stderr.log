@@ -1,8 +1,0 @@
-[33mCMake Warning:
-  Ignoring extra path from command line:
-
-   "/home/luca002/proj_ws/src/wamv_bringup"
-
-[0m
-[0mCMake Error: The source directory "/home/luca002/proj_ws/src/wamv_bringup" does not appear to contain CMakeLists.txt.
-Specify --help for usage, or press the help button on the CMake GUI.[0m

@@ -2,7 +2,8 @@
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 import os
-
+import launch.actions
+import launch_ros.actions
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch import LaunchDescription, LaunchService
@@ -31,7 +32,29 @@ def lidar_points(world_name, model_name, link_name, sensor_name):
         ros_type='sensor_msgs/msg/PointCloud2',
         direction=BridgeDirection.GZ_TO_ROS)
 
-def generate_launch_description(world_name, ign_flag=True):
+def thrust_joint_pos(model_name, side):
+    # ROS naming policy indicates that first character of a name must be an alpha
+    # character. In the case below, the gz topic has the joint index 0 as the
+    # first char so the following topics fail to be created on the ROS end
+    # left_joint_topic = '/model/' + model_name + '/joint/left_chasis_engine_joint/0/cmd_pos'
+    # right_joint_topic = '/model/' + model_name + '/joint/right_chasis_engine_joint/0/cmd_pos'
+    # For now, use erb to generate unique topic names in model.sdf.erb
+    return Bridge(
+        gz_topic=f'{model_name}/thrusters/{side}/pos',
+        ros_topic=f'thrusters/{side}/pos',
+        gz_type='gz.msgs.Double',
+        ros_type='std_msgs/msg/Float64',
+        direction=BridgeDirection.ROS_TO_GZ)
+
+def thrust(model_name, side):
+    return Bridge(
+        gz_topic=f'{model_name}/thrusters/{side}/thrust',
+        ros_topic=f'thrusters/{side}/thrust',
+        gz_type='gz.msgs.Double',
+        ros_type='std_msgs/msg/Float64',
+        direction=BridgeDirection.ROS_TO_GZ)
+
+def generate_launch_description(world_name="sydney", ign_flag=True):
     # Get the full path to the world file
     world_path = os.path.join(
         get_package_share_directory("wamv_gazebo"),
@@ -58,17 +81,35 @@ def generate_launch_description(world_name, ign_flag=True):
             launch_arguments={'gz_args': ' '.join(gz_args)}.items())
 
     # Create the ExecuteProcess action
-    # subprocess.run(gz_args,check=True)
 
     bridge_node = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
         name='dynamic_bridge',
-        arguments=['/lidar@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
-                   '/lidar/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked'
-                   ],
+        arguments=[
+            # LIDAR topics
+            '/lidar@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
+            '/lidar/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
+
+            # Angular velocity readings
+            '/model/wamv/joint/left_engine_propeller_joint/ang_vel@std_msgs/msg/Float64[gz.msgs.Double',
+            '/model/wamv/joint/right_engine_propeller_joint/ang_vel@std_msgs/msg/Float64[gz.msgs.Double',
+
+            # Thruster angle control (ROS -> Gazebo)
+            '/wamv/left/thruster/joint/cmd_pos@std_msgs/msg/Float64]gz.msgs.Double',
+            '/wamv/right/thruster/joint/cmd_pos@std_msgs/msg/Float64]gz.msgs.Double',
+
+            # Thrust commands (ROS -> Gazebo)
+            '/model/wamv/joint/left_engine_propeller_joint/cmd_thrust@std_msgs/msg/Float64]gz.msgs.Double',
+            '/model/wamv/joint/right_engine_propeller_joint/cmd_thrust@std_msgs/msg/Float64]gz.msgs.Double',
+        
+            # Deadband control (ROS -> Gazebo)
+            '/model/wamv/joint/left_engine_propeller_joint/enable_deadband@std_msgs/msg/Bool]gz.msgs.Boolean',
+            '/model/wamv/joint/right_engine_propeller_joint/enable_deadband@std_msgs/msg/Bool]gz.msgs.Boolean',
+        
+        ],
         output='screen'
-    )
+    )   
 
     static_tf = Node(
         package='tf2_ros',
@@ -81,12 +122,31 @@ def generate_launch_description(world_name, ign_flag=True):
         output='screen'
     )
 
-    return LaunchDescription([gz_sim, bridge_node, static_tf])
+    ld = LaunchDescription([gz_sim, bridge_node, static_tf])
+
+    # Teleop
+    # parameters_file = os.path.join(
+    #     get_package_share_directory('wamv_gazebo'),
+    #     'config', 'wamv.yaml'
+    # )
+    # ld = LaunchDescription([gz_sim, bridge_node, static_tf,
+    #    launch.actions.DeclareLaunchArgument('cmd_vel', default_value='cmd_vel'),
+    #    launch.actions.DeclareLaunchArgument('teleop_config', default_value=parameters_file),
+    # ])
+
+    # ld.add_action(launch_ros.actions.Node(package='joy', executable='joy_node'))
+
+    # ld.add_action(launch_ros.actions.Node(
+    # package='teleop_twist_joy', executable='teleop_node',
+    # parameters=[launch.substitutions.LaunchConfiguration('teleop_config')]))
+    
+    return ld
+
 
 if __name__ == '__main__':
 
-    world_name = "sydney"
-    ld = generate_launch_description(world_name)
+    ld = generate_launch_description()
     ls = LaunchService()
     ls.include_launch_description(ld)
     ls.run()
+

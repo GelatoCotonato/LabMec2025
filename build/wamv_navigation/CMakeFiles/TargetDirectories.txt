@@ -1,0 +1,9 @@
+/home/luca002/proj_ws/build/wamv_navigation/CMakeFiles/uninstall.dir
+/home/luca002/proj_ws/build/wamv_navigation/CMakeFiles/wamv_navigation_uninstall.dir
+/home/luca002/proj_ws/build/wamv_navigation/CMakeFiles/test.dir
+/home/luca002/proj_ws/build/wamv_navigation/CMakeFiles/edit_cache.dir
+/home/luca002/proj_ws/build/wamv_navigation/CMakeFiles/rebuild_cache.dir
+/home/luca002/proj_ws/build/wamv_navigation/CMakeFiles/list_install_components.dir
+/home/luca002/proj_ws/build/wamv_navigation/CMakeFiles/install.dir
+/home/luca002/proj_ws/build/wamv_navigation/CMakeFiles/install/local.dir
+/home/luca002/proj_ws/build/wamv_navigation/CMakeFiles/install/strip.dir

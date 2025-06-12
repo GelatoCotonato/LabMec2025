@@ -5,7 +5,8 @@
   <description>Gazebo resources</description>
 
   <maintainer email="emailprogramming02@gmail.com">Luca Barbieri</maintainer>
-
+  <maintainer email="graceffalorenzo@gmail.com">Lorenzo Graceffa</maintainer>
+  
   <license>Apache License 2.0</license>
 
   <author>Luca Barbieri</author>
