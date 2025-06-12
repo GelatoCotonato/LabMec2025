@@ -1,0 +1,143 @@
+[0.251s] Invoking command in '/home/luca002/proj_ws/build/wamv_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/luca002/proj_ws/src/wamv_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install/wamv_navigation
+[0.299s] -- The C compiler identification is GNU 13.3.0
+[0.353s] -- The CXX compiler identification is GNU 13.3.0
+[0.368s] -- Detecting C compiler ABI info
+[0.451s] -- Detecting C compiler ABI info - done
+[0.459s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.460s] -- Detecting C compile features
+[0.460s] -- Detecting C compile features - done
+[0.468s] -- Detecting CXX compiler ABI info
+[0.562s] -- Detecting CXX compiler ABI info - done
+[0.571s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.572s] -- Detecting CXX compile features
+[0.572s] -- Detecting CXX compile features - done
+[0.576s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.728s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.801s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.848s] -- Found nav2_common: 1.3.6 (/opt/ros/jazzy/share/nav2_common/cmake)
+[0.851s] -- Found ros_gz_bridge: 1.0.12 (/opt/ros/jazzy/share/ros_gz_bridge/cmake)
+[0.911s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.928s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.948s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.970s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.061s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.065s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.151s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.173s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.196s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.343s] -- Looking for gz-msgs10 -- found version 10.3.2
+[1.350s] -- Searching for dependencies of gz-msgs10
+[1.469s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.21.12") 
+[1.471s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.471s] -- Searching for dependencies of gz-utils2
+[1.474s] -- Looking for gz-math7 -- found version 7.5.2
+[1.474s] -- Searching for dependencies of gz-math7
+[1.474s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.479s] -- Checking for module 'tinyxml2'
+[1.494s] --   Found tinyxml2, version 10.0.0
+[1.543s] -- Looking for gz-transport13 -- found version 13.4.1
+[1.543s] -- Searching for dependencies of gz-transport13
+[1.591s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.595s] -- Checking for module 'libzmq >= 4'
+[1.612s] --   Found libzmq, version 4.3.5
+[1.652s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.660s] -- Checking for module 'uuid'
+[1.679s] --   Found uuid, version 2.39.3
+[1.716s] -- Found UUID: TRUE  
+[1.716s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.716s] -- Searching for dependencies of gz-utils2
+[1.716s] -- Searching for <gz-utils2> component [cli]
+[1.719s] -- Looking for gz-utils2-cli -- found version 2.2.1
+[1.719s] -- Searching for dependencies of gz-utils2-cli
+[1.721s] -- Looking for gz-msgs10 -- found version 10.3.2
+[2.021s] -- Found ros_gz_image: 1.0.12 (/opt/ros/jazzy/share/ros_gz_image/cmake)
+[2.024s] -- Found ros_gz_sim: 1.0.12 (/opt/ros/jazzy/share/ros_gz_sim/cmake)
+[2.074s] -- Found robot_state_publisher: 3.3.3 (/opt/ros/jazzy/share/robot_state_publisher/cmake)
+[2.121s] -- Found xacro: 2.0.13 (/opt/ros/jazzy/share/xacro/cmake)
+[2.236s] -- Configuring done (2.0s)
+[2.242s] -- Generating done (0.0s)
+[2.244s] -- Build files have been written to: /home/luca002/proj_ws/build/wamv_navigation
+[2.260s] Invoked command in '/home/luca002/proj_ws/build/wamv_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/luca002/proj_ws/src/wamv_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install/wamv_navigation
+[2.261s] Invoking command in '/home/luca002/proj_ws/build/wamv_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/wamv_navigation -- -j16 -l16
+[2.325s] Invoked command in '/home/luca002/proj_ws/build/wamv_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/wamv_navigation -- -j16 -l16
+[2.337s] Invoking command in '/home/luca002/proj_ws/build/wamv_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/wamv_navigation
+[2.344s] -- Install configuration: ""
+[2.344s] -- Execute custom install script
+[2.345s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/README.md
+[2.353s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/turtlebot3_waffle_bridge.yaml
+[2.361s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/wamv_config.yaml
+[2.369s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/__init__.py
+[2.378s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/bringup_launch.py
+[2.388s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/cloned_multi_tb3_simulation_launch.py
+[2.401s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/generate_wamv.launch.py
+[2.418s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/localization_launch.py
+[2.432s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/navigation_launch.py
+[2.443s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/rviz.launch.py
+[2.452s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/rviz_launch.py
+[2.460s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/slam_launch.py
+[2.468s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/spawn_tb3.launch.py
+[2.475s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/tb3_loopback_simulation.launch.py
+[2.483s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/tb3_simulation_launch.py
+[2.490s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/tb4_loopback_simulation.launch.py
+[2.498s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/tb4_simulation_launch.py
+[2.507s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/unique_multi_tb3_simulation_launch.py
+[2.517s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/depot.pgm
+[2.526s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/depot.yaml
+[2.534s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/lake.yaml
+[2.542s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/tb3_sandbox.pgm
+[2.549s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/tb3_sandbox.yaml
+[2.559s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/warehouse.pgm
+[2.566s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/warehouse.yaml
+[2.574s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_multirobot_params_1.yaml
+[2.581s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_multirobot_params_2.yaml
+[2.588s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_multirobot_params_all.yaml
+[2.596s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_params.yaml
+[2.605s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/nav2_default_view.rviz
+[2.614s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/nav2_namespaced_view.rviz
+[2.623s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/rviz_vrx_final.rviz
+[2.631s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/rviz_vrx_rsp.rviz
+[2.639s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/ament_index/resource_index/package_run_dependencies/wamv_navigation
+[2.648s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/ament_index/resource_index/parent_prefix_path/wamv_navigation
+[2.656s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/environment/ament_prefix_path.sh
+[2.664s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/environment/ament_prefix_path.dsv
+[2.673s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/environment/path.sh
+[2.681s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/environment/path.dsv
+[2.689s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/local_setup.bash
+[2.697s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/local_setup.sh
+[2.707s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/local_setup.zsh
+[2.717s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/local_setup.dsv
+[2.726s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/package.dsv
+[2.734s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/ament_index/resource_index/packages/wamv_navigation
+[2.742s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/cmake/wamv_navigationConfig.cmake
+[2.750s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/cmake/wamv_navigationConfig-version.cmake
+[2.758s] -- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/package.xml
+[2.766s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation
+[2.766s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/maps
+[2.766s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/params
+[2.766s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/hooks
+[2.766s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch
+[2.766s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/cloned_multi_tb3_simulation_launch.py
+[2.766s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/slam_launch.py
+[2.767s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/navigation_launch.py
+[2.767s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/rviz.launch.py
+[2.767s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/unique_multi_tb3_simulation_launch.py
+[2.767s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/tb4_loopback_simulation.launch.py
+[2.767s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/tb3_loopback_simulation.launch.py
+[2.767s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/localization_launch.py
+[2.767s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/__init__.py
+[2.767s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/tb3_simulation_launch.py
+[2.768s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/rviz_launch.py
+[2.768s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/tb4_simulation_launch.py
+[2.768s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/spawn_tb3.launch.py
+[2.768s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/generate_wamv.launch.py
+[2.768s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/bringup_launch.py
+[2.768s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/rviz
+[2.768s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/config
+[2.768s] -- Up-to-date: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation
+[2.769s] -- Up-to-date: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps
+[2.769s] -- Up-to-date: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params
+[2.769s] -- Installing: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/hooks
+[2.769s] -- Up-to-date: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch
+[2.769s] -- Up-to-date: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz
+[2.769s] -- Up-to-date: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config
+[2.770s] Invoked command in '/home/luca002/proj_ws/build/wamv_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/wamv_navigation

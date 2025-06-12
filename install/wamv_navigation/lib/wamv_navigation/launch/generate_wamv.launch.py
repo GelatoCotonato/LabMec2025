@@ -1,17 +1,3 @@
-# Copyright 2021 Open Source Robotics Foundation, Inc.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 import os
 
 from ament_index_python.packages import get_package_share_directory
@@ -31,10 +17,10 @@ def launch(context, *args, **kwargs):
     wamv_target = LaunchConfiguration('wamv_target').perform(context)
 
     if not component_yaml:
-        component_yaml = os.path.join(get_package_share_directory('vrx_gazebo'),
+        component_yaml = os.path.join(get_package_share_directory('wamv_gazebo'),
                                       'config', 'wamv_config', 'example_component_config.yaml')
     if not thruster_yaml:
-        thruster_yaml = os.path.join(get_package_share_directory('vrx_gazebo'),
+        thruster_yaml = os.path.join(get_package_share_directory('wamv_gazebo'),
                                      'config', 'wamv_config', 'example_thruster_config.yaml')
 
     components_dir = os.path.join(get_package_share_directory('wamv_gazebo'),
@@ -44,7 +30,7 @@ def launch(context, *args, **kwargs):
     wamv_gazebo = os.path.join(get_package_share_directory('wamv_gazebo'),
                                  'urdf', 'wamv_gazebo.urdf.xacro')
 
-    node = Node(package='vrx_gazebo',
+    node = Node(package='wamv_gazebo',
                 executable='generate_wamv.py',
                 output='screen',
                 parameters=[{'wamv_locked': wamv_locked},

@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "config" "launch" "maps" "params" "rviz" "DESTINATION" "share/wamv_navigation/cmake")
-ament_cmake_symlink_install_directory("/home/luca002/proj_ws/src/wamv_navigation" DIRECTORY "config" "launch" "maps" "params" "rviz" "DESTINATION" "share/wamv_navigation/cmake")
+# install(DIRECTORY "config" "launch" "maps" "params" "rviz" "DESTINATION" "share/wamv_navigation")
+ament_cmake_symlink_install_directory("/home/luca002/proj_ws/src/wamv_navigation" DIRECTORY "config" "launch" "maps" "params" "rviz" "DESTINATION" "share/wamv_navigation")
 
 # install(FILES "/home/luca002/proj_ws/build/wamv_navigation/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/wamv_navigation" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_navigation" FILES "/home/luca002/proj_ws/build/wamv_navigation/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/wamv_navigation" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

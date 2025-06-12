@@ -629,6 +629,13 @@
       <nR>-400.0</nR>
       <nAbsR>0.0</nAbsR>
     </plugin> 
+    <plugin
+        filename="libignition-gazebo-odometry-publisher-system.so"
+        name="ignition::gazebo::systems::OdometryPublisher">
+      <odom_topic>/model/wamv/odometry</odom_topic>
+      <world_frame>odom</world_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+    </plugin>
 
   </model>
 

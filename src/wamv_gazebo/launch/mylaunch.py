@@ -87,11 +87,13 @@ def generate_launch_description(world_name="sydney", ign_flag=True):
         executable='parameter_bridge',
         name='dynamic_bridge',
         arguments=[
-            # LIDAR topics
+            # LIDAR topics (Gazebo -> ROS)
             '/lidar@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
             '/lidar/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
 
-            # Angular velocity readings
+            '/model/wamv/odometry@nav_msgs/msg/Odometry[gz.msgs.Odometry',
+
+            # Angular velocity readings (Gazebo -> ROS)
             '/model/wamv/joint/left_engine_propeller_joint/ang_vel@std_msgs/msg/Float64[gz.msgs.Double',
             '/model/wamv/joint/right_engine_propeller_joint/ang_vel@std_msgs/msg/Float64[gz.msgs.Double',
 

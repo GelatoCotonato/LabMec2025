@@ -17,11 +17,11 @@ find_package(ros_gz_sim REQUIRED)
 find_package(robot_state_publisher REQUIRED)
 find_package(xacro REQUIRED)
 
-# Hooks
-#ament_environment_hooks("hooks/ament_prefix_path.dsv.in")
-#ament_environment_hooks("hooks/ament_prefix_path.sh")
-#ament_environment_hooks("hooks/path.dsv.in")
-#ament_environment_hooks("hooks/path.sh")
+# # Hooks
+# ament_environment_hooks("hooks/ament_prefix_path.dsv.in")
+# ament_environment_hooks("hooks/ament_prefix_path.sh")
+# ament_environment_hooks("hooks/path.dsv.in")
+# ament_environment_hooks("hooks/path.sh")
 
 # Installa i file Python
 install(
@@ -38,14 +38,14 @@ install(
   FILES_MATCHING PATTERN "*.py"
 )
 
-# CMake config files (in cmake/)
+# CMake config files 
 install(DIRECTORY 
   config
   launch
   maps
   params
   rviz
-  DESTINATION share/${PROJECT_NAME}/cmake
+  DESTINATION share/${PROJECT_NAME}
 )
 
 # Rende visibile il pacchetto ad ament
