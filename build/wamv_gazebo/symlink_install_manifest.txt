@@ -34,7 +34,10 @@
 /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/model.py
 /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/monitor_sim.py
 /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/payload_bridges.py
+/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/config/mapper_params.yaml
+/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/config/mylaunch.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/config/wamv.yaml
+/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/config/wamv_config.yaml
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/__init__.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/__pycache__/bridge.cpython-312.pyc
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/bridge.py

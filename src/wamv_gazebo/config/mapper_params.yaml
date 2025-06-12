@@ -1,0 +1,11 @@
+slam_toolbox:
+  ros__parameters:
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_link
+    scan_topic: scan
+    mode: mapping
+    resolution: 0.05
+    queue_size: 1000
+
+

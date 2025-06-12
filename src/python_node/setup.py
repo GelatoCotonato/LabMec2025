@@ -27,6 +27,7 @@ setup(
         'console_scripts': [
             'python_publisher = python_node.pub_node:main',
             'python_subscriber = python_node.sub_node:main',
+            'odom_to_tf = python_node.odom_to_tf:main'
         ],
     },
 )

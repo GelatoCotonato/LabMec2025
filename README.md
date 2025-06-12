@@ -26,3 +26,24 @@ esempio utile per prendere i modelli: https://github.com/osrf/vrx.git
 6) ricavare distanza dalla costa
 7) obstacle avoidance
 8) correzione rotta
+
+
+<pre>python3 ~/proj_ws/src/wamv_gazebo/launch/mylaunch.py</pre>
+
+<pre>rviz2</pre>
+
+<pre>ros2 run python_node python_publisher</pre>
+
+<pre>ros2 launch slam_toolbox online_async_launch.py \
+  slam_params_file:=~/proj_ws/src/wamv_navigation/config/mapper_params_online_async.yaml \
+  use_sim_time:=true</pre>
+
+Tf:
+<pre>ros2 run tf2_ros static_transform_publisher --x 0.77 --y 1,3 --z 0.035 --roll 0 --pitch 0 --yaw 0 --frame-id base_link --child-frame-id lidar_link</pre>
+
+Tf check:
+<pre>ros2 run tf2_ros tf2_echo base_link lidar_link</pre>
+
+
+Generation of /tf_static topic:
+<pre>ros2 run tf2_tools view_frames</pre>

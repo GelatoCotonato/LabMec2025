@@ -117,33 +117,15 @@ def generate_launch_description(world_name="sydney", ign_flag=True):
         output='screen'
     )   
 
-    # static_tf = Node(
-    #     package='tf2_ros',
-    #     executable='static_transform_publisher',
-    #     arguments=[
-    #         '0', '0', '0', '0', '0', '0',  
-    #         'lidar_link',                   
-    #         'wamv/lidar_link/gpu_lidar' 
-    #     ],
-    #     output='screen'
-    # )
-
     static_tf = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
-        name='lidar_static_tf',
         arguments=[
-            '0', '0', '1.5',   # translation: x y z
-            '0', '0', '0',     # rotation: roll pitch yaw
-            'base_link', 'lidar_link'
-        ]
-    )
-
-    # Dynamic TF: odom -> base_link
-    odom_tf = Node(
-        package='python_node',
-        executable='odom_to_tf',  # assuming this is how your Python node is set
-        name='odom_to_tf'
+            '0', '0', '0', '0', '0', '0',  
+            'lidar_link',                   
+            'wamv/lidar_link/gpu_lidar' 
+        ],
+        output='screen'
     )
 
     wamv_param_dir = LaunchConfiguration(
@@ -152,12 +134,10 @@ def generate_launch_description(world_name="sydney", ign_flag=True):
             get_package_share_directory('wamv_navigation'),
             'param','wamv_config.yaml'))
     
-    ld = LaunchDescription([gz_sim, bridge_node, odom_tf , DeclareLaunchArgument(
+    ld = LaunchDescription([gz_sim, bridge_node, static_tf, DeclareLaunchArgument(
             'wamv_param_dir',
             default_value=wamv_param_dir,
             description='Full path to wam-v parameter file to load')])
-
-
 
     # Teleop
     # parameters_file = os.path.join(

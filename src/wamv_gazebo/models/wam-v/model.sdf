@@ -31,7 +31,7 @@
       <collision name="top_base">
         <pose>0 -0 1.25 0 0 0</pose>
         <geometry>
-          <box><size>1.85 1 0.1" </size></box>
+          <box><size>1.85 1 0.1</size></box>
         </geometry>
       </collision>
 
@@ -465,8 +465,8 @@
 
   <!--LIDAR-->
   <link name="lidar_link">
-    <pose relative_to="tripod_ring_link">0 0 0.227 0 0 0</pose>
-
+    <!--<pose relative_to="tripod_ring_link">0 0 0.227 0 0 0</pose> -->
+    <pose relative_to="base_link">0.77 0 1.537 0 0 0</pose>
     <inertial>
       <mass>0.83</mass>
       <inertia>
@@ -498,10 +498,11 @@
     </visual>
 
     <sensor name="gpu_lidar" type="gpu_ray">
-        <pose>0 0 0.036 0 0 0</pose>
-        <update_rate>10</update_rate>
 
-        <topic>lidar</topic>
+        <pose>0 0 0.036 0 0 0</pose>
+        <update_rate>1</update_rate>
+
+        <topic>scan</topic>
 
         <ray>
           <scan>
@@ -531,11 +532,13 @@
         </ray>
         <always_on>1</always_on>
         <visualize>true</visualize>
+
+
       </sensor>
     </link>
 
     <joint name="lidar_joint" type="fixed">
-      <parent>tripod_ring_link</parent>
+      <parent>base_link</parent>
       <child>lidar_link</child>
     </joint> 
 
@@ -629,6 +632,7 @@
       <nR>-400.0</nR>
       <nAbsR>0.0</nAbsR>
     </plugin> 
+    
     <plugin
         filename="libignition-gazebo-odometry-publisher-system.so"
         name="ignition::gazebo::systems::OdometryPublisher">
