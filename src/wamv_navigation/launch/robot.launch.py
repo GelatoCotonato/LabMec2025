@@ -71,16 +71,16 @@ def generate_launch_description():
         output='screen'
     )   
 
-    static_tf = Node(
-        package='tf2_ros',
-        executable='static_transform_publisher',
-        arguments=[
-            '0', '0', '0', '0', '0', '0',  
-            'lidar_link',                   
-            'wamv/lidar_link/gpu_lidar' 
-        ],
-        output='screen'
-    )
+    # static_tf = Node(
+    #     package='tf2_ros',
+    #     executable='static_transform_publisher',
+    #     arguments=[
+    #         '0', '0', '0', '0', '0', '0',  
+    #         'lidar_link',                   
+    #         'wamv/lidar_link/gpu_lidar' 
+    #     ],
+    #     output='screen'
+    # )
 
     # UPLOAD WAMV PARAMS
     wamv_param_dir = LaunchConfiguration(
@@ -100,7 +100,7 @@ def generate_launch_description():
 
     use_sim_time = LaunchConfiguration('use_sim_time', default='false')
 
-    return LaunchDescription([ gz_sim, bridge_node, static_tf,
+    return LaunchDescription([ gz_sim, bridge_node,
         DeclareLaunchArgument(
             'use_sim_time',
             default_value=use_sim_time,

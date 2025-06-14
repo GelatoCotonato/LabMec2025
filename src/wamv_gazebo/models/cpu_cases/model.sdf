@@ -3,11 +3,10 @@
   <model name="cpu_cases">
     <link name="cpu_cases_link">
       <visual name="cpu_cases_visual">
-        <pose>0.073 0 -1.53 0 0 0</pose>
         <geometry>
           <mesh> 
             <uri>
-              model://cpu_cases/mesh/cpu_cases.dae
+              meshes/cpu_cases.dae
             </uri>
           </mesh>
         </geometry>

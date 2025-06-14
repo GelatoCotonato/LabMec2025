@@ -50,7 +50,7 @@ def generate_launch_description():
     # User defined config file should contain '<robot_namespace>' keyword for the replacements.
     params_file = ReplaceString(
         source_file=params_file,
-        replacements={'<robot_namespace>': ('/', namespace)},
+        replacements={'wamv_config.yaml': ('/', namespace)},
         condition=IfCondition(use_namespace),
     )
 

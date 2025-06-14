@@ -1,0 +1,30 @@
+[0.672s] Invoking command in '/home/luca002/proj_ws/build/python_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/luca002/proj_ws/build/python_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luca002/proj_ws/install/python_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luca002/proj_ws/build/python_node/build --no-deps symlink_data
+[0.914s] running develop
+[1.068s] running egg_info
+[1.068s] creating python_node.egg-info
+[1.085s] writing python_node.egg-info/PKG-INFO
+[1.085s] writing dependency_links to python_node.egg-info/dependency_links.txt
+[1.085s] writing entry points to python_node.egg-info/entry_points.txt
+[1.085s] writing requirements to python_node.egg-info/requires.txt
+[1.085s] writing top-level names to python_node.egg-info/top_level.txt
+[1.086s] writing manifest file 'python_node.egg-info/SOURCES.txt'
+[1.119s] reading manifest file 'python_node.egg-info/SOURCES.txt'
+[1.119s] writing manifest file 'python_node.egg-info/SOURCES.txt'
+[1.167s] running build_ext
+[1.167s] Creating /home/luca002/proj_ws/install/python_node/lib/python3.12/site-packages/python-node.egg-link (link to .)
+[1.167s] Installing odom_to_tf script to /home/luca002/proj_ws/install/python_node/lib/python_node
+[1.168s] Installing python_publisher script to /home/luca002/proj_ws/install/python_node/lib/python_node
+[1.168s] Installing python_subscriber script to /home/luca002/proj_ws/install/python_node/lib/python_node
+[1.168s] 
+[1.168s] Installed /home/luca002/proj_ws/build/python_node
+[1.168s] running symlink_data
+[1.168s] creating /home/luca002/proj_ws/install/python_node/share/ament_index
+[1.168s] creating /home/luca002/proj_ws/install/python_node/share/ament_index/resource_index
+[1.168s] creating /home/luca002/proj_ws/install/python_node/share/ament_index/resource_index/packages
+[1.168s] symbolically linking /home/luca002/proj_ws/build/python_node/resource/python_node -> /home/luca002/proj_ws/install/python_node/share/ament_index/resource_index/packages
+[1.168s] symbolically linking /home/luca002/proj_ws/build/python_node/package.xml -> /home/luca002/proj_ws/install/python_node/share/python_node
+[1.168s] creating /home/luca002/proj_ws/install/python_node/share/python_node/launch
+[1.168s] symbolically linking /home/luca002/proj_ws/build/python_node/launch/test.launch.yaml -> /home/luca002/proj_ws/install/python_node/share/python_node/launch
+[1.168s] creating /home/luca002/proj_ws/install/python_node/share/python_node/config
+[1.168s] symbolically linking /home/luca002/proj_ws/build/python_node/config/python_node.config.yaml -> /home/luca002/proj_ws/install/python_node/share/python_node/config
+[1.218s] Invoked command in '/home/luca002/proj_ws/build/python_node' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/luca002/proj_ws/build/python_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luca002/proj_ws/install/python_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luca002/proj_ws/build/python_node/build --no-deps symlink_data

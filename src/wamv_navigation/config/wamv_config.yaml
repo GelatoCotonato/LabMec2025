@@ -23,7 +23,7 @@ lidar:
   - name: gpu_lidar           
     type: VLP16               
     visualize: true           
-    topic: /lidar             
+    topic: /scan             
     x: 0.77                   
     y: 0.0                    
     z: 1.527                  

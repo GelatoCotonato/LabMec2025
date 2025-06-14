@@ -1,8 +1,10 @@
 <?xml version="1.0"?>
 
-<sdf version='1.6'>
+<sdf version='1.9'>
   <!-- Basic model of the 16' WAM-V USV -->
   <model name="wamv">
+
+
     <static>false</static>
     
     <link name="base_link">
@@ -258,8 +260,8 @@
 
 
     <!--BATTERIES-->
-    <link name="battery1_link">
-      <pose relative_to="base_link">-0.13 -2.05 0 0 0 0</pose>
+    <link name="battery_dx_link">
+      <pose relative_to="base_link">-0.13 -2.053 0 0 0 0</pose>
       <visual name="battery_visual">
         <geometry>
           <mesh> 
@@ -287,12 +289,12 @@
       </inertial>
     </link>
 
-    <joint name="battery1_joint" type="fixed">
+    <joint name="battery_dx_joint" type="fixed">
       <parent>base_link</parent>
-      <child>battery1_link</child>
+      <child>battery_dx_link</child>
     </joint>
 
-    <link name="battery2_link">
+    <link name="battery_sx_link">
       <pose relative_to="base_link">-0.13 0.00 0 0 0 0</pose>
       <visual name="battery_visual">
         <geometry>
@@ -321,9 +323,9 @@
       </inertial>
     </link>
 
-    <joint name="battery2_joint" type="fixed">
+    <joint name="battery_sx_joint" type="fixed">
       <parent>base_link</parent>
-      <child>battery2_link</child>
+      <child>battery_sx_link</child>
     </joint>
 
     <link name="cpu_cases_link">
@@ -366,6 +368,21 @@
     <joint name="cpu_cases_joint" type="fixed">
       <parent>base_link</parent>
       <child>cpu_cases_link</child>
+    </joint>
+
+    <link name="gps_link">
+      <pose>0 0 1.5 0 0 0</pose>  <!-- Place it 1.5m above the base -->
+      <sensor name="gps_sensor" type="gps">
+        <always_on>true</always_on>
+        <update_rate>5.0</update_rate>
+        <visualize>true</visualize>
+        <topic>wamv/gps_link/gps_sensor/fix</topic>
+      </sensor>
+    </link>
+
+    <joint name="gps_fixed_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>gps_link</child>
     </joint>
 
     <!--TRIPOD-->
@@ -464,9 +481,12 @@
 
 
   <!--LIDAR-->
+    
+    
+
   <link name="lidar_link">
-    <!--<pose relative_to="tripod_ring_link">0 0 0.227 0 0 0</pose> -->
-    <pose relative_to="base_link">0.77 0 1.537 0 0 0</pose>
+    <pose relative_to="tripod_ring_link">0 0 0.227 0 0 0</pose>
+    <!--<pose relative_to="__attached__">0.77 0 1.537 0 0 0</pose> -->
     <inertial>
       <mass>0.83</mass>
       <inertia>
@@ -500,9 +520,9 @@
     <sensor name="gpu_lidar" type="gpu_ray">
 
         <pose>0 0 0.036 0 0 0</pose>
-        <update_rate>1</update_rate>
+        <update_rate>20</update_rate>
 
-        <topic>scan</topic>
+        <topic>wamv/lidar_link/gpu_lidar/scan</topic>
 
         <ray>
           <scan>
@@ -532,16 +552,13 @@
         </ray>
         <always_on>1</always_on>
         <visualize>true</visualize>
-
-
       </sensor>
     </link>
-
+  
     <joint name="lidar_joint" type="fixed">
       <parent>base_link</parent>
       <child>lidar_link</child>
-    </joint> 
-
+    </joint>
 
     <plugin
       filename="gz-sim-thruster-system"
@@ -561,7 +578,7 @@
       <topic>/wamv/left/thruster/joint/cmd_pos</topic>
     </plugin>
 
-    <!-- Uncomment to enable the right thruster -->
+    <!--  enable the right thruster -->
     <plugin
       filename="gz-sim-thruster-system"
       name="gz::sim::systems::Thruster">
@@ -580,7 +597,7 @@
       <topic>/wamv/right/thruster/joint/cmd_pos</topic>
     </plugin>
 
-    <!-- Uncomment to produce buoyancy on the left hull -->
+    <!--  buoyancy on the left hull -->
     <plugin
       filename="libSurface.so"
       name="wamv_gazebo::Surface">
@@ -597,14 +614,14 @@
       </wavefield>
     </plugin>
 
-    <!-- Uncomment to produce buoyancy on the right hull -->
+    <!-- buoyancy on the right hull -->
     <plugin
       filename="libSurface.so"
       name="wamv_gazebo::Surface">
       <link_name>base_link</link_name>
       <hull_length>4.9</hull_length>
       <hull_radius>0.213</hull_radius>
-      <fluid_level>0</fluid_level>
+      <fluid_level>0.0</fluid_level>
       <points>
         <point>0.6 -1.03 0</point>
         <point>-1.4 -1.03 0</point>

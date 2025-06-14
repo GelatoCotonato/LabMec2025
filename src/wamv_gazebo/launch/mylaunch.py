@@ -12,29 +12,6 @@ from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
 from launch.actions import IncludeLaunchDescription
 
-def lidar_scan(world_name, model_name, link_name, sensor_name):
-    gz_sensor_prefix="/lidar"
-    ros_sensor_prefix="/lidar_ros"
-    return Bridge(
-        gz_topic=f'{gz_sensor_prefix}/scan',
-        ros_topic=f'{ros_sensor_prefix}/scan',
-        gz_type='gz.msgs.LaserScan',
-        ros_type='sensor_msgs/msg/LaserScan',
-        direction=BridgeDirection.GZ_TO_ROS)
-
-
-def lidar_points(world_name, model_name, link_name, sensor_name):
-
-    gz_sensor_prefix="/lidar"
-    ros_sensor_prefix="/lidar_ros"
-
-    return Bridge(
-        gz_topic=f'{gz_sensor_prefix}/scan/points',
-        ros_topic=f'{ros_sensor_prefix}/scan/points',
-        gz_type='gz.msgs.PointCloudPacked',
-        ros_type='sensor_msgs/msg/PointCloud2',
-        direction=BridgeDirection.GZ_TO_ROS)
-
 def thrust_joint_pos(model_name, side):
     # ROS naming policy indicates that first character of a name must be an alpha
     # character. In the case below, the gz topic has the joint index 0 as the
@@ -91,8 +68,8 @@ def generate_launch_description(world_name="sydney", ign_flag=True):
         name='dynamic_bridge',
         arguments=[
             # LIDAR topics (Gazebo -> ROS)
-            '/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
-            '/scan/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
+            '/wamv/lidar_link/gpu_lidar/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
+            '/wamv/lidar_link/gpu_lidar/scan/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
 
             '/model/wamv/odometry@nav_msgs/msg/Odometry[gz.msgs.Odometry',
 
@@ -113,10 +90,25 @@ def generate_launch_description(world_name="sydney", ign_flag=True):
             '/model/wamv/joint/right_engine_propeller_joint/enable_deadband@std_msgs/msg/Bool]gz.msgs.Boolean',
         
         ],
-        remappings=[('/model/wamv/odometry', '/odom')],
+        remappings=[('/model/wamv/odometry', '/odom'),
+                    ('/wamv/lidar_link/gpu_lidar/scan', 'base_link/scan'),
+                    ('/wamv/lidar_link/gpu_lidar/scan/points', 'base_link/scan/points')
+                    ],
         output='screen'
     )   
 
+    b2 =     Node(
+            package='ros_gz_bridge',
+            executable='parameter_bridge',
+            arguments=[
+                # LIDAR topics (Gazebo -> ROS)
+            '/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
+            '/scan/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
+            ],
+            parameters=[{
+                'frame_id': 'base_link'  # Force this frame_id
+            }]
+        )
     # static_tf = Node(
     #     package='tf2_ros',
     #     executable='static_transform_publisher',
@@ -128,16 +120,29 @@ def generate_launch_description(world_name="sydney", ign_flag=True):
     #     output='screen'
     # )
 
-    static_tf = Node(
-        package='tf2_ros',
-        executable='static_transform_publisher',
-        name='lidar_static_tf',
-        arguments=[
-            '0', '0', '1.5',   # translation: x y z
-            '0', '0', '0',     # rotation: roll pitch yaw
-            'base_link', 'lidar_link'
-        ]
-    )
+    # static_tf = Node(
+    #     package='tf2_ros',
+    #     executable='static_transform_publisher',
+    #     name='lidar_static_tf',
+    #     arguments=[
+    #         '0', '0', '1.5',   # translation: x y z
+    #         '0', '0', '0',     # rotation: roll pitch yaw
+    #         'base_link', 'lidar_link'
+    #     ]
+    # )
+
+    # # Localization Setup (AMCL) useful in a pre-built map 
+    # amcl_node = Node(
+    #     package='nav2_amcl',
+    #     executable='amcl',
+    #     name='amcl',
+    #     parameters=[{
+    #         'use_sim_time': True,
+    #         'odom_frame_id': 'odom',
+    #         'base_frame_id': 'base_link',
+    #         'global_frame_id': 'map'
+    #     }]
+    # )
 
     # Dynamic TF: odom -> base_link
     odom_tf = Node(
@@ -146,35 +151,55 @@ def generate_launch_description(world_name="sydney", ign_flag=True):
         name='odom_to_tf'
     )
 
+
+
+    lidar_tf = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='static_tf_pub_lidar',
+        arguments=['0.77', '0.0', '1.336', '0', '0', '0', 'base_link', 'lidar_link'],
+        output='screen'
+    )
+    
     wamv_param_dir = LaunchConfiguration(
         'wamv_param_dir',
         default=os.path.join(
             get_package_share_directory('wamv_navigation'),
             'param','wamv_config.yaml'))
     
-    ld = LaunchDescription([gz_sim, bridge_node, odom_tf , DeclareLaunchArgument(
+    wamv_param = DeclareLaunchArgument(
             'wamv_param_dir',
             default_value=wamv_param_dir,
-            description='Full path to wam-v parameter file to load')])
-
-
-
-    # Teleop
-    # parameters_file = os.path.join(
-    #     get_package_share_directory('wamv_gazebo'),
-    #     'config', 'wamv.yaml'
-    # )
-    # ld = LaunchDescription([gz_sim, bridge_node, static_tf,
-    #    launch.actions.DeclareLaunchArgument('cmd_vel', default_value='cmd_vel'),
-    #    launch.actions.DeclareLaunchArgument('teleop_config', default_value=parameters_file),
-    # ])
-
-    # ld.add_action(launch_ros.actions.Node(package='joy', executable='joy_node'))
-
-    # ld.add_action(launch_ros.actions.Node(
-    # package='teleop_twist_joy', executable='teleop_node',
-    # parameters=[launch.substitutions.LaunchConfiguration('teleop_config')]))
+            description='Full path to wam-v parameter file to load')
     
+
+    slam_config = os.path.join(
+    get_package_share_directory('wamv_navigation'),
+    'config',
+    'slam_toolbox_params.yaml'
+    )
+
+    # slam_toolbox_node = Node(
+    #     package='slam_toolbox',
+    #     executable='sync_slam_toolbox_node',
+    #     name='slam_toolbox',
+    #     parameters=[slam_config],
+    #     output='screen'
+    # )
+    
+    slam_toolbox_node = Node(
+    package='slam_toolbox',
+    executable='sync_slam_toolbox_node',
+    name='slam_toolbox',
+    parameters=[{
+        'use_sim_time': True,
+        'slam_mode': 'mapping'
+    }],
+    output='screen'
+)
+    
+    ld = LaunchDescription([gz_sim, bridge_node, odom_tf, lidar_tf])
+
     return ld
 
 

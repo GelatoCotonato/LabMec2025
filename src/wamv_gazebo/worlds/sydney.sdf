@@ -24,14 +24,12 @@
         <scene>scene</scene>
         <ambient_light>0.4 0.4 0.4</ambient_light>
         <background_color>0.8 0.8 0.8</background_color>
-        <camera_pose>-478.1 148.2 13.2 0 0.25 2.94</camera_pose>
+        <camera_pose> -10 0 5 0 0.4 0 </camera_pose>
         <camera_clip>
           <near>0.25</near>
           <far>10000</far>
         </camera_clip>
       </plugin>
-
-
 
       <!-- Plugins that add functionality to the scene -->
       <plugin filename="EntityContextMenuPlugin" name="Entity context menu">
@@ -328,8 +326,8 @@
     <spherical_coordinates>
       <surface_model>EARTH_WGS84</surface_model>
       <world_frame_orientation>ENU</world_frame_orientation>
-      <latitude_deg>-33.724223</latitude_deg>
-      <longitude_deg>150.679736</longitude_deg>
+      <latitude_deg>-33.724293</latitude_deg>
+      <longitude_deg>150.679518</longitude_deg>
       <elevation>0.0</elevation>
       <heading_deg>0.0</heading_deg>
     </spherical_coordinates>
@@ -646,10 +644,75 @@
     <include>
       <uri>model://wam-v</uri>
       <name>wamv</name>
-      <pose>-532 180 0 0 0 -1</pose>
+      <pose>0 0 0 0 0 0</pose>
     </include>
 
+    <include>
+      <name>light_buoy_1</name>
+      <pose>80 0 0 0 0 0</pose>
+      <uri>model://light_buoy</uri>
+    </include>
 
+    <include>
+      <name>light_buoy_2</name>
+      <pose>40 0 0 0 0 0</pose>
+      <uri>model://light_buoy</uri>
+    </include>
+
+    <include>
+      <name>mb_marker_buoy_red_1</name>
+      <pose>20 0 0 0 0 0</pose>
+      <uri>model://mb_marker_buoy_red</uri>
+    </include>
+
+    <include>
+      <name>mb_marker_buoy_red_2</name>
+      <pose>20 0 0 0 0 0</pose>
+      <uri>model://mb_marker_buoy_red</uri>
+    </include>
+
+    <include>
+      <name>mb_marker_buoy_black_1</name>
+      <pose>40 20 0 0 0 0</pose>
+      <uri>model://mb_marker_buoy_black</uri>
+    </include>
+
+    <include>
+      <name>mb_marker_buoy_green_1</name>
+      <pose>40 -20 0 0 0 0</pose>
+      <uri>model://mb_marker_buoy_green</uri>
+    </include>
+
+    <include>
+      <name>mb_marker_buoy_white_1</name>
+      <pose>60 0 0 0 0 0</pose>
+      <uri>model://mb_marker_buoy_white</uri>
+    </include>
+
+    <include>
+      <name>mb_round_buoy_orange_1</name>
+      <pose>30 10 0 0 0 0</pose>
+      <uri>model://mb_round_buoy_orange</uri>
+    </include>
+
+    <include>
+      <name>mb_round_buoy_orange_2</name>
+      <pose>50 -10 0 0 0 0</pose>
+      <uri>model://mb_round_buoy_orange</uri>
+    </include>
+    
+    <include>
+      <name>mb_round_buoy_black_1</name>
+      <pose>50 10 0 0 0 0</pose>
+      <uri>model://mb_round_buoy_black</uri>
+    </include>
+
+    <include>
+      <name>mb_round_buoy_black_2</name>
+      <pose>30 -10 0 0 0 0</pose>
+      <uri>model://mb_round_buoy_black</uri>
+    </include>
+    
   </world>
 
 </sdf>

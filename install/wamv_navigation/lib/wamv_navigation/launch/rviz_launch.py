@@ -40,7 +40,7 @@ def generate_launch_description():
 
     declare_rviz_config_file_cmd = DeclareLaunchArgument(
         'rviz_config',
-        default_value=os.path.join(bringup_dir, 'rviz', 'nav2_default_view.rviz'),
+        default_value=os.path.join(bringup_dir, 'config', 'nav2_default_view.rviz'),
         description='Full path to the RVIZ config file to use',
     )
 
@@ -61,7 +61,7 @@ def generate_launch_description():
 
     namespaced_rviz_config_file = ReplaceString(
         source_file=rviz_config_file,
-        replacements={'<robot_namespace>': ('/', namespace)},
+        replacements={'wamv_simulation': ('/', namespace)},
     )
 
     start_namespaced_rviz_cmd = Node(

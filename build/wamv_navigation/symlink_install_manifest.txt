@@ -1,5 +1,9 @@
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/README.md
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/mapper_params.yaml
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/nav2_default_view.rviz
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/nav2_namespaced_view.rviz
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/rviz_vrx_final.rviz
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/rviz_vrx_rsp.rviz
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/slam_toolbox_params.yaml
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/turtlebot3_waffle_bridge.yaml
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/wamv_config.yaml
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/__init__.py
@@ -32,10 +36,6 @@
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_multirobot_params_2.yaml
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_multirobot_params_all.yaml
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_params.yaml
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/nav2_default_view.rviz
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/nav2_namespaced_view.rviz
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/rviz_vrx_final.rviz
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/rviz_vrx_rsp.rviz
 /home/luca002/proj_ws/install/wamv_navigation/share/ament_index/resource_index/package_run_dependencies/wamv_navigation
 /home/luca002/proj_ws/install/wamv_navigation/share/ament_index/resource_index/parent_prefix_path/wamv_navigation
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/environment/ament_prefix_path.sh

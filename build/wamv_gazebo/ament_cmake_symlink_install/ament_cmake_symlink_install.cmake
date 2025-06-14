@@ -352,8 +352,8 @@ ament_cmake_symlink_install_directory("/home/luca002/proj_ws/src/wamv_gazebo" DI
 # install(DIRECTORY "/home/luca002/proj_ws/src/wamv_gazebo/src/wamv_gazebo/" "DESTINATION" "lib/python3.12/site-packages/wamv_gazebo" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 ament_cmake_symlink_install_directory("/home/luca002/proj_ws/src/wamv_gazebo" DIRECTORY "/home/luca002/proj_ws/src/wamv_gazebo/src/wamv_gazebo/" "DESTINATION" "lib/python3.12/site-packages/wamv_gazebo" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
-# install(DIRECTORY "config" "launch" "models" "worlds" "DESTINATION" "share/wamv_gazebo")
-ament_cmake_symlink_install_directory("/home/luca002/proj_ws/src/wamv_gazebo" DIRECTORY "config" "launch" "models" "worlds" "DESTINATION" "share/wamv_gazebo")
+# install(DIRECTORY "launch" "models" "worlds" "DESTINATION" "share/wamv_gazebo")
+ament_cmake_symlink_install_directory("/home/luca002/proj_ws/src/wamv_gazebo" DIRECTORY "launch" "models" "worlds" "DESTINATION" "share/wamv_gazebo")
 
 # install(FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

@@ -2,11 +2,11 @@
 <sdf version="1.6">
   <model name="battery">
     <link name="battery_link">
+      
       <visual name="battery_visual">
-        <pose>0 -1.03 -.45 0 0 0 </pose>
         <geometry>
           <mesh> 
-            <uri>model://battery/mesh/battery.dae</uri>
+            <uri>meshes/battery.dae</uri>
           </mesh>
         </geometry>
       </visual>

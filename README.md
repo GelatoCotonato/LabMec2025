@@ -27,23 +27,36 @@ esempio utile per prendere i modelli: https://github.com/osrf/vrx.git
 7) obstacle avoidance
 8) correzione rotta
 
-
+Command to launch the world and the robot:
 <pre>python3 ~/proj_ws/src/wamv_gazebo/launch/mylaunch.py</pre>
+
+<pre>ros2 launch slam_toolbox online_async_launch.py slam_params_file:=/home/luca002/proj_ws/src/wamv_navigation/config/slam_toolbox_params.yaml
+</pre>
+
 
 <pre>rviz2</pre>
 
 <pre>ros2 run python_node python_publisher</pre>
 
-<pre>ros2 launch slam_toolbox online_async_launch.py \
-  slam_params_file:=~/proj_ws/src/wamv_navigation/config/mapper_params_online_async.yaml \
-  use_sim_time:=true</pre>
-
-Tf:
-<pre>ros2 run tf2_ros static_transform_publisher --x 0.77 --y 1,3 --z 0.035 --roll 0 --pitch 0 --yaw 0 --frame-id base_link --child-frame-id lidar_link</pre>
-
 Tf check:
 <pre>ros2 run tf2_ros tf2_echo base_link lidar_link</pre>
 
-
 Generation of /tf_static topic:
 <pre>ros2 run tf2_tools view_frames</pre>
+
+How to get the params of slam toolbox:
+<pre>ros2 param list /slam_toolbox</pre>
+
+To get the publication rate (Hz) of a topic :
+<pre>ros2 topic hz /name_of_topic</pre>
+
+STEPS for SIMULATION:
+1. Launch Gazebo with World
+2. Define Robot Parameters
+3. Launch Gazebo with Boat   
+4. Launch Bridges <pre>python3 ~/proj_ws/src/wamv_gazebo/launch/mylaunch.py</pre>
+5. Launch Subscription Node to receive /odom in order to publish /tf 
+5. Define SLAM Toolbox Config Parameters (yaml)
+6. Launch SLAM Toolbox
+7. Launch RViz
+8. Launch Teleop

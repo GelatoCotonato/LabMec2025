@@ -31,12 +31,12 @@ install(
   FILES_MATCHING PATTERN "*.py"
 )
 
-install(
-  DIRECTORY
-    ${CMAKE_CURRENT_SOURCE_DIR}/
-  DESTINATION share/${PROJECT_NAME}
-  FILES_MATCHING PATTERN "*.py"
-)
+# install(
+#   DIRECTORY
+#     ${CMAKE_CURRENT_SOURCE_DIR}/
+#   DESTINATION share/${PROJECT_NAME}
+#   FILES_MATCHING PATTERN "*.py"
+# )
 
 # CMake config files 
 install(DIRECTORY 
@@ -44,7 +44,6 @@ install(DIRECTORY
   launch
   maps
   params
-  rviz
   DESTINATION share/${PROJECT_NAME}
 )
 
