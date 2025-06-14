@@ -6,7 +6,7 @@
 
 
     <static>false</static>
-    
+
     <link name="base_link">
       <enable_wind>true</enable_wind>
       <inertial>
@@ -109,7 +109,10 @@
           <izz>0.078125</izz>
         </inertia>
       </inertial>
+
     </link>
+
+
 
     <link name="left_propeller_link">
       <pose>-2.651932 1.027135 -0.191134 0 0 0</pose>
@@ -479,50 +482,46 @@
       <child>tripod_ring_link</child>
     </joint>
 
-
-  <!--LIDAR-->
-    
-    
-
-  <link name="lidar_link">
-    <pose relative_to="tripod_ring_link">0 0 0.227 0 0 0</pose>
-    <!--<pose relative_to="__attached__">0.77 0 1.537 0 0 0</pose> -->
-    <inertial>
-      <mass>0.83</mass>
-      <inertia>
-        <ixx>0.001</ixx>
-        <ixy>0</ixy>
-        <ixz>0</ixz>
-        <iyy>0.001</iyy>
-        <iyz>0</iyz>
-        <izz>0.001</izz>
-      </inertia>
-    </inertial>
+    <!--LIDAR-->
+    <link name="lidar_link">
+      <pose relative_to="tripod_ring_link">0 0 0.227 0 0 0</pose>
+      <!--<pose relative_to="__attached__">0.77 0 1.537 0 0 0</pose> -->
+      <inertial>
+        <mass>0.83</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
       
-    <collision name="lidar_collision">
-      <pose>0 0 0.036 0 0 0</pose>
-      <geometry>
-        <cylinder>
-          <radius>0.0515</radius>
-          <length>0.072</length>
-        </cylinder>
-      </geometry>
-    </collision>
-
-    <visual name="lidar_visual">
-      <geometry>
-        <mesh>
-          <uri>meshes/lidar_3d_v1.dae</uri>
-        </mesh>
-      </geometry>
-    </visual>
-
-    <sensor name="gpu_lidar" type="gpu_ray">
-
+      <collision name="lidar_collision">
         <pose>0 0 0.036 0 0 0</pose>
-        <update_rate>20</update_rate>
+        <geometry>
+          <cylinder>
+            <radius>0.0515</radius>
+            <length>0.072</length>
+          </cylinder>
+        </geometry>
+      </collision>
 
-        <topic>wamv/lidar_link/gpu_lidar/scan</topic>
+      <visual name="lidar_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/lidar_3d_v1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <sensor name="gpu_lidar" type="gpu_lidar">
+
+        <pose>0 0 0.036 0 0.139626 0</pose>
+        <update_rate>10</update_rate>
+        <topic>scan</topic>
+        <gz_frame_id>base_link</gz_frame_id>
 
         <ray>
           <scan>
@@ -556,10 +555,10 @@
     </link>
   
     <joint name="lidar_joint" type="fixed">
-      <parent>base_link</parent>
+      <parent>tripod_ring_link</parent>
       <child>lidar_link</child>
     </joint>
-
+   
     <plugin
       filename="gz-sim-thruster-system"
       name="gz::sim::systems::Thruster">
@@ -650,13 +649,26 @@
       <nAbsR>0.0</nAbsR>
     </plugin> 
     
-    <plugin
-        filename="libignition-gazebo-odometry-publisher-system.so"
+    <!-- <plugin filename="libignition-gazebo-odometry-publisher-system.so"
         name="ignition::gazebo::systems::OdometryPublisher">
-      <odom_topic>/model/wamv/odometry</odom_topic>
+
+      <odom_topic>/odom</odom_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id></child_frame_id>
       <world_frame>odom</world_frame>
       <robot_base_frame>base_link</robot_base_frame>
+    </plugin> -->
+
+
+    <plugin name="gz::sim::systems::OdometryPublisher" filename="libgz-sim-odometry-publisher-system.so">
+      <odom_topic>odom</odom_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_link</child_frame_id>
+      <tf_topic>tf</tf_topic>
+      <publish_tf>true</publish_tf>
+      <odom_publish_frequency>30</odom_publish_frequency>
     </plugin>
+
 
   </model>
 

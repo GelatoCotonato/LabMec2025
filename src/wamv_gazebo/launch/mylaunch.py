@@ -68,10 +68,12 @@ def generate_launch_description(world_name="sydney", ign_flag=True):
         name='dynamic_bridge',
         arguments=[
             # LIDAR topics (Gazebo -> ROS)
-            '/wamv/lidar_link/gpu_lidar/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
-            '/wamv/lidar_link/gpu_lidar/scan/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
+            '/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
+            '/scan/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
 
-            '/model/wamv/odometry@nav_msgs/msg/Odometry[gz.msgs.Odometry',
+            # (Gazebo -> ROS)
+            '/odom@nav_msgs/msg/Odometry[gz.msgs.Odometry',
+            '/tf@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V',
 
             # Angular velocity readings (Gazebo -> ROS)
             '/model/wamv/joint/left_engine_propeller_joint/ang_vel@std_msgs/msg/Float64[gz.msgs.Double',
@@ -90,10 +92,9 @@ def generate_launch_description(world_name="sydney", ign_flag=True):
             '/model/wamv/joint/right_engine_propeller_joint/enable_deadband@std_msgs/msg/Bool]gz.msgs.Boolean',
         
         ],
-        remappings=[('/model/wamv/odometry', '/odom'),
-                    ('/wamv/lidar_link/gpu_lidar/scan', 'base_link/scan'),
-                    ('/wamv/lidar_link/gpu_lidar/scan/points', 'base_link/scan/points')
-                    ],
+        # remappings=[('/wamv/lidar_link/gpu_lidar/scan', '/wamv/base_link/scan'),
+        #             ('/wamv/lidar_link/gpu_lidar/scan/points', '/wamv/base_link/scan/points')
+        #             ],
         output='screen'
     )   
 
@@ -179,26 +180,26 @@ def generate_launch_description(world_name="sydney", ign_flag=True):
     'slam_toolbox_params.yaml'
     )
 
-    # slam_toolbox_node = Node(
-    #     package='slam_toolbox',
-    #     executable='sync_slam_toolbox_node',
-    #     name='slam_toolbox',
-    #     parameters=[slam_config],
-    #     output='screen'
-    # )
-    
     slam_toolbox_node = Node(
-    package='slam_toolbox',
-    executable='sync_slam_toolbox_node',
-    name='slam_toolbox',
-    parameters=[{
-        'use_sim_time': True,
-        'slam_mode': 'mapping'
-    }],
-    output='screen'
-)
+        package='slam_toolbox',
+        executable='sync_slam_toolbox_node',
+        name='slam_toolbox',
+        parameters=[slam_config],
+        output='screen'
+    )
     
-    ld = LaunchDescription([gz_sim, bridge_node, odom_tf, lidar_tf])
+#     slam_toolbox_node = Node(
+#     package='slam_toolbox',
+#     executable='sync_slam_toolbox_node',
+#     name='slam_toolbox',
+#     parameters=[{
+#         'use_sim_time': True,
+#         'slam_mode': 'mapping'
+#     }],
+#     output='screen'
+# )
+    
+    ld = LaunchDescription([gz_sim, bridge_node])
 
     return ld
 
