@@ -4,8 +4,9 @@
   <!-- Basic model of the 16' WAM-V USV -->
   <model name="wamv">
 
-
     <static>false</static>
+
+    <link name="base_footprint" />
 
     <link name="base_link">
       <enable_wind>true</enable_wind>
@@ -109,10 +110,12 @@
           <izz>0.078125</izz>
         </inertia>
       </inertial>
-
     </link>
 
-
+    <joint name="base_footprint_joint" type="fixed">
+      <parent>base_footprint</parent>
+      <child>base_link</child>
+    </joint>
 
     <link name="left_propeller_link">
       <pose>-2.651932 1.027135 -0.191134 0 0 0</pose>
@@ -519,9 +522,9 @@
       <sensor name="gpu_lidar" type="gpu_lidar">
 
         <pose>0 0 0.036 0 0.139626 0</pose>
-        <update_rate>10</update_rate>
+        <update_rate>5</update_rate>
         <topic>scan</topic>
-        <gz_frame_id>base_link</gz_frame_id>
+        <gz_frame_id>wamv/base_footprint</gz_frame_id>
 
         <ray>
           <scan>
@@ -663,8 +666,8 @@
     <plugin name="gz::sim::systems::OdometryPublisher" filename="libgz-sim-odometry-publisher-system.so">
       <odom_topic>odom</odom_topic>
       <frame_id>odom</frame_id>
-      <child_frame_id>base_link</child_frame_id>
-      <tf_topic>tf</tf_topic>
+      <child_frame_id>base_footprint</child_frame_id>
+      <tf_topic>/tf</tf_topic>
       <publish_tf>true</publish_tf>
       <odom_publish_frequency>30</odom_publish_frequency>
     </plugin>

@@ -11,6 +11,7 @@ from bridge import Bridge, BridgeDirection
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
 from launch.actions import IncludeLaunchDescription
+import subprocess
 
 def thrust_joint_pos(model_name, side):
     # ROS naming policy indicates that first character of a name must be an alpha
@@ -98,18 +99,6 @@ def generate_launch_description(world_name="sydney", ign_flag=True):
         output='screen'
     )   
 
-    b2 =     Node(
-            package='ros_gz_bridge',
-            executable='parameter_bridge',
-            arguments=[
-                # LIDAR topics (Gazebo -> ROS)
-            '/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
-            '/scan/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
-            ],
-            parameters=[{
-                'frame_id': 'base_link'  # Force this frame_id
-            }]
-        )
     # static_tf = Node(
     #     package='tf2_ros',
     #     executable='static_transform_publisher',
@@ -198,7 +187,13 @@ def generate_launch_description(world_name="sydney", ign_flag=True):
 #     }],
 #     output='screen'
 # )
-    
+    command = "ros2 run python_node python_publisher"
+
+    # Open a new terminal and run the command
+    subprocess.Popen([
+        "gnome-terminal", "--", "bash", "-c", f"{command}; exec bash"
+    ])
+
     ld = LaunchDescription([gz_sim, bridge_node])
 
     return ld

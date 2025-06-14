@@ -36,6 +36,7 @@ Command to launch the world and the robot:
 
 <pre>rviz2</pre>
 
+To move the boat:
 <pre>ros2 run python_node python_publisher</pre>
 
 Tf check:
