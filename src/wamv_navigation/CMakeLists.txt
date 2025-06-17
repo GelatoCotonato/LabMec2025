@@ -44,6 +44,8 @@ install(DIRECTORY
   launch
   maps
   params
+  rviz
+  description
   DESTINATION share/${PROJECT_NAME}
 )
 

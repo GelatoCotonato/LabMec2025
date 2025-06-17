@@ -1,9 +1,6 @@
 import rclpy
 from rclpy.node import Node
-
-from std_msgs.msg import String, Bool
-from geometry_msgs.msg import Pose
-
+from std_msgs.msg import Bool
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float64
@@ -27,7 +24,9 @@ class PythonPublisher(Node):
             '/wamv/left/thruster/joint/cmd_pos', 10)
         self.right_angle_pub = self.create_publisher(Float64,
             '/wamv/right/thruster/joint/cmd_pos', 10)
-
+        self.enable_deadband_pub = self.create_publisher(Bool,
+            '/model/wamv/joint/right_engine_propeller_joint/enable_deadband', 10)
+        
         # Initial values
         self.thrust = 0.0
         self.angle = 0.0
@@ -37,6 +36,9 @@ class PythonPublisher(Node):
         self.period = self.get_parameter("timer_period").get_parameter_value().double_value
         self.timer = self.create_timer(self.period, self.listen_to_keyboard)
 
+        deadband_msg = Bool()
+        deadband_msg.data = True
+        self.enable_deadband_pub.publish(deadband_msg)
         self.get_logger().info("Keyboard controller ready. Use W/A/S/D to move. Q to quit.")
 
     def listen_to_keyboard(self):
@@ -50,9 +52,9 @@ class PythonPublisher(Node):
         elif key == 'x':
             self.thrust = 0.0
         elif key == 'a':
-            self.angle += 0.1
-        elif key == 'd':
             self.angle -= 0.1
+        elif key == 'd':
+            self.angle += 0.1
         elif key == 'q':
             self.angle = 0.5  # sharp left
         elif key == 'e':

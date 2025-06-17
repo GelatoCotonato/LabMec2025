@@ -1,0 +1,1142 @@
+[0.000000] (-) TimerEvent: {}
+[0.000171] (python_node) JobQueued: {'identifier': 'python_node', 'dependencies': OrderedDict()}
+[0.000191] (wamv_gazebo) JobQueued: {'identifier': 'wamv_gazebo', 'dependencies': OrderedDict()}
+[0.000202] (wamv_navigation) JobQueued: {'identifier': 'wamv_navigation', 'dependencies': OrderedDict()}
+[0.000406] (python_node) JobStarted: {'identifier': 'python_node'}
+[0.005468] (wamv_gazebo) JobStarted: {'identifier': 'wamv_gazebo'}
+[0.008195] (wamv_navigation) JobStarted: {'identifier': 'wamv_navigation'}
+[0.099965] (-) TimerEvent: {}
+[0.168669] (wamv_gazebo) JobProgress: {'identifier': 'wamv_gazebo', 'progress': 'cmake'}
+[0.168951] (wamv_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/luca002/proj_ws/src/wamv_gazebo', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install/wamv_gazebo'], 'cwd': '/home/luca002/proj_ws/build/wamv_gazebo', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/home/luca002/proj_ws/src/wamv_gazebo/models', 'USER': 'luca002', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/luca002/ros_ws/install/auv_control/lib:/home/luca002/ros_ws/install/thruster_manager/lib:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/luca002/ros_ws/install/dynamixel_sdk/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/luca002', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.101.0', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2454', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2928', 'BUNDLED_DEBUGPY_PATH': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '200617', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/luca002/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luca002', 'JOURNAL_STREAM': '9:28678', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'luca002', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/luca002/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/luca002/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/luca002/.local/bin:/home/luca002/.local/bin:/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/luke:@/tmp/.ICE-unix/2886,unix/luke:/tmp/.ICE-unix/2886', 'INVOCATION_ID': 'eb50163f92b74748967848669b52c3cb', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-4163fee7d3074f91.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-672260eb09.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '22', 'AMENT_PREFIX_PATH': '/home/luca002/ros_ws/install/bluerov2_control:/home/luca002/ros_ws/install/auv_control:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/robot_description_example:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/dynamixel_sdk_examples:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'GSK_RENDERER': 'gl', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/luca002/proj_ws/build/wamv_gazebo', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luca002/ros_ws/install/auv_control/lib/python3.12/site-packages:/home/luca002/ros_ws/build/robot_description_example:/home/luca002/ros_ws/install/robot_description_example/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/luca002/ros_ws/install/bluerov2_control:/home/luca002/ros_ws/install/auv_control:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/dynamixel_sdk_examples:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/luca002/ros_ws/install/robot_description_example:/opt/ros/jazzy'}), 'shell': False}
+[0.171555] (wamv_navigation) JobProgress: {'identifier': 'wamv_navigation', 'progress': 'cmake'}
+[0.171954] (wamv_navigation) Command: {'cmd': ['/usr/bin/cmake', '/home/luca002/proj_ws/src/wamv_navigation', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install/wamv_navigation'], 'cwd': '/home/luca002/proj_ws/build/wamv_navigation', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/home/luca002/proj_ws/src/wamv_gazebo/models', 'USER': 'luca002', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/luca002/ros_ws/install/auv_control/lib:/home/luca002/ros_ws/install/thruster_manager/lib:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/luca002/ros_ws/install/dynamixel_sdk/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/luca002', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.101.0', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2454', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2928', 'BUNDLED_DEBUGPY_PATH': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '200617', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/luca002/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luca002', 'JOURNAL_STREAM': '9:28678', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'luca002', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/luca002/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/luca002/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/luca002/.local/bin:/home/luca002/.local/bin:/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/luke:@/tmp/.ICE-unix/2886,unix/luke:/tmp/.ICE-unix/2886', 'INVOCATION_ID': 'eb50163f92b74748967848669b52c3cb', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-4163fee7d3074f91.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-672260eb09.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '22', 'AMENT_PREFIX_PATH': '/home/luca002/ros_ws/install/bluerov2_control:/home/luca002/ros_ws/install/auv_control:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/robot_description_example:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/dynamixel_sdk_examples:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'GSK_RENDERER': 'gl', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/luca002/proj_ws/build/wamv_navigation', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luca002/ros_ws/install/auv_control/lib/python3.12/site-packages:/home/luca002/ros_ws/build/robot_description_example:/home/luca002/ros_ws/install/robot_description_example/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/luca002/ros_ws/install/bluerov2_control:/home/luca002/ros_ws/install/auv_control:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/dynamixel_sdk_examples:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/luca002/ros_ws/install/robot_description_example:/opt/ros/jazzy'}), 'shell': False}
+[0.200074] (-) TimerEvent: {}
+[0.214883] (wamv_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.215156] (wamv_navigation) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.256058] (wamv_navigation) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.256235] (wamv_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.268307] (wamv_navigation) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.268430] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300182] (-) TimerEvent: {}
+[0.331548] (wamv_navigation) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.331719] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.337918] (wamv_navigation) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.338045] (wamv_navigation) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.338468] (wamv_navigation) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.341821] (wamv_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.342027] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.342368] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.345312] (wamv_navigation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.348622] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400280] (-) TimerEvent: {}
+[0.414954] (wamv_navigation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.416273] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.423342] (wamv_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.423497] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.423933] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.427263] (wamv_navigation) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.427417] (wamv_navigation) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.427785] (wamv_navigation) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.431425] (wamv_navigation) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.431478] (wamv_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.500388] (-) TimerEvent: {}
+[0.566890] (wamv_navigation) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.567171] (wamv_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.600628] (-) TimerEvent: {}
+[0.650390] (wamv_gazebo) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.650605] (wamv_navigation) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.692103] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sim8 -- found version 8.9.0\n'}
+[0.692691] (python_node) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/luca002/proj_ws/build/python_node/build', '--no-deps', 'symlink_data'], 'cwd': '/home/luca002/proj_ws/build/python_node', 'env': {'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/home/luca002/proj_ws/src/wamv_gazebo/models', 'USER': 'luca002', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/luca002/ros_ws/install/auv_control/lib:/home/luca002/ros_ws/install/thruster_manager/lib:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/luca002/ros_ws/install/dynamixel_sdk/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/luca002', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.101.0', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2454', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2928', 'BUNDLED_DEBUGPY_PATH': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '200617', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/luca002/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luca002', 'JOURNAL_STREAM': '9:28678', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'luca002', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/luca002/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/luca002/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/luca002/.local/bin:/home/luca002/.local/bin:/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/luke:@/tmp/.ICE-unix/2886,unix/luke:/tmp/.ICE-unix/2886', 'INVOCATION_ID': 'eb50163f92b74748967848669b52c3cb', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-4163fee7d3074f91.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-672260eb09.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '22', 'AMENT_PREFIX_PATH': '/home/luca002/ros_ws/install/bluerov2_control:/home/luca002/ros_ws/install/auv_control:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/robot_description_example:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/dynamixel_sdk_examples:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'GSK_RENDERER': 'gl', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/luca002/proj_ws/build/python_node', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luca002/proj_ws/build/python_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luca002/proj_ws/install/python_node/lib/python3.12/site-packages:/home/luca002/ros_ws/install/auv_control/lib/python3.12/site-packages:/home/luca002/ros_ws/build/robot_description_example:/home/luca002/ros_ws/install/robot_description_example/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/luca002/ros_ws/install/bluerov2_control:/home/luca002/ros_ws/install/auv_control:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/dynamixel_sdk_examples:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[0.693996] (wamv_navigation) StdoutLine: {'line': b'-- Found nav2_common: 1.3.6 (/opt/ros/jazzy/share/nav2_common/cmake)\n'}
+[0.696347] (wamv_navigation) StdoutLine: {'line': b'-- Found ros_gz_bridge: 1.0.12 (/opt/ros/jazzy/share/ros_gz_bridge/cmake)\n'}
+[0.699882] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sim8\n'}
+[0.700654] (-) TimerEvent: {}
+[0.701087] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.7.0\n'}
+[0.701213] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of sdformat14\n'}
+[0.705329] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[0.716750] (wamv_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 10.0.0\n'}
+[0.741038] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[0.741221] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[0.742681] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.742935] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[0.744492] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.744698] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[0.744821] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-utils2> component [cli]\n'}
+[0.746233] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2-cli -- found version 2.2.1\n'}
+[0.746332] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2-cli\n'}
+[0.748780] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[0.748937] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[0.749062] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.749683] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [loader]\n'}
+[0.750833] (wamv_navigation) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.751083] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2-loader -- found version 2.0.4\n'}
+[0.751207] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-loader\n'}
+[0.751803] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [register]\n'}
+[0.753242] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2-register -- found version 2.0.4\n'}
+[0.753350] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-register\n'}
+[0.755235] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.4.1\n'}
+[0.755371] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13\n'}
+[0.766279] (wamv_navigation) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.784668] (wamv_navigation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.800771] (-) TimerEvent: {}
+[0.804267] (wamv_navigation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.847802] (wamv_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.21.12") \n'}
+[0.856769] (wamv_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[0.859905] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[0.869016] (wamv_gazebo) StdoutLine: {'line': b'--   Found libzmq, version 4.3.5\n'}
+[0.886120] (wamv_navigation) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.890086] (wamv_navigation) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.893606] (wamv_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[0.897495] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[0.900834] (-) TimerEvent: {}
+[0.906496] (wamv_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.39.3\n'}
+[0.929837] (wamv_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[0.930061] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.931992] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[0.932130] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-msgs10\n'}
+[0.945927] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.946175] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[0.946654] (python_node) StdoutLine: {'line': b'running develop\n'}
+[0.951842] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-transport13> component [log]\n'}
+[0.953212] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13-log -- found version 13.4.1\n'}
+[0.953336] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13-log\n'}
+[0.953956] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-transport13> component [parameters]\n'}
+[0.955291] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13-parameters -- found version 13.4.1\n'}
+[0.955489] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13-parameters\n'}
+[0.956379] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[0.957880] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[0.958001] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[0.958303] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.958870] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.959200] (wamv_navigation) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[0.960007] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.960962] (wamv_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[0.965853] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [av]\n'}
+[0.967384] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-av -- found version 5.7.1\n'}
+[0.967546] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-av\n'}
+[0.970736] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[0.975976] (wamv_navigation) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[0.980032] (wamv_gazebo) StdoutLine: {'line': b'--   Found libswscale, version 7.5.100\n'}
+[0.992390] (wamv_navigation) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.000915] (-) TimerEvent: {}
+[1.001482] (wamv_gazebo) StdoutLine: {'line': b'-- Found SWSCALE: TRUE  \n'}
+[1.005956] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[1.022141] (wamv_gazebo) StdoutLine: {'line': b'--   Found libavdevice, version 60.3.100\n'}
+[1.063467] (wamv_gazebo) StdoutLine: {'line': b'-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") \n'}
+[1.068853] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[1.082957] (wamv_gazebo) StdoutLine: {'line': b'--   Found libavformat, version 60.16.100\n'}
+[1.101064] (-) TimerEvent: {}
+[1.115514] (wamv_gazebo) StdoutLine: {'line': b'-- Found AVFORMAT: TRUE  \n'}
+[1.121380] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[1.122209] (python_node) StdoutLine: {'line': b'running egg_info\n'}
+[1.122347] (python_node) StdoutLine: {'line': b'creating python_node.egg-info\n'}
+[1.135446] (wamv_gazebo) StdoutLine: {'line': b'--   Found libavcodec, version 60.31.102\n'}
+[1.141286] (python_node) StdoutLine: {'line': b'writing python_node.egg-info/PKG-INFO\n'}
+[1.141625] (python_node) StdoutLine: {'line': b'writing dependency_links to python_node.egg-info/dependency_links.txt\n'}
+[1.141774] (python_node) StdoutLine: {'line': b'writing entry points to python_node.egg-info/entry_points.txt\n'}
+[1.141921] (python_node) StdoutLine: {'line': b'writing requirements to python_node.egg-info/requires.txt\n'}
+[1.142030] (python_node) StdoutLine: {'line': b'writing top-level names to python_node.egg-info/top_level.txt\n'}
+[1.142112] (python_node) StdoutLine: {'line': b"writing manifest file 'python_node.egg-info/SOURCES.txt'\n"}
+[1.144072] (wamv_navigation) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.150073] (wamv_navigation) StdoutLine: {'line': b'-- Searching for dependencies of gz-msgs10\n'}
+[1.165369] (wamv_gazebo) StdoutLine: {'line': b'-- Found AVCODEC: TRUE  \n'}
+[1.170827] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[1.177938] (python_node) StdoutLine: {'line': b"reading manifest file 'python_node.egg-info/SOURCES.txt'\n"}
+[1.178482] (python_node) StdoutLine: {'line': b"writing manifest file 'python_node.egg-info/SOURCES.txt'\n"}
+[1.184735] (wamv_gazebo) StdoutLine: {'line': b'--   Found libavutil, version 58.29.100\n'}
+[1.201256] (-) TimerEvent: {}
+[1.217613] (wamv_gazebo) StdoutLine: {'line': b'-- Found AVUTIL: TRUE  \n'}
+[1.218865] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[1.221371] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-events -- found version 5.7.1\n'}
+[1.221730] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-events\n'}
+[1.221938] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.222968] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[1.225210] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-graphics -- found version 5.7.1\n'}
+[1.225418] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-graphics\n'}
+[1.225620] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.231216] (wamv_gazebo) StdoutLine: {'line': b'-- Found GzAssimp: TRUE (found version "5.3.0") \n'}
+[1.231964] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [io]\n'}
+[1.234087] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-io -- found version 5.7.1\n'}
+[1.234258] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-io\n'}
+[1.234900] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [profiler]\n'}
+[1.237018] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-profiler -- found version 5.7.1\n'}
+[1.237284] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-profiler\n'}
+[1.240515] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-fuel_tools9 -- found version 9.1.1\n'}
+[1.240699] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-fuel_tools9\n'}
+[1.254945] (python_node) StdoutLine: {'line': b'running build_ext\n'}
+[1.255212] (python_node) StdoutLine: {'line': b'Creating /home/luca002/proj_ws/install/python_node/lib/python3.12/site-packages/python-node.egg-link (link to .)\n'}
+[1.256490] (python_node) StdoutLine: {'line': b'Installing odom_to_tf script to /home/luca002/proj_ws/install/python_node/lib/python_node\n'}
+[1.256766] (python_node) StdoutLine: {'line': b'Installing python_publisher script to /home/luca002/proj_ws/install/python_node/lib/python_node\n'}
+[1.256864] (python_node) StdoutLine: {'line': b'Installing python_subscriber script to /home/luca002/proj_ws/install/python_node/lib/python_node\n'}
+[1.257037] (python_node) StdoutLine: {'line': b'Installing thruster_controller script to /home/luca002/proj_ws/install/python_node/lib/python_node\n'}
+[1.257228] (python_node) StdoutLine: {'line': b'\n'}
+[1.257306] (python_node) StdoutLine: {'line': b'Installed /home/luca002/proj_ws/build/python_node\n'}
+[1.257383] (python_node) StdoutLine: {'line': b'running symlink_data\n'}
+[1.257490] (python_node) StdoutLine: {'line': b'creating /home/luca002/proj_ws/install/python_node/share/ament_index\n'}
+[1.257570] (python_node) StdoutLine: {'line': b'creating /home/luca002/proj_ws/install/python_node/share/ament_index/resource_index\n'}
+[1.257636] (python_node) StdoutLine: {'line': b'creating /home/luca002/proj_ws/install/python_node/share/ament_index/resource_index/packages\n'}
+[1.257855] (python_node) StdoutLine: {'line': b'symbolically linking /home/luca002/proj_ws/build/python_node/resource/python_node -> /home/luca002/proj_ws/install/python_node/share/ament_index/resource_index/packages\n'}
+[1.257977] (python_node) StdoutLine: {'line': b'symbolically linking /home/luca002/proj_ws/build/python_node/package.xml -> /home/luca002/proj_ws/install/python_node/share/python_node\n'}
+[1.258053] (python_node) StdoutLine: {'line': b'creating /home/luca002/proj_ws/install/python_node/share/python_node/launch\n'}
+[1.258130] (python_node) StdoutLine: {'line': b'symbolically linking /home/luca002/proj_ws/build/python_node/launch/test.launch.yaml -> /home/luca002/proj_ws/install/python_node/share/python_node/launch\n'}
+[1.258201] (python_node) StdoutLine: {'line': b'creating /home/luca002/proj_ws/install/python_node/share/python_node/config\n'}
+[1.258298] (python_node) StdoutLine: {'line': b'symbolically linking /home/luca002/proj_ws/build/python_node/config/python_node.config.yaml -> /home/luca002/proj_ws/install/python_node/share/python_node/config\n'}
+[1.287706] (wamv_navigation) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.21.12") \n'}
+[1.291609] (wamv_navigation) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.292176] (wamv_navigation) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[1.294861] (wamv_navigation) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.295260] (wamv_navigation) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[1.295424] (wamv_navigation) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.301465] (-) TimerEvent: {}
+[1.303149] (wamv_navigation) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[1.323657] (wamv_navigation) StdoutLine: {'line': b'--   Found tinyxml2, version 10.0.0\n'}
+[1.360890] (wamv_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "8.5.0")  \n'}
+[1.375447] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[1.379749] (wamv_navigation) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.4.1\n'}
+[1.380076] (wamv_navigation) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13\n'}
+[1.397103] (wamv_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[1.401572] (-) TimerEvent: {}
+[1.417411] (python_node) CommandEnded: {'returncode': 0}
+[1.424933] (wamv_navigation) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.431492] (python_node) JobEnded: {'identifier': 'python_node', 'rc': 0}
+[1.433098] (wamv_navigation) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.451435] (wamv_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[1.462435] (wamv_navigation) StdoutLine: {'line': b'--   Found libzmq, version 4.3.5\n'}
+[1.469937] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'yaml-0.1'\n"}
+[1.487671] (wamv_gazebo) StdoutLine: {'line': b'--   Found yaml-0.1, version 0.2.5\n'}
+[1.501969] (-) TimerEvent: {}
+[1.521499] (wamv_navigation) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.525409] (wamv_gazebo) StdoutLine: {'line': b'-- Found YAML: TRUE  \n'}
+[1.533929] (wamv_navigation) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.534794] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[1.556403] (wamv_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[1.558747] (wamv_navigation) StdoutLine: {'line': b'--   Found uuid, version 2.39.3\n'}
+[1.597020] (wamv_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[1.597550] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.597855] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.597999] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.598339] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.598495] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.598608] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.599971] (wamv_navigation) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.600508] (wamv_navigation) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.600756] (wamv_navigation) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[1.600928] (wamv_navigation) StdoutLine: {'line': b'-- Searching for <gz-utils2> component [cli]\n'}
+[1.601972] (-) TimerEvent: {}
+[1.603501] (wamv_navigation) StdoutLine: {'line': b'-- Looking for gz-utils2-cli -- found version 2.2.1\n'}
+[1.603682] (wamv_navigation) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2-cli\n'}
+[1.604382] (wamv_navigation) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.609158] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [testing]\n'}
+[1.611789] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-testing -- found version 5.7.1\n'}
+[1.612187] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-testing\n'}
+[1.613762] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.614079] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.617526] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-gui8 -- found version 8.4.0\n'}
+[1.617913] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-gui8\n'}
+[1.648860] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.649376] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.649457] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.649679] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.650133] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.4.1\n'}
+[1.652059] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.2\n'}
+[1.652167] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering8\n'}
+[1.652506] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.652609] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[1.652912] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.653019] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-math7> component [eigen3]\n'}
+[1.655763] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7-eigen3 -- found version 7.5.2\n'}
+[1.656060] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7-eigen3\n'}
+[1.667750] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.668030] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.668131] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.668244] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.668301] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.677709] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[1.678231] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[1.678327] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [geospatial]\n'}
+[1.680045] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-geospatial -- found version 5.7.1\n'}
+[1.680252] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-geospatial\n'}
+[1.680519] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.680987] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.682179] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.682291] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[1.682492] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.682638] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [all]\n'}
+[1.685039] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for all libraries of gz-plugin2 -- found version 2.0.4\n'}
+[1.685567] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.686720] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.699752] (wamv_gazebo) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL \n'}
+[1.702125] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.702500] (-) TimerEvent: {}
+[1.738529] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics7 -- found version 7.5.0\n'}
+[1.738741] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7\n'}
+[1.738912] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.739160] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.739406] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.739664] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.740860] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [heightmap]\n'}
+[1.743424] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics7-heightmap -- found version 7.5.0\n'}
+[1.743885] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-heightmap\n'}
+[1.744131] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.745525] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [mesh]\n'}
+[1.747329] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics7-mesh -- found version 7.5.0\n'}
+[1.747557] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-mesh\n'}
+[1.747792] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.748702] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [sdf]\n'}
+[1.750335] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics7-sdf -- found version 7.5.0\n'}
+[1.750528] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-sdf\n'}
+[1.750947] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.7.0\n'}
+[1.753439] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.753572] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8\n'}
+[1.775895] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.776270] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.776971] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.4.1\n'}
+[1.777232] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.2\n'}
+[1.777528] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.777937] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.7.0\n'}
+[1.779111] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [air_pressure]\n'}
+[1.780696] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-air_pressure -- found version 8.2.2\n'}
+[1.780958] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-air_pressure\n'}
+[1.781959] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [air_speed]\n'}
+[1.784154] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-air_speed -- found version 8.2.2\n'}
+[1.784366] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-air_speed\n'}
+[1.784988] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [altimeter]\n'}
+[1.786276] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-altimeter -- found version 8.2.2\n'}
+[1.786473] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-altimeter\n'}
+[1.787190] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [imu]\n'}
+[1.788611] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-imu -- found version 8.2.2\n'}
+[1.788859] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-imu\n'}
+[1.789535] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [force_torque]\n'}
+[1.791171] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-force_torque -- found version 8.2.2\n'}
+[1.791256] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-force_torque\n'}
+[1.791990] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [logical_camera]\n'}
+[1.793517] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-logical_camera -- found version 8.2.2\n'}
+[1.793619] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-logical_camera\n'}
+[1.794600] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [magnetometer]\n'}
+[1.796226] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-magnetometer -- found version 8.2.2\n'}
+[1.796319] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-magnetometer\n'}
+[1.797090] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [navsat]\n'}
+[1.798277] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-navsat -- found version 8.2.2\n'}
+[1.798363] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-navsat\n'}
+[1.799129] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [dvl]\n'}
+[1.800450] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-dvl -- found version 8.2.2\n'}
+[1.800525] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-dvl\n'}
+[1.800952] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.801103] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8\n'}
+[1.802594] (-) TimerEvent: {}
+[1.825530] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.825952] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.826030] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.4.1\n'}
+[1.826335] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.2\n'}
+[1.826698] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.827006] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.7.0\n'}
+[1.827172] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rendering]\n'}
+[1.829169] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-rendering -- found version 8.2.2\n'}
+[1.829405] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-rendering\n'}
+[1.831495] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rendering]\n'}
+[1.831543] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [lidar]\n'}
+[1.833373] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-lidar -- found version 8.2.2\n'}
+[1.833496] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-lidar\n'}
+[1.833835] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.834916] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [gpu_lidar]\n'}
+[1.836839] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-gpu_lidar -- found version 8.2.2\n'}
+[1.836951] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-gpu_lidar\n'}
+[1.837341] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.838279] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [camera]\n'}
+[1.839712] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-camera -- found version 8.2.2\n'}
+[1.839903] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-camera\n'}
+[1.840364] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.841427] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [boundingbox_camera]\n'}
+[1.843187] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-boundingbox_camera -- found version 8.2.2\n'}
+[1.843309] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-boundingbox_camera\n'}
+[1.844204] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [segmentation_camera]\n'}
+[1.845676] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-segmentation_camera -- found version 8.2.2\n'}
+[1.845776] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-segmentation_camera\n'}
+[1.846601] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [depth_camera]\n'}
+[1.847833] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-depth_camera -- found version 8.2.2\n'}
+[1.847912] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-depth_camera\n'}
+[1.848185] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.848967] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rgbd_camera]\n'}
+[1.850922] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-rgbd_camera -- found version 8.2.2\n'}
+[1.851090] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-rgbd_camera\n'}
+[1.851579] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.852765] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [thermal_camera]\n'}
+[1.854751] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-thermal_camera -- found version 8.2.2\n'}
+[1.854822] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-thermal_camera\n'}
+[1.855211] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.856463] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [wide_angle_camera]\n'}
+[1.858683] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-wide_angle_camera -- found version 8.2.2\n'}
+[1.858860] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-wide_angle_camera\n'}
+[1.861181] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.2\n'}
+[1.861715] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.862251] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.886738] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.887041] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-fuel_tools9 -- found version 9.1.1\n'}
+[1.887215] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.887589] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.887950] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.4.1\n'}
+[1.888312] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.888634] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.2\n'}
+[1.888942] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.889276] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.889558] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.7.0\n'}
+[1.893303] (wamv_gazebo) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[1.902723] (-) TimerEvent: {}
+[1.921100] (wamv_navigation) StdoutLine: {'line': b'-- Found ros_gz_image: 1.0.12 (/opt/ros/jazzy/share/ros_gz_image/cmake)\n'}
+[1.924700] (wamv_navigation) StdoutLine: {'line': b'-- Found ros_gz_sim: 1.0.12 (/opt/ros/jazzy/share/ros_gz_sim/cmake)\n'}
+[1.938596] (wamv_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.955342] (wamv_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.974768] (wamv_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.976943] (wamv_navigation) StdoutLine: {'line': b'-- Found robot_state_publisher: 3.3.3 (/opt/ros/jazzy/share/robot_state_publisher/cmake)\n'}
+[1.996149] (wamv_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.002862] (-) TimerEvent: {}
+[2.030563] (wamv_navigation) StdoutLine: {'line': b'-- Found xacro: 2.0.13 (/opt/ros/jazzy/share/xacro/cmake)\n'}
+[2.102972] (-) TimerEvent: {}
+[2.152236] (wamv_navigation) StdoutLine: {'line': b'-- Configuring done (2.0s)\n'}
+[2.162046] (wamv_navigation) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.164917] (wamv_navigation) StdoutLine: {'line': b'-- Build files have been written to: /home/luca002/proj_ws/build/wamv_navigation\n'}
+[2.200122] (wamv_navigation) CommandEnded: {'returncode': 0}
+[2.200627] (wamv_navigation) JobProgress: {'identifier': 'wamv_navigation', 'progress': 'build'}
+[2.201682] (wamv_navigation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/luca002/proj_ws/build/wamv_navigation', '--', '-j16', '-l16'], 'cwd': '/home/luca002/proj_ws/build/wamv_navigation', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/home/luca002/proj_ws/src/wamv_gazebo/models', 'USER': 'luca002', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/luca002/ros_ws/install/auv_control/lib:/home/luca002/ros_ws/install/thruster_manager/lib:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/luca002/ros_ws/install/dynamixel_sdk/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/luca002', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.101.0', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2454', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2928', 'BUNDLED_DEBUGPY_PATH': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '200617', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/luca002/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luca002', 'JOURNAL_STREAM': '9:28678', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'luca002', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/luca002/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/luca002/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/luca002/.local/bin:/home/luca002/.local/bin:/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/luke:@/tmp/.ICE-unix/2886,unix/luke:/tmp/.ICE-unix/2886', 'INVOCATION_ID': 'eb50163f92b74748967848669b52c3cb', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-4163fee7d3074f91.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-672260eb09.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '22', 'AMENT_PREFIX_PATH': '/home/luca002/ros_ws/install/bluerov2_control:/home/luca002/ros_ws/install/auv_control:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/robot_description_example:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/dynamixel_sdk_examples:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'GSK_RENDERER': 'gl', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/luca002/proj_ws/build/wamv_navigation', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luca002/ros_ws/install/auv_control/lib/python3.12/site-packages:/home/luca002/ros_ws/build/robot_description_example:/home/luca002/ros_ws/install/robot_description_example/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/luca002/ros_ws/install/bluerov2_control:/home/luca002/ros_ws/install/auv_control:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/dynamixel_sdk_examples:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/luca002/ros_ws/install/robot_description_example:/opt/ros/jazzy'}), 'shell': False}
+[2.203048] (-) TimerEvent: {}
+[2.268609] (wamv_navigation) CommandEnded: {'returncode': 0}
+[2.269345] (wamv_navigation) JobProgress: {'identifier': 'wamv_navigation', 'progress': 'install'}
+[2.284214] (wamv_navigation) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/luca002/proj_ws/build/wamv_navigation'], 'cwd': '/home/luca002/proj_ws/build/wamv_navigation', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/home/luca002/proj_ws/src/wamv_gazebo/models', 'USER': 'luca002', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/luca002/ros_ws/install/auv_control/lib:/home/luca002/ros_ws/install/thruster_manager/lib:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/luca002/ros_ws/install/dynamixel_sdk/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/luca002', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.101.0', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2454', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2928', 'BUNDLED_DEBUGPY_PATH': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '200617', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/luca002/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luca002', 'JOURNAL_STREAM': '9:28678', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'luca002', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/luca002/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/luca002/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/luca002/.local/bin:/home/luca002/.local/bin:/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/luke:@/tmp/.ICE-unix/2886,unix/luke:/tmp/.ICE-unix/2886', 'INVOCATION_ID': 'eb50163f92b74748967848669b52c3cb', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-4163fee7d3074f91.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-672260eb09.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '22', 'AMENT_PREFIX_PATH': '/home/luca002/ros_ws/install/bluerov2_control:/home/luca002/ros_ws/install/auv_control:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/robot_description_example:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/dynamixel_sdk_examples:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'GSK_RENDERER': 'gl', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/luca002/proj_ws/build/wamv_navigation', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luca002/ros_ws/install/auv_control/lib/python3.12/site-packages:/home/luca002/ros_ws/build/robot_description_example:/home/luca002/ros_ws/install/robot_description_example/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/luca002/ros_ws/install/bluerov2_control:/home/luca002/ros_ws/install/auv_control:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/dynamixel_sdk_examples:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/luca002/ros_ws/install/robot_description_example:/opt/ros/jazzy'}), 'shell': False}
+[2.290674] (wamv_gazebo) StdoutLine: {'line': b'-- Configuring done (2.1s)\n'}
+[2.296147] (wamv_navigation) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.296480] (wamv_navigation) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.296896] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/README.md\n'}
+[2.303145] (-) TimerEvent: {}
+[2.305765] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/ekf.yaml\n'}
+[2.313658] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/nav2_default_view.rviz\n'}
+[2.325000] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/nav2_namespaced_view.rviz\n'}
+[2.332680] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/rviz_vrx_final.rviz\n'}
+[2.339372] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/rviz_vrx_rsp.rviz\n'}
+[2.346056] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/slam_toolbox_params.yaml\n'}
+[2.352638] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/turtlebot3_waffle_bridge.yaml\n'}
+[2.360257] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/wamv_config.yaml\n'}
+[2.367698] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/__init__.py\n'}
+[2.374438] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/bringup_launch.py\n'}
+[2.381135] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/cloned_multi_tb3_simulation_launch.py\n'}
+[2.387802] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/display.launch.py\n'}
+[2.388314] (wamv_gazebo) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[2.394231] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/generate_wamv.launch.py\n'}
+[2.400422] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/localization_launch.py\n'}
+[2.403223] (-) TimerEvent: {}
+[2.405468] (wamv_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/luca002/proj_ws/build/wamv_gazebo\n'}
+[2.406455] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/navigation_launch.py\n'}
+[2.413961] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/robot.launch.py\n'}
+[2.422792] (wamv_gazebo) CommandEnded: {'returncode': 0}
+[2.423411] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/rviz.launch.py\n'}
+[2.423496] (wamv_gazebo) JobProgress: {'identifier': 'wamv_gazebo', 'progress': 'build'}
+[2.423901] (wamv_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/luca002/proj_ws/build/wamv_gazebo', '--', '-j16', '-l16'], 'cwd': '/home/luca002/proj_ws/build/wamv_gazebo', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/home/luca002/proj_ws/src/wamv_gazebo/models', 'USER': 'luca002', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/luca002/ros_ws/install/auv_control/lib:/home/luca002/ros_ws/install/thruster_manager/lib:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/luca002/ros_ws/install/dynamixel_sdk/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/luca002', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.101.0', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2454', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2928', 'BUNDLED_DEBUGPY_PATH': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '200617', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/luca002/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luca002', 'JOURNAL_STREAM': '9:28678', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'luca002', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/luca002/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/luca002/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/luca002/.local/bin:/home/luca002/.local/bin:/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/luke:@/tmp/.ICE-unix/2886,unix/luke:/tmp/.ICE-unix/2886', 'INVOCATION_ID': 'eb50163f92b74748967848669b52c3cb', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-4163fee7d3074f91.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-672260eb09.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '22', 'AMENT_PREFIX_PATH': '/home/luca002/ros_ws/install/bluerov2_control:/home/luca002/ros_ws/install/auv_control:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/robot_description_example:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/dynamixel_sdk_examples:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'GSK_RENDERER': 'gl', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/luca002/proj_ws/build/wamv_gazebo', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luca002/ros_ws/install/auv_control/lib/python3.12/site-packages:/home/luca002/ros_ws/build/robot_description_example:/home/luca002/ros_ws/install/robot_description_example/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/luca002/ros_ws/install/bluerov2_control:/home/luca002/ros_ws/install/auv_control:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/dynamixel_sdk_examples:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/luca002/ros_ws/install/robot_description_example:/opt/ros/jazzy'}), 'shell': False}
+[2.429569] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/rviz2.launch.py\n'}
+[2.435220] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/rviz_launch.py\n'}
+[2.440724] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/slam_launch.py\n'}
+[2.446374] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/spawn_tb3.launch.py\n'}
+[2.452336] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/tb3_loopback_simulation.launch.py\n'}
+[2.458345] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/tb3_simulation_launch.py\n'}
+[2.458545] (wamv_gazebo) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/Waves.dir/src/Wavefield.cc.o\x1b[0m\n'}
+[2.458719] (wamv_gazebo) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/ScoringPlugin.dir/src/ScoringPlugin.cc.o\x1b[0m\n'}
+[2.463840] (wamv_gazebo) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_symlink_wamv_gazebo\n'}
+[2.464440] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/tb4_loopback_simulation.launch.py\n'}
+[2.470595] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/tb4_simulation_launch.py\n'}
+[2.476386] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/turtlebot3_state_publisher.launch.py\n'}
+[2.482606] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/unique_multi_tb3_simulation_launch.py\n'}
+[2.488646] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/wamv_launch.py\n'}
+[2.494997] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/depot.pgm\n'}
+[2.501377] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/depot.yaml\n'}
+[2.503307] (-) TimerEvent: {}
+[2.507435] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/lake.yaml\n'}
+[2.515282] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/tb3_sandbox.pgm\n'}
+[2.525427] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/tb3_sandbox.yaml\n'}
+[2.532722] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/warehouse.pgm\n'}
+[2.539184] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/warehouse.yaml\n'}
+[2.545710] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_multirobot_params_1.yaml\n'}
+[2.551875] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_multirobot_params_2.yaml\n'}
+[2.558200] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_multirobot_params_all.yaml\n'}
+[2.564768] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_params.yaml\n'}
+[2.571160] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/config.rviz\n'}
+[2.577745] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/WAM-V-Base.dae\n'}
+[2.583631] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/WamV.png\n'}
+[2.589529] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery.dae\n'}
+[2.595600] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery.png\n'}
+[2.601316] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery_Albedo.png\n'}
+[2.603380] (-) TimerEvent: {}
+[2.607396] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery_Metalness.png\n'}
+[2.614501] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery_Normal.png\n'}
+[2.625343] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery_Roughness.png\n'}
+[2.632575] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases.dae\n'}
+[2.638682] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases.png\n'}
+[2.642088] (wamv_gazebo) StdoutLine: {'line': b'running egg_info\n'}
+[2.642830] (wamv_gazebo) StdoutLine: {'line': b'creating wamv_gazebo.egg-info\n'}
+[2.644753] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases_Albedo.png\n'}
+[2.650913] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases_Metalness.png\n'}
+[2.657085] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases_Normal.png\n'}
+[2.658962] (wamv_gazebo) StdoutLine: {'line': b'writing wamv_gazebo.egg-info/PKG-INFO\n'}
+[2.659135] (wamv_gazebo) StdoutLine: {'line': b'writing dependency_links to wamv_gazebo.egg-info/dependency_links.txt\n'}
+[2.659241] (wamv_gazebo) StdoutLine: {'line': b'writing top-level names to wamv_gazebo.egg-info/top_level.txt\n'}
+[2.659291] (wamv_gazebo) StdoutLine: {'line': b"writing manifest file 'wamv_gazebo.egg-info/SOURCES.txt'\n"}
+[2.663380] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases_Roughness.png\n'}
+[2.669801] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/engine.dae\n'}
+[2.676480] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/legs.dae\n'}
+[2.682884] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/lidar_3d_v1 copy.png\n'}
+[2.689058] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/lidar_3d_v1.dae\n'}
+[2.695308] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/lidar_3d_v1.png\n'}
+[2.701536] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/propeller.dae\n'}
+[2.703459] (-) TimerEvent: {}
+[2.706996] (wamv_gazebo) StdoutLine: {'line': b"reading manifest file 'wamv_gazebo.egg-info/SOURCES.txt'\n"}
+[2.707380] (wamv_gazebo) StdoutLine: {'line': b"writing manifest file 'wamv_gazebo.egg-info/SOURCES.txt'\n"}
+[2.708296] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/ring.dae\n'}
+[2.721889] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/model.config\n'}
+[2.731588] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/model.sdf\n'}
+[2.737622] (wamv_gazebo) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_wamv_gazebo_egg\n'}
+[2.738406] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/urdf_wamv.urdf\n'}
+[2.744893] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/ament_index/resource_index/package_run_dependencies/wamv_navigation\n'}
+[2.751157] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/ament_index/resource_index/parent_prefix_path/wamv_navigation\n'}
+[2.757348] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/environment/ament_prefix_path.sh\n'}
+[2.763339] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/environment/ament_prefix_path.dsv\n'}
+[2.769485] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/environment/path.sh\n'}
+[2.775352] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/environment/path.dsv\n'}
+[2.781493] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/local_setup.bash\n'}
+[2.787358] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/local_setup.sh\n'}
+[2.793054] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/local_setup.zsh\n'}
+[2.798989] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/local_setup.dsv\n'}
+[2.803542] (-) TimerEvent: {}
+[2.804750] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/package.dsv\n'}
+[2.812030] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/ament_index/resource_index/packages/wamv_navigation\n'}
+[2.828169] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/cmake/wamv_navigationConfig.cmake\n'}
+[2.836046] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/cmake/wamv_navigationConfig-version.cmake\n'}
+[2.842587] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/package.xml\n'}
+[2.848691] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation\n'}
+[2.848931] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/description\n'}
+[2.849056] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/description/wam-v\n'}
+[2.849165] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/description/wam-v/meshes\n'}
+[2.849290] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/maps\n'}
+[2.849386] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/params\n'}
+[2.849464] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/hooks\n'}
+[2.849542] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch\n'}
+[2.849622] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/display.launch.py\n'}
+[2.849705] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/cloned_multi_tb3_simulation_launch.py\n'}
+[2.849840] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/slam_launch.py\n'}
+[2.849935] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/navigation_launch.py\n'}
+[2.850013] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/rviz.launch.py\n'}
+[2.850091] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/unique_multi_tb3_simulation_launch.py\n'}
+[2.850184] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/tb4_loopback_simulation.launch.py\n'}
+[2.850267] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/turtlebot3_state_publisher.launch.py\n'}
+[2.850343] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/wamv_launch.py\n'}
+[2.850419] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/robot.launch.py\n'}
+[2.850498] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/tb3_loopback_simulation.launch.py\n'}
+[2.850586] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/localization_launch.py\n'}
+[2.850663] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/rviz2.launch.py\n'}
+[2.850762] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/__init__.py\n'}
+[2.850846] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/tb3_simulation_launch.py\n'}
+[2.850932] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/rviz_launch.py\n'}
+[2.851015] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/tb4_simulation_launch.py\n'}
+[2.851097] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/spawn_tb3.launch.py\n'}
+[2.851176] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/generate_wamv.launch.py\n'}
+[2.851256] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/bringup_launch.py\n'}
+[2.851337] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/rviz\n'}
+[2.851416] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/config\n'}
+[2.851918] (wamv_navigation) CommandEnded: {'returncode': 0}
+[2.859309] (wamv_navigation) JobEnded: {'identifier': 'wamv_navigation', 'rc': 0}
+[2.903656] (-) TimerEvent: {}
+[3.003942] (-) TimerEvent: {}
+[3.104234] (-) TimerEvent: {}
+[3.204563] (-) TimerEvent: {}
+[3.304799] (-) TimerEvent: {}
+[3.405290] (-) TimerEvent: {}
+[3.505879] (-) TimerEvent: {}
+[3.606128] (-) TimerEvent: {}
+[3.706421] (-) TimerEvent: {}
+[3.806723] (-) TimerEvent: {}
+[3.906983] (-) TimerEvent: {}
+[4.007242] (-) TimerEvent: {}
+[4.107583] (-) TimerEvent: {}
+[4.207874] (-) TimerEvent: {}
+[4.308374] (-) TimerEvent: {}
+[4.408911] (-) TimerEvent: {}
+[4.509153] (-) TimerEvent: {}
+[4.609410] (-) TimerEvent: {}
+[4.709636] (-) TimerEvent: {}
+[4.809870] (-) TimerEvent: {}
+[4.910098] (-) TimerEvent: {}
+[5.010322] (-) TimerEvent: {}
+[5.045885] (wamv_gazebo) StdoutLine: {'line': b'[  6%] \x1b[32m\x1b[1mLinking CXX shared library libWaves.so\x1b[0m\n'}
+[5.110429] (-) TimerEvent: {}
+[5.190903] (wamv_gazebo) StdoutLine: {'line': b'[  6%] Built target Waves\n'}
+[5.204722] (wamv_gazebo) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/PolyhedraBuoyancyDrag.dir/src/PolyhedraBuoyancyDrag.cc.o\x1b[0m\n'}
+[5.204960] (wamv_gazebo) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/PolyhedraBuoyancyDrag.dir/src/PolyhedronVolume.cc.o\x1b[0m\n'}
+[5.205041] (wamv_gazebo) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/PolyhedraBuoyancyDrag.dir/src/ShapeVolume.cc.o\x1b[0m\n'}
+[5.210501] (-) TimerEvent: {}
+[5.310732] (-) TimerEvent: {}
+[5.410975] (-) TimerEvent: {}
+[5.511308] (-) TimerEvent: {}
+[5.611579] (-) TimerEvent: {}
+[5.711839] (-) TimerEvent: {}
+[5.812141] (-) TimerEvent: {}
+[5.912441] (-) TimerEvent: {}
+[6.012711] (-) TimerEvent: {}
+[6.020372] (wamv_gazebo) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking CXX shared library libScoringPlugin.so\x1b[0m\n'}
+[6.112780] (-) TimerEvent: {}
+[6.192369] (wamv_gazebo) StdoutLine: {'line': b'[ 14%] Built target ScoringPlugin\n'}
+[6.213079] (-) TimerEvent: {}
+[6.214996] (wamv_gazebo) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/PerceptionScoringPlugin.dir/src/PerceptionScoringPlugin.cc.o\x1b[0m\n'}
+[6.215210] (wamv_gazebo) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/BallShooterPlugin.dir/src/BallShooterPlugin.cc.o\x1b[0m\n'}
+[6.215285] (wamv_gazebo) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/AcousticPingerPlugin.dir/src/AcousticPingerPlugin.cc.o\x1b[0m\n'}
+[6.215351] (wamv_gazebo) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/WayfindingScoringPlugin.dir/src/WayfindingScoringPlugin.cc.o\x1b[0m\n'}
+[6.215413] (wamv_gazebo) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/GymkhanaScoringPlugin.dir/src/GymkhanaScoringPlugin.cc.o\x1b[0m\n'}
+[6.215477] (wamv_gazebo) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o\x1b[0m\n'}
+[6.215541] (wamv_gazebo) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/NavigationScoringPlugin.dir/src/NavigationScoringPlugin.cc.o\x1b[0m\n'}
+[6.215608] (wamv_gazebo) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/PlacardPlugin.dir/src/PlacardPlugin.cc.o\x1b[0m\n'}
+[6.216328] (wamv_gazebo) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/StationkeepingScoringPlugin.dir/src/StationkeepingScoringPlugin.cc.o\x1b[0m\n'}
+[6.216535] (wamv_gazebo) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/AcousticTrackingScoringPlugin.dir/src/AcousticTrackingScoringPlugin.cc.o\x1b[0m\n'}
+[6.216626] (wamv_gazebo) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/LightBuoyPlugin.dir/src/LightBuoyPlugin.cc.o\x1b[0m\n'}
+[6.217332] (wamv_gazebo) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/ScanDockScoringPlugin.dir/src/ScanDockScoringPlugin.cc.o\x1b[0m\n'}
+[6.217458] (wamv_gazebo) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/SimpleHydrodynamics.dir/src/SimpleHydrodynamics.cc.o\x1b[0m\n'}
+[6.217549] (wamv_gazebo) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/AcousticPerceptionScoringPlugin.dir/src/AcousticPerceptionScoringPlugin.cc.o\x1b[0m\n'}
+[6.313175] (-) TimerEvent: {}
+[6.412745] (wamv_gazebo) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/WayfindingScoringPlugin.dir/src/WaypointMarkers.cc.o\x1b[0m\n'}
+[6.413243] (-) TimerEvent: {}
+[6.513502] (-) TimerEvent: {}
+[6.613875] (-) TimerEvent: {}
+[6.715823] (-) TimerEvent: {}
+[6.816309] (-) TimerEvent: {}
+[6.916793] (-) TimerEvent: {}
+[7.020806] (-) TimerEvent: {}
+[7.121167] (-) TimerEvent: {}
+[7.221590] (-) TimerEvent: {}
+[7.321994] (-) TimerEvent: {}
+[7.422354] (-) TimerEvent: {}
+[7.522723] (-) TimerEvent: {}
+[7.623081] (-) TimerEvent: {}
+[7.726790] (-) TimerEvent: {}
+[7.827249] (-) TimerEvent: {}
+[7.927663] (-) TimerEvent: {}
+[8.028081] (-) TimerEvent: {}
+[8.128486] (-) TimerEvent: {}
+[8.229361] (-) TimerEvent: {}
+[8.332783] (-) TimerEvent: {}
+[8.433184] (-) TimerEvent: {}
+[8.533607] (-) TimerEvent: {}
+[8.634520] (-) TimerEvent: {}
+[8.734917] (-) TimerEvent: {}
+[8.835794] (-) TimerEvent: {}
+[8.938364] (-) TimerEvent: {}
+[9.039044] (-) TimerEvent: {}
+[9.139520] (-) TimerEvent: {}
+[9.243804] (-) TimerEvent: {}
+[9.344306] (-) TimerEvent: {}
+[9.444886] (-) TimerEvent: {}
+[9.545928] (-) TimerEvent: {}
+[9.646834] (-) TimerEvent: {}
+[9.750792] (-) TimerEvent: {}
+[9.852788] (-) TimerEvent: {}
+[9.953378] (-) TimerEvent: {}
+[10.054109] (-) TimerEvent: {}
+[10.154542] (-) TimerEvent: {}
+[10.255081] (-) TimerEvent: {}
+[10.357424] (-) TimerEvent: {}
+[10.460231] (-) TimerEvent: {}
+[10.560943] (-) TimerEvent: {}
+[10.663893] (-) TimerEvent: {}
+[10.765787] (-) TimerEvent: {}
+[10.866189] (-) TimerEvent: {}
+[10.966579] (-) TimerEvent: {}
+[11.067920] (-) TimerEvent: {}
+[11.168341] (-) TimerEvent: {}
+[11.269067] (-) TimerEvent: {}
+[11.372008] (-) TimerEvent: {}
+[11.472994] (-) TimerEvent: {}
+[11.574116] (-) TimerEvent: {}
+[11.591041] (wamv_gazebo) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX shared library libPublisherPlugin.so\x1b[0m\n'}
+[11.674264] (-) TimerEvent: {}
+[11.774703] (-) TimerEvent: {}
+[11.875124] (-) TimerEvent: {}
+[11.896190] (wamv_gazebo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/AcousticTrackingScoringPlugin.dir/src/WaypointMarkers.cc.o\x1b[0m\n'}
+[11.975789] (-) TimerEvent: {}
+[12.044596] (wamv_gazebo) StdoutLine: {'line': b'[ 50%] Built target PublisherPlugin\n'}
+[12.059448] (wamv_gazebo) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/AcousticPerceptionScoringPlugin.dir/src/WaypointMarkers.cc.o\x1b[0m\n'}
+[12.061246] (wamv_gazebo) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libLightBuoyPlugin.so\x1b[0m\n'}
+[12.075923] (-) TimerEvent: {}
+[12.176341] (-) TimerEvent: {}
+[12.276823] (-) TimerEvent: {}
+[12.377306] (-) TimerEvent: {}
+[12.455875] (wamv_gazebo) StdoutLine: {'line': b'[ 54%] Built target LightBuoyPlugin\n'}
+[12.468780] (wamv_gazebo) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/StationkeepingScoringPlugin.dir/src/WaypointMarkers.cc.o\x1b[0m\n'}
+[12.477459] (-) TimerEvent: {}
+[12.577898] (-) TimerEvent: {}
+[12.678343] (-) TimerEvent: {}
+[12.778764] (-) TimerEvent: {}
+[12.882019] (-) TimerEvent: {}
+[12.960119] (wamv_gazebo) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libSimpleHydrodynamics.so\x1b[0m\n'}
+[12.975517] (wamv_gazebo) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libPolyhedraBuoyancyDrag.so\x1b[0m\n'}
+[12.982155] (-) TimerEvent: {}
+[13.082603] (-) TimerEvent: {}
+[13.124739] (wamv_gazebo) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libGymkhanaScoringPlugin.so\x1b[0m\n'}
+[13.185846] (-) TimerEvent: {}
+[13.200894] (wamv_gazebo) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libPlacardPlugin.so\x1b[0m\n'}
+[13.286032] (-) TimerEvent: {}
+[13.356720] (wamv_gazebo) StdoutLine: {'line': b'[ 64%] Built target SimpleHydrodynamics\n'}
+[13.386190] (-) TimerEvent: {}
+[13.409831] (wamv_gazebo) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/Surface.dir/src/Surface.cc.o\x1b[0m\n'}
+[13.486534] (-) TimerEvent: {}
+[13.589060] (-) TimerEvent: {}
+[13.639043] (wamv_gazebo) StdoutLine: {'line': b'[ 66%] Built target PolyhedraBuoyancyDrag\n'}
+[13.691942] (-) TimerEvent: {}
+[13.775886] (wamv_gazebo) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/USVWind.dir/src/USVWind.cc.o\x1b[0m\n'}
+[13.792251] (-) TimerEvent: {}
+[13.837651] (wamv_gazebo) StdoutLine: {'line': b'[ 68%] Built target GymkhanaScoringPlugin\n'}
+[13.893268] (-) TimerEvent: {}
+[13.933970] (wamv_gazebo) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o\x1b[0m\n'}
+[13.971831] (wamv_gazebo) StdoutLine: {'line': b'[ 70%] Built target PlacardPlugin\n'}
+[13.998097] (-) TimerEvent: {}
+[14.026644] (wamv_gazebo) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/WildlifeScoringPlugin.dir/src/WildlifeScoringPlugin.cc.o\x1b[0m\n'}
+[14.099324] (-) TimerEvent: {}
+[14.200232] (-) TimerEvent: {}
+[14.305168] (-) TimerEvent: {}
+[14.405671] (-) TimerEvent: {}
+[14.506368] (-) TimerEvent: {}
+[14.609782] (-) TimerEvent: {}
+[14.710277] (-) TimerEvent: {}
+[14.811182] (-) TimerEvent: {}
+[14.912080] (-) TimerEvent: {}
+[15.017283] (-) TimerEvent: {}
+[15.118488] (-) TimerEvent: {}
+[15.223156] (-) TimerEvent: {}
+[15.323533] (-) TimerEvent: {}
+[15.424071] (-) TimerEvent: {}
+[15.524912] (-) TimerEvent: {}
+[15.625681] (-) TimerEvent: {}
+[15.728928] (-) TimerEvent: {}
+[15.829536] (-) TimerEvent: {}
+[15.930092] (-) TimerEvent: {}
+[16.030961] (-) TimerEvent: {}
+[16.038711] (wamv_gazebo) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libPerceptionScoringPlugin.so\x1b[0m\n'}
+[16.133856] (-) TimerEvent: {}
+[16.234420] (-) TimerEvent: {}
+[16.276749] (wamv_gazebo) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libAcousticPingerPlugin.so\x1b[0m\n'}
+[16.334551] (-) TimerEvent: {}
+[16.435037] (-) TimerEvent: {}
+[16.535549] (-) TimerEvent: {}
+[16.618257] (wamv_gazebo) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libWayfindingScoringPlugin.so\x1b[0m\n'}
+[16.636879] (-) TimerEvent: {}
+[16.737388] (-) TimerEvent: {}
+[16.748516] (wamv_gazebo) StdoutLine: {'line': b'[ 79%] Built target AcousticPingerPlugin\n'}
+[16.753492] (wamv_gazebo) StdoutLine: {'line': b'[ 79%] Built target PerceptionScoringPlugin\n'}
+[16.837544] (-) TimerEvent: {}
+[16.937921] (-) TimerEvent: {}
+[17.007269] (wamv_gazebo) StdoutLine: {'line': b'[ 79%] Built target WayfindingScoringPlugin\n'}
+[17.038039] (-) TimerEvent: {}
+[17.088108] (wamv_gazebo) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libNavigationScoringPlugin.so\x1b[0m\n'}
+[17.138170] (-) TimerEvent: {}
+[17.216308] (wamv_gazebo) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library libBallShooterPlugin.so\x1b[0m\n'}
+[17.238320] (-) TimerEvent: {}
+[17.332203] (wamv_gazebo) StdoutLine: {'line': b'[ 83%] Built target NavigationScoringPlugin\n'}
+[17.338499] (-) TimerEvent: {}
+[17.382542] (wamv_gazebo) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libScanDockScoringPlugin.so\x1b[0m\n'}
+[17.438680] (-) TimerEvent: {}
+[17.508233] (wamv_gazebo) StdoutLine: {'line': b'[ 85%] Built target BallShooterPlugin\n'}
+[17.538809] (-) TimerEvent: {}
+[17.639202] (-) TimerEvent: {}
+[17.659462] (wamv_gazebo) StdoutLine: {'line': b'[ 85%] Built target ScanDockScoringPlugin\n'}
+[17.739455] (-) TimerEvent: {}
+[17.840030] (-) TimerEvent: {}
+[17.854934] (wamv_gazebo) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX shared library libAcousticTrackingScoringPlugin.so\x1b[0m\n'}
+[17.940168] (-) TimerEvent: {}
+[18.040504] (-) TimerEvent: {}
+[18.094541] (wamv_gazebo) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking CXX shared library libAcousticPerceptionScoringPlugin.so\x1b[0m\n'}
+[18.103305] (wamv_gazebo) StdoutLine: {'line': b'[ 89%] Built target AcousticTrackingScoringPlugin\n'}
+[18.106317] (wamv_gazebo) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX shared library libStationkeepingScoringPlugin.so\x1b[0m\n'}
+[18.140630] (-) TimerEvent: {}
+[18.241033] (-) TimerEvent: {}
+[18.341415] (-) TimerEvent: {}
+[18.349493] (wamv_gazebo) StdoutLine: {'line': b'[ 91%] Built target AcousticPerceptionScoringPlugin\n'}
+[18.366528] (wamv_gazebo) StdoutLine: {'line': b'[ 91%] Built target StationkeepingScoringPlugin\n'}
+[18.441530] (-) TimerEvent: {}
+[18.541839] (-) TimerEvent: {}
+[18.642137] (-) TimerEvent: {}
+[18.742431] (-) TimerEvent: {}
+[18.842742] (-) TimerEvent: {}
+[18.943089] (-) TimerEvent: {}
+[19.043414] (-) TimerEvent: {}
+[19.143737] (-) TimerEvent: {}
+[19.244025] (-) TimerEvent: {}
+[19.303017] (wamv_gazebo) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX shared library libSurface.so\x1b[0m\n'}
+[19.344141] (-) TimerEvent: {}
+[19.444470] (-) TimerEvent: {}
+[19.514049] (wamv_gazebo) StdoutLine: {'line': b'[ 93%] Built target Surface\n'}
+[19.544581] (-) TimerEvent: {}
+[19.644909] (-) TimerEvent: {}
+[19.745240] (-) TimerEvent: {}
+[19.845531] (-) TimerEvent: {}
+[19.945865] (-) TimerEvent: {}
+[20.046172] (-) TimerEvent: {}
+[20.146461] (-) TimerEvent: {}
+[20.246749] (-) TimerEvent: {}
+[20.347052] (-) TimerEvent: {}
+[20.447340] (-) TimerEvent: {}
+[20.474560] (wamv_gazebo) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX shared library libWildlifeScoringPlugin.so\x1b[0m\n'}
+[20.547447] (-) TimerEvent: {}
+[20.647741] (-) TimerEvent: {}
+[20.661431] (wamv_gazebo) StdoutLine: {'line': b'[ 95%] Built target WildlifeScoringPlugin\n'}
+[20.741435] (wamv_gazebo) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX shared library libWaveVisual.so\x1b[0m\n'}
+[20.747823] (-) TimerEvent: {}
+[20.848085] (-) TimerEvent: {}
+[20.918518] (wamv_gazebo) StdoutLine: {'line': b'[ 97%] Built target WaveVisual\n'}
+[20.948163] (-) TimerEvent: {}
+[21.048399] (-) TimerEvent: {}
+[21.148691] (-) TimerEvent: {}
+[21.231621] (wamv_gazebo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libUSVWind.so\x1b[0m\n'}
+[21.248817] (-) TimerEvent: {}
+[21.349096] (-) TimerEvent: {}
+[21.395498] (wamv_gazebo) StdoutLine: {'line': b'[100%] Built target USVWind\n'}
+[21.406393] (wamv_gazebo) CommandEnded: {'returncode': 0}
+[21.406961] (wamv_gazebo) JobProgress: {'identifier': 'wamv_gazebo', 'progress': 'install'}
+[21.407199] (wamv_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/luca002/proj_ws/build/wamv_gazebo'], 'cwd': '/home/luca002/proj_ws/build/wamv_gazebo', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/home/luca002/proj_ws/src/wamv_gazebo/models', 'USER': 'luca002', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/luca002/ros_ws/install/auv_control/lib:/home/luca002/ros_ws/install/thruster_manager/lib:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/luca002/ros_ws/install/dynamixel_sdk/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/luca002', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.101.0', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2454', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2928', 'BUNDLED_DEBUGPY_PATH': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '200617', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/luca002/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luca002', 'JOURNAL_STREAM': '9:28678', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'luca002', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/luca002/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/luca002/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/luca002/.local/bin:/home/luca002/.local/bin:/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/luke:@/tmp/.ICE-unix/2886,unix/luke:/tmp/.ICE-unix/2886', 'INVOCATION_ID': 'eb50163f92b74748967848669b52c3cb', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luca002/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-4163fee7d3074f91.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-672260eb09.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '22', 'AMENT_PREFIX_PATH': '/home/luca002/ros_ws/install/bluerov2_control:/home/luca002/ros_ws/install/auv_control:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/robot_description_example:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/dynamixel_sdk_examples:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/home/luca002/ros_ws/install/bluerov2_description/share:/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'GSK_RENDERER': 'gl', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/luca002/proj_ws/build/wamv_gazebo', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luca002/ros_ws/install/auv_control/lib/python3.12/site-packages:/home/luca002/ros_ws/build/robot_description_example:/home/luca002/ros_ws/install/robot_description_example/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages:/home/luca002/ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/luca002/ros_ws/install/bluerov2_control:/home/luca002/ros_ws/install/auv_control:/home/luca002/ros_ws/install/thruster_manager:/home/luca002/ros_ws/install/pose_to_tf:/home/luca002/ros_ws/install/dynamixel_sdk_examples:/home/luca002/ros_ws/install/dynamixel_sdk_custom_interfaces:/home/luca002/ros_ws/install/dynamixel_sdk:/home/luca002/ros_ws/install/bluerov2_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/luca002/ros_ws/install/robot_description_example:/opt/ros/jazzy'}), 'shell': False}
+[21.412595] (wamv_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.413042] (wamv_gazebo) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[21.413161] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/resource_paths.dsv\n'}
+[21.418907] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/resource_paths.sh\n'}
+[21.424408] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libWaves.so\n'}
+[21.429862] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libPolyhedraBuoyancyDrag.so\n'}
+[21.435143] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libScoringPlugin.so\n'}
+[21.440518] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libStationkeepingScoringPlugin.so\n'}
+[21.445754] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libWayfindingScoringPlugin.so\n'}
+[21.449178] (-) TimerEvent: {}
+[21.450993] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libAcousticPerceptionScoringPlugin.so\n'}
+[21.456490] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libAcousticTrackingScoringPlugin.so\n'}
+[21.466398] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libAcousticPingerPlugin.so\n'}
+[21.474256] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libBallShooterPlugin.so\n'}
+[21.480927] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libLightBuoyPlugin.so\n'}
+[21.488167] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libNavigationScoringPlugin.so\n'}
+[21.494427] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libGymkhanaScoringPlugin.so\n'}
+[21.500138] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libPerceptionScoringPlugin.so\n'}
+[21.505635] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libPlacardPlugin.so\n'}
+[21.511043] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libPublisherPlugin.so\n'}
+[21.516388] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libScanDockScoringPlugin.so\n'}
+[21.521793] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libSimpleHydrodynamics.so\n'}
+[21.527031] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libSurface.so\n'}
+[21.532258] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libUSVWind.so\n'}
+[21.537547] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libWaveVisual.so\n'}
+[21.542868] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libWildlifeScoringPlugin.so\n'}
+[21.548217] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/pythonpath.sh\n'}
+[21.549256] (-) TimerEvent: {}
+[21.553702] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/pythonpath.dsv\n'}
+[21.560996] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[21.571604] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[21.579442] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[21.585267] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[21.591006] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/__init__.py\n'}
+[21.596267] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/bridge.py\n'}
+[21.601499] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/bridges.py\n'}
+[21.606850] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/launch.py\n'}
+[21.612347] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/model.py\n'}
+[21.617722] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/monitor_sim.py\n'}
+[21.623899] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/payload_bridges.py\n'}
+[21.631126] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/__init__.py\n'}
+[21.636618] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/__pycache__/bridge.cpython-312.pyc\n'}
+[21.641931] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/bridge.py\n'}
+[21.647185] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/competition.launch.py\n'}
+[21.649343] (-) TimerEvent: {}
+[21.652471] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/compliance.py\n'}
+[21.658108] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/configure_wamv.py\n'}
+[21.668015] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/launch1.py\n'}
+[21.677083] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/launch2.py\n'}
+[21.683215] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/launch3.py\n'}
+[21.688847] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/launch4.py\n'}
+[21.694195] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/spawn.launch.py\n'}
+[21.699747] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/spawn_config.launch.py\n'}
+[21.706861] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/usv_joy_teleop.py\n'}
+[21.712934] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/utils.py\n'}
+[21.718526] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/vrx_environment.launch.py\n'}
+[21.725834] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/articulated_platform/model.config\n'}
+[21.731482] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/articulated_platform/model.sdf\n'}
+[21.738628] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/materials/Textures/Launcher_Albedo.png\n'}
+[21.744459] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/materials/Textures/Launcher_Metalness.png\n'}
+[21.749482] (-) TimerEvent: {}
+[21.750028] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/materials/Textures/Launcher_Normal.png\n'}
+[21.755348] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/materials/Textures/Launcher_Roughness.png\n'}
+[21.762664] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/meshes/Launcher_Albedo.png\n'}
+[21.771800] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/meshes/Launcher_BaseColor.png\n'}
+[21.779150] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/meshes/ball_shooter_base.dae\n'}
+[21.784995] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/meshes/ball_shooter_launcher.dae\n'}
+[21.790252] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/model.config\n'}
+[21.795547] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/ball_shooter/model.sdf\n'}
+[21.801003] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/battery/mesh/battery.dae\n'}
+[21.806170] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/battery/mesh/battery.png\n'}
+[21.811299] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/battery/mesh/battery_Albedo.png\n'}
+[21.816535] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/battery/mesh/battery_Metalness.png\n'}
+[21.821861] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/battery/mesh/battery_Normal.png\n'}
+[21.826872] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/battery/mesh/battery_Roughness.png\n'}
+[21.832090] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/battery/model.config\n'}
+[21.837232] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/battery/model.sdf\n'}
+[21.842414] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/blue_projectile/model.config\n'}
+[21.847513] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/blue_projectile/model.sdf\n'}
+[21.849566] (-) TimerEvent: {}
+[21.852766] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/materials/textures/Boat_Albedo.png\n'}
+[21.859194] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/materials/textures/Boat_Metalness.png\n'}
+[21.867080] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/materials/textures/Boat_Normal.png\n'}
+[21.876721] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/materials/textures/Boat_Roughness.png\n'}
+[21.883038] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/materials/textures/lidar_3d_v1.png\n'}
+[21.888542] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/meshes/rcboat.dae\n'}
+[21.893885] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/model.config\n'}
+[21.899011] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/model.sdf\n'}
+[21.904181] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/oldmodel/mmodel.sdf\n'}
+[21.909485] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/thumbnails/boat/1.png\n'}
+[21.914714] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/thumbnails/boat/2.png\n'}
+[21.921402] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/thumbnails/boat/3.png\n'}
+[21.927168] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/thumbnails/boat/4.png\n'}
+[21.932654] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/boat/thumbnails/boat/5.png\n'}
+[21.937909] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/programs/GerstnerWaves_fs_330.glsl\n'}
+[21.942993] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/programs/GerstnerWaves_vs_330.glsl\n'}
+[21.948260] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/textures/skybox_lowres.dds\n'}
+[21.949642] (-) TimerEvent: {}
+[21.953448] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/textures/wave_normals.dds\n'}
+[21.959695] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/meshes/waterlow.dae\n'}
+[21.969015] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/model.config\n'}
+[21.976023] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/model.sdf\n'}
+[21.981926] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/cpu_cases/mesh/cpu_cases.dae\n'}
+[21.987143] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/cpu_cases/mesh/cpu_cases.png\n'}
+[21.992537] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/cpu_cases/mesh/cpu_cases_Albedo.png\n'}
+[21.997605] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/cpu_cases/mesh/cpu_cases_Metalness.png\n'}
+[22.003024] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/cpu_cases/mesh/cpu_cases_Normal.png\n'}
+[22.008595] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/cpu_cases/mesh/cpu_cases_Roughness.png\n'}
+[22.013892] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/cpu_cases/model.config\n'}
+[22.018965] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/cpu_cases/model.sdf\n'}
+[22.024053] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_2022/model.config\n'}
+[22.029072] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_2022/model.sdf\n'}
+[22.034036] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_2022_base/model.config\n'}
+[22.039447] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_2022_base/model.sdf\n'}
+[22.044840] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block_4x4/mesh/DockCubes_Albedo.png\n'}
+[22.049724] (-) TimerEvent: {}
+[22.050101] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block_4x4/mesh/DockCubes_Metalness.png\n'}
+[22.055313] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block_4x4/mesh/DockCubes_Normal.png\n'}
+[22.063083] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block_4x4/mesh/DockCubes_Roughness.png\n'}
+[22.070769] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block_4x4/mesh/dock_block_4x4.dae\n'}
+[22.078361] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block_4x4/model.config\n'}
+[22.084236] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block_4x4/model.sdf\n'}
+[22.089597] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/engine/mesh/engine.dae\n'}
+[22.094935] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/engine/model.config\n'}
+[22.099995] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/entrance_exit/model.config\n'}
+[22.105116] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/entrance_exit/model.sdf\n'}
+[22.110760] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/gps/mesh/gps.dae\n'}
+[22.116197] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/gps/mesh/gps.png\n'}
+[22.124582] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/gps/model.config\n'}
+[22.135844] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/materials/textures/lidar_3d_v1.png\n'}
+[22.144325] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/meshes/lidar_3d_v1.dae\n'}
+[22.149928] (-) TimerEvent: {}
+[22.150191] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/meshes/lidar_3d_v1.png\n'}
+[22.160624] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/model.config\n'}
+[22.174636] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/model.sdf\n'}
+[22.182778] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/thumbnails/1.png\n'}
+[22.192797] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/thumbnails/2.png\n'}
+[22.199316] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/thumbnails/3.png\n'}
+[22.206455] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/thumbnails/4.png\n'}
+[22.215647] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/lidar/thumbnails/5.png\n'}
+[22.222207] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/light_buoy/meshes/LightTower_Albedo.png\n'}
+[22.230226] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/light_buoy/meshes/LightTower_Metalness.png\n'}
+[22.235946] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/light_buoy/meshes/LightTower_Normal.png\n'}
+[22.243136] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/light_buoy/meshes/LightTower_Opacity.png\n'}
+[22.248398] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/light_buoy/meshes/LightTower_Roughness.png\n'}
+[22.250003] (-) TimerEvent: {}
+[22.254890] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/light_buoy/meshes/light_buoy.dae\n'}
+[22.261730] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/light_buoy/model.config\n'}
+[22.269722] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/light_buoy/model.sdf\n'}
+[22.276207] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_black/materials/textures/MarkerBuoy_Base_Color.png\n'}
+[22.282013] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_black/materials/textures/MarkerBuoy_Roughness.png\n'}
+[22.287354] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_black/meshes/mb_marker_buoy.dae\n'}
+[22.292643] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_black/model.config\n'}
+[22.297950] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_black/model.sdf\n'}
+[22.312214] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_black/thumbnails/1.png\n'}
+[22.320777] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_black/thumbnails/2.png\n'}
+[22.328246] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_black/thumbnails/3.png\n'}
+[22.335058] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_black/thumbnails/4.png\n'}
+[22.340111] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_black/thumbnails/5.png\n'}
+[22.348104] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_green/materials/textures/MarkerBuoy_Base_Color.png\n'}
+[22.350083] (-) TimerEvent: {}
+[22.355447] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_green/materials/textures/MarkerBuoy_Roughness.png\n'}
+[22.363023] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_green/meshes/mb_marker_buoy.dae\n'}
+[22.375520] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_green/model.config\n'}
+[22.383646] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_green/model.sdf\n'}
+[22.389938] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_green/thumbnails/1.png\n'}
+[22.396378] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_green/thumbnails/2.png\n'}
+[22.403384] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_green/thumbnails/3.png\n'}
+[22.410896] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_green/thumbnails/4.png\n'}
+[22.416784] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_green/thumbnails/5.png\n'}
+[22.422173] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_red/materials/textures/MarkerBuoy_Base_Color.png\n'}
+[22.427331] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_red/materials/textures/MarkerBuoy_Roughness.png\n'}
+[22.432548] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_red/meshes/mb_marker_buoy.dae\n'}
+[22.437622] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_red/model.config\n'}
+[22.442697] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_red/model.sdf\n'}
+[22.447956] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_red/thumbnails/1.png\n'}
+[22.450164] (-) TimerEvent: {}
+[22.453045] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_red/thumbnails/2.png\n'}
+[22.458526] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_red/thumbnails/3.png\n'}
+[22.465639] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_red/thumbnails/4.png\n'}
+[22.472111] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_red/thumbnails/5.png\n'}
+[22.480827] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_white/materials/textures/MarkerBuoy_Base_Color.png\n'}
+[22.487085] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_white/materials/textures/MarkerBuoy_Roughness.png\n'}
+[22.492884] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_white/meshes/mb_marker_buoy.dae\n'}
+[22.498194] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_white/model.config\n'}
+[22.503597] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_white/model.sdf\n'}
+[22.508985] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_white/thumbnails/1.png\n'}
+[22.514275] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_white/thumbnails/2.png\n'}
+[22.519803] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_white/thumbnails/3.png\n'}
+[22.525081] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_white/thumbnails/4.png\n'}
+[22.530355] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_marker_buoy_white/thumbnails/5.png\n'}
+[22.535830] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_black/materials/textures/RoundBarrierBuoy_Base_Color.png\n'}
+[22.540902] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_black/materials/textures/RoundBarrierBuoy_Roughness.png\n'}
+[22.546273] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_black/meshes/mb_round_buoy.dae\n'}
+[22.550251] (-) TimerEvent: {}
+[22.551538] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_black/model.config\n'}
+[22.557065] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_black/model.sdf\n'}
+[22.564586] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_black/thumbnails/1.png\n'}
+[22.573629] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_black/thumbnails/2.png\n'}
+[22.580145] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_black/thumbnails/3.png\n'}
+[22.585727] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_black/thumbnails/4.png\n'}
+[22.591060] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_black/thumbnails/5.png\n'}
+[22.596678] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_orange/materials/textures/RoundBarrierBuoy_Base_Color.png\n'}
+[22.601776] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_orange/materials/textures/RoundBarrierBuoy_Roughness.png\n'}
+[22.606866] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_orange/meshes/mb_round_buoy.dae\n'}
+[22.612062] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_orange/model.config\n'}
+[22.617299] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_orange/model.sdf\n'}
+[22.622428] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_orange/thumbnails/1.png\n'}
+[22.627699] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_orange/thumbnails/2.png\n'}
+[22.632884] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_orange/thumbnails/3.png\n'}
+[22.637931] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_orange/thumbnails/4.png\n'}
+[22.643044] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mb_round_buoy_orange/thumbnails/5.png\n'}
+[22.648604] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mono_camera/mesh/mono_camera.dae\n'}
+[22.650340] (-) TimerEvent: {}
+[22.653791] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mono_camera/mesh/mono_camera.png\n'}
+[22.659883] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mono_camera/mesh/mono_camera_Albedo.png\n'}
+[22.667657] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mono_camera/mesh/mono_camera_Metalness.png\n'}
+[22.674428] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mono_camera/mesh/mono_camera_Normal.png\n'}
+[22.680233] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mono_camera/mesh/mono_camera_Roughness.png\n'}
+[22.685816] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mono_camera/model.config\n'}
+[22.690934] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/mono_camera/model.sdf\n'}
+[22.696463] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/placard_2022/materials/textures/Placard.png\n'}
+[22.701832] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/placard_2022/meshes/placard_2022.dae\n'}
+[22.707250] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/placard_2022/model.config\n'}
+[22.712599] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/placard_2022/model.sdf\n'}
+[22.717853] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/platform/model.config\n'}
+[22.723110] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/platform/model.sdf\n'}
+[22.728137] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/propeller/mesh/propeller.dae\n'}
+[22.733358] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/propeller/model.config\n'}
+[22.738495] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/materials/scripts/model.material\n'}
+[22.743736] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/materials/textures/Boat01_Albedo.png\n'}
+[22.748952] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/materials/textures/Boat01_Metallic.png\n'}
+[22.750419] (-) TimerEvent: {}
+[22.754152] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/materials/textures/Boat01_Normal.png\n'}
+[22.760591] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/materials/textures/Boat01_Roughness.png\n'}
+[22.769630] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/materials/textures/Thruster_Albedo.png\n'}
+[22.776813] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/materials/textures/Thruster_Roughness.png\n'}
+[22.782568] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/meshes/housing.dae\n'}
+[22.787784] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/meshes/mount.dae\n'}
+[22.792970] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/meshes/prop.dae\n'}
+[22.798357] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/meshes/roboboat01.dae\n'}
+[22.803796] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/model.config\n'}
+[22.809167] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat01/model.sdf\n'}
+[22.814632] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat02/materials/scripts/model.material\n'}
+[22.819765] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat02/materials/textures/Boat02_Albedo.png\n'}
+[22.825014] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat02/materials/textures/Boat02_Metallic.png\n'}
+[22.830173] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat02/materials/textures/Boat02_Normal.png\n'}
+[22.835317] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat02/materials/textures/Boat02_Roughness.png\n'}
+[22.840437] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat02/meshes/roboboat02.dae\n'}
+[22.845373] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat02/model.config\n'}
+[22.850563] (-) TimerEvent: {}
+[22.850775] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat02/model.sdf\n'}
+[22.855901] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat_cpubox/materials/textures/DryBox_Albedo.png\n'}
+[22.862624] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat_cpubox/materials/textures/DryBox_Roughness.png\n'}
+[22.870525] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat_cpubox/meshes/drybox.dae\n'}
+[22.876849] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat_cpubox/model.config\n'}
+[22.882511] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/roboboat_cpubox/model.sdf\n'}
+[22.887931] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/sensor_post/mesh/sensor_post.dae\n'}
+[22.893060] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/sensor_post/mesh/sensor_post.png\n'}
+[22.898451] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/sensor_post/mesh/sensor_post_arm.dae\n'}
+[22.903512] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/sensor_post/model.config\n'}
+[22.908753] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/sensor_post/model.sdf\n'}
+[22.913938] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/symbol_triangle/mesh/triangle.dae\n'}
+[22.919161] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/symbol_triangle/model.config\n'}
+[22.924485] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/symbol_triangle/model.sdf\n'}
+[22.929592] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/tripod/model.config\n'}
+[22.934878] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/tripod/model.sdf\n'}
+[22.939967] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel/materials/textures/Boat01_Albedo.jpg\n'}
+[22.945150] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel/materials/textures/Boat01_Normal.jpg\n'}
+[22.950402] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel/materials/textures/Boat01_Roughness.jpg\n'}
+[22.950622] (-) TimerEvent: {}
+[22.955533] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel/meshes/Boat01.dae\n'}
+[22.962515] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel/model.config\n'}
+[22.972116] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel/model.sdf\n'}
+[22.978481] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel/thumbnails/1.png\n'}
+[22.984132] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/WAM-V-Base.dae\n'}
+[22.989268] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/WamV.png\n'}
+[22.994623] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/battery.dae\n'}
+[22.999711] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/battery.png\n'}
+[23.004868] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/battery_Albedo.png\n'}
+[23.010294] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/battery_Metalness.png\n'}
+[23.015578] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/battery_Normal.png\n'}
+[23.020850] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/battery_Roughness.png\n'}
+[23.026042] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/cpu_cases.dae\n'}
+[23.031191] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/cpu_cases.png\n'}
+[23.036232] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/cpu_cases_Albedo.png\n'}
+[23.041579] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/cpu_cases_Metalness.png\n'}
+[23.046768] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/cpu_cases_Normal.png\n'}
+[23.050775] (-) TimerEvent: {}
+[23.052181] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/cpu_cases_Roughness.png\n'}
+[23.057458] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/engine.dae\n'}
+[23.064850] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/legs.dae\n'}
+[23.074867] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/lidar_3d_v1 copy.png\n'}
+[23.081939] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/lidar_3d_v1.dae\n'}
+[23.087526] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/lidar_3d_v1.png\n'}
+[23.092916] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/propeller.dae\n'}
+[23.098134] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/meshes/ring.dae\n'}
+[23.103360] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/model.config\n'}
+[23.109410] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/model.sdf\n'}
+[23.116097] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/old/oldmodel.sdf\n'}
+[23.121653] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/worlds/sydney.sdf\n'}
+[23.128574] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/battery.xacro\n'}
+[23.134233] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/cpu_cases.xacro\n'}
+[23.142767] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/dynamics/wamv_gazebo_dynamics_plugin.xacro\n'}
+[23.150922] (-) TimerEvent: {}
+[23.151472] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/gz_waffle.sdf.xacro\n'}
+[23.159271] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/macros.xacro\n'}
+[23.169173] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/model.urdf.xacro\n'}
+[23.177833] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/model2.sdf\n'}
+[23.183790] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/thruster_layouts/wamv_aft_thrusters.xacro\n'}
+[23.189173] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/thruster_layouts/wamv_gazebo_thruster_config.xacro\n'}
+[23.194902] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/thruster_layouts/wamv_t_thrusters.xacro\n'}
+[23.203369] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/thruster_layouts/wamv_x_thrusters.xacro\n'}
+[23.212026] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/thrusters/engine.xacro\n'}
+[23.219644] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/turtlebot3_waffle.urdf\n'}
+[23.224943] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/wamv_base.urdf.xacro\n'}
+[23.233361] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/wamv_gazebo.urdf.xacro\n'}
+[23.243734] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/wamv_gazebo.xacro\n'}
+[23.251102] (-) TimerEvent: {}
+[23.251603] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo\n'}
+[23.263609] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/ament_index/resource_index/parent_prefix_path/wamv_gazebo\n'}
+[23.274228] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/ament_prefix_path.sh\n'}
+[23.281114] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/ament_prefix_path.dsv\n'}
+[23.286790] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/path.sh\n'}
+[23.291977] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/path.dsv\n'}
+[23.297276] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/local_setup.bash\n'}
+[23.302332] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/local_setup.sh\n'}
+[23.307540] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/local_setup.zsh\n'}
+[23.312882] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/local_setup.dsv\n'}
+[23.318337] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/package.dsv\n'}
+[23.323536] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/ament_index/resource_index/packages/wamv_gazebo\n'}
+[23.329047] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/cmake/wamv_gazeboConfig.cmake\n'}
+[23.334309] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/cmake/wamv_gazeboConfig-version.cmake\n'}
+[23.341889] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/package.xml\n'}
+[23.351245] (-) TimerEvent: {}
+[23.386281] (wamv_gazebo) StdoutLine: {'line': b"Listing '/home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo'...\n"}
+[23.386411] (wamv_gazebo) StdoutLine: {'line': b"Compiling '/home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/__init__.py'...\n"}
+[23.386456] (wamv_gazebo) StdoutLine: {'line': b"Compiling '/home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/bridge.py'...\n"}
+[23.386495] (wamv_gazebo) StdoutLine: {'line': b"Compiling '/home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/bridges.py'...\n"}
+[23.386534] (wamv_gazebo) StdoutLine: {'line': b"Compiling '/home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/launch.py'...\n"}
+[23.386572] (wamv_gazebo) StdoutLine: {'line': b"Compiling '/home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/model.py'...\n"}
+[23.386610] (wamv_gazebo) StdoutLine: {'line': b"Compiling '/home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/monitor_sim.py'...\n"}
+[23.386648] (wamv_gazebo) StdoutLine: {'line': b"Compiling '/home/luca002/proj_ws/install/wamv_gazebo/lib/python3.12/site-packages/wamv_gazebo/payload_bridges.py'...\n"}
+[23.391273] (wamv_gazebo) CommandEnded: {'returncode': 0}
+[23.400900] (wamv_gazebo) JobEnded: {'identifier': 'wamv_gazebo', 'rc': 0}
+[23.401436] (-) EventReactorShutdown: {}

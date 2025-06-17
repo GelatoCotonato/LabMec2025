@@ -5,7 +5,7 @@ set(wamv_navigation_BUILD_DEPENDS "nav2_common" "navigation2" "launch_ros" "ros_
 set(wamv_navigation_BUILDTOOL_DEPENDS "ament_cmake")
 set(wamv_navigation_BUILD_EXPORT_DEPENDS "ros_gz_bridge" "ros_gz_interfaces" "ros_gz_image" "ros_gz_sim" "robot_state_publisher" "xacro")
 set(wamv_navigation_BUILDTOOL_EXPORT_DEPENDS )
-set(wamv_navigation_EXEC_DEPENDS "diff_drive_controller" "joint_state_broadcaster" "launch_ros" "navigation2" "nav2_common" "slam_toolbox" "ros_gz_bridge" "ros_gz_interfaces" "ros_gz_image" "ros_gz_sim" "robot_state_publisher" "xacro")
+set(wamv_navigation_EXEC_DEPENDS "robot_localization" "diff_drive_controller" "joint_state_broadcaster" "launch_ros" "nav2_common" "slam_toolbox" "joint_state_publisher" "joint_state_publisher_gui" "rviz" "rviz2" "ros_gz_bridge" "ros_gz_interfaces" "ros_gz_image" "ros_gz_sim" "robot_state_publisher" "xacro")
 set(wamv_navigation_TEST_DEPENDS "ament_lint_auto" "ament_lint_common" "ament_cmake_gtest" "ament_cmake_pytest" "launch" "launch_testing")
 set(wamv_navigation_GROUP_DEPENDS )
 set(wamv_navigation_MEMBER_OF_GROUPS )

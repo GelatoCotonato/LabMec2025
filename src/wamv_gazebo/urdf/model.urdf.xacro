@@ -1,0 +1,705 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="wamv">
+
+  <!-- BASE FOOTPRINT -->
+
+  <link name="base_footprint" />
+
+  <!-- BASE LINK -->
+
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="180.0" />
+      <inertia ixx="120.0" ixy="0.0" ixz="0.0" iyy="393.0" iyz="0.0" izz="446.0" />
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/WAM-V-Base.dae" />
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 1.25" rpy="0 0 0" />
+      <geometry>
+        <box size="1.85 1 0.1" />
+      </geometry>
+    </collision>
+
+    <collision>
+      <origin xyz="-0.4 1.03 0.2" rpy="0 1.57 0" />
+      <geometry>
+        <cylinder length="4" radius="0.2" />
+      </geometry>
+    </collision>
+
+    <collision>
+      <origin xyz="1.85 1.03 0.3" rpy="0 1.38 0" />
+      <geometry>
+        <cylinder length="0.5" radius="0.17" />
+      </geometry>
+    </collision>
+
+    <collision>
+      <origin xyz="2.3 1.03 0.4" rpy="0 1.3 0" />
+      <geometry>
+        <cylinder length="0.45" radius="0.12" />
+      </geometry>
+    </collision>
+
+    <collision>
+      <origin xyz="-0.4 -1.03 0.2" rpy="0 1.57 0" />
+      <geometry>
+        <cylinder length="4" radius="0.2" />
+      </geometry>
+    </collision>
+
+    <collision>
+      <origin xyz="1.85 -1.03 0.3" rpy="0 1.38 0" />
+      <geometry>
+        <cylinder length="0.5" radius="0.17" />
+      </geometry>
+    </collision>
+
+    <collision>
+      <origin xyz="2.3 -1.03 0.4" rpy="0 1.3 0" />
+      <geometry>
+        <cylinder length="0.45" radius="0.12" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_footprint" />
+    <child link="base_link" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+
+  <!-- LEFT PART -->
+
+  <!-- ENGINE -->
+
+  <link name="left_engine_link">
+
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="15.0" />
+      <inertia ixx="0.889245" ixy="0.0" ixz="0.0" iyy="0.811125" iyz="0.0" izz="0.078125" />
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/engine.dae" />
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="-0.145 0 -0.27" rpy="0 0 0" />
+      <geometry>
+        <box size="0.25 0.15 0.9" />
+      </geometry>
+    </collision>
+
+    <collision>
+      <origin xyz="-0.34 0 0.12" rpy="0 0 0" />
+      <geometry>
+        <box size="0.14 0.15 0.12" />
+      </geometry>
+    </collision>
+
+  </link>
+
+  <joint name="left_chassis_engine_joint" type="revolute">
+    <axis xyz="0 0 1" />
+    <parent link="base_link" />
+    <child link="left_engine_link" />
+    <limit effort="10" lower="-1.57" upper="1.57" velocity="10" />
+    <origin xyz="-2.373776 1.027135 0.318237" rpy="0 0 0" />
+  </joint>
+
+  <!-- PROPELLER -->
+
+  <link name="left_propeller_link">
+    
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.5" />
+      <inertia ixx="0.008545" ixy="0.0" ixz="0.0" 
+               iyy="0.008545" iyz="0.0" 
+               izz="0.0144" />
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/propeller.dae" />
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="-0.08 0 0" rpy="0 1.57 0" />
+      <geometry>
+        <cylinder length="0.18" radius="0.24" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="left_engine_propeller_joint" type="revolute">
+    <axis xyz="1 0 0" />
+    <parent link="left_engine_link" />
+    <child link="left_propeller_link" />
+    <limit effort="20" lower="-999999" upper="999999" velocity="15" />
+    <dynamics damping="0.05" friction="0.05" spring_reference="0" spring_stiffness="0" />
+    <origin xyz="-0.278156 0 -0.509371" rpy="0 0 0" />
+  </joint>
+
+
+  <!-- RIGHT PART -->
+
+  <!-- ENGINE -->
+
+  <link name="right_engine_link">
+     
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="15.0" />
+      <inertia ixx="0.889245" ixy="0.0" ixz="0.0" 
+               iyy="0.811125" iyz="0.0" 
+               izz="0.078125" />
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/engine.dae" />
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="-0.145 0 -0.27" rpy="0 0 0" />
+      <geometry>
+        <box size="0.25 0.15 0.9" />
+      </geometry>
+    </collision>
+
+    <collision>
+      <origin xyz="-0.34 0 0.12" rpy="0 0 0" />
+      <geometry>
+        <box size="0.14 0.15 0.12" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="right_chassis_engine_joint" type="revolute">
+    <axis xyz="0 0 1" />
+    <parent link="base_link" />
+    <child link="right_engine_link" />
+    <limit effort="10" lower="-1.57" upper="1.57" velocity="2" />
+    <origin xyz="-2.373776 -1.027135 0.318237" rpy="0 0 0" />
+  </joint>
+
+  <!-- PROPELLER -->0.15
+
+  <link name="right_propeller_link">
+ 
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.008545" ixy="0.0" ixz="0.0" 
+               iyy="0.008545" iyz="0.0" 
+               izz="0.0144"/>
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/propeller.dae"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="-0.08 0 0" rpy="0 1.57 0"/>
+      <geometry>
+        <cylinder length="0.18" radius="0.24"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="right_engine_propeller_joint" type="revolute">
+    <axis xyz="1 0 0" />
+    <parent link="right_engine_link" />
+    <child link="right_propeller_link" />
+    <limit effort="20" lower="-999999" upper="999999" velocity="15" />
+    <dynamics damping="0.05" friction="0.05" spring_reference="0" spring_stiffness="0" />
+    <origin xyz="-0.278156 0 -0.509371" rpy="0 0 0" />
+  </joint>
+
+  <!-- BATTERIES -->
+  
+  <link name="battery_dx_link">
+   
+    <inertial>
+      <origin xyz="-0.02 0 0.155" rpy="0 0 0"/>
+      <mass value="23.5"/>
+      <inertia 
+        ixx="0.5015291666666667" ixy="0" ixz="0"
+        iyy="0.8931958333333333" iyz="0"
+        izz="1.0183333333333333"/>
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/battery.dae"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="-0.02 0 0.155" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.64 0.44 0.31"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="battery_dx_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="battery_dx_link" />
+    <origin xyz="-0.13 -1.029 0.448" rpy="0 0 0" />
+  </joint>
+
+  <link name="battery_sx_link">
+ 
+    <inertial>
+      <origin xyz="-0.02 0 0.155" rpy="0 0 0"/>
+      <mass value="23.5"/>
+      <inertia 
+        ixx="0.50152917"          ixy="0" ixz="0"
+        iyy="0.8931958333333333"  iyz="0"
+        izz="1.0183333333333333"/>
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/battery.dae"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="-0.02 0 0.155" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.64 0.44 0.31"/>
+      </geometry>
+    </collision>
+
+  </link>
+
+  <joint name="battery_sx_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="battery_sx_link" />
+    <origin xyz="-0.13 1.029 0.448" rpy="0 0 0" />
+  </joint>
+
+  <!-- CPU CASES -->
+
+  <link name="cpu_cases_link">
+ 
+    <inertial>
+      <origin xyz="0.1 0 0.235" rpy="0 0 0"/>
+      <mass value="20"/>
+      <inertia 
+        ixx="1.51633333333333" ixy="0" ixz="0"
+        iyy="1.93633333333333" iyz="0"
+        izz="2.71633333333333"/>
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/cpu_cases.dae"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="0.1 0 0.235" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.595 0.83 0.47"/>
+      </geometry>
+    </collision>
+
+    <collision>
+      <origin xyz="-0.387 0 0.14" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.375 0.64 0.28"/>
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint name="cpu_cases_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="cpu_cases_link"/>
+    <origin xyz="0.073 0 1.3" rpy="0 0 0" />
+  </joint>
+
+  <!-- TRIPOD -->
+
+  <link name="tripod_legs_link">
+    <inertial>
+      <origin xyz="0 0 0.11" rpy="0 0 0"/>
+      <mass value="0.35"/>
+      <inertia
+        ixx="0.0008" iyy="0.0008" izz="0.0005"
+        ixy="0.0"    ixz="0.0"
+        iyz="0.0"/>
+    </inertial>
+
+    <visual name="tripod_legs_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/legs.dae" />
+      </geometry>
+      <material name="dark_gray_metal">
+        <color rgba="0.25 0.25 0.25 1"/>
+      </material>
+    </visual>
+
+    <collision name="tripod_legs_collision">
+      <origin xyz="0 0 0.11" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.218" radius="0.1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="tripod_legs_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="tripod_legs_link" />
+    <origin xyz="0.77 0 1.29" rpy="0 0 0" />
+  </joint>
+
+  <link name="tripod_ring_link">
+    <inertial>
+      <origin xyz="0 0 0.005" rpy="0 0 0"/>
+      <mass value="0.15"/>
+      <inertia
+        ixx="0.00015" iyy="0.00015" izz="0.0001"
+        ixy="0.0"     ixz="0.0"
+        iyz="0.0"/>
+    </inertial>
+
+    <visual name="tripod_ring_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/ring.dae"/>
+      </geometry>
+      <material name="gray_metal">
+        <color rgba="0.65 0.65 0.70 1"/>
+      </material>
+    </visual>
+
+    <collision name="tripod_ring_collision">
+      <origin xyz="0 0 0.005" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.01" radius="0.068"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="tripod_ring_joint" type="fixed">
+    <parent link="tripod_legs_link" />
+    <child link="tripod_ring_link" />
+    <origin xyz="0 0 0.218" rpy="0 0 0" />
+  </joint>
+
+  <!-- SENSORS -->
+
+  <link name="lidar_link">
+    <inertial>
+      <origin xyz="0 0 0.036" rpy="0 0 0"/>
+      <mass value="0.83"/>
+      <inertia 
+        ixx="0.001" ixy="0.0" ixz="0.0"
+        iyy="0.001" iyz="0.0"
+        izz="0.001"/>
+    </inertial>
+
+    <visual name="lidar_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/lidar_3d_v1.dae"/>
+      </geometry>
+    </visual>
+
+    <collision name="lidar_collision">
+      <origin xyz="0 0 0.036" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.072" radius="0.0515"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="lidar_joint" type="fixed">
+    <parent link="tripod_ring_link" />
+    <child link="lidar_link" />
+    <origin xyz="0 0 0.01" rpy="0 0 0" />
+  </joint>
+
+  <!-- LIDAR -->
+  <gazebo reference="lidar_link">
+    <sensor name="gpu_lidar" type="gpu_lidar">
+      <pose>0 0 0.036 0 0.139626 0</pose>
+      <update_rate>35</update_rate>
+      <topic>scan</topic>
+      <always_on>1</always_on>
+      <visualize>true</visualize>
+      <gz_frame_id>lidar_link</gz_frame_id>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>640</samples>
+            <resolution>1</resolution>
+            <min_angle>-1.396263</min_angle>
+            <max_angle>1.396263</max_angle>
+          </horizontal>
+          <vertical>
+            <samples>16</samples>
+            <resolution>1</resolution>
+            <min_angle>-0.26179</min_angle>
+            <max_angle>0.26179</max_angle>
+          </vertical>
+        </scan>
+        <range>
+          <min>0.1</min>
+          <max>30.0</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+    </sensor>
+  </gazebo>
+
+  <!-- GPS -->
+
+  <gazebo reference="lidar_link">
+    <sensor name="gps_sensor" type="gps">
+      <always_on>true</always_on>
+      <update_rate>1</update_rate>
+      <visualize>true</visualize>
+      <topic>fix</topic>
+      <gz_frame_id>lidar_link</gz_frame_id>
+      <gps>
+        <position_sensing>
+          <horizontal>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>0.000001</stddev>
+            </noise>
+          </horizontal>
+          <vertical>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>0.000001</stddev>
+            </noise>
+          </vertical>
+        </position_sensing>
+      </gps>
+    </sensor>
+  </gazebo>
+
+  <!-- IMU -->
+
+  <gazebo reference="cpu_cases_link">
+    <sensor name="imu_sensor" type="imu">
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <topic>imu</topic>
+      <gz_frame_id>cpu_cases_link</gz_frame_id>
+      <imu>
+        <angular_velocity>
+          <x>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.009</stddev>
+              <bias_mean>0.00075</bias_mean>
+              <bias_stddev>0.005</bias_stddev>
+              <dynamic_bias_stddev>0.00002</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>400.0</dynamic_bias_correlation_time>
+              <precision>0.00025</precision>
+            </noise>
+          </x>
+          <y>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.009</stddev>
+              <bias_mean>0.00075</bias_mean>
+              <bias_stddev>0.005</bias_stddev>
+              <dynamic_bias_stddev>0.00002</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>400.0</dynamic_bias_correlation_time>
+              <precision>0.00025</precision>
+            </noise>
+          </y>
+          <z>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.009</stddev>
+              <bias_mean>0.00075</bias_mean>
+              <bias_stddev>0.005</bias_stddev>
+              <dynamic_bias_stddev>0.00002</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>400.0</dynamic_bias_correlation_time>
+              <precision>0.00025</precision>
+            </noise>
+          </z>
+        </angular_velocity>
+
+        <linear_acceleration>
+          <x>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.021</stddev>
+              <bias_mean>0.05</bias_mean>
+              <bias_stddev>0.0075</bias_stddev>
+              <dynamic_bias_stddev>0.000375</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>175.0</dynamic_bias_correlation_time>
+              <precision>0.005</precision>
+            </noise>
+          </x>
+          <y>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.021</stddev>
+              <bias_mean>0.05</bias_mean>
+              <bias_stddev>0.0075</bias_stddev>
+              <dynamic_bias_stddev>0.000375</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>175.0</dynamic_bias_correlation_time>
+              <precision>0.005</precision>
+            </noise>
+          </y>
+          <z>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.021</stddev>
+              <bias_mean>0.05</bias_mean>
+              <bias_stddev>0.0075</bias_stddev>
+              <dynamic_bias_stddev>0.000375</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>175.0</dynamic_bias_correlation_time>
+              <precision>0.005</precision>
+            </noise>
+          </z>
+        </linear_acceleration>
+      </imu>
+    </sensor>
+  </gazebo>
+
+  <gazebo>
+    <plugin name="gz::sim::systems::Thruster" filename="gz-sim-thruster-system">
+      <joint_name>left_engine_propeller_joint</joint_name>
+      <thrust_coefficient>0.004422</thrust_coefficient>
+      <fluid_density>1000</fluid_density>
+      <propeller_diameter>0.2</propeller_diameter>
+      <velocity_control>true</velocity_control>
+    </plugin>
+  </gazebo>
+
+  <gazebo>
+    <plugin name="gz::sim::systems::JointPositionController"
+            filename="gz-sim-joint-position-controller-system">
+      <joint_name>left_chassis_engine_joint</joint_name>
+      <use_velocity_commands>true</use_velocity_commands>
+      <topic>/wamv/left/thruster/joint/cmd_pos</topic>
+    </plugin>
+  </gazebo>
+
+  <gazebo>
+    <plugin
+      filename="gz-sim-thruster-system"
+      name="gz::sim::systems::Thruster">
+      <joint_name>right_engine_propeller_joint</joint_name>
+      <thrust_coefficient>0.004422</thrust_coefficient>
+      <fluid_density>1000</fluid_density>
+      <propeller_diameter>0.2</propeller_diameter>
+      <velocity_control>true</velocity_control>
+    </plugin>
+  </gazebo>
+      
+  <gazebo>
+    <plugin
+      filename="gz-sim-joint-position-controller-system"
+      name="gz::sim::systems::JointPositionController">
+      <joint_name>right_chassis_engine_joint</joint_name>
+      <use_velocity_commands>true</use_velocity_commands>
+      <topic>/wamv/right/thruster/joint/cmd_pos</topic>
+    </plugin>
+  </gazebo>
+
+  <gazebo>
+    <plugin name="wamv_gazebo::Surface" filename="libSurface.so">
+      <link_name>base_footprint</link_name>
+      <hull_length>4.9</hull_length>
+      <hull_radius>0.213</hull_radius>
+      <fluid_level>0</fluid_level>
+      <points>
+        <point>0.6 1.03 0</point>
+        <point>-1.4 1.03 0</point>
+      </points>
+      <wavefield>
+        <topic>/wamv_gazebo/wavefield/parameters</topic>
+      </wavefield>
+    </plugin>
+  </gazebo>
+
+  <gazebo>
+    <plugin name="wamv_gazebo::Surface" filename="libSurface.so">
+      <link_name>base_footprint</link_name>
+      <hull_length>4.9</hull_length>
+      <hull_radius>0.213</hull_radius>
+      <fluid_level>0</fluid_level>
+      <points>
+        <point>0.6 -1.03 0</point>
+        <point>-1.4 -1.03 0</point>
+      </points>
+      <wavefield>
+        <topic>/wamv_gazebo/wavefield/parameters</topic>
+      </wavefield>
+    </plugin>
+  </gazebo>
+
+  <gazebo>
+    <plugin name="gz::sim::systems::Hydrodynamics" filename="gz-sim-hydrodynamics-system">
+      <link_name>base_footprint</link_name>
+      <xDotU>0.0</xDotU>
+      <yDotV>0.0</yDotV>
+      <nDotR>0.0</nDotR>
+      <xU>-51.3</xU>
+      <xAbsU>-72.4</xAbsU>
+      <yV>-40.0</yV>
+      <yAbsV>0.0</yAbsV>
+      <zW>-500.0</zW>
+      <kP>-50.0</kP>
+      <mQ>-50.0</mQ>
+      <nR>-400.0</nR>
+      <nAbsR>0.0</nAbsR>
+    </plugin>
+  </gazebo>
+
+  <gazebo>
+    <plugin
+      filename="gz-sim-odometry-publisher-system"
+      name="gz::sim::systems::OdometryPublisher">
+      
+      <odom_topic>/odom</odom_topic>
+      <odom_frame>odom</odom_frame>
+      <robot_base_frame>base_footprint</robot_base_frame>
+      <dimension>3</dimension>
+      <publish_tf>false</publish_tf> 
+      <odom_publish_frequency>20.0</odom_publish_frequency>
+  </plugin>
+  </gazebo>
+</robot>

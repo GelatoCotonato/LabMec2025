@@ -4,6 +4,7 @@ setup.py
 config/python_node.config.yaml
 launch/test.launch.yaml
 python_node/ CmdVelToWamv.py
+python_node/ThrusterController.py
 python_node/__init__.py
 python_node/odom_to_tf.py
 python_node/pub_node.py

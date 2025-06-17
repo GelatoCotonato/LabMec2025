@@ -321,8 +321,7 @@
       <background>0.8 0.8 0.8</background>
     </scene>
 
-    <!-- Estimated latitude/longitude of sydneyregatta
-         from satellite imagery -->
+    <!-- Estimated latitude/longitude -->
     <spherical_coordinates>
       <surface_model>EARTH_WGS84</surface_model>
       <world_frame_orientation>ENU</world_frame_orientation>
@@ -354,167 +353,43 @@
     <include>
       <name>Coast Waves</name>
       <pose>0 0 0 0 0 0</pose>
-      <uri>coast_waves</uri>
+      <uri>model://coast_waves</uri>
     </include>
 
     <include>
       <name>mb_marker_buoy_red</name>
       <pose>-528 191 0 0 0 0</pose>
-      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/mb_marker_buoy_red</uri>
-
-      <plugin name="wamv_gazebo::PolyhedraBuoyancyDrag"
-              filename="libPolyhedraBuoyancyDrag.so">
-        <fluid_density>1000</fluid_density>
-        <fluid_level>0.0</fluid_level>
-        <linear_drag>25.0</linear_drag>
-        <angular_drag>2.0</angular_drag>
-        <buoyancy name="collision_outer">
-          <link_name>link</link_name>
-          <pose>0 0 -0.3 0 0 0</pose>
-          <geometry>
-            <cylinder>
-              <radius>0.325</radius>
-              <length>0.1</length>
-            </cylinder>
-          </geometry>
-        </buoyancy>
-        <wavefield>
-          <topic>/wamv_gazebo/wavefield/parameters</topic>
-        </wavefield>
-      </plugin>
+      <uri>model://mb_marker_buoy_red</uri>
     </include>
 
     <include>
       <name>mb_marker_buoy_black</name>
       <pose>-528 190 0 0 0 0</pose>
-      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/mb_marker_buoy_black</uri>
-
-      <plugin name="wamv_gazebo::PolyhedraBuoyancyDrag"
-              filename="libPolyhedraBuoyancyDrag.so">
-        <fluid_density>1000</fluid_density>
-        <fluid_level>0.0</fluid_level>
-        <linear_drag>25.0</linear_drag>
-        <angular_drag>2.0</angular_drag>
-        <buoyancy name="collision_outer">
-          <link_name>link</link_name>
-          <pose>0 0 -0.3 0 0 0</pose>
-          <geometry>
-            <cylinder>
-              <radius>0.325</radius>
-              <length>0.1</length>
-            </cylinder>
-          </geometry>
-        </buoyancy>
-        <wavefield>
-          <topic>/wamv_gazebo/wavefield/parameters</topic>
-        </wavefield>
-      </plugin>
+      <uri>model://mb_marker_buoy_black</uri>
     </include>
 
     <include>
       <name>mb_marker_buoy_green</name>
       <pose>-528 189 0 0 0 0</pose>
-      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/mb_marker_buoy_green</uri>
-
-      <plugin name="wamv_gazebo::PolyhedraBuoyancyDrag"
-              filename="libPolyhedraBuoyancyDrag.so">
-        <fluid_density>1000</fluid_density>
-        <fluid_level>0.0</fluid_level>
-        <linear_drag>25.0</linear_drag>
-        <angular_drag>2.0</angular_drag>
-        <buoyancy name="collision_outer">
-          <link_name>link</link_name>
-          <pose>0 0 -0.3 0 0 0</pose>
-          <geometry>
-            <cylinder>
-              <radius>0.325</radius>
-              <length>0.1</length>
-            </cylinder>
-          </geometry>
-        </buoyancy>
-        <wavefield>
-          <topic>/wamv_gazebo/wavefield/parameters</topic>
-        </wavefield>
-      </plugin>
+      <uri>model://mb_marker_buoy_green</uri>
     </include>
 
     <include>
       <name>mb_marker_buoy_white</name>
       <pose>-528 188 0 0 0 0</pose>
-      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/mb_marker_buoy_white</uri>
-
-      <plugin name="wamv_gazebo::PolyhedraBuoyancyDrag"
-              filename="libPolyhedraBuoyancyDrag.so">
-        <fluid_density>1000</fluid_density>
-        <fluid_level>0.0</fluid_level>
-        <linear_drag>25.0</linear_drag>
-        <angular_drag>2.0</angular_drag>
-        <buoyancy name="collision_outer">
-          <link_name>link</link_name>
-          <pose>0 0 -0.3 0 0 0</pose>
-          <geometry>
-            <cylinder>
-              <radius>0.325</radius>
-              <length>0.1</length>
-            </cylinder>
-          </geometry>
-        </buoyancy>
-        <wavefield>
-          <topic>/wamv_gazebo/wavefield/parameters</topic>
-        </wavefield>
-      </plugin>
+      <uri>model://mb_marker_buoy_white</uri>
     </include>
 
     <include>
       <name>mb_round_buoy_orange</name>
       <pose>-528 187 0 0 0 0</pose>
-      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/mb_round_buoy_orange</uri>
-
-      <plugin name="wamv_gazebo::PolyhedraBuoyancyDrag"
-              filename="libPolyhedraBuoyancyDrag.so">
-        <fluid_density>1000</fluid_density>
-        <fluid_level>0.0</fluid_level>
-        <linear_drag>75.0</linear_drag>
-        <angular_drag>2.0</angular_drag>
-        <buoyancy name="collision_outer">
-          <link_name>link</link_name>
-          <pose>0 0 0 0 0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.21</radius>
-          </sphere>
-          </geometry>
-        </buoyancy>
-        <wavefield>
-          <topic>/wamv_gazebo/wavefield/parameters</topic>
-        </wavefield>
-      </plugin>
+      <uri>model://mb_round_buoy_orange</uri>
     </include>
 
     <include>
       <name>mb_round_buoy_black</name>
       <pose>-528 186 0 0 0 0</pose>
-      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/mb_round_buoy_black</uri>
-
-      <plugin name="wamv_gazebo::PolyhedraBuoyancyDrag"
-              filename="libPolyhedraBuoyancyDrag.so">
-        <fluid_density>1000</fluid_density>
-        <fluid_level>0.0</fluid_level>
-        <linear_drag>75.0</linear_drag>
-        <angular_drag>2.0</angular_drag>
-        <buoyancy name="collision_outer">
-          <link_name>link</link_name>
-          <pose>0 0 0 0 0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.21</radius>
-          </sphere>
-          </geometry>
-        </buoyancy>
-        <wavefield>
-          <topic>/wamv_gazebo/wavefield/parameters</topic>
-        </wavefield>
-      </plugin>
+      <uri>model://mb_round_buoy_black</uri>
     </include>
 
     <!-- The posts for securing the WAM-V -->
@@ -557,39 +432,13 @@
       <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/ground_station</uri>
     </include>
 
-    <!-- The projectile for the ball shooter -->
-    <include>
-      <name>blue_projectile</name>
-      <pose>-545 60 0.03 0 0 0</pose>
-      <uri>blue_projectile</uri>
-      <plugin name="wamv_gazebo::PolyhedraBuoyancyDrag"
-              filename="libPolyhedraBuoyancyDrag.so">
-        <fluid_density>1000</fluid_density>
-        <fluid_level>0.0</fluid_level>
-        <linear_drag>25.0</linear_drag>
-        <angular_drag>2.0</angular_drag>
-        <buoyancy name="collision_outer">
-          <link_name>link</link_name>
-          <pose>0 0 -0.02 0 0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.0285</radius>
-            </sphere>
-          </geometry>
-        </buoyancy>
-        <wavefield>
-          <topic>/wamv_gazebo/wavefield/parameters</topic>
-        </wavefield>
-      </plugin>
-    </include>
-
     <!-- Load the plugin for the wind --> 
     <plugin
       filename="libUSVWind.so"
       name="wamv_gazebo::USVWind">
       <wind_obj>
         <name>wamv</name>
-        <link_name>wamv/base_link</link_name>
+        <link_name>base_footprint</link_name>
         <coeff_vector>.5 .5 .33</coeff_vector>
       </wind_obj>
       <!-- Wind -->
@@ -639,13 +488,6 @@
         }
       </message>
     </plugin>
-
-
-    <include>
-      <uri>model://wam-v</uri>
-      <name>wamv</name>
-      <pose>0 0 0 0 0 0</pose>
-    </include>
 
     <include>
       <name>light_buoy_1</name>
@@ -713,6 +555,12 @@
       <uri>model://mb_round_buoy_black</uri>
     </include>
     
+    <!-- <include>
+      <uri>model://wam-v</uri>
+      <name>wamv</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>  -->
+
   </world>
 
 </sdf>

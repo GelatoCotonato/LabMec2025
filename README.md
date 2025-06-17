@@ -27,12 +27,9 @@ esempio utile per prendere i modelli: https://github.com/osrf/vrx.git
 7) obstacle avoidance
 8) correzione rotta
 
-Command to launch the world and the robot:
-<pre>python3 ~/proj_ws/src/wamv_gazebo/launch/mylaunch.py</pre>
 
 <pre>ros2 launch slam_toolbox online_async_launch.py slam_params_file:=/home/luca002/proj_ws/src/wamv_navigation/config/slam_toolbox_params.yaml
 </pre>
-
 
 <pre>rviz2</pre>
 
@@ -54,7 +51,7 @@ To get the publication rate (Hz) of a topic :
 STEPS for SIMULATION:
 1. Launch Gazebo with World
 2. Define Robot Parameters
-3. Launch Gazebo with Boat   
+3. Launch Gazebo with Boat    
 4. Launch Bridges <pre>python3 ~/proj_ws/src/wamv_gazebo/launch/mylaunch.py</pre>
 5. Launch Subscription Node to receive /odom in order to publish /tf 
 5. Define SLAM Toolbox Config Parameters (yaml)

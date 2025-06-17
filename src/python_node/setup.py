@@ -18,8 +18,8 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='noel',
-    maintainer_email='nfpb1993@gmail.com',
+    maintainer='Luca',
+    maintainer_email='emailprogramming02@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
@@ -27,7 +27,8 @@ setup(
         'console_scripts': [
             'python_publisher = python_node.pub_node:main',
             'python_subscriber = python_node.sub_node:main',
-            'odom_to_tf = python_node.odom_to_tf:main'
+            'odom_to_tf = python_node.odom_to_tf:main',
+            'thruster_controller = python_node.ThrusterController:main'
         ],
     },
 )

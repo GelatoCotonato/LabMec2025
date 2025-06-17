@@ -1,4 +1,5 @@
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/README.md
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/ekf.yaml
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/nav2_default_view.rviz
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/nav2_namespaced_view.rviz
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/rviz_vrx_final.rviz
@@ -9,6 +10,7 @@
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/__init__.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/bringup_launch.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/cloned_multi_tb3_simulation_launch.py
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/display.launch.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/generate_wamv.launch.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/localization_launch.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/navigation_launch.py
@@ -36,6 +38,31 @@
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_multirobot_params_2.yaml
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_multirobot_params_all.yaml
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_params.yaml
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/config.rviz
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/WAM-V-Base.dae
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/WamV.png
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery.dae
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery.png
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery_Albedo.png
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery_Metalness.png
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery_Normal.png
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery_Roughness.png
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases.dae
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases.png
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases_Albedo.png
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases_Metalness.png
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases_Normal.png
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases_Roughness.png
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/engine.dae
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/legs.dae
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/lidar_3d_v1 copy.png
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/lidar_3d_v1.dae
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/lidar_3d_v1.png
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/propeller.dae
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/ring.dae
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/model.config
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/model.sdf
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/urdf_wamv.urdf
 /home/luca002/proj_ws/install/wamv_navigation/share/ament_index/resource_index/package_run_dependencies/wamv_navigation
 /home/luca002/proj_ws/install/wamv_navigation/share/ament_index/resource_index/parent_prefix_path/wamv_navigation
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/environment/ament_prefix_path.sh

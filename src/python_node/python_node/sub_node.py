@@ -4,23 +4,14 @@ from std_msgs.msg import String
 from custom_interface.srv import CustomSrv
 from time import sleep
 
-
-
-
 class PythonSubscriber(Node):
-
     def __init__(self, name='python_subscriber'):
         super().__init__(node_name=name)
 
-
-        
-        self.declare_parameter("topic_name","")
-        self.declare_parameter("message", "This is a message")
-
+        self.declare_parameter("topic_name","/joint_states")
         name_of_topic = self.get_parameter("topic_name").get_parameter_value().string_value
         self.message = self.get_parameter("message").get_parameter_value().string_value
 
-        self.cli = self.create_client(CustomSrv, "/pub_start")
         self.pub = self.create_subscription(String, name_of_topic, self.msg_callback, 10)
     
     def msg_callback(self, msg: String):

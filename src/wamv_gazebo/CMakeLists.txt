@@ -188,6 +188,7 @@ install(DIRECTORY
   launch
   models
   worlds
+  urdf
   DESTINATION share/${PROJECT_NAME})
 
 ament_package()
