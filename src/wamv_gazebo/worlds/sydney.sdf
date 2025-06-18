@@ -9,9 +9,6 @@
     </physics>
 
     <gui fullscreen="0">
-
-      
-
       <!-- 3D scene -->
       <plugin filename="MinimalScene" name="3D View">
         <gz-gui>
@@ -356,42 +353,6 @@
       <uri>model://coast_waves</uri>
     </include>
 
-    <include>
-      <name>mb_marker_buoy_red</name>
-      <pose>-528 191 0 0 0 0</pose>
-      <uri>model://mb_marker_buoy_red</uri>
-    </include>
-
-    <include>
-      <name>mb_marker_buoy_black</name>
-      <pose>-528 190 0 0 0 0</pose>
-      <uri>model://mb_marker_buoy_black</uri>
-    </include>
-
-    <include>
-      <name>mb_marker_buoy_green</name>
-      <pose>-528 189 0 0 0 0</pose>
-      <uri>model://mb_marker_buoy_green</uri>
-    </include>
-
-    <include>
-      <name>mb_marker_buoy_white</name>
-      <pose>-528 188 0 0 0 0</pose>
-      <uri>model://mb_marker_buoy_white</uri>
-    </include>
-
-    <include>
-      <name>mb_round_buoy_orange</name>
-      <pose>-528 187 0 0 0 0</pose>
-      <uri>model://mb_round_buoy_orange</uri>
-    </include>
-
-    <include>
-      <name>mb_round_buoy_black</name>
-      <pose>-528 186 0 0 0 0</pose>
-      <uri>model://mb_round_buoy_black</uri>
-    </include>
-
     <!-- The posts for securing the WAM-V -->
     <include>
       <name>post_0</name>
@@ -408,27 +369,11 @@
       <pose>-544.832825 156.671951 0.499025 -0.162625 0 0 </pose>
       <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
     </include>
-
-    <!-- Antenna for communication with the WAM-V -->
-    <include>
-      <pose>-531.063721 147.668579 1.59471 -0.068142 0 -0.1</pose>
-      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/antenna</uri>
-    </include>
-
+    
     <!-- ground station tents -->
     <include>
       <name>ground_station_0</name>
       <pose>-540.796448 146.493744 1.671421 -0.00834 0.01824 1.301726</pose>
-      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/ground_station</uri>
-    </include>
-    <include>
-      <name>ground_station_1</name>
-      <pose>-537.622681 145.827896 1.681931 -0.00603 0.018667 1.301571</pose>
-      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/ground_station</uri>
-    </include>
-    <include>
-      <name>ground_station_2</name>
-      <pose>-534.550537 144.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/ground_station</uri>
     </include>
 
@@ -489,77 +434,381 @@
       </message>
     </plugin>
 
+    <!-- ROUND BUOY -->
     <include>
-      <name>light_buoy_1</name>
-      <pose>80 0 0 0 0 0</pose>
-      <uri>model://light_buoy</uri>
+      <name>mb_round_buoy_black__0</name>
+      <pose>40 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__1</name>
+      <pose>45 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__2</name>
+      <pose>50 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__3</name>
+      <pose>55 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__4</name>
+      <pose>60 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__5</name>
+      <pose>65 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__6</name>
+      <pose>70 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__7</name>
+      <pose>75 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__8</name>
+      <pose>80 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__9</name>
+      <pose>85 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__10</name>
+      <pose>90 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__11</name>
+      <pose>95 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__12</name>
+      <pose>100 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__13</name>
+      <pose>105 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__14</name>
+      <pose>110 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__15</name>
+      <pose>115 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__16</name>
+      <pose>120 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__17</name>
+      <pose>125 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__18</name>
+      <pose>130 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__19</name>
+      <pose>135 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__20</name>
+      <pose>140 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__21</name>
+      <pose>145 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__22</name>
+      <pose>150 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__23</name>
+      <pose>155 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black__24</name>
+      <pose>160 -50 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
     </include>
 
     <include>
-      <name>light_buoy_2</name>
-      <pose>40 0 0 0 0 0</pose>
-      <uri>model://light_buoy</uri>
+      <name>mb_round_buoy_black_0</name>
+      <pose>40 -30 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
     </include>
+    <include>
+      <name>mb_round_buoy_black_5</name>
+      <pose>60 -30 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black_8</name>
+      <pose>80 -30 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black_12</name>
+      <pose>100 -30 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black_16</name>
+      <pose>120 -30 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black_20</name>
+      <pose>140 -30 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_black_24</name>
+      <pose>160 -30 0 0 0 0</pose>
+      <uri>model://round_buoy_black</uri>
+    </include>
+
 
     <include>
-      <name>mb_marker_buoy_red_1</name>
-      <pose>20 0 0 0 0 0</pose>
-      <uri>model://mb_marker_buoy_red</uri>
+      <name>mb_round_buoy_orange_0</name>
+      <pose>60 35 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
     </include>
-
-    <include>
-      <name>mb_marker_buoy_red_2</name>
-      <pose>20 0 0 0 0 0</pose>
-      <uri>model://mb_marker_buoy_red</uri>
-    </include>
-
-    <include>
-      <name>mb_marker_buoy_black_1</name>
-      <pose>40 20 0 0 0 0</pose>
-      <uri>model://mb_marker_buoy_black</uri>
-    </include>
-
-    <include>
-      <name>mb_marker_buoy_green_1</name>
-      <pose>40 -20 0 0 0 0</pose>
-      <uri>model://mb_marker_buoy_green</uri>
-    </include>
-
-    <include>
-      <name>mb_marker_buoy_white_1</name>
-      <pose>60 0 0 0 0 0</pose>
-      <uri>model://mb_marker_buoy_white</uri>
-    </include>
-
     <include>
       <name>mb_round_buoy_orange_1</name>
-      <pose>30 10 0 0 0 0</pose>
-      <uri>model://mb_round_buoy_orange</uri>
+      <pose>60 25 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
     </include>
-
     <include>
       <name>mb_round_buoy_orange_2</name>
-      <pose>50 -10 0 0 0 0</pose>
-      <uri>model://mb_round_buoy_orange</uri>
+      <pose>60 15 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
     </include>
-    
     <include>
-      <name>mb_round_buoy_black_1</name>
-      <pose>50 10 0 0 0 0</pose>
-      <uri>model://mb_round_buoy_black</uri>
+      <name>mb_round_buoy_orange_3</name>
+      <pose>60 5 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange_4</name>
+      <pose>60 -5 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange_5</name>
+      <pose>60 -15 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange_6</name>
+      <pose>60 -25 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
     </include>
 
+
     <include>
-      <name>mb_round_buoy_black_2</name>
-      <pose>30 -10 0 0 0 0</pose>
-      <uri>model://mb_round_buoy_black</uri>
+      <name>mb_round_buoy_orange__0</name>
+      <pose>80 35 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
     </include>
+    <include>
+      <name>mb_round_buoy_orange__1</name>
+      <pose>80 25 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange__2</name>
+      <pose>80 15 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange__3</name>
+      <pose>80 5 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange__4</name>
+      <pose>80 -5 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange__5</name>
+      <pose>80 -15 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange__6</name>
+      <pose>80 -25 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+
     
-    <!-- <include>
-      <uri>model://wam-v</uri>
-      <name>wamv</name>
-      <pose>0 0 0 0 0 0</pose>
-    </include>  -->
+
+    <include>
+      <name>mb_round_buoy_orange___0</name>
+      <pose>100 35 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange___1</name>
+      <pose>100 25 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange___2</name>
+      <pose>100 15 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange___3</name>
+      <pose>100 5 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange___4</name>
+      <pose>100 -5 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange___5</name>
+      <pose>100 -15 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange___6</name>
+      <pose>100 -25 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+
+
+    <include>
+      <name>mb_round_buoy_orange____0</name>
+      <pose>120 35 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange____1</name>
+      <pose>120 25 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange____2</name>
+      <pose>120 15 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange____3</name>
+      <pose>120 5 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange____4</name>
+      <pose>120 -5 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange____5</name>
+      <pose>120 -15 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange____6</name>
+      <pose>120 -25 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+
+
+    <include>
+      <name>mb_round_buoy_orange_____0</name>
+      <pose>140 35 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange_____1</name>
+      <pose>140 25 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange_____2</name>
+      <pose>140 15 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange_____3</name>
+      <pose>140 5 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange_____4</name>
+      <pose>140 -5 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange_____5</name>
+      <pose>140 -15 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+    <include>
+      <name>mb_round_buoy_orange_____6</name>
+      <pose>140 -25 0 0 0 0</pose>
+      <uri>model://round_buoy_orange</uri>
+    </include>
+
+
+    <include>
+      <uri>model://vessel1</uri>
+      <name>vessel1_1</name>
+      <pose>50 10 0 0 0 -1.57</pose>
+    </include> 
+    <include>
+      <uri>model://vessel2</uri>
+      <name>vessel2_1</name>
+      <pose>70 25 0 0 0 -1.57</pose>
+    </include> 
+        <include>
+      <uri>model://vessel3</uri>
+      <name>vessel1_2</name>
+      <pose>90 0 0 0 0 -1.57</pose>
+    </include> 
+    <include>
+      <uri>model://vessel2</uri>
+      <name>vessel2_2</name>
+      <pose>110 -10 0 0 0 -1.57</pose>
+    </include>
+    <include>
+      <uri>model://vessel1</uri>
+      <name>vessel1_3</name>
+      <pose>130 20 0 0 0 -1.57</pose>
+    </include> 
 
   </world>
 
