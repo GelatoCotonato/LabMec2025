@@ -50,7 +50,6 @@ class ThrusterController(Node):
         self.left_angle_pub.publish(Float64(data=left_angle))
         self.right_angle_pub.publish(Float64(data=right_angle))
         
-        # self.get_logger().debug(f"Comandi inviati: L_thrust={left_thrust}, R_thrust={right_thrust}, L_angle={left_angle}, R_angle={right_angle}")
 
 def main(args=None):
     rclpy.init(args=args)

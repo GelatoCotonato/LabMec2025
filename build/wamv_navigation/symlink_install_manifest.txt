@@ -1,4 +1,5 @@
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/README.md
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/backpack_3d.lua
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/ekf.yaml
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/nav2_default_view.rviz
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/nav2_namespaced_view.rviz
@@ -39,6 +40,9 @@
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_multirobot_params_all.yaml
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_params.yaml
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/config.rviz
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/config2.rviz
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/config3.rviz
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/wamv_cartographer.rviz
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/WAM-V-Base.dae
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/WamV.png
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery.dae

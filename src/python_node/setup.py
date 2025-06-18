@@ -25,7 +25,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'python_publisher = python_node.pub_node:main',
+            'python_publisher = python_node.keyboard_teleop:main',
             'python_subscriber = python_node.sub_node:main',
             'odom_to_tf = python_node.odom_to_tf:main',
             'thruster_controller = python_node.ThrusterController:main'

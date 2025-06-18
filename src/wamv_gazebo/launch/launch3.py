@@ -5,8 +5,6 @@ from launch.actions import DeclareLaunchArgument, ExecuteProcess, TimerAction
 from launch.substitutions import Command, LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node
 from launch.conditions import IfCondition, UnlessCondition
-from launch.actions import RegisterEventHandler
-from launch.event_handlers import OnProcessStart
 
 def generate_launch_description():
     pkg_gazebo = get_package_share_directory('wamv_gazebo')
@@ -79,8 +77,8 @@ def generate_launch_description():
             'ros2', 'run', 'ros_gz_sim', 'create',
             '-topic', '/robot_description',
             '-name', 'wamv',
-            '-x', '0', '-y', '0', '-z', '0.5',
-            '--wait', '10'  
+            '-x', '0', '-y', '0', '-z', '0.2',
+            '--wait', '5'  
         ],
         output='screen'
     )
@@ -110,8 +108,6 @@ def generate_launch_description():
 
             # Odom & TF 
             '/odom@nav_msgs/msg/Odometry[gz.msgs.Odometry',
-            
-            # '/tf@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V',
 
             # GPS
             '/fix@sensor_msgs/msg/NavSatFix[gz.msgs.NavSat',
@@ -143,18 +139,10 @@ def generate_launch_description():
         ],
         output='screen'
     )
-
-    robot_localization_node = Node(
-        package='robot_localization',
-        executable='ekf_node',
-        name='ekf_node',
-        output='screen',
-        parameters=[os.path.join(pkg_navigation, 'config/ekf.yaml'), {'use_sim_time': LaunchConfiguration('use_sim_time')}]
-    )
     
     odom_tf = Node(
         package='python_node',
-        executable='odom_to_tf',  # assuming this is how your Python node is set
+        executable='odom_to_tf', 
         name='odom_to_tf',
         parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
@@ -184,7 +172,6 @@ def generate_launch_description():
         robot_state_publisher,
         gz_sim,
         spawn_entity,
-        # robot_localization_node,
         odom_tf,
         rviz_node,
         thruster_controller

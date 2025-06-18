@@ -37,6 +37,7 @@
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/__init__.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/__pycache__/bridge.cpython-312.pyc
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/bridge.py
+/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/cartographer.launch.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/competition.launch.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/compliance.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/configure_wamv.py
@@ -44,6 +45,9 @@
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/launch2.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/launch3.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/launch4.py
+/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/launch5.py
+/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/launch6.py
+/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/occupancy_grid.launch.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/spawn.launch.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/spawn_config.launch.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/usv_joy_teleop.py

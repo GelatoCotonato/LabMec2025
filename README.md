@@ -58,3 +58,10 @@ STEPS for SIMULATION:
 6. Launch SLAM Toolbox
 7. Launch RViz
 8. Launch Teleop
+
+
+To launch nav2_costmap
+<pre>ros2 launch slam_toolbox online_async_launch.py use_sim_time:=true</pre>
+<pre>ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true</pre>
+<pre>ros2 run nav2_costmap_2d nav2_costmap_2d_markers voxel_grid:=/local_costmap/voxel_grid visualization_marker:=/my_marker</pre>
+

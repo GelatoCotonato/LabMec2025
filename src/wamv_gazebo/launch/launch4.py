@@ -1,230 +1,43 @@
-
-from launch_ros.actions import Node
-from ament_index_python.packages import get_package_share_directory
 import os
-from launch.actions import ExecuteProcess, IncludeLaunchDescription
-import launch.actions
-import launch_ros.actions
-from launch.actions import TimerAction
-from launch.actions import IncludeLaunchDescription
-from launch.launch_description_sources import PythonLaunchDescriptionSource
+from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription, LaunchService
-from launch.actions import DeclareLaunchArgument
-from launch.substitutions import LaunchConfiguration
-from launch.actions import IncludeLaunchDescription
-import subprocess
+from launch.actions import DeclareLaunchArgument, ExecuteProcess, TimerAction
+from launch.substitutions import Command, LaunchConfiguration, PathJoinSubstitution
+from launch_ros.actions import Node
 from launch.conditions import IfCondition, UnlessCondition
-from launch.substitutions import Command, LaunchConfiguration
-from ros_gz_sim.actions import GzServer
 
-def generate_launch_description(world_name="sydney", robot_name="wam-v", ign_flag=True):
+def generate_launch_description():
+    pkg_gazebo = get_package_share_directory('wamv_gazebo')
+    pkg_navigation = get_package_share_directory('wamv_navigation')
+    # Percorsi dei file
+    urdf_model_path = os.path.join(pkg_gazebo, 'urdf', 'model.urdf.xacro')
+    world_path = os.path.join(pkg_gazebo, 'worlds', 'sydney.sdf')
+    rviz_config_path = os.path.join(pkg_navigation, 'rviz', 'config3.rviz')
 
-    # PATHS
-    my_dir = get_package_share_directory("wamv_gazebo")
-
-    world_path = os.path.join(my_dir,"worlds",f"{world_name}.sdf")
-    robot_path = os.path.join(my_dir,"models",f"{robot_name}","model.sdf")
-
-    my_dir2 = get_package_share_directory("wamv_navigation")
-
-    default_model_path = os.path.join(my_dir,"urdf","model.xacro")
-
-    rviz_config_path = os.path.join(my_dir2, 'rviz', 'config.rviz')
-
-    # Verify the world file exists
+    if not os.path.exists(urdf_model_path):
+        raise FileNotFoundError(f"Urdf file not found at: {urdf_model_path}")
+    
     if not os.path.exists(world_path):
         raise FileNotFoundError(f"World file not found at: {world_path}")
-
-    if not os.path.exists(robot_path):
-        raise FileNotFoundError(f"Robot file not found at: {robot_path}")
-
-    if not os.path.exists(default_model_path):
-        raise FileNotFoundError(f"Urdf file not found at: {default_model_path}")
     
-
-    gz_args = ["-v", "0", "-r", world_path]
-
-    gz_sim = IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([
-                os.path.join(get_package_share_directory('ros_gz_sim'),'launch'),
-                '/gz_sim.launch.py']),
-            launch_arguments={'gz_args': ' '.join(gz_args)}.items())
+    if not os.path.exists(rviz_config_path):
+        raise FileNotFoundError(f"Rviz config file not found at: {rviz_config_path}")
     
-    # BRIDGES
-
-    bridge_node = Node(
-        package='ros_gz_bridge',
-        executable='parameter_bridge',
-        name='dynamic_bridge',
-        arguments=[
-            # LIDAR topics (Gazebo -> ROS)
-            '/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
-            '/scan/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
-
-            # IMU (Gazebo -> ROS)
-            '/imu@sensor_msgs/msg/Imu[gz.msgs.IMU',
-
-            # Odom & TF (Gazebo -> ROS)
-            '/odom@nav_msgs/msg/Odometry[gz.msgs.Odometry',
-            '/model/wamv/odometry_with_covariance@nav_msgs/msg/Odometry[gz.msgs.OdometryWithCovariance',
-            '/tf@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V',
-
-            # GPS (Gazebo -> ROS)
-            '/fix@sensor_msgs/msg/NavSatFix[gz.msgs.NavSat',
-
-            # Clock (Gazebo -> ROS)
-            '/world/sydney/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
-
-            # Angular velocity readings (Gazebo -> ROS)
-            '/model/wamv/joint/left_engine_propeller_joint/ang_vel@std_msgs/msg/Float64[gz.msgs.Double',
-            '/model/wamv/joint/right_engine_propeller_joint/ang_vel@std_msgs/msg/Float64[gz.msgs.Double',
-
-            # Thruster angle control (ROS -> Gazebo)
-            '/wamv/left/thruster/joint/cmd_pos@std_msgs/msg/Float64]gz.msgs.Double',
-            '/wamv/right/thruster/joint/cmd_pos@std_msgs/msg/Float64]gz.msgs.Double',
-
-            # Thrust commands (ROS -> Gazebo)
-            '/model/wamv/joint/left_engine_propeller_joint/cmd_thrust@std_msgs/msg/Float64]gz.msgs.Double',
-            '/model/wamv/joint/right_engine_propeller_joint/cmd_thrust@std_msgs/msg/Float64]gz.msgs.Double',
-        
-            # Deadband control (ROS -> Gazebo)
-            '/model/wamv/joint/left_engine_propeller_joint/enable_deadband@std_msgs/msg/Bool]gz.msgs.Boolean',
-            '/model/wamv/joint/right_engine_propeller_joint/enable_deadband@std_msgs/msg/Bool]gz.msgs.Boolean',
-        
-        ],
-        output='screen'
-    )   
-
-
-    # # Localization Setup (AMCL) useful in a pre-built map 
-    # amcl_node = Node(
-    #     package='nav2_amcl',
-    #     executable='amcl',
-    #     name='amcl',
-    #     parameters=[{
-    #         'use_sim_time': True,
-    #         'odom_frame_id': 'odom',
-    #         'base_frame_id': 'base_link',
-    #         'global_frame_id': 'map'
-    #     }]
-    # )
-
-    # Dynamic TF: odom -> base_link
-    odom_tf = Node(
-        package='python_node',
-        executable='odom_to_tf',  # assuming this is how your Python node is set
-        name='odom_to_tf'
-    )
-
-    lidar_tf = Node(
-        package='tf2_ros',
-        executable='static_transform_publisher',
-        name='static_tf_pub_lidar',
-        arguments=['0.77', '0.0', '1.336', '0', '0', '0', 'base_link', 'lidar_link'],
-        output='screen'
-    )
-    
-    wamv_param_dir = LaunchConfiguration(
-        'wamv_param_dir',
-        default=os.path.join(
-            get_package_share_directory('wamv_navigation'),
-            'param','wamv_config.yaml'))
-    
-    wamv_param = DeclareLaunchArgument(
-            'wamv_param_dir',
-            default_value=wamv_param_dir,
-            description='Full path to wam-v parameter file to load')
-    
-
-    slam_config = os.path.join(
-    get_package_share_directory('wamv_navigation'),
-    'config',
-    'slam_toolbox_params.yaml'
-    )
-
-    slam_toolbox_node = Node(
-        package='slam_toolbox',
-        executable='sync_slam_toolbox_node',
-        name='slam_toolbox',
-        parameters=[slam_config],
-        output='screen'
-    )
-    
-#     slam_toolbox_node = Node(
-#     package='slam_toolbox',
-#     executable='sync_slam_toolbox_node',
-#     name='slam_toolbox',
-#     parameters=[{
-#         'use_sim_time': True,
-#         'slam_mode': 'mapping'
-#     }],
-#     output='screen'
-# )
-    robot_state_publisher_node = Node(
+    # Robot State Publisher
+    robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
-        parameters=[{'robot_description': Command(['xacro ', LaunchConfiguration('model')])}]
+        parameters=[{
+            'robot_description': Command(['xacro ', urdf_model_path]),
+            'publish_frequency': 20.0, 
+            'use_sim_time': True
+        }]
     )
 
-    joint_state_publisher_node = Node(
-        package='joint_state_publisher',
-        executable='joint_state_publisher',
-        name='joint_state_publisher',
-        parameters=[{'robot_description': Command(['xacro ', default_model_path])}],
-        condition=UnlessCondition(LaunchConfiguration('gui'))
-    )
-    joint_state_publisher_gui_node = Node(
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
-        name='joint_state_publisher_gui',
-        condition=IfCondition(LaunchConfiguration('gui'))
-    )
-
-    rviz_node = Node(
-            package='rviz2',
-            namespace='',
-            executable='rviz2',
-            name='rviz2',
-            arguments=['-d' + rviz_config_path]
-    )
-    
-    gz_server = GzServer(
-        world_sdf_file=world_path,
-        container_name='ros_gz_container',
-        create_own_container='True',
-        use_composition='True',
-    )
-
-
-    command = "ros2 run python_node python_publisher"
-
-    # Open a new terminal and run the command
-    subprocess.Popen([
-        "gnome-terminal", "--", "bash", "-c", f"{command}; exec bash"
-    ])
-
-    spawn_robot = TimerAction(
-        period=5.0, 
-        actions=[
-            ExecuteProcess(
-                cmd=[
-                    'ros2', 'run', 'ros_gz_sim', 'create',
-                    '-file', robot_path,
-                    '-x', '0', '-y', '0', '-z', '-0.2',
-                    '-name', 'wamv'
-                ],
-                output='screen'
-            )
-        ]
-    )
-
-    
-    robot_localization_node = Node(
-        package='robot_localization',
-        executable='ekf_node',
-        name='ekf_node',
-        output='screen',
-        parameters=[os.path.join(my_dir2,'config','ekf.yaml'), {'use_sim_time': LaunchConfiguration('use_sim_time')}]
+    sim_time_arg = DeclareLaunchArgument(
+        name='use_sim_time', 
+        default_value='True', 
+        description='Flag to enable use_sim_time'
     )
 
     gui = DeclareLaunchArgument(
@@ -232,64 +45,141 @@ def generate_launch_description(world_name="sydney", robot_name="wam-v", ign_fla
         default_value='True',
         description='Flag to enable joint_state_publisher_gui'
     )
-    
-    model_path = DeclareLaunchArgument(
-        name='model',
-        default_value=default_model_path,
-        description='Absolute path to robot model file'
+
+    joint_state_publisher_node = Node(
+        package='joint_state_publisher',
+        executable='joint_state_publisher',
+        name='joint_state_publisher',
+        parameters=[{'robot_description': Command(['xacro ', urdf_model_path]),
+                     'rate': 20.0,
+                     'use_sim_time': True}],
+        condition=UnlessCondition(LaunchConfiguration('gui'))
     )
+
+    joint_state_publisher_gui_node = Node(
+        package='joint_state_publisher_gui',
+        executable='joint_state_publisher_gui',
+        name='joint_state_publisher_gui',
+        parameters=[{'rate': 20.0,
+                    'use_sim_time': True}],
+        condition=IfCondition(LaunchConfiguration('gui'))
+    )
+    
+    # Gazebo Sim - Nuova sintassi per ROS 2 Jazzy
+    gz_sim = ExecuteProcess(
+        cmd=['gz', 'sim', '-v', '4', '-r', world_path],
+        output='screen'
+    )
+
+    # Spawn del modello
+    spawn_entity = ExecuteProcess(
+        cmd=[
+            'ros2', 'run', 'ros_gz_sim', 'create',
+            '-topic', '/robot_description',
+            '-name', 'wamv',
+            '-x', '0', '-y', '0', '-z', '0.2',
+            '--wait', '5'  
+        ],
+        output='screen'
+    )
+    
+    # Bridge per TF e sensori
+    bridge = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        arguments=[
         
-    ld = LaunchDescription([
+            # GZ -> ROS
+
+            # Pose Syncro
+            '/model/wamv/pose/info@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V',
+            '/world/sydney/dynamic_pose/info@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V',
+            '/world/sydney/pose/info@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V',
+
+            # Clock
+            '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
+                                           
+            # LIDAR 
+            '/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
+            '/scan/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
+
+            # IMU 
+            '/imu@sensor_msgs/msg/Imu[gz.msgs.IMU',
+
+            # Odom & TF 
+            '/odom@nav_msgs/msg/Odometry[gz.msgs.Odometry',
+            
+            # '/tf@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V',
+
+            # GPS
+            '/fix@sensor_msgs/msg/NavSatFix[gz.msgs.NavSat',
+
+            # Clock 
+            '/world/sydney/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
+
+            # Angular velocity 
+            '/model/wamv/joint/left_engine_propeller_joint/ang_vel@std_msgs/msg/Float64[gz.msgs.Double',
+            '/model/wamv/joint/right_engine_propeller_joint/ang_vel@std_msgs/msg/Float64[gz.msgs.Double',
+
+            # ROS -> GZ
+
+            # Thruster angle  
+            '/wamv/left/thruster/joint/cmd_pos@std_msgs/msg/Float64]gz.msgs.Double',
+            '/wamv/right/thruster/joint/cmd_pos@std_msgs/msg/Float64]gz.msgs.Double',
+
+            # Thrust
+            '/model/wamv/joint/left_engine_propeller_joint/cmd_thrust@std_msgs/msg/Float64]gz.msgs.Double',
+            '/model/wamv/joint/right_engine_propeller_joint/cmd_thrust@std_msgs/msg/Float64]gz.msgs.Double',
+        
+            # Deadband
+            '/model/wamv/joint/left_engine_propeller_joint/enable_deadband@std_msgs/msg/Bool]gz.msgs.Boolean',
+            '/model/wamv/joint/right_engine_propeller_joint/enable_deadband@std_msgs/msg/Bool]gz.msgs.Boolean',
+
+            '/robot_description@std_msgs/msg/String]gz.msgs.StringMsg',
+
+            '/odometry/filtered@nav_msgs/msg/Odometry]gz.msgs.OdometryWithCovariance'
+        ],
+        output='screen'
+    )
+
+    robot_localization_node = Node(
+        package='robot_localization',
+        executable='ekf_node',
+        name='ekf_node',
+        output='screen',
+        parameters=[os.path.join(pkg_navigation, 'config/ekf.yaml'),
+                    {'use_sim_time': True}]
+    )
+
+    rviz_node = Node(
+        package='rviz2',
+        namespace='',
+        executable='rviz2',
+        name='rviz2',
+        arguments=['-d' + rviz_config_path],
+        parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
+    )
+    
+    thruster_controller = Node(
+        package='python_node',
+        executable='thruster_controller', 
+        name='thruster_controller',
+        parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
+    )
+
+    return LaunchDescription([
+        sim_time_arg,
         gui,
-        model_path,
+        bridge,
         joint_state_publisher_node,
         joint_state_publisher_gui_node,
-        robot_state_publisher_node,
-        rviz_node,
-        DeclareLaunchArgument(name="use_sim_time",default_value="True", description="Flag to enable use_sim_time"),
+        robot_state_publisher,
         gz_sim,
-        bridge_node,
-        spawn_robot,
-        # DeclareLaunchArgument(
-        #     name='model',
-        #     default_value=default_model_path,
-        #     description='Absolute path to robot urdf file'
-        # ),
-        # DeclareLaunchArgument(
-        #     name='gui',
-        #     default_value='true',
-        #     description='Flag to enable joint_state_publisher_gui'
-        # ),
-
-        # Node(
-        #     package='joint_state_publisher',
-        #     executable='joint_state_publisher',
-        #     name='joint_state_publisher',
-        #     parameters=[{'source_list': ['joint_states']}],
-        #     condition=UnlessCondition(LaunchConfiguration('gui'))
-        # ),
-
-        # Node(
-        #     package='joint_state_publisher_gui',
-        #     executable='joint_state_publisher_gui',
-        #     name='joint_state_publisher_gui',
-        #     condition=IfCondition(LaunchConfiguration('gui'))
-        # ),
-
-        # Node(
-        #     package='robot_state_publisher',
-        #     executable='robot_state_publisher',
-        #     name='robot_state_publisher',
-        #     parameters=[{
-        #         'robot_description': open(default_model_path).read()
-        #     }]
-        # ),
-        
-        # robot_localization_node
-        ])
-
-    return ld
-
+        spawn_entity,
+        robot_localization_node,
+        rviz_node,
+        thruster_controller
+    ])
 
 if __name__ == '__main__':
 
@@ -297,4 +187,5 @@ if __name__ == '__main__':
     ls = LaunchService()
     ls.include_launch_description(ld)
     ls.run()
+
 

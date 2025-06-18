@@ -6,8 +6,8 @@ launch/test.launch.yaml
 python_node/ CmdVelToWamv.py
 python_node/ThrusterController.py
 python_node/__init__.py
+python_node/keyboard_teleop.py
 python_node/odom_to_tf.py
-python_node/pub_node.py
 python_node/sub_node.py
 python_node.egg-info/PKG-INFO
 python_node.egg-info/SOURCES.txt
