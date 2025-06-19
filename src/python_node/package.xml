@@ -3,10 +3,16 @@
 <package format="3">
   <name>python_node</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="nfpb1993@gmail.com">noel</maintainer>
-  <license>TODO: License declaration</license>
+  <description>Defining Python Nodes for control and teleoperation</description>
 
+  <maintainer email="emailprogramming02@gmail.com">Luca Barbieri</maintainer>
+  <maintainer email="graceffalorenzo@gmail.com">Lorenzo Graceffa</maintainer>
+  
+  <license>Apache License 2.0</license>
+
+  <author>Luca Barbieri</author>
+  <author>Lorenzo Graceffa</author>
+  
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>

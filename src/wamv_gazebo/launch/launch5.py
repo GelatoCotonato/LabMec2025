@@ -1,3 +1,5 @@
+# USING SLAM TOOLBOX TO GET /MAP TOPIC
+
 import os, subprocess
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription, LaunchService
@@ -5,7 +7,7 @@ from launch.actions import DeclareLaunchArgument, ExecuteProcess, TimerAction
 from launch.substitutions import Command, LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node
 from launch.conditions import IfCondition, UnlessCondition
-
+import atexit, signal
 def generate_launch_description():
     pkg_gazebo = get_package_share_directory('wamv_gazebo')
     pkg_navigation = get_package_share_directory('wamv_navigation')
@@ -30,7 +32,7 @@ def generate_launch_description():
         parameters=[{
             'robot_description': Command(['xacro ', urdf_model_path]),
             'publish_frequency': 20.0, 
-            'use_sim_time': True
+            'use_sim_time': LaunchConfiguration('use_sim_time')
         }]
     )
 
@@ -52,7 +54,7 @@ def generate_launch_description():
         name='joint_state_publisher',
         parameters=[{'robot_description': Command(['xacro ', urdf_model_path]),
                      'rate': 20.0,
-                     'use_sim_time': True}],
+                     'use_sim_time': LaunchConfiguration('use_sim_time')}],
         condition=UnlessCondition(LaunchConfiguration('gui'))
     )
     
@@ -137,7 +139,14 @@ def generate_launch_description():
         name='ekf_node',
         output='screen',
         parameters=[os.path.join(pkg_navigation, 'config/ekf.yaml'),
-                    {'use_sim_time': True}]
+                    {'use_sim_time': LaunchConfiguration('use_sim_time')}]
+    )
+
+    wamv_controller = Node(
+        package='python_node',
+        executable='wamv_controller', 
+        name='wamv_controller',
+        parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
 
     rviz_node = Node(
@@ -149,13 +158,16 @@ def generate_launch_description():
         parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
 
-    subprocess.Popen([
+    keyboard_teleop_process = subprocess.Popen([
         "gnome-terminal",
+        "--disable-factory",
         "--",
         "bash",
         "-c",
-        "ros2 run python_node python_publisher --ros-args -p use_sim_time:=true; exec bash"
+        "ros2 run python_node keyboard_teleop --ros-args -p use_sim_time:=true; exit"
     ])
+
+    atexit.register(lambda: keyboard_teleop_process.send_signal(signal.SIGKILL))
 
     return LaunchDescription([
         sim_time_arg,
@@ -166,6 +178,7 @@ def generate_launch_description():
         gz_sim,
         spawn_entity,
         robot_localization_node,
+        wamv_controller,
         rviz_node
     ])
 

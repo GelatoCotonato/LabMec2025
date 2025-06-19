@@ -1,0 +1,170 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found nav2_common: 1.3.6 (/opt/ros/jazzy/share/nav2_common/cmake)
+-- Found ros_gz_bridge: 1.0.12 (/opt/ros/jazzy/share/ros_gz_bridge/cmake)
+-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for gz-msgs10 -- found version 10.3.2
+-- Searching for dependencies of gz-msgs10
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.21.12") 
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Searching for dependencies of gz-utils2
+-- Looking for gz-math7 -- found version 7.5.2
+-- Searching for dependencies of gz-math7
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Checking for module 'tinyxml2'
+--   Found tinyxml2, version 10.0.0
+-- Looking for gz-transport13 -- found version 13.4.1
+-- Searching for dependencies of gz-transport13
+-- Config-file not installed for ZeroMQ -- checking for pkg-config
+-- Checking for module 'libzmq >= 4'
+--   Found libzmq, version 4.3.5
+-- Found ZeroMQ: TRUE (Required is at least version "4") 
+-- Checking for module 'uuid'
+--   Found uuid, version 2.39.3
+-- Found UUID: TRUE  
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Searching for dependencies of gz-utils2
+-- Searching for <gz-utils2> component [cli]
+-- Looking for gz-utils2-cli -- found version 2.2.1
+-- Searching for dependencies of gz-utils2-cli
+-- Looking for gz-msgs10 -- found version 10.3.2
+-- Found ros_gz_image: 1.0.12 (/opt/ros/jazzy/share/ros_gz_image/cmake)
+-- Found ros_gz_sim: 1.0.12 (/opt/ros/jazzy/share/ros_gz_sim/cmake)
+-- Found robot_state_publisher: 3.3.3 (/opt/ros/jazzy/share/robot_state_publisher/cmake)
+-- Found xacro: 2.0.13 (/opt/ros/jazzy/share/xacro/cmake)
+-- Configuring done (1.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/luca002/proj_ws/build/wamv_navigation
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/README.md
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/backpack_3d.lua
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/ekf.yaml
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/nav2_default_view.rviz
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/nav2_namespaced_view.rviz
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/rviz_vrx_final.rviz
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/rviz_vrx_rsp.rviz
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/slam_toolbox_params.yaml
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/turtlebot3_waffle_bridge.yaml
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/wamv_config.yaml
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/__init__.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/bringup_launch.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/cloned_multi_tb3_simulation_launch.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/display.launch.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/generate_wamv.launch.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/localization_launch.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/navigation_launch.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/robot.launch.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/rviz_launch.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/slam_launch.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/spawn_tb3.launch.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/tb3_loopback_simulation.launch.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/tb3_simulation_launch.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/tb4_loopback_simulation.launch.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/tb4_simulation_launch.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/turtlebot3_state_publisher.launch.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/unique_multi_tb3_simulation_launch.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/wamv_launch.py
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/depot.pgm
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/depot.yaml
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/lake.yaml
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/tb3_sandbox.pgm
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/tb3_sandbox.yaml
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/warehouse.pgm
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/warehouse.yaml
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_multirobot_params_1.yaml
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_multirobot_params_2.yaml
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_multirobot_params_all.yaml
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_params.yaml
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/config.rviz
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/config2.rviz
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/config3.rviz
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/wamv_cartographer.rviz
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/WAM-V-Base.dae
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/WamV.png
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery.dae
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery.png
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery_Albedo.png
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery_Metalness.png
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery_Normal.png
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/battery_Roughness.png
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases.dae
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases.png
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases_Albedo.png
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases_Metalness.png
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases_Normal.png
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/cpu_cases_Roughness.png
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/engine.dae
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/legs.dae
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/lidar_3d_v1 copy.png
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/lidar_3d_v1.dae
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/lidar_3d_v1.png
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/propeller.dae
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/meshes/ring.dae
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/model.config
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/model.sdf
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/description/wam-v/urdf_wamv.urdf
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/ament_index/resource_index/package_run_dependencies/wamv_navigation
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/ament_index/resource_index/parent_prefix_path/wamv_navigation
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/environment/ament_prefix_path.sh
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/environment/ament_prefix_path.dsv
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/environment/path.sh
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/environment/path.dsv
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/local_setup.bash
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/local_setup.sh
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/local_setup.zsh
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/local_setup.dsv
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/package.dsv
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/ament_index/resource_index/packages/wamv_navigation
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/cmake/wamv_navigationConfig.cmake
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/cmake/wamv_navigationConfig-version.cmake
+-- Symlinking: /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/package.xml
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/description
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/description/wam-v
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/description/wam-v/meshes
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/maps
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/params
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/hooks
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/display.launch.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/cloned_multi_tb3_simulation_launch.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/slam_launch.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/navigation_launch.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/unique_multi_tb3_simulation_launch.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/tb4_loopback_simulation.launch.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/turtlebot3_state_publisher.launch.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/wamv_launch.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/robot.launch.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/tb3_loopback_simulation.launch.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/localization_launch.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/__init__.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/tb3_simulation_launch.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/rviz_launch.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/tb4_simulation_launch.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/spawn_tb3.launch.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/generate_wamv.launch.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/bringup_launch.py
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/rviz
+-- Installing: /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/config

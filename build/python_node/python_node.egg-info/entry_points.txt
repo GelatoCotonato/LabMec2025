@@ -1,5 +1,5 @@
 [console_scripts]
-odom_to_tf = python_node.odom_to_tf:main
-python_publisher = python_node.keyboard_teleop:main
-python_subscriber = python_node.sub_node:main
-thruster_controller = python_node.ThrusterController:main
+gui_teleop = python_node.GuiTeleop:main
+keyboard_teleop = python_node.KeyboardTeleop:main
+odom2tf = python_node.Odom2TF:main
+wamv_controller = python_node.WamvController:main

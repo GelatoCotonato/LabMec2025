@@ -1,0 +1,20 @@
+[0.656s] Invoking command in '/home/luca002/proj_ws/build/python_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/luca002/proj_ws/build/python_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luca002/proj_ws/install/python_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luca002/proj_ws/build/python_node/build --no-deps symlink_data
+[0.897s] running develop
+[1.050s] running egg_info
+[1.065s] writing python_node.egg-info/PKG-INFO
+[1.065s] writing dependency_links to python_node.egg-info/dependency_links.txt
+[1.065s] writing entry points to python_node.egg-info/entry_points.txt
+[1.065s] writing requirements to python_node.egg-info/requires.txt
+[1.065s] writing top-level names to python_node.egg-info/top_level.txt
+[1.095s] reading manifest file 'python_node.egg-info/SOURCES.txt'
+[1.095s] writing manifest file 'python_node.egg-info/SOURCES.txt'
+[1.138s] running build_ext
+[1.138s] Creating /home/luca002/proj_ws/install/python_node/lib/python3.12/site-packages/python-node.egg-link (link to .)
+[1.138s] Installing gui_teleop script to /home/luca002/proj_ws/install/python_node/lib/python_node
+[1.138s] Installing keyboard_teleop script to /home/luca002/proj_ws/install/python_node/lib/python_node
+[1.138s] Installing odom2tf script to /home/luca002/proj_ws/install/python_node/lib/python_node
+[1.138s] Installing wamv_controller script to /home/luca002/proj_ws/install/python_node/lib/python_node
+[1.139s] 
+[1.139s] Installed /home/luca002/proj_ws/build/python_node
+[1.139s] running symlink_data
+[1.161s] Invoked command in '/home/luca002/proj_ws/build/python_node' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/luca002/proj_ws/build/python_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luca002/proj_ws/install/python_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luca002/proj_ws/build/python_node/build --no-deps symlink_data

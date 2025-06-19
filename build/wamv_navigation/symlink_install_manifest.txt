@@ -16,8 +16,6 @@
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/localization_launch.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/navigation_launch.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/robot.launch.py
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/rviz.launch.py
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/rviz2.launch.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/rviz_launch.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/slam_launch.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/spawn_tb3.launch.py

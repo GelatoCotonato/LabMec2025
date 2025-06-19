@@ -1,4 +1,6 @@
-import os, subprocess
+# ADDING SLAM_TOOLBOX
+
+import os, subprocess, atexit, signal
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription, LaunchService
 from launch.actions import DeclareLaunchArgument, ExecuteProcess, TimerAction
@@ -26,17 +28,6 @@ def generate_launch_description():
     
     if not os.path.exists(rviz_config_path):
         raise FileNotFoundError(f"Rviz config file not found at: {rviz_config_path}")
-    
-    # Robot State Publisher
-    robot_state_publisher = Node(
-        package='robot_state_publisher',
-        executable='robot_state_publisher',
-        parameters=[{
-            'robot_description': Command(['xacro ', urdf_model_path]),
-            'publish_frequency': 20.0, 
-            'use_sim_time': True
-        }]
-    )
 
     sim_time_arg = DeclareLaunchArgument(
         name='use_sim_time', 
@@ -56,10 +47,21 @@ def generate_launch_description():
         name='joint_state_publisher',
         parameters=[{'robot_description': Command(['xacro ', urdf_model_path]),
                      'rate': 20.0,
-                     'use_sim_time': True}],
+                     'use_sim_time': LaunchConfiguration('use_sim_time')}],
         condition=UnlessCondition(LaunchConfiguration('gui'))
     )
     
+    # Robot State Publisher
+    robot_state_publisher = Node(
+        package='robot_state_publisher',
+        executable='robot_state_publisher',
+        parameters=[{
+            'robot_description': Command(['xacro ', urdf_model_path]),
+            'publish_frequency': 20.0, 
+            'use_sim_time': LaunchConfiguration('use_sim_time')
+        }]
+    )
+
     # Gazebo Sim - Nuova sintassi per ROS 2 Jazzy
     gz_sim = ExecuteProcess(
         cmd=['gz', 'sim', '-v', '4', '-r', world_path],
@@ -141,16 +143,7 @@ def generate_launch_description():
         name='ekf_node',
         output='screen',
         parameters=[os.path.join(pkg_navigation, 'config/ekf.yaml'),
-                    {'use_sim_time': True}]
-    )
-
-    rviz_node = Node(
-        package='rviz2',
-        namespace='',
-        executable='rviz2',
-        name='rviz2',
-        arguments=['-d' + rviz_config_path],
-        parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
+                    {'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
     
     slam_launch = IncludeLaunchDescription(
@@ -160,21 +153,23 @@ def generate_launch_description():
             launch_arguments=[('use_sim_time', 'true')]
     )
 
-    # Prepare launch description
-    cartographer_launch = IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(
-                os.path.join(pkg_gazebo, 'launch', 'cartographer.launch.py')
-            ),
-            launch_arguments=[('use_sim_time', 'true')]
+    wamv_controller = Node(
+        package='python_node',
+        executable='wamv_controller', 
+        name='wamv_controller',
+        parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
 
-    subprocess.Popen([
+    keyboard_teleop_process = subprocess.Popen([
         "gnome-terminal",
+        "--disable-factory",
         "--",
         "bash",
         "-c",
-        "ros2 run python_node python_publisher --ros-args -p use_sim_time:=true; exec bash"
+        "ros2 run python_node keyboard_teleop --ros-args -p use_sim_time:=true; exit"
     ])
+
+    atexit.register(lambda: keyboard_teleop_process.send_signal(signal.SIGKILL))
 
     return LaunchDescription([
         sim_time_arg,
@@ -185,8 +180,8 @@ def generate_launch_description():
         gz_sim,
         spawn_entity,
         robot_localization_node,
-        slam_launch,
-        cartographer_launch
+        wamv_controller,
+        slam_launch
     ])
 
 if __name__ == '__main__':

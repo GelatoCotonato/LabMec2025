@@ -2,7 +2,6 @@ import os
 from glob import glob
 from setuptools import find_packages, setup
 
-
 package_name = 'python_node'
 
 setup(
@@ -12,23 +11,21 @@ setup(
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
-        ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name, 'launch'), glob('launch/*')),
-        (os.path.join('share', package_name, 'config'), glob('config/*')),
+        ('share/' + package_name, ['package.xml'])
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='Luca',
+    maintainer='Luca Barbieri',
     maintainer_email='emailprogramming02@gmail.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='Defining Python Nodes for control and teleoperation',
+    license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'python_publisher = python_node.keyboard_teleop:main',
-            'python_subscriber = python_node.sub_node:main',
-            'odom_to_tf = python_node.odom_to_tf:main',
-            'thruster_controller = python_node.ThrusterController:main'
+            'gui_teleop = python_node.GuiTeleop:main',
+            'keyboard_teleop = python_node.KeyboardTeleop:main',
+            'odom2tf = python_node.Odom2TF:main',
+            'wamv_controller = python_node.WamvController:main'
         ],
     },
 )

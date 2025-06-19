@@ -23,16 +23,7 @@ def generate_launch_description():
     if not os.path.exists(rviz_config_path):
         raise FileNotFoundError(f"Rviz config file not found at: {rviz_config_path}")
     
-    # Robot State Publisher
-    robot_state_publisher = Node(
-        package='robot_state_publisher',
-        executable='robot_state_publisher',
-        parameters=[{
-            'robot_description': Command(['xacro ', urdf_model_path]),
-            'publish_frequency': 20.0, 
-            'use_sim_time': True
-        }]
-    )
+
 
     sim_time_arg = DeclareLaunchArgument(
         name='use_sim_time', 
@@ -44,43 +35,6 @@ def generate_launch_description():
         name='gui',
         default_value='True',
         description='Flag to enable joint_state_publisher_gui'
-    )
-
-    joint_state_publisher_node = Node(
-        package='joint_state_publisher',
-        executable='joint_state_publisher',
-        name='joint_state_publisher',
-        parameters=[{'robot_description': Command(['xacro ', urdf_model_path]),
-                     'rate': 20.0,
-                     'use_sim_time': True}],
-        condition=UnlessCondition(LaunchConfiguration('gui'))
-    )
-
-    joint_state_publisher_gui_node = Node(
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
-        name='joint_state_publisher_gui',
-        parameters=[{'rate': 20.0,
-                    'use_sim_time': True}],
-        condition=IfCondition(LaunchConfiguration('gui'))
-    )
-    
-    # Gazebo Sim - Nuova sintassi per ROS 2 Jazzy
-    gz_sim = ExecuteProcess(
-        cmd=['gz', 'sim', '-v', '4', '-r', world_path],
-        output='screen'
-    )
-
-    # Spawn del modello
-    spawn_entity = ExecuteProcess(
-        cmd=[
-            'ros2', 'run', 'ros_gz_sim', 'create',
-            '-topic', '/robot_description',
-            '-name', 'wamv',
-            '-x', '0', '-y', '0', '-z', '0.2',
-            '--wait', '5'  
-        ],
-        output='screen'
     )
     
     # Bridge per TF e sensori
@@ -140,10 +94,58 @@ def generate_launch_description():
         output='screen'
     )
     
-    odom_tf = Node(
+    joint_state_publisher_node = Node(
+        package='joint_state_publisher',
+        executable='joint_state_publisher',
+        name='joint_state_publisher',
+        parameters=[{'robot_description': Command(['xacro ', urdf_model_path]),
+                     'rate': 20.0,
+                     'use_sim_time': True}],
+        condition=UnlessCondition(LaunchConfiguration('gui'))
+    )
+
+    joint_state_publisher_gui_node = Node(
+        package='joint_state_publisher_gui',
+        executable='joint_state_publisher_gui',
+        name='joint_state_publisher_gui',
+        parameters=[{'rate': 20.0,
+                    'use_sim_time': True}],
+        condition=IfCondition(LaunchConfiguration('gui'))
+    )
+
+    # Robot State Publisher
+    robot_state_publisher = Node(
+        package='robot_state_publisher',
+        executable='robot_state_publisher',
+        parameters=[{
+            'robot_description': Command(['xacro ', urdf_model_path]),
+            'publish_frequency': 20.0, 
+            'use_sim_time': True
+        }]
+    )
+
+    # Gazebo Sim - Nuova sintassi per ROS 2 Jazzy
+    gz_sim = ExecuteProcess(
+        cmd=['gz', 'sim', '-v', '4', '-r', world_path],
+        output='screen'
+    )
+
+    # Spawn del modello
+    spawn_entity = ExecuteProcess(
+        cmd=[
+            'ros2', 'run', 'ros_gz_sim', 'create',
+            '-topic', '/robot_description',
+            '-name', 'wamv',
+            '-x', '0', '-y', '0', '-z', '0.2',
+            '--wait', '5'  
+        ],
+        output='screen'
+    )
+
+    odom2tf = Node(
         package='python_node',
-        executable='odom_to_tf', 
-        name='odom_to_tf',
+        executable='odom2tf', 
+        name='odom2tf',
         parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
 
@@ -156,10 +158,10 @@ def generate_launch_description():
         parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
     
-    thruster_controller = Node(
+    gui_teleop = Node(
         package='python_node',
-        executable='thruster_controller', 
-        name='thruster_controller',
+        executable='gui_teleop', 
+        name='gui_teleop',
         parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
 
@@ -172,9 +174,9 @@ def generate_launch_description():
         robot_state_publisher,
         gz_sim,
         spawn_entity,
-        odom_tf,
+        odom2tf,
         rviz_node,
-        thruster_controller
+        gui_teleop
     ])
 
 if __name__ == '__main__':

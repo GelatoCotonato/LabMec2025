@@ -1,14 +1,12 @@
 package.xml
 setup.cfg
 setup.py
-config/python_node.config.yaml
-launch/test.launch.yaml
-python_node/ CmdVelToWamv.py
-python_node/ThrusterController.py
+python_node/GuiTeleop.py
+python_node/KeyboardTeleop.py
+python_node/Odom2TF.py
+python_node/PIDController.py
+python_node/WamvController.py
 python_node/__init__.py
-python_node/keyboard_teleop.py
-python_node/odom_to_tf.py
-python_node/sub_node.py
 python_node.egg-info/PKG-INFO
 python_node.egg-info/SOURCES.txt
 python_node.egg-info/dependency_links.txt

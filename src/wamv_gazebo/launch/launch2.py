@@ -148,10 +148,10 @@ def generate_launch_description():
         parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
     
-    thruster_controller = Node(
+    gui_teleop = Node(
         package='python_node',
-        executable='thruster_controller', 
-        name='thruster_controller',
+        executable='gui_teleop', 
+        name='gui_teleop',
         parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
 
@@ -165,7 +165,7 @@ def generate_launch_description():
         gz_sim,
         spawn_entity,
         rviz_node,
-        thruster_controller
+        gui_teleop
     ])
 
 if __name__ == '__main__':

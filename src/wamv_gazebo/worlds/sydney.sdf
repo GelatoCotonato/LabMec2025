@@ -434,7 +434,8 @@
       </message>
     </plugin>
 
-    <!-- ROUND BUOY -->
+    <!-- Adding round buoy -->
+
     <include>
       <name>mb_round_buoy_black__0</name>
       <pose>40 -50 0 0 0 0</pose>
@@ -597,7 +598,6 @@
       <uri>model://round_buoy_black</uri>
     </include>
 
-
     <include>
       <name>mb_round_buoy_orange_0</name>
       <pose>60 35 0 0 0 0</pose>
@@ -634,7 +634,6 @@
       <uri>model://round_buoy_orange</uri>
     </include>
 
-
     <include>
       <name>mb_round_buoy_orange__0</name>
       <pose>80 35 0 0 0 0</pose>
@@ -670,8 +669,6 @@
       <pose>80 -25 0 0 0 0</pose>
       <uri>model://round_buoy_orange</uri>
     </include>
-
-    
 
     <include>
       <name>mb_round_buoy_orange___0</name>
@@ -784,32 +781,31 @@
     </include>
 
 
+    <!-- Adding vessels -->
     <include>
-      <uri>model://vessel1</uri>
-      <name>vessel1_1</name>
+      <uri>model://vessel_a</uri>
+      <name>vessel_a_1</name>
       <pose>50 10 0 0 0 -1.57</pose>
+    </include>
+    <include>
+      <uri>model://vessel_a</uri>
+      <name>vessel_a_2</name>
+      <pose>130 20 0 0 0 -1.57</pose>
     </include> 
     <include>
-      <uri>model://vessel2</uri>
-      <name>vessel2_1</name>
+      <uri>model://vessel_b</uri>
+      <name>vessel_b_1</name>
       <pose>70 25 0 0 0 -1.57</pose>
-    </include> 
-        <include>
-      <uri>model://vessel3</uri>
-      <name>vessel1_2</name>
-      <pose>90 0 0 0 0 -1.57</pose>
-    </include> 
+    </include>
     <include>
-      <uri>model://vessel2</uri>
-      <name>vessel2_2</name>
+      <uri>model://vessel_b</uri>
+      <name>vessel_b_2</name>
       <pose>110 -10 0 0 0 -1.57</pose>
     </include>
     <include>
-      <uri>model://vessel1</uri>
-      <name>vessel1_3</name>
-      <pose>130 20 0 0 0 -1.57</pose>
+      <uri>model://vessel_c</uri>
+      <name>vessel_c_1</name>
+      <pose>90 0 0 0 0 -1.57</pose>
     </include> 
-
   </world>
-
 </sdf>
