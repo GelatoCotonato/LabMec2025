@@ -177,14 +177,10 @@ install(
   TARGETS ${VRX_GZ_PLUGINS}
   DESTINATION lib)
 
-ament_python_install_package(
-  wamv_gazebo
-  PACKAGE_DIR src/wamv_gazebo
-)
-
 #============================================================================
 # Resources
 install(DIRECTORY
+  config
   launch
   models
   worlds

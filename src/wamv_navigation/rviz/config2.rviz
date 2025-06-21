@@ -5,9 +5,6 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
-        - /Status1
-        - /TF1
-        - /Odometry1
       Splitter Ratio: 0.5
     Tree Height: 1050
 Visualization Manager:
@@ -155,26 +152,25 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        base_footprint:
-          base_link:
-            battery_dx_link:
-              {}
-            battery_sx_link:
-              {}
-            cpu_cases_link:
-              {}
-            left_engine_link:
-              left_propeller_link:
-                {}
-            right_engine_link:
-              right_propeller_link:
-                {}
-            tripod_legs_link:
-              tripod_ring_link:
-                lidar_link:
-                  {}
         odom:
-          {}
+          base_footprint:
+            base_link:
+              battery_dx_link:
+                {}
+              battery_sx_link:
+                {}
+              cpu_cases_link:
+                {}
+              left_engine_link:
+                left_propeller_link:
+                  {}
+              right_engine_link:
+                right_propeller_link:
+                  {}
+              tripod_legs_link:
+                tripod_ring_link:
+                  lidar_link:
+                    {}
       Update Interval: 0
       Value: true
     - Angle Tolerance: 0.10000000149011612

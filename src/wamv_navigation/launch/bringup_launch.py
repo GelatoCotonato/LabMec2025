@@ -48,21 +48,6 @@ def generate_launch_description():
     # '<robot_namespace>' keyword shall be replaced by 'namespace' launch argument
     # in config file 'nav2_multirobot_params.yaml' as a default & example.
     # User defined config file should contain '<robot_namespace>' keyword for the replacements.
-    params_file = ReplaceString(
-        source_file=params_file,
-        replacements={'wamv_config.yaml': ('/', namespace)},
-        condition=IfCondition(use_namespace),
-    )
-
-    configured_params = ParameterFile(
-        RewrittenYaml(
-            source_file=params_file,
-            root_key=namespace,
-            param_rewrites={},
-            convert_types=True,
-        ),
-        allow_substs=True,
-    )
 
     stdout_linebuf_envvar = SetEnvironmentVariable(
         'RCUTILS_LOGGING_BUFFERED_STREAM', '1'
@@ -83,7 +68,7 @@ def generate_launch_description():
     )
 
     declare_map_yaml_cmd = DeclareLaunchArgument(
-        'map', default_value='', description='Full path to map yaml file to load'
+        'map', default_value='/home/luca002/proj_ws/src/wamv_navigation/maps/sydney_map.yaml', description='Full path to map yaml file to load'
     )
 
     declare_use_localization_cmd = DeclareLaunchArgument(
@@ -134,7 +119,7 @@ def generate_launch_description():
                 name='nav2_container',
                 package='rclcpp_components',
                 executable='component_container_isolated',
-                parameters=[configured_params, {'autostart': autostart}],
+                parameters=[{'autostart': autostart}],
                 arguments=['--ros-args', '--log-level', log_level],
                 remappings=remappings,
                 output='screen',

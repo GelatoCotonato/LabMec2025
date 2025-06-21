@@ -5,7 +5,6 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
-        - /Status1
       Splitter Ratio: 0.5
     Tree Height: 1050
 Visualization Manager:
@@ -210,7 +209,7 @@ Visualization Manager:
       Pitch: 0.26039859652519226
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.8003976345062256
+      Yaw: 2.7953975200653076
     Saved: ~
 Window Geometry:
   Displays:

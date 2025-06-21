@@ -1,21 +1,19 @@
-# ADDING SLAM_TOOLBOX
+# ADDING SLAM_TOOLBOX AND NAV2
 
 import os, subprocess, atexit, signal
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription, LaunchService
-from launch.actions import DeclareLaunchArgument, ExecuteProcess, TimerAction
-from launch.substitutions import Command, LaunchConfiguration, PathJoinSubstitution
+from launch.substitutions import Command, LaunchConfiguration
 from launch_ros.actions import Node
-from launch.conditions import IfCondition, UnlessCondition
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, ExecuteProcess
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 def generate_launch_description():
     pkg_gazebo = get_package_share_directory('wamv_gazebo')
     pkg_navigation = get_package_share_directory('wamv_navigation')
     pkg_slam = get_package_share_directory('slam_toolbox')
+    pkg_nav2 = get_package_share_directory('nav2_bringup')
 
-    # Percorsi dei file
     urdf_model_path = os.path.join(pkg_gazebo, 'urdf', 'model.urdf.xacro')
     world_path = os.path.join(pkg_gazebo, 'worlds', 'sydney.sdf')
     rviz_config_path = os.path.join(pkg_navigation, 'rviz', 'config3.rviz')
@@ -28,29 +26,13 @@ def generate_launch_description():
     
     if not os.path.exists(rviz_config_path):
         raise FileNotFoundError(f"Rviz config file not found at: {rviz_config_path}")
-
+    
     sim_time_arg = DeclareLaunchArgument(
         name='use_sim_time', 
         default_value='True', 
         description='Flag to enable use_sim_time'
     )
 
-    gui = DeclareLaunchArgument(
-        name='gui',
-        default_value='True',
-        description='Flag to enable joint_state_publisher_gui'
-    )
-
-    joint_state_publisher_node = Node(
-        package='joint_state_publisher',
-        executable='joint_state_publisher',
-        name='joint_state_publisher',
-        parameters=[{'robot_description': Command(['xacro ', urdf_model_path]),
-                     'rate': 20.0,
-                     'use_sim_time': LaunchConfiguration('use_sim_time')}],
-        condition=UnlessCondition(LaunchConfiguration('gui'))
-    )
-    
     # Robot State Publisher
     robot_state_publisher = Node(
         package='robot_state_publisher',
@@ -79,7 +61,7 @@ def generate_launch_description():
         ],
         output='screen'
     )
-    
+
     # Bridge per TF e sensori
     bridge = Node(
         package='ros_gz_bridge',
@@ -142,10 +124,17 @@ def generate_launch_description():
         executable='ekf_node',
         name='ekf_node',
         output='screen',
-        parameters=[os.path.join(pkg_navigation, 'config/ekf.yaml'),
+        parameters=[os.path.join(pkg_gazebo, 'config/ekf.yaml'),
                     {'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
-    
+
+    wamv_controller = Node(
+        package='python_node',
+        executable='wamv_controller', 
+        name='wamv_controller',
+        parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
+    )
+
     slam_launch = IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(pkg_slam, 'launch', 'online_async_launch.py')
@@ -153,10 +142,19 @@ def generate_launch_description():
             launch_arguments=[('use_sim_time', 'true')]
     )
 
-    wamv_controller = Node(
-        package='python_node',
-        executable='wamv_controller', 
-        name='wamv_controller',
+    nav2_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(pkg_nav2, 'launch', 'navigation_launch.py')
+        ),
+        launch_arguments=[('use_sim_time', 'true')]
+    )
+    
+    rviz_node = Node(
+        package='rviz2',
+        namespace='',
+        executable='rviz2',
+        name='rviz2',
+        arguments=['-d' + rviz_config_path],
         parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
 
@@ -173,15 +171,15 @@ def generate_launch_description():
 
     return LaunchDescription([
         sim_time_arg,
-        gui,
         bridge,
-        joint_state_publisher_node,
         robot_state_publisher,
         gz_sim,
         spawn_entity,
         robot_localization_node,
         wamv_controller,
-        slam_launch
+        slam_launch,
+        nav2_launch,
+        rviz_node
     ])
 
 if __name__ == '__main__':
@@ -190,5 +188,10 @@ if __name__ == '__main__':
     ls = LaunchService()
     ls.include_launch_description(ld)
     ls.run()
+
+
+
+
+
 
 

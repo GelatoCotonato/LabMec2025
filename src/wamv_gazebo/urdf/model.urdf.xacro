@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<robot name="wamv">
+<robot name="wamv" xmlns:xacro="http://ros.org/wiki/xacro">
 
+  <xacro:property name="user_path" value="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes"/>
   <!-- BASE FOOTPRINT -->
 
   <link name="base_footprint" />
@@ -17,7 +18,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/WAM-V-Base.dae" />
+        <mesh filename="${user_path}/WAM-V-Base.dae" />
       </geometry>
     </visual>
 
@@ -92,7 +93,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/engine.dae" />
+        <mesh filename="${user_path}/engine.dae" />
       </geometry>
     </visual>
 
@@ -135,7 +136,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/propeller.dae" />
+        <mesh filename="${user_path}/propeller.dae" />
       </geometry>
     </visual>
 
@@ -174,7 +175,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/engine.dae" />
+        <mesh filename="${user_path}/engine.dae" />
       </geometry>
     </visual>
 
@@ -216,7 +217,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/propeller.dae"/>
+        <mesh filename="${user_path}/propeller.dae"/>
       </geometry>
     </visual>
 
@@ -253,7 +254,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/battery.dae"/>
+        <mesh filename="${user_path}/battery.dae"/>
       </geometry>
     </visual>
 
@@ -285,7 +286,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/battery.dae"/>
+        <mesh filename="${user_path}/battery.dae"/>
       </geometry>
     </visual>
 
@@ -320,7 +321,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/cpu_cases.dae"/>
+        <mesh filename="${user_path}/cpu_cases.dae"/>
       </geometry>
     </visual>
 
@@ -360,7 +361,7 @@
     <visual name="tripod_legs_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/legs.dae" />
+        <mesh filename="${user_path}/legs.dae" />
       </geometry>
       <material name="dark_gray_metal">
         <color rgba="0.25 0.25 0.25 1"/>
@@ -394,7 +395,7 @@
     <visual name="tripod_ring_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/ring.dae"/>
+        <mesh filename="${user_path}/ring.dae"/>
       </geometry>
       <material name="gray_metal">
         <color rgba="0.65 0.65 0.70 1"/>
@@ -430,7 +431,7 @@
     <visual name="lidar_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes/lidar_3d_v1.dae"/>
+        <mesh filename="${user_path}/lidar_3d_v1.dae"/>
       </geometry>
     </visual>
 
@@ -452,7 +453,7 @@
   <gazebo reference="lidar_link">
     <sensor name="gpu_lidar" type="gpu_lidar">
       <pose>0 0 0.036 0 0 0</pose>
-      <update_rate>35</update_rate>
+      <update_rate>15</update_rate>
       <topic>scan</topic>
       <always_on>1</always_on>
       <visualize>true</visualize>
@@ -462,8 +463,8 @@
           <horizontal>
             <samples>640</samples>
             <resolution>1</resolution>
-            <min_angle>-1.396263</min_angle>
-            <max_angle>1.396263</max_angle>
+            <min_angle>-1.570796</min_angle>
+            <max_angle>1.570796</max_angle>
           </horizontal>
           <vertical>
             <samples>16</samples>
@@ -474,14 +475,9 @@
         </scan>
         <range>
           <min>0.08</min>
-          <max>30.0</max>
+          <max>50.0</max>
           <resolution>0.05</resolution>
         </range>
-        <noise>
-          <type>gaussian</type>
-          <mean>0.0</mean>
-          <stddev>0.0001</stddev>
-        </noise>
       </ray>
     </sensor>
   </gazebo>
@@ -522,7 +518,81 @@
       <visualize>true</visualize>
       <topic>imu</topic>
       <gz_frame_id>cpu_cases_link</gz_frame_id>
+
       <imu>
+        <angular_velocity>
+          <x>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.008</stddev>               <!-- rumore standard leggermente ridotto -->
+              <bias_mean>0.0005</bias_mean>        <!-- bias medio realistico -->
+              <bias_stddev>0.003</bias_stddev>    <!-- deviazione bias -->
+              <dynamic_bias_stddev>0.000015</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>300.0</dynamic_bias_correlation_time>
+              <precision>0.0003</precision>
+            </noise>
+          </x>
+          <y>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.008</stddev>
+              <bias_mean>0.0005</bias_mean>
+              <bias_stddev>0.003</bias_stddev>
+              <dynamic_bias_stddev>0.000015</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>300.0</dynamic_bias_correlation_time>
+              <precision>0.0003</precision>
+            </noise>
+          </y>
+          <z>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.008</stddev>
+              <bias_mean>0.0005</bias_mean>
+              <bias_stddev>0.003</bias_stddev>
+              <dynamic_bias_stddev>0.000015</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>300.0</dynamic_bias_correlation_time>
+              <precision>0.0003</precision>
+            </noise>
+          </z>
+        </angular_velocity>
+
+        <linear_acceleration>
+          <x>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.02</stddev>                 <!-- rumore standard realistico -->
+              <bias_mean>0.04</bias_mean>          <!-- bias medio -->
+              <bias_stddev>0.006</bias_stddev>    <!-- deviazione bias -->
+              <dynamic_bias_stddev>0.0003</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>150.0</dynamic_bias_correlation_time>
+              <precision>0.006</precision>
+            </noise>
+          </x>
+          <y>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.02</stddev>
+              <bias_mean>0.04</bias_mean>
+              <bias_stddev>0.006</bias_stddev>
+              <dynamic_bias_stddev>0.0003</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>150.0</dynamic_bias_correlation_time>
+              <precision>0.006</precision>
+            </noise>
+          </y>
+          <z>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.02</stddev>
+              <bias_mean>0.04</bias_mean>
+              <bias_stddev>0.006</bias_stddev>
+              <dynamic_bias_stddev>0.0003</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>150.0</dynamic_bias_correlation_time>
+              <precision>0.006</precision>
+            </noise>
+          </z>
+        </linear_acceleration>
+      </imu>
+      <!-- <imu>
         <angular_velocity>
           <x>
             <noise type="gaussian">
@@ -594,7 +664,7 @@
             </noise>
           </z>
         </linear_acceleration>
-      </imu>
+      </imu> -->
     </sensor>
   </gazebo>
 
@@ -690,16 +760,12 @@
   </gazebo>
 
   <gazebo>
-    <plugin
-      filename="gz-sim-odometry-publisher-system"
-      name="gz::sim::systems::OdometryPublisher">
-      
+    <plugin filename="gz-sim-odometry-publisher-system" name="gz::sim::systems::OdometryPublisher">
       <odom_topic>/odom</odom_topic>
       <odom_frame>odom</odom_frame>
       <robot_base_frame>base_footprint</robot_base_frame>
       <dimension>2</dimension>
-      <publish_tf>false</publish_tf> 
       <odom_publish_frequency>20.0</odom_publish_frequency>
-  </plugin>
-  </gazebo>
+    </plugin>
+  </gazebo> 
 </robot>

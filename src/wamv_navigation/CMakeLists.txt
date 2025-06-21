@@ -17,12 +17,6 @@ find_package(ros_gz_sim REQUIRED)
 find_package(robot_state_publisher REQUIRED)
 find_package(xacro REQUIRED)
 
-# # Hooks
-# ament_environment_hooks("hooks/ament_prefix_path.dsv.in")
-# ament_environment_hooks("hooks/ament_prefix_path.sh")
-# ament_environment_hooks("hooks/path.dsv.in")
-# ament_environment_hooks("hooks/path.sh")
-
 # Installa i file Python
 install(
   DIRECTORY
@@ -31,13 +25,6 @@ install(
   FILES_MATCHING PATTERN "*.py"
 )
 
-# install(
-#   DIRECTORY
-#     ${CMAKE_CURRENT_SOURCE_DIR}/
-#   DESTINATION share/${PROJECT_NAME}
-#   FILES_MATCHING PATTERN "*.py"
-# )
-
 # CMake config files 
 install(DIRECTORY 
   config
@@ -45,7 +32,6 @@ install(DIRECTORY
   maps
   params
   rviz
-  description
   DESTINATION share/${PROJECT_NAME}
 )
 

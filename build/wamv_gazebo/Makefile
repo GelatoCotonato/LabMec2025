@@ -470,32 +470,6 @@ WildlifeScoringPlugin/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WildlifeScoringPlugin.dir/build.make CMakeFiles/WildlifeScoringPlugin.dir/build
 .PHONY : WildlifeScoringPlugin/fast
 
-#=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_wamv_gazebo
-
-# Build rule for target.
-ament_cmake_python_symlink_wamv_gazebo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_wamv_gazebo
-.PHONY : ament_cmake_python_symlink_wamv_gazebo
-
-# fast build rule for target.
-ament_cmake_python_symlink_wamv_gazebo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/build.make CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/build
-.PHONY : ament_cmake_python_symlink_wamv_gazebo/fast
-
-#=============================================================================
-# Target rules for targets named ament_cmake_python_build_wamv_gazebo_egg
-
-# Build rule for target.
-ament_cmake_python_build_wamv_gazebo_egg: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_build_wamv_gazebo_egg
-.PHONY : ament_cmake_python_build_wamv_gazebo_egg
-
-# fast build rule for target.
-ament_cmake_python_build_wamv_gazebo_egg/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/build.make CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/build
-.PHONY : ament_cmake_python_build_wamv_gazebo_egg/fast
-
 src/AcousticPerceptionScoringPlugin.o: src/AcousticPerceptionScoringPlugin.cc.o
 .PHONY : src/AcousticPerceptionScoringPlugin.o
 
@@ -1094,8 +1068,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... ament_cmake_python_build_wamv_gazebo_egg"
-	@echo "... ament_cmake_python_symlink_wamv_gazebo"
 	@echo "... uninstall"
 	@echo "... wamv_gazebo_uninstall"
 	@echo "... AcousticPerceptionScoringPlugin"

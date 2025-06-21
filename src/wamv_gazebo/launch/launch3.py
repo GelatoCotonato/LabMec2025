@@ -1,15 +1,17 @@
+# ADDING ODOM TOPIC AND ODOM FRAME
+
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription, LaunchService
-from launch.actions import DeclareLaunchArgument, ExecuteProcess, TimerAction
-from launch.substitutions import Command, LaunchConfiguration, PathJoinSubstitution
+from launch.actions import DeclareLaunchArgument, ExecuteProcess
+from launch.substitutions import Command, LaunchConfiguration
 from launch_ros.actions import Node
 from launch.conditions import IfCondition, UnlessCondition
 
 def generate_launch_description():
     pkg_gazebo = get_package_share_directory('wamv_gazebo')
     pkg_navigation = get_package_share_directory('wamv_navigation')
-    # Percorsi dei file
+
     urdf_model_path = os.path.join(pkg_gazebo, 'urdf', 'model.urdf.xacro')
     world_path = os.path.join(pkg_gazebo, 'worlds', 'sydney.sdf')
     rviz_config_path = os.path.join(pkg_navigation, 'rviz', 'config2.rviz')
@@ -23,8 +25,6 @@ def generate_launch_description():
     if not os.path.exists(rviz_config_path):
         raise FileNotFoundError(f"Rviz config file not found at: {rviz_config_path}")
     
-
-
     sim_time_arg = DeclareLaunchArgument(
         name='use_sim_time', 
         default_value='True', 
@@ -120,7 +120,7 @@ def generate_launch_description():
         parameters=[{
             'robot_description': Command(['xacro ', urdf_model_path]),
             'publish_frequency': 20.0, 
-            'use_sim_time': True
+            'use_sim_time':  LaunchConfiguration('use_sim_time')
         }]
     )
 

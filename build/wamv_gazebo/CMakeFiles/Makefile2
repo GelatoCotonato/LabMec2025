@@ -84,7 +84,6 @@ all: CMakeFiles/Surface.dir/all
 all: CMakeFiles/USVWind.dir/all
 all: CMakeFiles/WaveVisual.dir/all
 all: CMakeFiles/WildlifeScoringPlugin.dir/all
-all: CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -115,8 +114,6 @@ clean: CMakeFiles/Surface.dir/clean
 clean: CMakeFiles/USVWind.dir/clean
 clean: CMakeFiles/WaveVisual.dir/clean
 clean: CMakeFiles/WildlifeScoringPlugin.dir/clean
-clean: CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/clean
-clean: CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -730,58 +727,6 @@ WildlifeScoringPlugin: CMakeFiles/WildlifeScoringPlugin.dir/rule
 CMakeFiles/WildlifeScoringPlugin.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WildlifeScoringPlugin.dir/build.make CMakeFiles/WildlifeScoringPlugin.dir/clean
 .PHONY : CMakeFiles/WildlifeScoringPlugin.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir
-
-# All Build rule for target.
-CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/build.make CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/build.make CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/luca002/proj_ws/build/wamv_gazebo/CMakeFiles --progress-num= "Built target ament_cmake_python_symlink_wamv_gazebo"
-.PHONY : CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luca002/proj_ws/build/wamv_gazebo/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luca002/proj_ws/build/wamv_gazebo/CMakeFiles 0
-.PHONY : CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/rule
-
-# Convenience name for target.
-ament_cmake_python_symlink_wamv_gazebo: CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/rule
-.PHONY : ament_cmake_python_symlink_wamv_gazebo
-
-# clean rule for target.
-CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/build.make CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/clean
-.PHONY : CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir
-
-# All Build rule for target.
-CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/all: CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/build.make CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/build.make CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/luca002/proj_ws/build/wamv_gazebo/CMakeFiles --progress-num= "Built target ament_cmake_python_build_wamv_gazebo_egg"
-.PHONY : CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luca002/proj_ws/build/wamv_gazebo/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luca002/proj_ws/build/wamv_gazebo/CMakeFiles 0
-.PHONY : CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/rule
-
-# Convenience name for target.
-ament_cmake_python_build_wamv_gazebo_egg: CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/rule
-.PHONY : ament_cmake_python_build_wamv_gazebo_egg
-
-# clean rule for target.
-CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/build.make CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/clean
-.PHONY : CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

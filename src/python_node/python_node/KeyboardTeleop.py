@@ -31,11 +31,11 @@ class KeyboardTeleop(Node):
         self.linear_step = 0.2   # velocità incrementa o decrementa di 0.05 m/s
         self.angular_step = 0.1   # angolo incrementa o decrementa di 0.1 rad
 
-        self.max_linear = 7.71667     # max velocità (m/s)
-        self.min_linear = -7.71667    # min velocità
+        self.max_linear = 1.0    # max velocità (m/s)
+        self.min_linear = -1.0    # min velocità
 
-        self.max_angular = 1.0    # max angolo (rad)
-        self.min_angular = -1.0   # min angolo
+        self.max_angular = 0.7    # max angolo (rad)
+        self.min_angular = -0.7   # min angolo
 
         self.declare_parameter("timer_period", 0.1)
         self.period = self.get_parameter("timer_period").get_parameter_value().double_value
@@ -50,9 +50,9 @@ class KeyboardTeleop(Node):
             self.linear_x += self.linear_step
         elif key == 's':
             self.linear_x -= self.linear_step
-        elif key == 'a':
-            self.angular_z -= self.angular_step
         elif key == 'd':
+            self.angular_z -= self.angular_step
+        elif key == 'a':
             self.angular_z += self.angular_step
         elif key == 'x':
             self.linear_x = 0.0

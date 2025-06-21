@@ -1,1 +1,0 @@
-/home/luca002/proj_ws/src/wamv_gazebo/launch/usv_joy_teleop.py

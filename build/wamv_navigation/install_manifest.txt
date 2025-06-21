@@ -6,8 +6,8 @@
 /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/tb4_loopback_simulation.launch.py
 /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/turtlebot3_state_publisher.launch.py
 /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/wamv_launch.py
-/home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/robot.launch.py
 /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/tb3_loopback_simulation.launch.py
+/home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/launch8.py
 /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/localization_launch.py
 /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/__init__.py
 /home/luca002/proj_ws/install/wamv_navigation/lib/wamv_navigation/launch/tb3_simulation_launch.py

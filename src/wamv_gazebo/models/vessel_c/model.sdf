@@ -3,9 +3,9 @@
   <model name="vessel3">
     <static>true</static>
     <link name="link">
-      <enable_wind>true</enable_wind>
+
       <inertial>
-        <mass>3000.0</mass>
+        <mass>4300.0</mass>
         <inertia>
           <ixx>13000</ixx>
           <ixy>0.0</ixy>
@@ -20,7 +20,7 @@
         <geometry>
           <mesh>
             <uri>meshes/Boat07.dae</uri>
-            <scale>0.7 0.7 0.7</scale>
+            <scale>1 1 1</scale>
           </mesh>
         </geometry>
         <material>
@@ -40,7 +40,7 @@
         <geometry>
           <mesh>
             <uri>meshes/Boat07.dae</uri>
-            <scale>0.7 0.7 0.7</scale>
+            <scale>1 1 1</scale>
           </mesh>
         </geometry>
       </collision>

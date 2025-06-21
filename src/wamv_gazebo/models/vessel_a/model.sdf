@@ -20,6 +20,7 @@
         <geometry>
           <mesh>
             <uri>meshes/Boat05.dae</uri>
+            <scale>1.7 1.7 1.7</scale>
           </mesh>
         </geometry>
         <material>
@@ -40,6 +41,7 @@
         <geometry>
           <mesh>
             <uri>meshes/Boat05.dae</uri>
+            <scale>1.7 1.7 1.7</scale>
           </mesh>
         </geometry>
       </collision>

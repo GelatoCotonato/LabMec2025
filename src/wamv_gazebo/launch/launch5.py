@@ -1,17 +1,16 @@
-# USING SLAM TOOLBOX TO GET /MAP TOPIC
+# ADDING WAMV CONTROLLER AND KEYBOARD TELEOP
 
-import os, subprocess
+import os, subprocess, atexit, signal
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription, LaunchService
-from launch.actions import DeclareLaunchArgument, ExecuteProcess, TimerAction
-from launch.substitutions import Command, LaunchConfiguration, PathJoinSubstitution
+from launch.actions import DeclareLaunchArgument, ExecuteProcess
+from launch.substitutions import Command, LaunchConfiguration
 from launch_ros.actions import Node
-from launch.conditions import IfCondition, UnlessCondition
-import atexit, signal
+
 def generate_launch_description():
     pkg_gazebo = get_package_share_directory('wamv_gazebo')
     pkg_navigation = get_package_share_directory('wamv_navigation')
-    # Percorsi dei file
+
     urdf_model_path = os.path.join(pkg_gazebo, 'urdf', 'model.urdf.xacro')
     world_path = os.path.join(pkg_gazebo, 'worlds', 'sydney.sdf')
     rviz_config_path = os.path.join(pkg_navigation, 'rviz', 'config3.rviz')
@@ -25,6 +24,12 @@ def generate_launch_description():
     if not os.path.exists(rviz_config_path):
         raise FileNotFoundError(f"Rviz config file not found at: {rviz_config_path}")
     
+    sim_time_arg = DeclareLaunchArgument(
+        name='use_sim_time', 
+        default_value='True', 
+        description='Flag to enable use_sim_time'
+    )
+
     # Robot State Publisher
     robot_state_publisher = Node(
         package='robot_state_publisher',
@@ -36,28 +41,6 @@ def generate_launch_description():
         }]
     )
 
-    sim_time_arg = DeclareLaunchArgument(
-        name='use_sim_time', 
-        default_value='True', 
-        description='Flag to enable use_sim_time'
-    )
-
-    gui = DeclareLaunchArgument(
-        name='gui',
-        default_value='True',
-        description='Flag to enable joint_state_publisher_gui'
-    )
-
-    joint_state_publisher_node = Node(
-        package='joint_state_publisher',
-        executable='joint_state_publisher',
-        name='joint_state_publisher',
-        parameters=[{'robot_description': Command(['xacro ', urdf_model_path]),
-                     'rate': 20.0,
-                     'use_sim_time': LaunchConfiguration('use_sim_time')}],
-        condition=UnlessCondition(LaunchConfiguration('gui'))
-    )
-    
     # Gazebo Sim - Nuova sintassi per ROS 2 Jazzy
     gz_sim = ExecuteProcess(
         cmd=['gz', 'sim', '-v', '4', '-r', world_path],
@@ -75,7 +58,7 @@ def generate_launch_description():
         ],
         output='screen'
     )
-    
+
     # Bridge per TF e sensori
     bridge = Node(
         package='ros_gz_bridge',
@@ -138,7 +121,7 @@ def generate_launch_description():
         executable='ekf_node',
         name='ekf_node',
         output='screen',
-        parameters=[os.path.join(pkg_navigation, 'config/ekf.yaml'),
+        parameters=[os.path.join(pkg_gazebo, 'config/ekf.yaml'),
                     {'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
 
@@ -171,9 +154,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         sim_time_arg,
-        gui,
         bridge,
-        joint_state_publisher_node,
         robot_state_publisher,
         gz_sim,
         spawn_entity,
@@ -188,5 +169,6 @@ if __name__ == '__main__':
     ls = LaunchService()
     ls.include_launch_description(ld)
     ls.run()
+
 
 

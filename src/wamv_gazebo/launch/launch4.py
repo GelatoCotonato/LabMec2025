@@ -1,15 +1,17 @@
+# ADDING EKF TO GET A FILTERED ODOMETRY
+
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription, LaunchService
-from launch.actions import DeclareLaunchArgument, ExecuteProcess, TimerAction
-from launch.substitutions import Command, LaunchConfiguration, PathJoinSubstitution
+from launch.actions import DeclareLaunchArgument, ExecuteProcess
+from launch.substitutions import Command, LaunchConfiguration
 from launch_ros.actions import Node
 from launch.conditions import IfCondition, UnlessCondition
 
 def generate_launch_description():
     pkg_gazebo = get_package_share_directory('wamv_gazebo')
     pkg_navigation = get_package_share_directory('wamv_navigation')
-    # Percorsi dei file
+
     urdf_model_path = os.path.join(pkg_gazebo, 'urdf', 'model.urdf.xacro')
     world_path = os.path.join(pkg_gazebo, 'worlds', 'sydney.sdf')
     rviz_config_path = os.path.join(pkg_navigation, 'rviz', 'config3.rviz')
@@ -83,6 +85,13 @@ def generate_launch_description():
         output='screen'
     )
     
+    odom2tf = Node(
+        package='python_node',
+        executable='odom2tf', 
+        name='odom2tf',
+        parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
+    )
+
     # Bridge per TF e sensori
     bridge = Node(
         package='ros_gz_bridge',
@@ -108,8 +117,6 @@ def generate_launch_description():
 
             # Odom & TF 
             '/odom@nav_msgs/msg/Odometry[gz.msgs.Odometry',
-            
-            # '/tf@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V',
 
             # GPS
             '/fix@sensor_msgs/msg/NavSatFix[gz.msgs.NavSat',
@@ -147,8 +154,8 @@ def generate_launch_description():
         executable='ekf_node',
         name='ekf_node',
         output='screen',
-        parameters=[os.path.join(pkg_navigation, 'config/ekf.yaml'),
-                    {'use_sim_time': True}]
+        parameters=[os.path.join(pkg_gazebo, 'config/ekf_node.yaml'),
+                    {'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
 
     rviz_node = Node(
@@ -170,6 +177,7 @@ def generate_launch_description():
     return LaunchDescription([
         sim_time_arg,
         gui,
+        odom2tf,
         bridge,
         joint_state_publisher_node,
         joint_state_publisher_gui_node,

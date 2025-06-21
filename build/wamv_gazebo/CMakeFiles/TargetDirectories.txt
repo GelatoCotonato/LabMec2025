@@ -21,8 +21,6 @@
 /home/luca002/proj_ws/build/wamv_gazebo/CMakeFiles/USVWind.dir
 /home/luca002/proj_ws/build/wamv_gazebo/CMakeFiles/WaveVisual.dir
 /home/luca002/proj_ws/build/wamv_gazebo/CMakeFiles/WildlifeScoringPlugin.dir
-/home/luca002/proj_ws/build/wamv_gazebo/CMakeFiles/ament_cmake_python_symlink_wamv_gazebo.dir
-/home/luca002/proj_ws/build/wamv_gazebo/CMakeFiles/ament_cmake_python_build_wamv_gazebo_egg.dir
 /home/luca002/proj_ws/build/wamv_gazebo/CMakeFiles/test.dir
 /home/luca002/proj_ws/build/wamv_gazebo/CMakeFiles/edit_cache.dir
 /home/luca002/proj_ws/build/wamv_gazebo/CMakeFiles/rebuild_cache.dir

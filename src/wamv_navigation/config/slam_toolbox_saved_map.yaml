@@ -1,0 +1,8 @@
+slam_toolbox:
+  ros__parameters:
+    use_sim_time: true
+    mode: "mapping"
+    load_state_filename: "~/my_map2.yaml"
+    map_file_name: "my_map2"
+    map_start_pose: [0.0, 0.0, 0.0]
+    enable_interactive_mode: true

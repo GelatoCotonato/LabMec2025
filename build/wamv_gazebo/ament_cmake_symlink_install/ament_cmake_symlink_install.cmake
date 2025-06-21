@@ -340,20 +340,8 @@ include("/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_symlink_install_tar
 # install("TARGETS" "AcousticPingerPlugin" "BallShooterPlugin" "LightBuoyPlugin" "NavigationScoringPlugin" "GymkhanaScoringPlugin" "PerceptionScoringPlugin" "PlacardPlugin" "PublisherPlugin" "ScanDockScoringPlugin" "SimpleHydrodynamics" "Surface" "USVWind" "WaveVisual" "WildlifeScoringPlugin" "DESTINATION" "lib")
 include("/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_symlink_install_targets_7_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/wamv_gazebo/environment")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/wamv_gazebo/environment")
-
-# install(FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/wamv_gazebo/environment")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/wamv_gazebo/environment")
-
-# install(DIRECTORY "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_python/wamv_gazebo/wamv_gazebo.egg-info/" "DESTINATION" "lib/python3.12/site-packages/wamv_gazebo-0.0.0-py3.12.egg-info")
-ament_cmake_symlink_install_directory("/home/luca002/proj_ws/src/wamv_gazebo" DIRECTORY "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_python/wamv_gazebo/wamv_gazebo.egg-info/" "DESTINATION" "lib/python3.12/site-packages/wamv_gazebo-0.0.0-py3.12.egg-info")
-
-# install(DIRECTORY "/home/luca002/proj_ws/src/wamv_gazebo/src/wamv_gazebo/" "DESTINATION" "lib/python3.12/site-packages/wamv_gazebo" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/home/luca002/proj_ws/src/wamv_gazebo" DIRECTORY "/home/luca002/proj_ws/src/wamv_gazebo/src/wamv_gazebo/" "DESTINATION" "lib/python3.12/site-packages/wamv_gazebo" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-
-# install(DIRECTORY "launch" "models" "worlds" "urdf" "DESTINATION" "share/wamv_gazebo")
-ament_cmake_symlink_install_directory("/home/luca002/proj_ws/src/wamv_gazebo" DIRECTORY "launch" "models" "worlds" "urdf" "DESTINATION" "share/wamv_gazebo")
+# install(DIRECTORY "config" "launch" "models" "worlds" "urdf" "DESTINATION" "share/wamv_gazebo")
+ament_cmake_symlink_install_directory("/home/luca002/proj_ws/src/wamv_gazebo" DIRECTORY "config" "launch" "models" "worlds" "urdf" "DESTINATION" "share/wamv_gazebo")
 
 # install(FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
