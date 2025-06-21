@@ -575,8 +575,6 @@
       <uri>model://round_buoy_black</uri>
     </include>
 
-
-
     <!-- Adding vessels -->
     <include>
       <uri>model://vessel_c</uri>

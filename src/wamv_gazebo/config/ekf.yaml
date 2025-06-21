@@ -1,23 +1,23 @@
 ekf_node:
   ros__parameters:
 
-    ### Frequenza del filtro e timeout sensori ###
+    ### Frequenza del filtro e timeout sensori
     frequency: 30.0
     sensor_timeout: 1.0
     two_d_mode: true
     transform_time_offset: 0.0
     transform_timeout: 0.1
 
-    ### Frames ###
+    ### Frames 
     world_frame: odom
     odom_frame: odom
     base_link_frame: base_footprint
     publish_tf: true
     publish_acceleration: false
 
-    ### Odometry input (simulazione o encoder da Gazebo) ###
+    ### Odometry input
     odom0: /odom
-    odom0_config:  [true,  true,  false,   # x, y, z
+    odom0_config:  [true,  true,  false,  # x, y, z
                     false, false, false,  # roll, pitch, yaw
                     true,  true,  false,  # ẋ, ẏ, ż
                     false, false, true,   # roll̇, pitcḣ, yaẇ
@@ -26,7 +26,7 @@ ekf_node:
     odom0_differential: false
     odom0_relative: false
 
-    ### IMU input ###
+    ### IMU input
     imu0: /imu
     imu0_config:   [false, false, false,  # x, y, z
                     false, false, true,   # roll, pitch, yaw
@@ -37,18 +37,3 @@ ekf_node:
     imu0_differential: false
     imu0_relative: false
     imu0_remove_gravitational_acceleration: true
-
-    # ### GPS input (convertito via navsat_transform_node) ###
-    # gps0: /gps/filtered
-    # gps0_config:   [true,  true,  false,  # x, y, z
-    #                 false, false, false,  # roll, pitch, yaw
-    #                 false, false, false,  # ẋ, ẏ, ż
-    #                 false, false, false,  # roll̇, pitcḣ, yaẇ
-    #                 false, false, false]  # ẍ, ÿ, z̈
-
-    # gps0_queue_size: 5
-    # gps0_nodelay: false
-    # gps0_differential: false
-    # gps0_relative: false
-    # gps0_rejection_threshold: 5.0
-    # gps0_rejection_threshold_scalar: 1.0

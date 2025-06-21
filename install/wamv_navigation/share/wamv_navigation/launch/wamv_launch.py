@@ -1,1 +1,0 @@
-/home/luca002/proj_ws/src/wamv_navigation/launch/wamv_launch.py

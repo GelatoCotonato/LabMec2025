@@ -1,0 +1,19 @@
+digraph G {
+"odom" -> "base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 30.253\nBuffer length: 4.264\nMost recent transform: 42.328\nOldest transform: 38.064\n"];
+"map" -> "odom"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_footprint" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "battery_dx_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "battery_sx_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "cpu_cases_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"tripod_ring_link" -> "lidar_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"tripod_legs_link" -> "tripod_ring_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "tripod_legs_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "left_engine_link"[label=" Broadcaster: default_authority\nAverage rate: 10.238\nBuffer length: 4.2\nMost recent transform: 42.3\nOldest transform: 38.1\n"];
+"left_engine_link" -> "left_propeller_link"[label=" Broadcaster: default_authority\nAverage rate: 10.238\nBuffer length: 4.2\nMost recent transform: 42.3\nOldest transform: 38.1\n"];
+"base_link" -> "right_engine_link"[label=" Broadcaster: default_authority\nAverage rate: 10.238\nBuffer length: 4.2\nMost recent transform: 42.3\nOldest transform: 38.1\n"];
+"right_engine_link" -> "right_propeller_link"[label=" Broadcaster: default_authority\nAverage rate: 10.238\nBuffer length: 4.2\nMost recent transform: 42.3\nOldest transform: 38.1\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1750517807.1788392"[ shape=plaintext ] ;
+}->"map";
+}

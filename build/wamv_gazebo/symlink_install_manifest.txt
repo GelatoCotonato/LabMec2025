@@ -22,17 +22,13 @@
 /home/luca002/proj_ws/install/wamv_gazebo/lib/libWaveVisual.so
 /home/luca002/proj_ws/install/wamv_gazebo/lib/libWildlifeScoringPlugin.so
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/config/ekf.yaml
-/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/config/navsat.yaml
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/__init__.py
-/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/cartographer.launch.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/launch1.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/launch2.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/launch3.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/launch4.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/launch5.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/launch6.py
-/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/launch7.py
-/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/occupancy_grid.launch.py
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/programs/GerstnerWaves_fs_330.glsl
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/programs/GerstnerWaves_vs_330.glsl
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/textures/skybox_lowres.dds
@@ -60,7 +56,6 @@
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/3.png
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/4.png
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/5.png
-/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/nav2_params.yaml
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/eyebrow001-unmodified.png
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/eyebrow001.png
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/green_eye.png
@@ -147,6 +142,10 @@
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/model.config
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/wamv/model.sdf
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/worlds/sydney.sdf
+/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/rviz/config.rviz
+/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/rviz/config2.rviz
+/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/rviz/config3.rviz
+/home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/rviz/config4.rviz
 /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/model.urdf.xacro
 /home/luca002/proj_ws/install/wamv_gazebo/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo
 /home/luca002/proj_ws/install/wamv_gazebo/share/ament_index/resource_index/parent_prefix_path/wamv_gazebo

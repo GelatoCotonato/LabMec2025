@@ -2,7 +2,7 @@
 <package format="2">
   <name>wamv_gazebo</name>
   <version>0.0.0</version>
-  <description>Gazebo resources</description>
+  <description>Gazebo Resources</description>
 
   <maintainer email="emailprogramming02@gmail.com">Luca Barbieri</maintainer>
   <maintainer email="graceffalorenzo@gmail.com">Lorenzo Graceffa</maintainer>

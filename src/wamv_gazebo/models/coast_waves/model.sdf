@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
-  <model name="waves">
+  <model name="coast_waves">
     <static>true</static>
     <link name="link">
       <visual name= "wave_visual">
@@ -14,8 +14,6 @@
             <vertex>materials/programs/GerstnerWaves_vs_330.glsl</vertex>
             <fragment>materials/programs/GerstnerWaves_fs_330.glsl</fragment>
             <parameters>
-
-
               <rescale>0.125</rescale>
               <bumpScale>75 75</bumpScale>
               <bumpSpeed>0.01 0.0</bumpSpeed> 

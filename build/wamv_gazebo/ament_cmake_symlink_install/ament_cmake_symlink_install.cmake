@@ -340,8 +340,8 @@ include("/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_symlink_install_tar
 # install("TARGETS" "AcousticPingerPlugin" "BallShooterPlugin" "LightBuoyPlugin" "NavigationScoringPlugin" "GymkhanaScoringPlugin" "PerceptionScoringPlugin" "PlacardPlugin" "PublisherPlugin" "ScanDockScoringPlugin" "SimpleHydrodynamics" "Surface" "USVWind" "WaveVisual" "WildlifeScoringPlugin" "DESTINATION" "lib")
 include("/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_symlink_install_targets_7_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(DIRECTORY "config" "launch" "models" "worlds" "urdf" "DESTINATION" "share/wamv_gazebo")
-ament_cmake_symlink_install_directory("/home/luca002/proj_ws/src/wamv_gazebo" DIRECTORY "config" "launch" "models" "worlds" "urdf" "DESTINATION" "share/wamv_gazebo")
+# install(DIRECTORY "config" "launch" "models" "worlds" "rviz" "urdf" "DESTINATION" "share/wamv_gazebo")
+ament_cmake_symlink_install_directory("/home/luca002/proj_ws/src/wamv_gazebo" DIRECTORY "config" "launch" "models" "worlds" "rviz" "urdf" "DESTINATION" "share/wamv_gazebo")
 
 # install(FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
