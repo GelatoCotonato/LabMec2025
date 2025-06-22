@@ -1,0 +1,503 @@
+[0.161s] Invoking command in '/home/luca002/proj_ws/build/wamv_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luca002/ros_ws/install/robot_description_example:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/luca002/proj_ws/src/wamv_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install/wamv_gazebo
+[0.228s] -- The C compiler identification is GNU 13.3.0
+[0.285s] -- The CXX compiler identification is GNU 13.3.0
+[0.297s] -- Detecting C compiler ABI info
+[0.360s] -- Detecting C compiler ABI info - done
+[0.372s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.372s] -- Detecting C compile features
+[0.373s] -- Detecting C compile features - done
+[0.381s] -- Detecting CXX compiler ABI info
+[0.457s] -- Detecting CXX compiler ABI info - done
+[0.464s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.464s] -- Detecting CXX compile features
+[0.465s] -- Detecting CXX compile features - done
+[0.468s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.585s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.644s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.692s] -- Looking for gz-sim8 -- found version 8.9.0
+[0.699s] -- Searching for dependencies of gz-sim8
+[0.700s] -- Looking for sdformat14 -- found version 14.7.0
+[0.700s] -- Searching for dependencies of sdformat14
+[0.706s] -- Checking for module 'tinyxml2'
+[0.718s] --   Found tinyxml2, version 10.0.0
+[0.739s] -- Looking for gz-math7 -- found version 7.5.2
+[0.739s] -- Searching for dependencies of gz-math7
+[0.741s] -- Looking for gz-utils2 -- found version 2.2.1
+[0.741s] -- Searching for dependencies of gz-utils2
+[0.742s] -- Looking for gz-utils2 -- found version 2.2.1
+[0.742s] -- Searching for dependencies of gz-utils2
+[0.743s] -- Searching for <gz-utils2> component [cli]
+[0.744s] -- Looking for gz-utils2-cli -- found version 2.2.1
+[0.744s] -- Searching for dependencies of gz-utils2-cli
+[0.747s] -- Looking for gz-plugin2 -- found version 2.0.4
+[0.747s] -- Searching for dependencies of gz-plugin2
+[0.747s] -- Looking for gz-utils2 -- found version 2.2.1
+[0.747s] -- Searching for <gz-plugin2> component [loader]
+[0.749s] -- Looking for gz-plugin2-loader -- found version 2.0.4
+[0.749s] -- Searching for dependencies of gz-plugin2-loader
+[0.749s] -- Searching for <gz-plugin2> component [register]
+[0.751s] -- Looking for gz-plugin2-register -- found version 2.0.4
+[0.751s] -- Searching for dependencies of gz-plugin2-register
+[0.753s] -- Looking for gz-transport13 -- found version 13.4.1
+[0.753s] -- Searching for dependencies of gz-transport13
+[0.847s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.21.12") 
+[0.856s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.859s] -- Checking for module 'libzmq >= 4'
+[0.868s] --   Found libzmq, version 4.3.5
+[0.892s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[0.896s] -- Checking for module 'uuid'
+[0.905s] --   Found uuid, version 2.39.3
+[0.926s] -- Found UUID: TRUE  
+[0.926s] -- Looking for gz-utils2 -- found version 2.2.1
+[0.928s] -- Looking for gz-msgs10 -- found version 10.3.2
+[0.928s] -- Searching for dependencies of gz-msgs10
+[0.942s] -- Looking for gz-utils2 -- found version 2.2.1
+[0.942s] -- Looking for gz-math7 -- found version 7.5.2
+[0.947s] -- Searching for <gz-transport13> component [log]
+[0.948s] -- Looking for gz-transport13-log -- found version 13.4.1
+[0.948s] -- Searching for dependencies of gz-transport13-log
+[0.949s] -- Searching for <gz-transport13> component [parameters]
+[0.950s] -- Looking for gz-transport13-parameters -- found version 13.4.1
+[0.950s] -- Searching for dependencies of gz-transport13-parameters
+[0.951s] -- Looking for gz-msgs10 -- found version 10.3.2
+[0.953s] -- Looking for gz-common5 -- found version 5.7.1
+[0.953s] -- Searching for dependencies of gz-common5
+[0.953s] -- Looking for gz-utils2 -- found version 2.2.1
+[0.954s] -- Looking for dlfcn.h - found
+[0.955s] -- Looking for libdl - found
+[0.956s] -- Found DL: TRUE  
+[0.960s] -- Searching for <gz-common5> component [av]
+[0.961s] -- Looking for gz-common5-av -- found version 5.7.1
+[0.962s] -- Searching for dependencies of gz-common5-av
+[0.965s] -- Checking for module 'libswscale'
+[0.974s] --   Found libswscale, version 7.5.100
+[0.995s] -- Found SWSCALE: TRUE  
+[0.998s] -- Checking for module 'libavdevice >= 56.4.100'
+[1.009s] --   Found libavdevice, version 60.3.100
+[1.037s] -- Found AVDEVICE: TRUE (Required is at least version "56.4.100") 
+[1.040s] -- Checking for module 'libavformat'
+[1.049s] --   Found libavformat, version 60.16.100
+[1.071s] -- Found AVFORMAT: TRUE  
+[1.075s] -- Checking for module 'libavcodec'
+[1.084s] --   Found libavcodec, version 60.31.102
+[1.106s] -- Found AVCODEC: TRUE  
+[1.110s] -- Checking for module 'libavutil'
+[1.120s] --   Found libavutil, version 58.29.100
+[1.141s] -- Found AVUTIL: TRUE  
+[1.142s] -- Searching for <gz-common5> component [events]
+[1.144s] -- Looking for gz-common5-events -- found version 5.7.1
+[1.144s] -- Searching for dependencies of gz-common5-events
+[1.144s] -- Looking for gz-math7 -- found version 7.5.2
+[1.145s] -- Searching for <gz-common5> component [graphics]
+[1.146s] -- Looking for gz-common5-graphics -- found version 5.7.1
+[1.146s] -- Searching for dependencies of gz-common5-graphics
+[1.146s] -- Looking for gz-math7 -- found version 7.5.2
+[1.151s] -- Found GzAssimp: TRUE (found version "5.3.0") 
+[1.151s] -- Searching for <gz-common5> component [io]
+[1.153s] -- Looking for gz-common5-io -- found version 5.7.1
+[1.153s] -- Searching for dependencies of gz-common5-io
+[1.154s] -- Searching for <gz-common5> component [profiler]
+[1.155s] -- Looking for gz-common5-profiler -- found version 5.7.1
+[1.155s] -- Searching for dependencies of gz-common5-profiler
+[1.158s] -- Looking for gz-fuel_tools9 -- found version 9.1.1
+[1.158s] -- Searching for dependencies of gz-fuel_tools9
+[1.217s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "8.5.0")  
+[1.225s] -- Checking for module 'jsoncpp'
+[1.234s] --   Found jsoncpp, version 1.9.5
+[1.254s] -- Found JSONCPP: TRUE  
+[1.265s] -- Checking for module 'yaml-0.1'
+[1.274s] --   Found yaml-0.1, version 0.2.5
+[1.295s] -- Found YAML: TRUE  
+[1.298s] -- Checking for module 'libzip'
+[1.308s] --   Found libzip, version 1.7.3
+[1.330s] -- Found ZIP: TRUE  
+[1.330s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.330s] -- Looking for gz-common5 -- found version 5.7.1
+[1.330s] -- Searching for dependencies of gz-common5
+[1.331s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.331s] -- Looking for dlfcn.h - found
+[1.331s] -- Looking for libdl - found
+[1.336s] -- Searching for <gz-common5> component [testing]
+[1.337s] -- Looking for gz-common5-testing -- found version 5.7.1
+[1.338s] -- Searching for dependencies of gz-common5-testing
+[1.338s] -- Looking for gz-math7 -- found version 7.5.2
+[1.339s] -- Looking for gz-msgs10 -- found version 10.3.2
+[1.341s] -- Looking for gz-gui8 -- found version 8.4.0
+[1.341s] -- Searching for dependencies of gz-gui8
+[1.358s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.358s] -- Looking for gz-math7 -- found version 7.5.2
+[1.358s] -- Looking for gz-common5 -- found version 5.7.1
+[1.358s] -- Looking for gz-plugin2 -- found version 2.0.4
+[1.358s] -- Looking for gz-transport13 -- found version 13.4.1
+[1.360s] -- Looking for gz-rendering8 -- found version 8.2.2
+[1.360s] -- Searching for dependencies of gz-rendering8
+[1.360s] -- Looking for gz-math7 -- found version 7.5.2
+[1.360s] -- Searching for dependencies of gz-math7
+[1.361s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.361s] -- Searching for <gz-math7> component [eigen3]
+[1.362s] -- Looking for gz-math7-eigen3 -- found version 7.5.2
+[1.362s] -- Searching for dependencies of gz-math7-eigen3
+[1.369s] -- Looking for gz-common5 -- found version 5.7.1
+[1.369s] -- Searching for dependencies of gz-common5
+[1.369s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.370s] -- Looking for dlfcn.h - found
+[1.370s] -- Looking for libdl - found
+[1.374s] -- Searching for <gz-common5> component [graphics]
+[1.374s] -- Searching for <gz-common5> component [events]
+[1.374s] -- Searching for <gz-common5> component [geospatial]
+[1.376s] -- Looking for gz-common5-geospatial -- found version 5.7.1
+[1.376s] -- Searching for dependencies of gz-common5-geospatial
+[1.376s] -- Looking for gz-math7 -- found version 7.5.2
+[1.376s] -- Looking for gz-common5 -- found version 5.7.1
+[1.377s] -- Looking for gz-plugin2 -- found version 2.0.4
+[1.377s] -- Searching for dependencies of gz-plugin2
+[1.378s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.378s] -- Searching for <gz-plugin2> component [all]
+[1.379s] -- Looking for all libraries of gz-plugin2 -- found version 2.0.4
+[1.379s] -- Looking for gz-plugin2 -- found version 2.0.4
+[1.380s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.390s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL 
+[1.391s] -- Looking for gz-msgs10 -- found version 10.3.2
+[1.419s] -- Looking for gz-physics7 -- found version 7.5.0
+[1.419s] -- Searching for dependencies of gz-physics7
+[1.419s] -- Looking for gz-common5 -- found version 5.7.1
+[1.420s] -- Looking for gz-math7 -- found version 7.5.2
+[1.420s] -- Looking for gz-plugin2 -- found version 2.0.4
+[1.420s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.421s] -- Searching for <gz-physics7> component [heightmap]
+[1.422s] -- Looking for gz-physics7-heightmap -- found version 7.5.0
+[1.422s] -- Searching for dependencies of gz-physics7-heightmap
+[1.423s] -- Looking for gz-common5 -- found version 5.7.1
+[1.423s] -- Searching for <gz-physics7> component [mesh]
+[1.424s] -- Looking for gz-physics7-mesh -- found version 7.5.0
+[1.424s] -- Searching for dependencies of gz-physics7-mesh
+[1.425s] -- Looking for gz-common5 -- found version 5.7.1
+[1.425s] -- Searching for <gz-physics7> component [sdf]
+[1.426s] -- Looking for gz-physics7-sdf -- found version 7.5.0
+[1.426s] -- Searching for dependencies of gz-physics7-sdf
+[1.426s] -- Looking for sdformat14 -- found version 14.7.0
+[1.428s] -- Looking for gz-sensors8 -- found version 8.2.2
+[1.428s] -- Searching for dependencies of gz-sensors8
+[1.442s] -- Looking for gz-math7 -- found version 7.5.2
+[1.442s] -- Looking for gz-common5 -- found version 5.7.1
+[1.443s] -- Looking for gz-transport13 -- found version 13.4.1
+[1.443s] -- Looking for gz-rendering8 -- found version 8.2.2
+[1.443s] -- Looking for gz-msgs10 -- found version 10.3.2
+[1.443s] -- Looking for sdformat14 -- found version 14.7.0
+[1.444s] -- Searching for <gz-sensors8> component [air_pressure]
+[1.445s] -- Looking for gz-sensors8-air_pressure -- found version 8.2.2
+[1.445s] -- Searching for dependencies of gz-sensors8-air_pressure
+[1.446s] -- Searching for <gz-sensors8> component [air_speed]
+[1.447s] -- Looking for gz-sensors8-air_speed -- found version 8.2.2
+[1.447s] -- Searching for dependencies of gz-sensors8-air_speed
+[1.448s] -- Searching for <gz-sensors8> component [altimeter]
+[1.449s] -- Looking for gz-sensors8-altimeter -- found version 8.2.2
+[1.449s] -- Searching for dependencies of gz-sensors8-altimeter
+[1.449s] -- Searching for <gz-sensors8> component [imu]
+[1.450s] -- Looking for gz-sensors8-imu -- found version 8.2.2
+[1.450s] -- Searching for dependencies of gz-sensors8-imu
+[1.451s] -- Searching for <gz-sensors8> component [force_torque]
+[1.452s] -- Looking for gz-sensors8-force_torque -- found version 8.2.2
+[1.452s] -- Searching for dependencies of gz-sensors8-force_torque
+[1.452s] -- Searching for <gz-sensors8> component [logical_camera]
+[1.453s] -- Looking for gz-sensors8-logical_camera -- found version 8.2.2
+[1.454s] -- Searching for dependencies of gz-sensors8-logical_camera
+[1.454s] -- Searching for <gz-sensors8> component [magnetometer]
+[1.455s] -- Looking for gz-sensors8-magnetometer -- found version 8.2.2
+[1.455s] -- Searching for dependencies of gz-sensors8-magnetometer
+[1.456s] -- Searching for <gz-sensors8> component [navsat]
+[1.457s] -- Looking for gz-sensors8-navsat -- found version 8.2.2
+[1.457s] -- Searching for dependencies of gz-sensors8-navsat
+[1.457s] -- Searching for <gz-sensors8> component [dvl]
+[1.458s] -- Looking for gz-sensors8-dvl -- found version 8.2.2
+[1.458s] -- Searching for dependencies of gz-sensors8-dvl
+[1.459s] -- Looking for gz-sensors8 -- found version 8.2.2
+[1.459s] -- Searching for dependencies of gz-sensors8
+[1.472s] -- Looking for gz-math7 -- found version 7.5.2
+[1.472s] -- Looking for gz-common5 -- found version 5.7.1
+[1.473s] -- Looking for gz-transport13 -- found version 13.4.1
+[1.473s] -- Looking for gz-rendering8 -- found version 8.2.2
+[1.473s] -- Looking for gz-msgs10 -- found version 10.3.2
+[1.473s] -- Looking for sdformat14 -- found version 14.7.0
+[1.474s] -- Searching for <gz-sensors8> component [rendering]
+[1.475s] -- Looking for gz-sensors8-rendering -- found version 8.2.2
+[1.475s] -- Searching for dependencies of gz-sensors8-rendering
+[1.476s] -- Searching for <gz-sensors8> component [rendering]
+[1.476s] -- Searching for <gz-sensors8> component [lidar]
+[1.477s] -- Looking for gz-sensors8-lidar -- found version 8.2.2
+[1.477s] -- Searching for dependencies of gz-sensors8-lidar
+[1.477s] -- Looking for gz-sensors8 -- found version 8.2.2
+[1.478s] -- Searching for <gz-sensors8> component [gpu_lidar]
+[1.479s] -- Looking for gz-sensors8-gpu_lidar -- found version 8.2.2
+[1.479s] -- Searching for dependencies of gz-sensors8-gpu_lidar
+[1.479s] -- Looking for gz-sensors8 -- found version 8.2.2
+[1.480s] -- Searching for <gz-sensors8> component [camera]
+[1.481s] -- Looking for gz-sensors8-camera -- found version 8.2.2
+[1.481s] -- Searching for dependencies of gz-sensors8-camera
+[1.481s] -- Looking for gz-sensors8 -- found version 8.2.2
+[1.482s] -- Searching for <gz-sensors8> component [boundingbox_camera]
+[1.483s] -- Looking for gz-sensors8-boundingbox_camera -- found version 8.2.2
+[1.483s] -- Searching for dependencies of gz-sensors8-boundingbox_camera
+[1.483s] -- Searching for <gz-sensors8> component [segmentation_camera]
+[1.484s] -- Looking for gz-sensors8-segmentation_camera -- found version 8.2.2
+[1.484s] -- Searching for dependencies of gz-sensors8-segmentation_camera
+[1.485s] -- Searching for <gz-sensors8> component [depth_camera]
+[1.486s] -- Looking for gz-sensors8-depth_camera -- found version 8.2.2
+[1.486s] -- Searching for dependencies of gz-sensors8-depth_camera
+[1.486s] -- Looking for gz-sensors8 -- found version 8.2.2
+[1.487s] -- Searching for <gz-sensors8> component [rgbd_camera]
+[1.488s] -- Looking for gz-sensors8-rgbd_camera -- found version 8.2.2
+[1.488s] -- Searching for dependencies of gz-sensors8-rgbd_camera
+[1.488s] -- Looking for gz-sensors8 -- found version 8.2.2
+[1.489s] -- Searching for <gz-sensors8> component [thermal_camera]
+[1.490s] -- Looking for gz-sensors8-thermal_camera -- found version 8.2.2
+[1.490s] -- Searching for dependencies of gz-sensors8-thermal_camera
+[1.490s] -- Looking for gz-sensors8 -- found version 8.2.2
+[1.491s] -- Searching for <gz-sensors8> component [wide_angle_camera]
+[1.492s] -- Looking for gz-sensors8-wide_angle_camera -- found version 8.2.2
+[1.492s] -- Searching for dependencies of gz-sensors8-wide_angle_camera
+[1.493s] -- Looking for gz-rendering8 -- found version 8.2.2
+[1.493s] -- Looking for gz-math7 -- found version 7.5.2
+[1.493s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.508s] -- Looking for gz-common5 -- found version 5.7.1
+[1.509s] -- Looking for gz-fuel_tools9 -- found version 9.1.1
+[1.509s] -- Looking for gz-math7 -- found version 7.5.2
+[1.509s] -- Looking for gz-msgs10 -- found version 10.3.2
+[1.510s] -- Looking for gz-transport13 -- found version 13.4.1
+[1.510s] -- Looking for gz-plugin2 -- found version 2.0.4
+[1.510s] -- Looking for gz-rendering8 -- found version 8.2.2
+[1.511s] -- Looking for gz-sensors8 -- found version 8.2.2
+[1.511s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.511s] -- Looking for sdformat14 -- found version 14.7.0
+[1.514s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.546s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.559s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.573s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.589s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.680s] -- Configuring done (1.5s)
+[1.763s] -- Generating done (0.1s)
+[1.779s] -- Build files have been written to: /home/luca002/proj_ws/build/wamv_gazebo
+[1.790s] Invoked command in '/home/luca002/proj_ws/build/wamv_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luca002/ros_ws/install/robot_description_example:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/luca002/proj_ws/src/wamv_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luca002/proj_ws/install/wamv_gazebo
+[1.791s] Invoking command in '/home/luca002/proj_ws/build/wamv_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luca002/ros_ws/install/robot_description_example:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/wamv_gazebo -- -j16 -l16
+[1.829s] [  2%] [32mBuilding CXX object CMakeFiles/Waves.dir/src/Wavefield.cc.o[0m
+[1.829s] [  4%] [32mBuilding CXX object CMakeFiles/ScoringPlugin.dir/src/ScoringPlugin.cc.o[0m
+[4.233s] [  6%] [32m[1mLinking CXX shared library libWaves.so[0m
+[4.363s] [  6%] Built target Waves
+[4.377s] [  8%] [32mBuilding CXX object CMakeFiles/PolyhedraBuoyancyDrag.dir/src/PolyhedraBuoyancyDrag.cc.o[0m
+[4.377s] [ 10%] [32mBuilding CXX object CMakeFiles/PolyhedraBuoyancyDrag.dir/src/PolyhedronVolume.cc.o[0m
+[4.377s] [ 12%] [32mBuilding CXX object CMakeFiles/PolyhedraBuoyancyDrag.dir/src/ShapeVolume.cc.o[0m
+[5.246s] [ 14%] [32m[1mLinking CXX shared library libScoringPlugin.so[0m
+[5.394s] [ 14%] Built target ScoringPlugin
+[5.415s] [ 31%] [32mBuilding CXX object CMakeFiles/BallShooterPlugin.dir/src/BallShooterPlugin.cc.o[0m
+[5.415s] [ 31%] [32mBuilding CXX object CMakeFiles/NavigationScoringPlugin.dir/src/NavigationScoringPlugin.cc.o[0m
+[5.415s] [ 31%] [32mBuilding CXX object CMakeFiles/AcousticTrackingScoringPlugin.dir/src/AcousticTrackingScoringPlugin.cc.o[0m
+[5.416s] [ 31%] [32mBuilding CXX object CMakeFiles/WayfindingScoringPlugin.dir/src/WayfindingScoringPlugin.cc.o[0m
+[5.417s] [ 33%] [32mBuilding CXX object CMakeFiles/GymkhanaScoringPlugin.dir/src/GymkhanaScoringPlugin.cc.o[0m
+[5.417s] [ 31%] [32mBuilding CXX object CMakeFiles/AcousticPerceptionScoringPlugin.dir/src/AcousticPerceptionScoringPlugin.cc.o[0m
+[5.417s] [ 35%] [32mBuilding CXX object CMakeFiles/StationkeepingScoringPlugin.dir/src/StationkeepingScoringPlugin.cc.o[0m
+[5.418s] [ 37%] [32mBuilding CXX object CMakeFiles/PlacardPlugin.dir/src/PlacardPlugin.cc.o[0m
+[5.418s] [ 39%] [32mBuilding CXX object CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o[0m
+[5.418s] [ 31%] [32mBuilding CXX object CMakeFiles/PerceptionScoringPlugin.dir/src/PerceptionScoringPlugin.cc.o[0m
+[5.418s] [ 41%] [32mBuilding CXX object CMakeFiles/SimpleHydrodynamics.dir/src/SimpleHydrodynamics.cc.o[0m
+[5.418s] [ 31%] [32mBuilding CXX object CMakeFiles/AcousticPingerPlugin.dir/src/AcousticPingerPlugin.cc.o[0m
+[5.419s] [ 43%] [32mBuilding CXX object CMakeFiles/Surface.dir/src/Surface.cc.o[0m
+[5.419s] [ 31%] [32mBuilding CXX object CMakeFiles/LightBuoyPlugin.dir/src/LightBuoyPlugin.cc.o[0m
+[5.419s] [ 45%] [32mBuilding CXX object CMakeFiles/ScanDockScoringPlugin.dir/src/ScanDockScoringPlugin.cc.o[0m
+[9.721s] [ 47%] [32m[1mLinking CXX shared library libPublisherPlugin.so[0m
+[10.031s] [ 47%] Built target PublisherPlugin
+[10.044s] [ 50%] [32mBuilding CXX object CMakeFiles/AcousticTrackingScoringPlugin.dir/src/WaypointMarkers.cc.o[0m
+[10.356s] [ 52%] [32m[1mLinking CXX shared library libLightBuoyPlugin.so[0m
+[10.732s] [ 52%] Built target LightBuoyPlugin
+[10.749s] [ 54%] [32mBuilding CXX object CMakeFiles/WayfindingScoringPlugin.dir/src/WaypointMarkers.cc.o[0m
+[10.794s] [ 56%] [32m[1mLinking CXX shared library libPolyhedraBuoyancyDrag.so[0m
+[11.107s] [ 58%] [32m[1mLinking CXX shared library libGymkhanaScoringPlugin.so[0m
+[11.121s] [ 60%] [32m[1mLinking CXX shared library libSimpleHydrodynamics.so[0m
+[11.189s] [ 62%] [32m[1mLinking CXX shared library libSurface.so[0m
+[11.254s] [ 64%] [32m[1mLinking CXX shared library libPlacardPlugin.so[0m
+[11.265s] [ 64%] Built target PolyhedraBuoyancyDrag
+[11.278s] [ 66%] [32mBuilding CXX object CMakeFiles/StationkeepingScoringPlugin.dir/src/WaypointMarkers.cc.o[0m
+[11.502s] [ 66%] Built target SimpleHydrodynamics
+[11.520s] [ 68%] [32mBuilding CXX object CMakeFiles/AcousticPerceptionScoringPlugin.dir/src/WaypointMarkers.cc.o[0m
+[11.597s] [ 68%] Built target GymkhanaScoringPlugin
+[11.642s] [ 70%] [32mBuilding CXX object CMakeFiles/USVWind.dir/src/USVWind.cc.o[0m
+[11.723s] [ 70%] Built target Surface
+[11.759s] [ 72%] [32mBuilding CXX object CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o[0m
+[11.781s] [ 72%] Built target PlacardPlugin
+[11.813s] [ 75%] [32mBuilding CXX object CMakeFiles/WildlifeScoringPlugin.dir/src/WildlifeScoringPlugin.cc.o[0m
+[13.136s] [ 79%] [32m[1mLinking CXX shared library libPerceptionScoringPlugin.so[0m
+[13.136s] [ 79%] [32m[1mLinking CXX shared library libAcousticPingerPlugin.so[0m
+[13.581s] [ 79%] Built target AcousticPingerPlugin
+[13.615s] [ 79%] Built target PerceptionScoringPlugin
+[13.731s] [ 81%] [32m[1mLinking CXX shared library libNavigationScoringPlugin.so[0m
+[13.935s] [ 81%] Built target NavigationScoringPlugin
+[14.218s] [ 83%] [32m[1mLinking CXX shared library libBallShooterPlugin.so[0m
+[14.278s] [ 85%] [32m[1mLinking CXX shared library libAcousticTrackingScoringPlugin.so[0m
+[14.279s] [ 87%] [32m[1mLinking CXX shared library libScanDockScoringPlugin.so[0m
+[14.503s] [ 87%] Built target BallShooterPlugin
+[14.556s] [ 87%] Built target AcousticTrackingScoringPlugin
+[14.558s] [ 87%] Built target ScanDockScoringPlugin
+[14.997s] [ 89%] [32m[1mLinking CXX shared library libWayfindingScoringPlugin.so[0m
+[15.206s] [ 89%] Built target WayfindingScoringPlugin
+[15.210s] [ 91%] [32m[1mLinking CXX shared library libAcousticPerceptionScoringPlugin.so[0m
+[15.282s] [ 93%] [32m[1mLinking CXX shared library libStationkeepingScoringPlugin.so[0m
+[15.417s] [ 93%] Built target AcousticPerceptionScoringPlugin
+[15.487s] [ 93%] Built target StationkeepingScoringPlugin
+[17.050s] [ 95%] [32m[1mLinking CXX shared library libWildlifeScoringPlugin.so[0m
+[17.181s] [ 97%] [32m[1mLinking CXX shared library libUSVWind.so[0m
+[17.218s] [100%] [32m[1mLinking CXX shared library libWaveVisual.so[0m
+[17.238s] [100%] Built target WildlifeScoringPlugin
+[17.360s] [100%] Built target USVWind
+[17.392s] [100%] Built target WaveVisual
+[17.401s] Invoked command in '/home/luca002/proj_ws/build/wamv_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luca002/ros_ws/install/robot_description_example:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/wamv_gazebo -- -j16 -l16
+[17.402s] Invoking command in '/home/luca002/proj_ws/build/wamv_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luca002/ros_ws/install/robot_description_example:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/wamv_gazebo
+[17.409s] -- Install configuration: ""
+[17.409s] -- Execute custom install script
+[17.409s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/resource_paths.dsv
+[17.416s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/resource_paths.sh
+[17.422s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libWaves.so
+[17.427s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libPolyhedraBuoyancyDrag.so
+[17.432s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libScoringPlugin.so
+[17.438s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libStationkeepingScoringPlugin.so
+[17.443s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libWayfindingScoringPlugin.so
+[17.448s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libAcousticPerceptionScoringPlugin.so
+[17.453s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libAcousticTrackingScoringPlugin.so
+[17.459s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libAcousticPingerPlugin.so
+[17.464s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libBallShooterPlugin.so
+[17.469s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libLightBuoyPlugin.so
+[17.474s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libNavigationScoringPlugin.so
+[17.479s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libGymkhanaScoringPlugin.so
+[17.484s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libPerceptionScoringPlugin.so
+[17.489s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libPlacardPlugin.so
+[17.494s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libPublisherPlugin.so
+[17.500s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libScanDockScoringPlugin.so
+[17.507s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libSimpleHydrodynamics.so
+[17.514s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libSurface.so
+[17.519s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libUSVWind.so
+[17.525s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libWaveVisual.so
+[17.530s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/lib/libWildlifeScoringPlugin.so
+[17.535s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/config/ekf.yaml
+[17.541s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/__init__.py
+[17.546s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/wamv_gz_rviz.py
+[17.553s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/wamv_keyboard_control.py
+[17.562s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/wamv_rviz.py
+[17.570s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/programs/GerstnerWaves_fs_330.glsl
+[17.578s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/programs/GerstnerWaves_vs_330.glsl
+[17.584s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/textures/skybox_lowres.dds
+[17.594s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/textures/wave_normals.dds
+[17.610s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/meshes/waterlow.dae
+[17.623s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/model.config
+[17.635s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/model.sdf
+[17.646s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/DockCubes_Albedo.png
+[17.656s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/DockCubes_Metalness.png
+[17.670s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/DockCubes_Normal.png
+[17.679s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/DockCubes_Roughness.png
+[17.686s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/dock_block_4x4.dae
+[17.694s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/model.config
+[17.700s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/model.sdf
+[17.707s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitor.png
+[17.713s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitorStatic.mtl
+[17.719s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitorStatic.obj
+[17.724s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitorStatic_Col.mtl
+[17.729s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitorStatic_Col.obj
+[17.734s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/Phone.png
+[17.739s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/model.config
+[17.743s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/model.sdf
+[17.748s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/1.png
+[17.754s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/2.png
+[17.758s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/3.png
+[17.764s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/4.png
+[17.769s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/5.png
+[17.774s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/eyebrow001-unmodified.png
+[17.779s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/eyebrow001.png
+[17.783s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/green_eye.png
+[17.789s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/jeans01_normals.png
+[17.794s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/jeans_basic_diffuse.png
+[17.800s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/male02_diffuse_black-unmodified.png
+[17.807s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/male02_diffuse_black.png
+[17.813s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/teeth.png
+[17.819s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/tshirt02_normals.png
+[17.824s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/tshirt02_texture.png
+[17.829s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/young_lightskinned_male_diffuse.png
+[17.834s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/meshes/standing.dae
+[17.839s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/model.config
+[17.844s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/model.sdf
+[17.849s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/1.png
+[17.854s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/2.png
+[17.859s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/3.png
+[17.864s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/4.png
+[17.869s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/5.png
+[17.875s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/materials/textures/RoundBarrierBuoy_Base_Color.png
+[17.880s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/materials/textures/RoundBarrierBuoy_Roughness.png
+[17.885s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/meshes/mb_round_buoy.dae
+[17.890s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/model.config
+[17.895s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/model.sdf
+[17.901s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/1.png
+[17.908s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/2.png
+[17.914s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/3.png
+[17.919s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/4.png
+[17.924s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/5.png
+[17.930s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/materials/textures/Boat05_Albedo.jpg
+[17.935s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/materials/textures/Boat05_Metalness.png
+[17.939s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/materials/textures/Boat05_Normal.png
+[17.944s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/materials/textures/Boat05_Roughness.jpg
+[17.949s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/meshes/Boat05.dae
+[17.954s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/model.config
+[17.959s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/model.sdf
+[17.964s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/thumbnails/1.png
+[17.969s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/materials/textures/Boat06_Albedo.jpg
+[17.974s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/materials/textures/Boat06_Metalness.png
+[17.979s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/materials/textures/Boat06_Normal.jpg
+[17.984s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/materials/textures/Boat06_Roughness.jpg
+[17.989s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/meshes/Boat06.dae
+[17.994s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/model.config
+[18.000s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/model.sdf
+[18.008s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/thumbnails/1.png
+[18.014s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/materials/textures/Boat07_Albedo.jpg
+[18.019s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/materials/textures/Boat07_Normal.jpg
+[18.024s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/materials/textures/Boat07_Roughness.jpg
+[18.029s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/meshes/Boat07.dae
+[18.034s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/model.config
+[18.039s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/model.sdf
+[18.044s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/thumbnails/1.png
+[18.050s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/worlds/sydney.sdf
+[18.055s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/rviz/wamv_gz_rviz.rviz
+[18.060s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/rviz/wamv_keyboard_control.rviz
+[18.065s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/rviz/wamv_rviz.rviz
+[18.070s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery.dae
+[18.075s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery.png
+[18.080s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery_Albedo.png
+[18.085s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery_Metalness.png
+[18.090s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery_Normal.png
+[18.095s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery_Roughness.png
+[18.102s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases.dae
+[18.109s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases.png
+[18.115s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases_Albedo.png
+[18.121s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases_Metalness.png
+[18.126s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases_Normal.png
+[18.131s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases_Roughness.png
+[18.136s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/lidar/lidar_3d_v1 copy.png
+[18.141s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/lidar/lidar_3d_v1.dae
+[18.146s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/lidar/lidar_3d_v1.png
+[18.151s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/tripod/legs.dae
+[18.156s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/tripod/ring.dae
+[18.161s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/wamv/WAM-V-Base.dae
+[18.166s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/wamv/WamV.png
+[18.171s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/wamv/engine.dae
+[18.176s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/wamv/propeller.dae
+[18.181s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/model.urdf.xacro
+[18.186s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo
+[18.191s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/ament_index/resource_index/parent_prefix_path/wamv_gazebo
+[18.196s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/ament_prefix_path.sh
+[18.202s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/ament_prefix_path.dsv
+[18.209s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/path.sh
+[18.215s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/path.dsv
+[18.220s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/local_setup.bash
+[18.225s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/local_setup.sh
+[18.231s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/local_setup.zsh
+[18.236s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/local_setup.dsv
+[18.241s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/package.dsv
+[18.246s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/ament_index/resource_index/packages/wamv_gazebo
+[18.251s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/cmake/wamv_gazeboConfig.cmake
+[18.256s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/cmake/wamv_gazeboConfig-version.cmake
+[18.261s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/package.xml
+[18.268s] Invoked command in '/home/luca002/proj_ws/build/wamv_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luca002/ros_ws/install/robot_description_example:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/wamv_gazebo

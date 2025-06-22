@@ -49,7 +49,7 @@ def generate_launch_description():
             'ros2', 'run', 'ros_gz_sim', 'create',
             '-topic', '/robot_description',
             '-name', 'wamv',
-            '-x', '0', '-y', '0', '-z', '0.2',
+            '-x', '0', '-y', '-1.0', '-z', '0.2',
             '--wait', '5'  
         ],
         output='screen'
