@@ -120,12 +120,35 @@ def generate_launch_description():
         parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
 
-    nav2_bringup = os.path.join(
-        get_package_share_directory('wamv_navigation'),
-        'launch',
-        'bringup_launch.py'
+    nav2_bringup_dir = get_package_share_directory('nav2_bringup')
+
+    # Include the `bringup_launch.py` from nav2_bringup
+    nav2_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            nav2_bringup_dir + '/launch/bringup_launch.py'
+        ]),
+        # You can override parameters here if needed
+        launch_arguments={
+            'use_sim_time': 'True',
+            'map': pkg_navigation+'/maps/sydney_map.yaml',
+            'params_file': '/home/luca002/proj_ws/src/wamv_navigation/params/wamv_nav2_params.yaml'  
+        }.items()
     )
 
+    nav2_bringup = IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(
+                    get_package_share_directory('wamv_navigation'),
+                    'launch',
+                    'bringup_launch.py'
+                )
+            ),
+            launch_arguments={
+                'map': pkg_navigation+'/maps/sydney_map.yaml',
+                'params_file' : '/home/luca002/proj_ws/src/wamv_navigation/params/wamv_nav2_params.yaml'
+            }.items()
+    )
+    
     rviz_node = Node(
         package='rviz2',
         namespace='',
@@ -136,13 +159,9 @@ def generate_launch_description():
     )
 
     delayed_nav2_bringup = TimerAction(
-        period=15.0,
-        actions=[
-            IncludeLaunchDescription(
-                PythonLaunchDescriptionSource(nav2_bringup),
-            ),
-            rviz_node
-        ]
+        period=10.0,
+        actions=[nav2_launch,
+                 rviz_node]
     )
 
     return LaunchDescription([

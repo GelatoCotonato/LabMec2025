@@ -54,7 +54,7 @@ def generate_launch_description():
     )
 
     declare_map_yaml_cmd = DeclareLaunchArgument(
-        'map', default_value='/home/luca002/proj_ws/src/wamv_navigation/maps/sydney_map.yaml', description='Full path to map yaml file to load'
+        'map', default_value='', description='Full path to map yaml file to load'
     )
 
     declare_use_localization_cmd = DeclareLaunchArgument(

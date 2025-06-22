@@ -15,5 +15,3 @@ La cartella _wamv_navigation_ integra SLAM Toolbox, Nav2 e Cartographer per la n
 2. wamv_navigation.py
 
 Per avviare correttamente le simulazioni, è necessario aggiornare la proprietà Xacro _user_path_ nel file _wamv_gazebo/urdf/model.urdf.xacro_ con il percorso assoluto corretto.
-
-
