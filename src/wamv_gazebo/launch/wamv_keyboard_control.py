@@ -18,7 +18,7 @@ def generate_launch_description():
     # Defining directory
     pkg_gazebo = get_package_share_directory('wamv_gazebo')
 
-    # Defining urdf model, world model and lastly rviz config file
+    # Defining urdf model, world model and lastly Rviz config file
     urdf_model_path = os.path.join(pkg_gazebo, 'urdf','model.urdf.xacro')
     world_path = os.path.join(pkg_gazebo, 'worlds','sydney.sdf')
     rviz_config_path = os.path.join(pkg_gazebo, 'rviz','wamv_keyboard_control.rviz')

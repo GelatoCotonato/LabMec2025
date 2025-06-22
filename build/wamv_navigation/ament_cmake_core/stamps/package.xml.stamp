@@ -3,7 +3,7 @@
 <package format="3">
   <name>wamv_navigation</name>
   <version>1.3.6</version>
-  <description>Nav2 Wam-v Simulation</description>
+  <description>Nav2 WAM-V Simulation</description>
 
   <maintainer email="emailprogramming02@gmail.com">Luca Barbieri</maintainer>
   <maintainer email="graceffalorenzo@gmail.com">Lorenzo Graceffa</maintainer>

@@ -1,11 +1,7 @@
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/wamv_mapping.lua
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/__init__.py
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/bringup_launch.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/cartographer.launch.py
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/localization_launch.py
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/navigation_launch.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/occupancy_grid.launch.py
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/slam_launch.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/wamv_localization.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/wamv_simulation.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/sydney_map.pgm

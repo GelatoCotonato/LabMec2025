@@ -2,7 +2,7 @@
 
 import os, subprocess, atexit, signal
 from ament_index_python.packages import get_package_share_directory
-from launch import LaunchDescription, LaunchService
+from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, ExecuteProcess, TimerAction, IncludeLaunchDescription
 from launch.substitutions import Command, LaunchConfiguration
 from launch_ros.actions import Node
