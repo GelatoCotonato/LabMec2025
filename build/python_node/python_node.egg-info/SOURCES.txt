@@ -3,7 +3,6 @@ setup.cfg
 setup.py
 python_node/GuiTeleop.py
 python_node/KeyboardTeleop.py
-python_node/Odom2TF.py
 python_node/PIDController.py
 python_node/WamvController.py
 python_node/__init__.py

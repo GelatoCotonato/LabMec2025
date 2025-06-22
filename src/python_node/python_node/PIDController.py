@@ -1,3 +1,5 @@
+# Defining a PID controller class that accounts for saturation effects.
+
 class PIDController:
     def __init__(self, kp, ki, kd, output_limits=(None, None)):
         self.kp = kp

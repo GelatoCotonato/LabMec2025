@@ -1,23 +1,18 @@
 import os
-
 from ament_index_python.packages import get_package_share_directory
-
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, GroupAction
-from launch.actions import SetEnvironmentVariable
+from launch.actions import DeclareLaunchArgument, GroupAction, SetEnvironmentVariable
 from launch.conditions import IfCondition
-from launch.substitutions import EqualsSubstitution
-from launch.substitutions import LaunchConfiguration, PythonExpression
-from launch.substitutions import NotEqualsSubstitution
-from launch_ros.actions import LoadComposableNodes, SetParameter
-from launch_ros.actions import Node
+from launch.substitutions import EqualsSubstitution, LaunchConfiguration, PythonExpression, NotEqualsSubstitution
+from launch_ros.actions import LoadComposableNodes, SetParameter, Node
 from launch_ros.descriptions import ComposableNode, ParameterFile
 from nav2_common.launch import RewrittenYaml
 
 
 def generate_launch_description():
+
     # Get the launch directory
-    bringup_dir = get_package_share_directory('wamv_navigation')
+    pkg_navigation = get_package_share_directory('wamv_navigation')
 
     namespace = LaunchConfiguration('namespace')
     map_yaml_file = LaunchConfiguration('map')
@@ -32,12 +27,6 @@ def generate_launch_description():
 
     lifecycle_nodes = ['map_server', 'amcl']
 
-    # Map fully qualified names to relative ones so the node's namespace can be prepended.
-    # In case of the transforms (tf), currently, there doesn't seem to be a better alternative
-    # https://github.com/ros/geometry2/issues/32
-    # https://github.com/ros/robot_state_publisher/pull/30
-    # TODO(orduno) Substitute with `PushNodeRemapping`
-    #              https://github.com/ros2/launch_ros/issues/56
     remappings = [('/tf', 'tf'), ('/tf_static', 'tf_static')]
 
     configured_params = ParameterFile(
@@ -70,7 +59,7 @@ def generate_launch_description():
 
     declare_params_file_cmd = DeclareLaunchArgument(
         'params_file',
-        default_value=os.path.join(bringup_dir, 'params', 'nav2_params.yaml'),
+        default_value=os.path.join(pkg_navigation, 'params', 'nav2_params.yaml'),
         description='Full path to the ROS2 parameters file to use for all launched nodes',
     )
 
@@ -155,11 +144,7 @@ def generate_launch_description():
             ),
         ],
     )
-    # LoadComposableNode for map server twice depending if we should use the
-    # value of map from a CLI or launch default or user defined value in the
-    # yaml configuration file. They are separated since the conditions
-    # currently only work on the LoadComposableNodes commands and not on the
-    # ComposableNode node function itself
+
     load_composable_nodes = GroupAction(
         condition=IfCondition(use_composition),
         actions=[

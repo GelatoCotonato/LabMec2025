@@ -1,7 +1,4 @@
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/backpack_3d.lua
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/slam_toolbox_params.yaml
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/slam_toolbox_saved_map.yaml
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/wamv_config.yaml
+/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/config/wamv_mapping.lua
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/__init__.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/bringup_launch.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/cartographer.launch.py
@@ -13,12 +10,8 @@
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/launch/wamv_simulation.py
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/sydney_map.pgm
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/maps/sydney_map.yaml
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_multirobot_params_1.yaml
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_multirobot_params_2.yaml
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_multirobot_params_all.yaml
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/params/nav2_params.yaml
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/wamv_cartographer.rviz
-/home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/wamv_localization.rviz
 /home/luca002/proj_ws/install/wamv_navigation/share/wamv_navigation/rviz/wamv_navigation.rviz
 /home/luca002/proj_ws/install/wamv_navigation/share/ament_index/resource_index/package_run_dependencies/wamv_navigation
 /home/luca002/proj_ws/install/wamv_navigation/share/ament_index/resource_index/parent_prefix_path/wamv_navigation

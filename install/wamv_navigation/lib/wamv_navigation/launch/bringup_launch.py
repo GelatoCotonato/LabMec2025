@@ -1,7 +1,7 @@
+# Nav2 bringup
+
 import os
-
 from ament_index_python.packages import get_package_share_directory
-
 from launch import LaunchDescription
 from launch.actions import (
     DeclareLaunchArgument,
@@ -12,13 +12,13 @@ from launch.actions import (
 from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PythonExpression
-from launch_ros.actions import Node
-from launch_ros.actions import PushROSNamespace
+from launch_ros.actions import Node, PushROSNamespace
 
 def generate_launch_description():
-    # Get the launch directory
-    bringup_dir = get_package_share_directory('wamv_navigation')
-    launch_dir = os.path.join(bringup_dir, 'launch')
+
+    # Getting the launch directory
+    pkg_navigation = get_package_share_directory('wamv_navigation')
+    launch_dir = os.path.join(pkg_navigation,'launch')
 
     # Create the launch configuration variables
     namespace = LaunchConfiguration('namespace')
@@ -70,7 +70,7 @@ def generate_launch_description():
 
     declare_params_file_cmd = DeclareLaunchArgument(
         'params_file',
-        default_value=os.path.join(bringup_dir, 'params', 'nav2_params.yaml'),
+        default_value=os.path.join(pkg_navigation, 'params', 'nav2_params.yaml'),
         description='Full path to the ROS2 parameters file to use for all launched nodes',
     )
 

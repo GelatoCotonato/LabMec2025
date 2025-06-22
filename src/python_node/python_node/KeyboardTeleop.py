@@ -1,42 +1,39 @@
+# This node captures keyboard input and sends the corresponding velocity commands to the /cmd_vel topic.
+
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Bool
-import rclpy
-from rclpy.node import Node
-from std_msgs.msg import Float64
-from sensor_msgs.msg import JointState
 from geometry_msgs.msg import Twist
-import sys
-import termios
-import tty
-import select
+import sys, termios, tty, select
 
 settings = termios.tcgetattr(sys.stdin)
 
 class KeyboardTeleop(Node):
 
-    def __init__(self, name='python_publisher'):
+    def __init__(self, name='keyboard_teleop'):
         super().__init__(node_name=name)
 
+        # Counter variable used to periodically print the current velocity values to the terminal
         self.count = 0
         self.count_reset = 100
 
+        # Defining /cmd_vel publisher
         self.cmd_vel_pub = self.create_publisher(Twist, '/cmd_vel', 10)
 
-        # Valori correnti iniziali
-        self.linear_x = 0.0
-        self.angular_z = 0.0
+        # Initial values of linear and angular velocities
+        self.linear_x = 0.0  # [m/s]
+        self.angular_z = 0.0 # [rad/s]
 
-        # Passi di incremento/decremento
-        self.linear_step = 0.2   # velocità incrementa o decrementa di 0.05 m/s
-        self.angular_step = 0.1   # angolo incrementa o decrementa di 0.1 rad
+        # Incremental steps for linear and angular velocities
+        self.linear_step = 0.2  
+        self.angular_step = 0.1 
 
-        self.max_linear = 1.0    # max velocità (m/s)
-        self.min_linear = -1.0    # min velocità
+        # Maximum and minimum values of velocities
+        self.max_linear = 1.0    
+        self.min_linear = -1.0   
+        self.max_angular = 0.7   
+        self.min_angular = -0.7  
 
-        self.max_angular = 0.7    # max angolo (rad)
-        self.min_angular = -0.7   # min angolo
-
+        # Defining timer for the user command input
         self.declare_parameter("timer_period", 0.1)
         self.period = self.get_parameter("timer_period").get_parameter_value().double_value
         self.timer = self.create_timer(self.period, self.listen_to_keyboard)
@@ -44,6 +41,8 @@ class KeyboardTeleop(Node):
         self.get_logger().info("Keyboard to /cmd_vel ready. Use W/A/S/D to change velocity and angle. X to reset. Q to quit.")
 
     def listen_to_keyboard(self):
+
+        # Getting the key command
         key = get_key()
 
         if key == 'w':
@@ -66,14 +65,15 @@ class KeyboardTeleop(Node):
             rclpy.shutdown()
             return
 
-        # Limita valori
         self.linear_x = max(min(self.linear_x, self.max_linear), self.min_linear)
         self.angular_z = max(min(self.angular_z, self.max_angular), self.min_angular)
 
+        # Building the message
         twist_msg = Twist()
         twist_msg.linear.x = self.linear_x
         twist_msg.angular.z = self.angular_z
 
+        # Publishing the topic
         self.cmd_vel_pub.publish(twist_msg)
 
         self.count = self.count + 1
@@ -83,10 +83,12 @@ class KeyboardTeleop(Node):
  
 def get_key():
     try:
-        tty.setraw(sys.stdin.fileno())  
-        rlist, _, _ = select.select([sys.stdin], [], [], 0.1)  # Timeout di 0.1 secondi
+        tty.setraw(sys.stdin.fileno())
+        # Timeout of 0.1 second
+        rlist, _, _ = select.select([sys.stdin], [], [], 0.1) 
         if rlist:
-            key = sys.stdin.read(1)  # Legge 1 carattere
+            # Reading one char
+            key = sys.stdin.read(1)  
         else:
             key = ''
     finally:

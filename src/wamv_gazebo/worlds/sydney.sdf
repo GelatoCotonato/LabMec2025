@@ -1,22 +1,21 @@
 <?xml version="1.0" ?>
-
 <sdf version="1.9">
   <world name="sydney">
 
+    <!-- Defining physics -->
     <physics name="4ms" type="dart">
       <max_step_size>0.004</max_step_size>
       <real_time_factor>1.0</real_time_factor>
     </physics>
 
+    <!-- Defining plugins -->
     <gui fullscreen="0">
-      <!-- 3D scene -->
       <plugin filename="MinimalScene" name="3D View">
         <gz-gui>
           <title>3D View</title>
           <property type="bool" key="showTitleBar">false</property>
           <property type="string" key="state">docked</property>
         </gz-gui>
-
         <engine>ogre2</engine>
         <scene>scene</scene>
         <ambient_light>0.4 0.4 0.4</ambient_light>
@@ -27,8 +26,6 @@
           <far>10000</far>
         </camera_clip>
       </plugin>
-
-      <!-- Plugins that add functionality to the scene -->
       <plugin filename="EntityContextMenuPlugin" name="Entity context menu">
         <gz-gui>
           <property key="state" type="string">floating</property>
@@ -37,7 +34,6 @@
           <property key="showTitleBar" type="bool">false</property>
         </gz-gui>
       </plugin>
-
       <plugin filename="GzSceneManager" name="Scene Manager">
         <gz-gui>
           <property key="resizable" type="bool">false</property>
@@ -47,7 +43,6 @@
           <property key="showTitleBar" type="bool">false</property>
         </gz-gui>
       </plugin>
-
       <plugin filename="InteractiveViewControl" name="Interactive view control">
         <gz-gui>
           <property key="resizable" type="bool">false</property>
@@ -57,7 +52,6 @@
           <property key="showTitleBar" type="bool">false</property>
         </gz-gui>
       </plugin>
-
       <plugin filename="CameraTracking" name="Camera Tracking">
         <gz-gui>
           <property key="resizable" type="bool">false</property>
@@ -67,7 +61,6 @@
           <property key="showTitleBar" type="bool">false</property>
         </gz-gui>
       </plugin>
-
       <plugin filename="SelectEntities" name="Select Entities">
         <gz-gui>
           <anchors target="Select entities">
@@ -81,7 +74,6 @@
           <property key="showTitleBar" type="bool">false</property>
         </gz-gui>
       </plugin>
-
       <plugin filename="Spawn" name="Spawn Entities">
         <gz-gui>
           <anchors target="Select entities">
@@ -95,8 +87,6 @@
           <property key="showTitleBar" type="bool">false</property>
         </gz-gui>
       </plugin>
-
-      <!-- World control -->
       <plugin filename="WorldControl" name="World control">
         <gz-gui>
           <title>World control</title>
@@ -105,22 +95,17 @@
           <property type="double" key="height">72</property>
           <property type="double" key="width">121</property>
           <property type="double" key="z">1</property>
-
           <property type="string" key="state">floating</property>
           <anchors target="3D View">
             <line own="left" target="left"/>
             <line own="bottom" target="bottom"/>
           </anchors>
         </gz-gui>
-
         <play_pause>true</play_pause>
         <step>true</step>
         <start_paused>true</start_paused>
         <use_event>true</use_event>
-
       </plugin>
-
-      <!-- World statistics -->
       <plugin filename="WorldStats" name="World stats">
         <gz-gui>
           <title>World stats</title>
@@ -129,42 +114,33 @@
           <property type="double" key="height">110</property>
           <property type="double" key="width">290</property>
           <property type="double" key="z">1</property>
-
           <property type="string" key="state">floating</property>
           <anchors target="3D View">
             <line own="right" target="right"/>
             <line own="bottom" target="bottom"/>
           </anchors>
         </gz-gui>
-
         <sim_time>true</sim_time>
         <real_time>true</real_time>
         <real_time_factor>true</real_time_factor>
         <iterations>true</iterations>
       </plugin>
-
-      <!-- Inspector -->
       <plugin filename="ComponentInspector" name="Component inspector">
         <gz-gui>
           <property type="string" key="state">docked_collapsed</property>
         </gz-gui>
       </plugin>
-
-      <!-- Entity tree -->
       <plugin filename="EntityTree" name="Entity tree">
         <gz-gui>
           <property type="string" key="state">docked_collapsed</property>
         </gz-gui>
       </plugin>
-
-      <!-- View angle -->
       <plugin filename="ViewAngle" name="View angle">
         <gz-gui>
           <property type="string" key="state">docked_collapsed</property>
         </gz-gui>
         <legacy>false</legacy>
       </plugin>
-
     </gui>
 
     <plugin
@@ -209,7 +185,7 @@
       <background>0.8 0.8 0.8</background>
     </scene>
 
-    <!-- Estimated latitude/longitude -->
+    <!-- Latitude and longitude -->
     <spherical_coordinates>
       <surface_model>EARTH_WGS84</surface_model>
       <world_frame_orientation>ENU</world_frame_orientation>
@@ -233,7 +209,6 @@
       <direction>-0.5 0.1 -0.9</direction>
     </light>
 
-    <!-- The wave field -->
     <plugin filename="libPublisherPlugin.so" name="wamv_gazebo::PublisherPlugin">
       <message type="gz.msgs.Param" topic="/wamv_gazebo/wavefield/parameters"
                every="2.0">
@@ -267,19 +242,21 @@
         }
       </message>
     </plugin>
-
+    
+    <!-- Sydney lake -->
     <include>
       <pose>0 0 0.2 0 0 0 </pose>
       <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/sydney_regatta</uri>
     </include>
 
+    <!-- Adding waves -->
     <include>
       <name>Coast Waves</name>
       <pose>0 0 0 0 0 0</pose>
       <uri>model://coast_waves</uri>
-    </include> 
+    </include>
 
-    <!-- The posts for securing the WAM-V -->
+    <!-- Adding the post to tie Wam-v to the shore -->
     <include>
       <name>post_01</name>
       <pose>40 42 0.325844 0 0 -0.005286</pose>
@@ -295,8 +272,7 @@
       <pose>50 42 0.399025 0 0 0 </pose>
       <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
     </include>
-    
-        <include>
+    <include>
       <name>post_0</name>
       <pose>-535.916809 154.362869 0.675884 -0.17182 0.030464 -0.005286</pose>
       <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
@@ -312,7 +288,7 @@
       <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
     </include>
 
-    <!-- ground station tents -->
+    <!-- Adding ground station -->
     <include>
       <name>ground_station_0</name>
       <pose>-540.796448 146.493744 1.671421 -0.00834 0.01824 1.301726</pose>
@@ -320,9 +296,6 @@
     </include>
 
     <!-- Adding round buoy -->
-
-
-
     <include>
       <name>mb_round_buoy_black__0</name>
       <pose>5 -45 0 0 0 0</pose>
@@ -448,7 +421,6 @@
       <pose>125 -45 0 0 0 0</pose>
       <uri>model://round_buoy_black</uri>
     </include>
-
     <include>
       <name>mb_round_buoy_black_0</name>
       <pose>5 -25 0 0 0 0</pose>
@@ -577,15 +549,20 @@
 
     <!-- Adding vessels -->
     <include>
-      <uri>model://vessel_c</uri>
-      <name>vessel_c_1</name>
-      <pose>8 10 0 0 0 -1.57</pose>
+      <name>vessel_a_1</name>
+      <pose>12 -35 -0.15 0 0 0</pose>
+      <uri>model://vessel_a</uri>
     </include>
     <include>
       <uri>model://vessel_a</uri>
       <name>vessel_a_2</name>
       <pose>39 15 0 0 0 -1.57</pose>
     </include> 
+    <include>
+      <name>vessel_a_3</name>
+      <pose>43 -35 -0.15 0 0 0</pose>
+      <uri>model://vessel_a</uri>
+    </include>
     <include>
       <uri>model://vessel_b</uri>
       <name>vessel_b_1</name>
@@ -597,33 +574,17 @@
       <pose>26 -10 0 0 0 -1.57</pose>
     </include>
     <include>
-      <name>vessel_a_1</name>
-      <pose>12 -35 -0.15 0 0 0</pose>
-      <uri>model://vessel_a</uri>
+      <uri>model://vessel_c</uri>
+      <name>vessel_c_1</name>
+      <pose>8 10 0 0 0 -1.57</pose>
     </include>
-
-    <include>
-      <name>vessel_a_3</name>
-      <pose>43 -35 -0.15 0 0 0</pose>
-      <uri>model://vessel_a</uri>
-    </include>
-
-
-
     <include>
       <name>vessel_c_2</name>
       <pose>53 10 0 0 0 -1.57</pose>
       <uri>model://vessel_c</uri>
     </include>
-    
 
-    <!-- <include>
-      <uri>model://vessel_c</uri>
-      <name>vessel_c_1</name>
-      <pose>55 0 0 0 0 -1.57</pose>
-    </include> -->
-
-
+    <!-- Adding dock block -->
     <include>
       <uri>model://dock_block</uri>
       <name>dock_block_1</name>
@@ -740,18 +701,16 @@
       <pose>-4.5 -1.5 0.2 0 0 0</pose>
     </include> 
 
+    <!-- Adding people -->
     <include>
       <uri>model://male</uri>
       <name>male_1</name>
       <pose>-4.5 0 0.16 0 0 0</pose>
     </include> 
-
     <include>
       <uri>model://person</uri>
       <name>male_2</name>
       <pose>10 44 0.54 0 0 0</pose>
     </include> 
-
-    
   </world>
 </sdf>

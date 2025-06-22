@@ -1,28 +1,24 @@
-import os
+# Cartographer bringup
 
+import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
-from launch.actions import IncludeLaunchDescription
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration
-from launch.substitutions import ThisLaunchFileDir
+from launch.substitutions import LaunchConfiguration, ThisLaunchFileDir
 from launch_ros.actions import Node
 
 
 def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
     use_rviz = LaunchConfiguration('use_rviz', default='true')
-
-    pkg_navigation = get_package_share_directory('wamv_navigation')
-
-    lua_path =  os.path.join(pkg_navigation, 'config', 'backpack_3d.lua')
-
-
     resolution = LaunchConfiguration('resolution', default='0.05')
     publish_period_sec = LaunchConfiguration('publish_period_sec', default='1.0')
 
+    pkg_navigation = get_package_share_directory('wamv_navigation')
+
+    lua_path =  os.path.join(pkg_navigation, 'config', 'wamv_mapping.lua')
     rviz_config_dir = os.path.join(pkg_navigation,'rviz', 'wamv_cartographer.rviz')
 
     return LaunchDescription([

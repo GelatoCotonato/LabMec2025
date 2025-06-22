@@ -1,5 +1,4 @@
 [console_scripts]
 gui_teleop = python_node.GuiTeleop:main
 keyboard_teleop = python_node.KeyboardTeleop:main
-odom2tf = python_node.Odom2TF:main
 wamv_controller = python_node.WamvController:main

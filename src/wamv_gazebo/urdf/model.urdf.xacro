@@ -1,13 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <robot name="wamv" xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <xacro:property name="user_path" value="file:///home/luca002/proj_ws/src/wamv_gazebo/models/wamv/meshes"/>
+  <xacro:property name="user_path" value="file:///home/luca002/proj_ws/src/wamv_gazebo/urdf/meshes"/>
+  
   <!-- BASE FOOTPRINT -->
-
   <link name="base_footprint" />
 
   <!-- BASE LINK -->
-
   <link name="base_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -18,7 +17,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="${user_path}/WAM-V-Base.dae" />
+        <mesh filename="${user_path}/wamv/WAM-V-Base.dae" />
       </geometry>
     </visual>
 
@@ -78,10 +77,9 @@
     <origin xyz="0 0 0" rpy="0 0 0" />
   </joint>
 
-  <!-- LEFT PART -->
+  <!-- WAM-V LEFT PART -->
 
   <!-- ENGINE -->
-
   <link name="left_engine_link">
 
     <inertial>
@@ -93,7 +91,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="${user_path}/engine.dae" />
+        <mesh filename="${user_path}/wamv/engine.dae" />
       </geometry>
     </visual>
 
@@ -110,7 +108,6 @@
         <box size="0.14 0.15 0.12" />
       </geometry>
     </collision>
-
   </link>
 
   <joint name="left_chassis_engine_joint" type="revolute">
@@ -122,7 +119,6 @@
   </joint>
 
   <!-- PROPELLER -->
-
   <link name="left_propeller_link">
     
     <inertial>
@@ -136,7 +132,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="${user_path}/propeller.dae" />
+        <mesh filename="${user_path}/wamv/propeller.dae" />
       </geometry>
     </visual>
 
@@ -158,10 +154,9 @@
   </joint>
 
 
-  <!-- RIGHT PART -->
+  <!-- WAM-V RIGHT PART -->
 
   <!-- ENGINE -->
-
   <link name="right_engine_link">
      
     <inertial>
@@ -175,7 +170,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="${user_path}/engine.dae" />
+        <mesh filename="${user_path}/wamv/engine.dae" />
       </geometry>
     </visual>
 
@@ -202,8 +197,7 @@
     <origin xyz="-2.373776 -1.027135 0.318237" rpy="0 0 0" />
   </joint>
 
-  <!-- PROPELLER -->0.15
-
+  <!-- PROPELLER -->
   <link name="right_propeller_link">
  
     <inertial>
@@ -217,7 +211,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${user_path}/propeller.dae"/>
+        <mesh filename="${user_path}/wamv/propeller.dae"/>
       </geometry>
     </visual>
 
@@ -238,8 +232,9 @@
     <origin xyz="-0.278156 0 -0.509371" rpy="0 0 0" />
   </joint>
 
+  <!-- WAM-V LOAD -->
+
   <!-- BATTERIES -->
-  
   <link name="battery_dx_link">
    
     <inertial>
@@ -254,7 +249,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="${user_path}/battery.dae"/>
+        <mesh filename="${user_path}/battery/battery.dae"/>
       </geometry>
     </visual>
 
@@ -286,7 +281,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${user_path}/battery.dae"/>
+        <mesh filename="${user_path}/battery/battery.dae"/>
       </geometry>
     </visual>
 
@@ -296,7 +291,6 @@
         <box size="0.64 0.44 0.31"/>
       </geometry>
     </collision>
-
   </link>
 
   <joint name="battery_sx_joint" type="fixed">
@@ -306,7 +300,6 @@
   </joint>
 
   <!-- CPU CASES -->
-
   <link name="cpu_cases_link">
  
     <inertial>
@@ -321,7 +314,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${user_path}/cpu_cases.dae"/>
+        <mesh filename="${user_path}/cpu_cases/cpu_cases.dae"/>
       </geometry>
     </visual>
 
@@ -347,7 +340,6 @@
   </joint>
 
   <!-- TRIPOD -->
-
   <link name="tripod_legs_link">
     <inertial>
       <origin xyz="0 0 0.11" rpy="0 0 0"/>
@@ -361,7 +353,7 @@
     <visual name="tripod_legs_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${user_path}/legs.dae" />
+        <mesh filename="${user_path}/tripod/legs.dae" />
       </geometry>
       <material name="dark_gray_metal">
         <color rgba="0.25 0.25 0.25 1"/>
@@ -395,7 +387,7 @@
     <visual name="tripod_ring_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${user_path}/ring.dae"/>
+        <mesh filename="${user_path}/tripod/ring.dae"/>
       </geometry>
       <material name="gray_metal">
         <color rgba="0.65 0.65 0.70 1"/>
@@ -416,8 +408,6 @@
     <origin xyz="0 0 0.218" rpy="0 0 0" />
   </joint>
 
-  <!-- SENSORS -->
-
   <link name="lidar_link">
     <inertial>
       <origin xyz="0 0 0.036" rpy="0 0 0"/>
@@ -431,7 +421,7 @@
     <visual name="lidar_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="${user_path}/lidar_3d_v1.dae"/>
+        <mesh filename="${user_path}/lidar/lidar_3d_v1.dae"/>
       </geometry>
     </visual>
 
@@ -448,6 +438,8 @@
     <child link="lidar_link" />
     <origin xyz="0 0 0.01" rpy="0 0 0" />
   </joint>
+
+  <!-- SENSORS -->
 
   <!-- LIDAR -->
   <gazebo reference="lidar_link">
@@ -483,7 +475,6 @@
   </gazebo>
 
   <!-- GPS -->
-
   <gazebo reference="lidar_link">
     <sensor name="gps_sensor" type="gps">
       <always_on>true</always_on>
@@ -511,7 +502,6 @@
   </gazebo>
 
   <!-- IMU -->
-
   <gazebo reference="cpu_cases_link">
     <sensor name="imu_sensor" type="imu">
       <update_rate>50</update_rate>
@@ -524,9 +514,9 @@
           <x>
             <noise type="gaussian">
               <mean>0</mean>
-              <stddev>0.008</stddev>               <!-- rumore standard leggermente ridotto -->
-              <bias_mean>0.0005</bias_mean>        <!-- bias medio realistico -->
-              <bias_stddev>0.003</bias_stddev>    <!-- deviazione bias -->
+              <stddev>0.008</stddev>          
+              <bias_mean>0.0005</bias_mean>       
+              <bias_stddev>0.003</bias_stddev>   
               <dynamic_bias_stddev>0.000015</dynamic_bias_stddev>
               <dynamic_bias_correlation_time>300.0</dynamic_bias_correlation_time>
               <precision>0.0003</precision>
@@ -560,9 +550,9 @@
           <x>
             <noise type="gaussian">
               <mean>0</mean>
-              <stddev>0.02</stddev>                 <!-- rumore standard realistico -->
-              <bias_mean>0.04</bias_mean>          <!-- bias medio -->
-              <bias_stddev>0.006</bias_stddev>    <!-- deviazione bias -->
+              <stddev>0.02</stddev>             
+              <bias_mean>0.04</bias_mean>         
+              <bias_stddev>0.006</bias_stddev> 
               <dynamic_bias_stddev>0.0003</dynamic_bias_stddev>
               <dynamic_bias_correlation_time>150.0</dynamic_bias_correlation_time>
               <precision>0.006</precision>
@@ -592,82 +582,10 @@
           </z>
         </linear_acceleration>
       </imu>
-      <!-- <imu>
-        <angular_velocity>
-          <x>
-            <noise type="gaussian">
-              <mean>0</mean>
-              <stddev>0.009</stddev>
-              <bias_mean>0.00075</bias_mean>
-              <bias_stddev>0.005</bias_stddev>
-              <dynamic_bias_stddev>0.00002</dynamic_bias_stddev>
-              <dynamic_bias_correlation_time>400.0</dynamic_bias_correlation_time>
-              <precision>0.00025</precision>
-            </noise>
-          </x>
-          <y>
-            <noise type="gaussian">
-              <mean>0</mean>
-              <stddev>0.009</stddev>
-              <bias_mean>0.00075</bias_mean>
-              <bias_stddev>0.005</bias_stddev>
-              <dynamic_bias_stddev>0.00002</dynamic_bias_stddev>
-              <dynamic_bias_correlation_time>400.0</dynamic_bias_correlation_time>
-              <precision>0.00025</precision>
-            </noise>
-          </y>
-          <z>
-            <noise type="gaussian">
-              <mean>0</mean>
-              <stddev>0.009</stddev>
-              <bias_mean>0.00075</bias_mean>
-              <bias_stddev>0.005</bias_stddev>
-              <dynamic_bias_stddev>0.00002</dynamic_bias_stddev>
-              <dynamic_bias_correlation_time>400.0</dynamic_bias_correlation_time>
-              <precision>0.00025</precision>
-            </noise>
-          </z>
-        </angular_velocity>
-
-        <linear_acceleration>
-          <x>
-            <noise type="gaussian">
-              <mean>0</mean>
-              <stddev>0.021</stddev>
-              <bias_mean>0.05</bias_mean>
-              <bias_stddev>0.0075</bias_stddev>
-              <dynamic_bias_stddev>0.000375</dynamic_bias_stddev>
-              <dynamic_bias_correlation_time>175.0</dynamic_bias_correlation_time>
-              <precision>0.005</precision>
-            </noise>
-          </x>
-          <y>
-            <noise type="gaussian">
-              <mean>0</mean>
-              <stddev>0.021</stddev>
-              <bias_mean>0.05</bias_mean>
-              <bias_stddev>0.0075</bias_stddev>
-              <dynamic_bias_stddev>0.000375</dynamic_bias_stddev>
-              <dynamic_bias_correlation_time>175.0</dynamic_bias_correlation_time>
-              <precision>0.005</precision>
-            </noise>
-          </y>
-          <z>
-            <noise type="gaussian">
-              <mean>0</mean>
-              <stddev>0.021</stddev>
-              <bias_mean>0.05</bias_mean>
-              <bias_stddev>0.0075</bias_stddev>
-              <dynamic_bias_stddev>0.000375</dynamic_bias_stddev>
-              <dynamic_bias_correlation_time>175.0</dynamic_bias_correlation_time>
-              <precision>0.005</precision>
-            </noise>
-          </z>
-        </linear_acceleration>
-      </imu> -->
     </sensor>
   </gazebo>
 
+  <!-- PLUGINS -->
   <gazebo>
     <plugin name="gz::sim::systems::Thruster" filename="gz-sim-thruster-system">
       <joint_name>left_engine_propeller_joint</joint_name>

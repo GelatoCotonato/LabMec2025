@@ -1,5 +1,3 @@
-import os
-from glob import glob
 from setuptools import find_packages, setup
 
 package_name = 'python_node'
@@ -24,7 +22,6 @@ setup(
         'console_scripts': [
             'gui_teleop = python_node.GuiTeleop:main',
             'keyboard_teleop = python_node.KeyboardTeleop:main',
-            'odom2tf = python_node.Odom2TF:main',
             'wamv_controller = python_node.WamvController:main'
         ],
     },

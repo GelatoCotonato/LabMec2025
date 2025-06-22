@@ -1,7 +1,7 @@
+# Launching SLAM Toolbox
+
 import os
-
 from ament_index_python.packages import get_package_share_directory
-
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, GroupAction, IncludeLaunchDescription
 from launch.conditions import IfCondition, UnlessCondition
@@ -11,8 +11,8 @@ from launch_ros.actions import Node, SetParameter, SetRemap
 from launch_ros.descriptions import ParameterFile
 from nav2_common.launch import HasNodeParams, RewrittenYaml
 
-
 def generate_launch_description():
+
     # Input parameters declaration
     namespace = LaunchConfiguration('namespace')
     params_file = LaunchConfiguration('params_file')
@@ -25,11 +25,11 @@ def generate_launch_description():
     lifecycle_nodes = ['map_saver']
 
     # Getting directories and launch-files
-    bringup_dir = get_package_share_directory('wamv_navigation')
+    pkg_navigation = get_package_share_directory('wamv_navigation')
     slam_toolbox_dir = get_package_share_directory('slam_toolbox')
     slam_launch_file = os.path.join(slam_toolbox_dir, 'launch', 'online_sync_launch.py')
 
-    # Create our own temporary YAML files that include substitutions
+    # Create own temporary YAML files that include substitutions
     configured_params = ParameterFile(
         RewrittenYaml(
             source_file=params_file,
@@ -47,7 +47,7 @@ def generate_launch_description():
 
     declare_params_file_cmd = DeclareLaunchArgument(
         'params_file',
-        default_value=os.path.join(bringup_dir, 'params', 'nav2_params.yaml'),
+        default_value=os.path.join(pkg_navigation, 'params', 'nav2_params.yaml'),
         description='Full path to the ROS2 parameters file to use for all launched nodes',
     )
 
