@@ -13,7 +13,7 @@ amcl:
     global_frame_id: "map"
     lambda_short: 0.15
     laser_likelihood_max_dist: 20.0
-    laser_max_range: 50.0
+    laser_max_range: 70.0
     laser_min_range: 0.08
     laser_model_type: "likelihood_field"
     max_beams: 60

@@ -1,0 +1,20 @@
+running develop
+running egg_info
+writing python_node.egg-info/PKG-INFO
+writing dependency_links to python_node.egg-info/dependency_links.txt
+writing entry points to python_node.egg-info/entry_points.txt
+writing requirements to python_node.egg-info/requires.txt
+writing top-level names to python_node.egg-info/top_level.txt
+reading manifest file 'python_node.egg-info/SOURCES.txt'
+writing manifest file 'python_node.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/luca002/proj_ws/install/python_node/lib/python3.12/site-packages/python-node.egg-link (link to .)
+Installing coast_follower script to /home/luca002/proj_ws/install/python_node/lib/python_node
+Installing gui_teleop script to /home/luca002/proj_ws/install/python_node/lib/python_node
+Installing keyboard_teleop script to /home/luca002/proj_ws/install/python_node/lib/python_node
+Installing lidar_data script to /home/luca002/proj_ws/install/python_node/lib/python_node
+Installing lidar_node script to /home/luca002/proj_ws/install/python_node/lib/python_node
+Installing wamv_controller script to /home/luca002/proj_ws/install/python_node/lib/python_node
+
+Installed /home/luca002/proj_ws/build/python_node
+running symlink_data

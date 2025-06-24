@@ -22,7 +22,8 @@ setup(
         'console_scripts': [
             'gui_teleop = python_node.GuiTeleop:main',
             'keyboard_teleop = python_node.KeyboardTeleop:main',
-            'wamv_controller = python_node.WamvController:main'
+            'wamv_controller = python_node.WamvController:main',
+            'coast_follower = python_node.CoastFollower:main'
         ],
     },
 )

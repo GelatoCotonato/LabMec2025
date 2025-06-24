@@ -1,9 +1,11 @@
 package.xml
 setup.cfg
 setup.py
+python_node/CoastFollower.py
 python_node/GuiTeleop.py
 python_node/KeyboardTeleop.py
 python_node/PIDController.py
+python_node/RLS.py
 python_node/WamvController.py
 python_node/__init__.py
 python_node.egg-info/PKG-INFO

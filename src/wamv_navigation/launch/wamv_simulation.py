@@ -49,7 +49,7 @@ def generate_launch_description():
             'ros2', 'run', 'ros_gz_sim', 'create',
             '-topic', '/robot_description',
             '-name', 'wamv',
-            '-x', '0', '-y', '-1.0', '-z', '0.2',
+            '-x', '0.0', '-y', '0.0', '-z', '0.2',
             '--wait', '5'  
         ],
         output='screen'
@@ -142,10 +142,18 @@ def generate_launch_description():
         parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
 
+    coast_follower = Node(
+        package='python_node',
+        executable='coast_follower', 
+        name='coast_follower',
+        parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
+    )
+
     delayed_nav2_bringup = TimerAction(
         period=10.0,
         actions=[nav2_launch,
-                 rviz_node]
+                 rviz_node,
+                 coast_follower]
     )
 
     return LaunchDescription([

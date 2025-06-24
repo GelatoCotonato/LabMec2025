@@ -13,7 +13,7 @@ class WamvController(Node):
         super().__init__('wamv_controller')
 
         # Maximum thrust value
-        max_thrust = 2780.29  # [N]
+        max_thrust = 30*2780.29  # [N]
 
         # PID with proper output saturation
         self.pid_surge = PIDController(kp=400.0, ki = 150, kd=10.0, output_limits=(-max_thrust, max_thrust))

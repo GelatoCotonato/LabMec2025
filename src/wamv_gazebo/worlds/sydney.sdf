@@ -258,33 +258,48 @@
 
     <!-- Adding the post to tie Wam-v to the shore -->
     <include>
+      <name>post_09</name>
+      <pose>80 40.45 0.325844 0 0 -0.005286</pose>
+      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
+    </include>
+    <include>
+      <name>post_08</name>
+      <pose>70 40.6 0.325844 0  0  0</pose>
+      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
+    </include>
+    <include>
+      <name>post_07</name>
+      <pose>60 41.0 0.325844 0 0 -0.005286</pose>
+      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
+    </include>
+    <include>
+      <name>post_06</name>
+      <pose>50 41.5 0.325844 0  0  0</pose>
+      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
+    </include>
+    <include>
+      <name>post_05</name>
+      <pose>40 42.2 0.325844 0  0  0</pose>
+      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
+    </include>
+    <include>
+      <name>post_04</name>
+      <pose>30 43.1 0.399025 0 0 0 </pose>
+      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
+    </include>
+    <include>
+      <name>post_03</name>
+      <pose>20 43.4 0.325844 0 0 -0.005286</pose>
+      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
+    </include>
+    <include>
+      <name>post_02</name>
+      <pose>10 43.3 0.325844 0  0  0</pose>
+      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
+    </include>
+    <include>
       <name>post_01</name>
-      <pose>40 42 0.325844 0 0 -0.005286</pose>
-      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
-    </include>
-    <include>
-      <name>post_11</name>
-      <pose>45 42 0.325844 0  0  0</pose>
-      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
-    </include>
-    <include>
-      <name>post_21</name>
-      <pose>50 42 0.399025 0 0 0 </pose>
-      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
-    </include>
-    <include>
-      <name>post_0</name>
-      <pose>-535.916809 154.362869 0.675884 -0.17182 0.030464 -0.005286</pose>
-      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
-    </include>
-    <include>
-      <name>post_1</name>
-      <pose>-527.48999 153.854782 0.425844 -0.1365 0  0</pose>
-      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
-    </include>
-    <include>
-      <name>post_2</name>
-      <pose>-544.832825 156.671951 0.499025 -0.162625 0 0 </pose>
+      <pose>0 44 0.399025 0 0 0 </pose>
       <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/post</uri>
     </include>
 
@@ -295,7 +310,6 @@
       <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/ground_station</uri>
     </include>
 
-    <!-- Adding round buoy -->
     <include>
       <name>mb_round_buoy_black__0</name>
       <pose>5 -45 0 0 0 0</pose>
@@ -547,7 +561,8 @@
       <uri>model://round_buoy_black</uri>
     </include>
 
-    <!-- Adding vessels -->
+
+
     <include>
       <name>vessel_a_1</name>
       <pose>12 -35 -0.15 0 0 0</pose>
@@ -584,7 +599,7 @@
       <uri>model://vessel_c</uri>
     </include>
 
-    <!-- Adding dock block -->
+
     <include>
       <uri>model://dock_block</uri>
       <name>dock_block_1</name>
@@ -701,7 +716,7 @@
       <pose>-4.5 -1.5 0.2 0 0 0</pose>
     </include> 
 
-    <!-- Adding people -->
+
     <include>
       <uri>model://male</uri>
       <name>male_1</name>
@@ -710,7 +725,7 @@
     <include>
       <uri>model://person</uri>
       <name>male_2</name>
-      <pose>10 44 0.54 0 0 0</pose>
-    </include> 
+      <pose>15 44 0.54 0 0 0</pose>
+    </include>  
   </world>
 </sdf>
