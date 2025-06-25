@@ -138,5 +138,5 @@ def generate_launch_description():
         spawn_entity,
         robot_localization_node,
         wamv_controller,
-        #rviz_node
+        rviz_node
     ])

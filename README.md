@@ -12,6 +12,6 @@ La cartella _python_node_ contiene nodi Publisher/Subscriber a supporto dei laun
 
 La cartella _wamv_navigation_ integra SLAM Toolbox, Nav2 e Cartographer per la navigazione del robot, e include i seguenti launch files:
 1. wamv_localization.py; : consente di ottenere una mappa in formato pgm dell'area di lavoro considerata;
-2. wamv_navigation.py : simula la navigazione autonoma del WAM-V all’interno di un ambiente noto, evitando ostacoli in tempo reale.
+2. wamv_navigation.py : simula la navigazione autonoma del WAM-V all’interno di un ambiente noto, evitando ostacoli in tempo reale e mantenendo la linea di costa.
 
 Per avviare correttamente le simulazioni, è necessario aggiornare la proprietà Xacro _user_path_ nel file _wamv_gazebo/urdf/model.urdf.xacro_ con il percorso assoluto corretto.
