@@ -16,7 +16,7 @@ class WamvController(Node):
         max_thrust = 2780.29  # [N]
 
         # PID with proper output saturation
-        self.pid_surge = PIDController(kp=400.0, ki = 150, kd=10.0, output_limits=(-max_thrust, max_thrust))
+        self.pid_surge = PIDController(kp=400.0, ki = 140.0, kd=10.0, output_limits=(-max_thrust, max_thrust))
         self.pid_yaw = PIDController(kp=50.0, ki = 0.01, kd= 40.0, output_limits=(-max_thrust, max_thrust))
 
         # Control timestep
@@ -37,7 +37,7 @@ class WamvController(Node):
         self.enable_right_deadband_pub = self.create_publisher(Bool, '/model/wamv/joint/right_engine_propeller_joint/enable_deadband', 1)
 
         deadband_msg = Bool()
-        deadband_msg.data = True
+        deadband_msg.data = False
         self.enable_left_deadband_pub.publish(deadband_msg)
         self.enable_right_deadband_pub.publish(deadband_msg)
         self.left_angle_pub.publish(Float64(data=0.0))

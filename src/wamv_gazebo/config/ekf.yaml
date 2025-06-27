@@ -20,7 +20,7 @@ ekf_node:
     odom0_config:  [true,  true,  false,  # x, y, z
                     false, false, false,  # roll, pitch, yaw
                     true,  true,  false,  # ẋ, ẏ, ż
-                    false, false, true,   # roll̇, pitcḣ, yaẇ
+                    false, false, false,  # roll̇, pitcḣ, yaẇ
                     false, false, false]  # ẍ, ÿ, z̈
 
     odom0_differential: false

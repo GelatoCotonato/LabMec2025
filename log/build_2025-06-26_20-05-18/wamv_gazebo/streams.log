@@ -1,0 +1,175 @@
+[0.168s] Invoking command in '/home/luca002/proj_ws/build/wamv_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luca002/ros_ws/install/robot_description_example:/home/luca002/proj_ws/install/python_node:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/wamv_gazebo -- -j16 -l16
+[0.211s] [  8%] Built target ScoringPlugin
+[0.211s] [  8%] Built target Waves
+[0.240s] [ 12%] Built target BallShooterPlugin
+[0.241s] [ 18%] Built target WayfindingScoringPlugin
+[0.241s] [ 25%] Built target StationkeepingScoringPlugin
+[0.242s] [ 35%] Built target AcousticPingerPlugin
+[0.242s] [ 35%] Built target AcousticTrackingScoringPlugin
+[0.242s] [ 39%] Built target NavigationScoringPlugin
+[0.242s] [ 43%] Built target GymkhanaScoringPlugin
+[0.242s] [ 47%] Built target PerceptionScoringPlugin
+[0.243s] [ 52%] Built target LightBuoyPlugin
+[0.243s] [ 58%] Built target AcousticPerceptionScoringPlugin
+[0.244s] [ 62%] Built target Surface
+[0.246s] [ 66%] Built target SimpleHydrodynamics
+[0.246s] [ 70%] Built target ScanDockScoringPlugin
+[0.246s] [ 75%] Built target PlacardPlugin
+[0.250s] [ 79%] Built target PublisherPlugin
+[0.252s] [ 83%] Built target USVWind
+[0.263s] [ 95%] Built target WaveVisual
+[0.263s] [ 95%] Built target WildlifeScoringPlugin
+[0.263s] [100%] Built target PolyhedraBuoyancyDrag
+[0.276s] Invoked command in '/home/luca002/proj_ws/build/wamv_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luca002/ros_ws/install/robot_description_example:/home/luca002/proj_ws/install/python_node:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/luca002/proj_ws/build/wamv_gazebo -- -j16 -l16
+[0.277s] Invoking command in '/home/luca002/proj_ws/build/wamv_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luca002/ros_ws/install/robot_description_example:/home/luca002/proj_ws/install/python_node:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/wamv_gazebo
+[0.283s] -- Install configuration: ""
+[0.284s] -- Execute custom install script
+[0.284s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/resource_paths.dsv
+[0.284s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/resource_paths.sh
+[0.284s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libWaves.so
+[0.284s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libPolyhedraBuoyancyDrag.so
+[0.285s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libScoringPlugin.so
+[0.285s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libStationkeepingScoringPlugin.so
+[0.285s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libWayfindingScoringPlugin.so
+[0.285s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libAcousticPerceptionScoringPlugin.so
+[0.285s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libAcousticTrackingScoringPlugin.so
+[0.285s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libAcousticPingerPlugin.so
+[0.285s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libBallShooterPlugin.so
+[0.285s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libLightBuoyPlugin.so
+[0.285s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libNavigationScoringPlugin.so
+[0.285s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libGymkhanaScoringPlugin.so
+[0.286s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libPerceptionScoringPlugin.so
+[0.286s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libPlacardPlugin.so
+[0.286s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libPublisherPlugin.so
+[0.286s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libScanDockScoringPlugin.so
+[0.286s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libSimpleHydrodynamics.so
+[0.286s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libSurface.so
+[0.286s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libUSVWind.so
+[0.286s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libWaveVisual.so
+[0.286s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/lib/libWildlifeScoringPlugin.so
+[0.286s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/config/ekf.yaml
+[0.287s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/__init__.py
+[0.287s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/wamv_gz_rviz.py
+[0.287s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/wamv_keyboard_control.py
+[0.287s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/launch/wamv_rviz.py
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/programs/GerstnerWaves_fs_330.glsl
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/programs/GerstnerWaves_vs_330.glsl
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/textures/skybox_lowres.dds
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/textures/wave_normals.dds
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/meshes/waterlow.dae
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/model.config
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/model.sdf
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/DockCubes_Albedo.png
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/DockCubes_Metalness.png
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/DockCubes_Normal.png
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/DockCubes_Roughness.png
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/dock_block_4x4.dae
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/model.config
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/model.sdf
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitor.png
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitorStatic.mtl
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitorStatic.obj
+[0.288s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitorStatic_Col.mtl
+[0.289s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitorStatic_Col.obj
+[0.289s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/Phone.png
+[0.289s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/model.config
+[0.289s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/model.sdf
+[0.289s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/1.png
+[0.289s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/2.png
+[0.289s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/3.png
+[0.289s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/4.png
+[0.289s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/5.png
+[0.289s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/eyebrow001-unmodified.png
+[0.289s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/eyebrow001.png
+[0.289s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/green_eye.png
+[0.289s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/jeans01_normals.png
+[0.289s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/jeans_basic_diffuse.png
+[0.289s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/male02_diffuse_black-unmodified.png
+[0.289s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/male02_diffuse_black.png
+[0.289s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/teeth.png
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/tshirt02_normals.png
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/tshirt02_texture.png
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/young_lightskinned_male_diffuse.png
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/meshes/standing.dae
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/model.config
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/model.sdf
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/1.png
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/2.png
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/3.png
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/4.png
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/5.png
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/materials/textures/RoundBarrierBuoy_Base_Color.png
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/materials/textures/RoundBarrierBuoy_Roughness.png
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/meshes/mb_round_buoy.dae
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/model.config
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/model.sdf
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/1.png
+[0.290s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/2.png
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/3.png
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/4.png
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/5.png
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/materials/textures/Boat05_Albedo.jpg
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/materials/textures/Boat05_Metalness.png
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/materials/textures/Boat05_Normal.png
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/materials/textures/Boat05_Roughness.jpg
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/meshes/Boat05.dae
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/model.config
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/model.sdf
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/thumbnails/1.png
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/materials/textures/Boat06_Albedo.jpg
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/materials/textures/Boat06_Metalness.png
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/materials/textures/Boat06_Normal.jpg
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/materials/textures/Boat06_Roughness.jpg
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/meshes/Boat06.dae
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/model.config
+[0.291s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/model.sdf
+[0.292s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/thumbnails/1.png
+[0.292s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/materials/textures/Boat07_Albedo.jpg
+[0.292s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/materials/textures/Boat07_Normal.jpg
+[0.292s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/materials/textures/Boat07_Roughness.jpg
+[0.292s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/meshes/Boat07.dae
+[0.292s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/model.config
+[0.292s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/model.sdf
+[0.292s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/thumbnails/1.png
+[0.292s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/worlds/sydney.sdf
+[0.292s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/rviz/wamv_gz_rviz.rviz
+[0.292s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/rviz/wamv_keyboard_control.rviz
+[0.292s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/rviz/wamv_rviz.rviz
+[0.293s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery.dae
+[0.293s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery.png
+[0.293s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery_Albedo.png
+[0.293s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery_Metalness.png
+[0.293s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery_Normal.png
+[0.293s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery_Roughness.png
+[0.293s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases.dae
+[0.293s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases.png
+[0.293s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases_Albedo.png
+[0.293s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases_Metalness.png
+[0.293s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases_Normal.png
+[0.293s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases_Roughness.png
+[0.293s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/lidar/lidar_3d_v1 copy.png
+[0.293s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/lidar/lidar_3d_v1.dae
+[0.293s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/lidar/lidar_3d_v1.png
+[0.293s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/tripod/legs.dae
+[0.294s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/tripod/ring.dae
+[0.294s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/wamv/WAM-V-Base.dae
+[0.294s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/wamv/WamV.png
+[0.294s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/wamv/engine.dae
+[0.294s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/wamv/propeller.dae
+[0.294s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/urdf/model.urdf.xacro
+[0.294s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo
+[0.294s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/ament_index/resource_index/parent_prefix_path/wamv_gazebo
+[0.294s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/ament_prefix_path.sh
+[0.294s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/ament_prefix_path.dsv
+[0.294s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/path.sh
+[0.294s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/environment/path.dsv
+[0.295s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/local_setup.bash
+[0.295s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/local_setup.sh
+[0.295s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/local_setup.zsh
+[0.295s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/local_setup.dsv
+[0.295s] -- Symlinking: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/package.dsv
+[0.301s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/ament_index/resource_index/packages/wamv_gazebo
+[0.301s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/cmake/wamv_gazeboConfig.cmake
+[0.302s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/cmake/wamv_gazeboConfig-version.cmake
+[0.302s] -- Up-to-date symlink: /home/luca002/proj_ws/install/wamv_gazebo/share/wamv_gazebo/package.xml
+[0.303s] Invoked command in '/home/luca002/proj_ws/build/wamv_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luca002/ros_ws/install/robot_description_example:/home/luca002/proj_ws/install/python_node:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/luca002/proj_ws/build/wamv_gazebo
