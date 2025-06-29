@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/luca002/proj_ws/install/wamv_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/gelatocotonato/LabMec2025/install/wamv_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/luca002/proj_ws/install/wamv_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/gelatocotonato/LabMec2025/install/wamv_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/luca002/proj_ws/install/wamv_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/gelatocotonato/LabMec2025/install/wamv_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/luca002/proj_ws/install/wamv_gazebo/${destination}")
+      set(destination "/home/gelatocotonato/LabMec2025/install/wamv_gazebo/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -310,77 +310,77 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/resource_paths.dsv" "DESTINATION" "share/wamv_gazebo/environment")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/resource_paths.dsv" "DESTINATION" "share/wamv_gazebo/environment")
+# install(FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_environment_hooks/resource_paths.dsv" "DESTINATION" "share/wamv_gazebo/environment")
+ament_cmake_symlink_install_files("/home/gelatocotonato/LabMec2025/src/wamv_gazebo" FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_environment_hooks/resource_paths.dsv" "DESTINATION" "share/wamv_gazebo/environment")
 
 # install(FILES "hooks/resource_paths.sh" "DESTINATION" "share/wamv_gazebo/environment")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "hooks/resource_paths.sh" "DESTINATION" "share/wamv_gazebo/environment")
+ament_cmake_symlink_install_files("/home/gelatocotonato/LabMec2025/src/wamv_gazebo" FILES "hooks/resource_paths.sh" "DESTINATION" "share/wamv_gazebo/environment")
 
 # install("TARGETS" "Waves" "DESTINATION" "lib")
-include("/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "PolyhedraBuoyancyDrag" "DESTINATION" "lib")
-include("/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "ScoringPlugin" "DESTINATION" "lib")
-include("/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "StationkeepingScoringPlugin" "DESTINATION" "lib")
-include("/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "WayfindingScoringPlugin" "DESTINATION" "lib")
-include("/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_symlink_install_targets_4_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_symlink_install_targets_4_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "AcousticPerceptionScoringPlugin" "DESTINATION" "lib")
-include("/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_symlink_install_targets_5_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_symlink_install_targets_5_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "AcousticTrackingScoringPlugin" "DESTINATION" "lib")
-include("/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_symlink_install_targets_6_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_symlink_install_targets_6_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "AcousticPingerPlugin" "BallShooterPlugin" "LightBuoyPlugin" "NavigationScoringPlugin" "GymkhanaScoringPlugin" "PerceptionScoringPlugin" "PlacardPlugin" "PublisherPlugin" "ScanDockScoringPlugin" "SimpleHydrodynamics" "Surface" "USVWind" "WaveVisual" "WildlifeScoringPlugin" "DESTINATION" "lib")
-include("/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_symlink_install_targets_7_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_symlink_install_targets_7_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "config" "launch" "models" "worlds" "rviz" "urdf" "DESTINATION" "share/wamv_gazebo")
-ament_cmake_symlink_install_directory("/home/luca002/proj_ws/src/wamv_gazebo" DIRECTORY "config" "launch" "models" "worlds" "rviz" "urdf" "DESTINATION" "share/wamv_gazebo")
+ament_cmake_symlink_install_directory("/home/gelatocotonato/LabMec2025/src/wamv_gazebo" DIRECTORY "config" "launch" "models" "worlds" "rviz" "urdf" "DESTINATION" "share/wamv_gazebo")
 
-# install(FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/gelatocotonato/LabMec2025/src/wamv_gazebo" FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/gelatocotonato/LabMec2025/src/wamv_gazebo" FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/wamv_gazebo/environment")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/wamv_gazebo/environment")
+ament_cmake_symlink_install_files("/home/gelatocotonato/LabMec2025/src/wamv_gazebo" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/wamv_gazebo/environment")
 
-# install(FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/wamv_gazebo/environment")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/wamv_gazebo/environment")
+# install(FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/wamv_gazebo/environment")
+ament_cmake_symlink_install_files("/home/gelatocotonato/LabMec2025/src/wamv_gazebo" FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/wamv_gazebo/environment")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/wamv_gazebo/environment")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/wamv_gazebo/environment")
+ament_cmake_symlink_install_files("/home/gelatocotonato/LabMec2025/src/wamv_gazebo" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/wamv_gazebo/environment")
 
-# install(FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/wamv_gazebo/environment")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/wamv_gazebo/environment")
+# install(FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/wamv_gazebo/environment")
+ament_cmake_symlink_install_files("/home/gelatocotonato/LabMec2025/src/wamv_gazebo" FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/wamv_gazebo/environment")
 
-# install(FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/wamv_gazebo")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/wamv_gazebo")
+# install(FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/wamv_gazebo")
+ament_cmake_symlink_install_files("/home/gelatocotonato/LabMec2025/src/wamv_gazebo" FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/wamv_gazebo")
 
-# install(FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/wamv_gazebo")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/wamv_gazebo")
+# install(FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/wamv_gazebo")
+ament_cmake_symlink_install_files("/home/gelatocotonato/LabMec2025/src/wamv_gazebo" FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/wamv_gazebo")
 
-# install(FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/wamv_gazebo")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/wamv_gazebo")
+# install(FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/wamv_gazebo")
+ament_cmake_symlink_install_files("/home/gelatocotonato/LabMec2025/src/wamv_gazebo" FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/wamv_gazebo")
 
-# install(FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/wamv_gazebo")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/wamv_gazebo")
+# install(FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/wamv_gazebo")
+ament_cmake_symlink_install_files("/home/gelatocotonato/LabMec2025/src/wamv_gazebo" FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/wamv_gazebo")
 
-# install(FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/wamv_gazebo")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/wamv_gazebo")
+# install(FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/wamv_gazebo")
+ament_cmake_symlink_install_files("/home/gelatocotonato/LabMec2025/src/wamv_gazebo" FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/wamv_gazebo")
 
-# install(FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/gelatocotonato/LabMec2025/src/wamv_gazebo" FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/wamv_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_core/wamv_gazeboConfig.cmake" "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_core/wamv_gazeboConfig-version.cmake" "DESTINATION" "share/wamv_gazebo/cmake")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_core/wamv_gazeboConfig.cmake" "/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_core/wamv_gazeboConfig-version.cmake" "DESTINATION" "share/wamv_gazebo/cmake")
+# install(FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_core/wamv_gazeboConfig.cmake" "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_core/wamv_gazeboConfig-version.cmake" "DESTINATION" "share/wamv_gazebo/cmake")
+ament_cmake_symlink_install_files("/home/gelatocotonato/LabMec2025/src/wamv_gazebo" FILES "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_core/wamv_gazeboConfig.cmake" "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_core/wamv_gazeboConfig-version.cmake" "DESTINATION" "share/wamv_gazebo/cmake")
 
-# install(FILES "/home/luca002/proj_ws/src/wamv_gazebo/package.xml" "DESTINATION" "share/wamv_gazebo")
-ament_cmake_symlink_install_files("/home/luca002/proj_ws/src/wamv_gazebo" FILES "/home/luca002/proj_ws/src/wamv_gazebo/package.xml" "DESTINATION" "share/wamv_gazebo")
+# install(FILES "/home/gelatocotonato/LabMec2025/src/wamv_gazebo/package.xml" "DESTINATION" "share/wamv_gazebo")
+ament_cmake_symlink_install_files("/home/gelatocotonato/LabMec2025/src/wamv_gazebo" FILES "/home/gelatocotonato/LabMec2025/src/wamv_gazebo/package.xml" "DESTINATION" "share/wamv_gazebo")

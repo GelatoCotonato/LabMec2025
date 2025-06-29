@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luca002/proj_ws/src/wamv_navigation
+CMAKE_SOURCE_DIR = /home/gelatocotonato/LabMec2025/src/wamv_navigation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luca002/proj_ws/build/wamv_navigation
+CMAKE_BINARY_DIR = /home/gelatocotonato/LabMec2025/build/wamv_navigation
 
 # Utility rule file for wamv_navigation_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/wamv_navigation_uninstall.dir/compiler_depend.make
 include CMakeFiles/wamv_navigation_uninstall.dir/progress.make
 
 CMakeFiles/wamv_navigation_uninstall:
-	/usr/bin/cmake -P /home/luca002/proj_ws/build/wamv_navigation/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/gelatocotonato/LabMec2025/build/wamv_navigation/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 wamv_navigation_uninstall: CMakeFiles/wamv_navigation_uninstall
 wamv_navigation_uninstall: CMakeFiles/wamv_navigation_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/wamv_navigation_uninstall.dir/clean:
 .PHONY : CMakeFiles/wamv_navigation_uninstall.dir/clean
 
 CMakeFiles/wamv_navigation_uninstall.dir/depend:
-	cd /home/luca002/proj_ws/build/wamv_navigation && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luca002/proj_ws/src/wamv_navigation /home/luca002/proj_ws/src/wamv_navigation /home/luca002/proj_ws/build/wamv_navigation /home/luca002/proj_ws/build/wamv_navigation /home/luca002/proj_ws/build/wamv_navigation/CMakeFiles/wamv_navigation_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/gelatocotonato/LabMec2025/build/wamv_navigation && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gelatocotonato/LabMec2025/src/wamv_navigation /home/gelatocotonato/LabMec2025/src/wamv_navigation /home/gelatocotonato/LabMec2025/build/wamv_navigation /home/gelatocotonato/LabMec2025/build/wamv_navigation /home/gelatocotonato/LabMec2025/build/wamv_navigation/CMakeFiles/wamv_navigation_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/wamv_navigation_uninstall.dir/depend
 

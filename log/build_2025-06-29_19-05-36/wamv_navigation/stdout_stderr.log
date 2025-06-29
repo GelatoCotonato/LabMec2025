@@ -1,0 +1,40 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/config/wamv_mapping.lua
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/launch/__init__.py
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/launch/cartographer.launch.py
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/launch/occupancy_grid.launch.py
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/launch/wamv_localization.py
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/launch/wamv_simulation.py
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/maps/sydney_map.pgm
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/maps/sydney_map.yaml
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/params/wamv_nav2_params.yaml
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/rviz/wamv_cartographer.rviz
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/rviz/wamv_navigation.rviz
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/ament_index/resource_index/package_run_dependencies/wamv_navigation
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/ament_index/resource_index/parent_prefix_path/wamv_navigation
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/environment/path.sh
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/environment/path.dsv
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/local_setup.bash
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/local_setup.sh
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/local_setup.zsh
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/local_setup.dsv
+-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/package.dsv
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/ament_index/resource_index/packages/wamv_navigation
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/cmake/wamv_navigationConfig.cmake
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/cmake/wamv_navigationConfig-version.cmake
+-- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/package.xml
+-- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation
+-- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/config
+-- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/maps
+-- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/params
+-- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/hooks
+-- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch
+-- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch/cartographer.launch.py
+-- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch/__init__.py
+-- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch/occupancy_grid.launch.py
+-- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch/wamv_localization.py
+-- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch/wamv_simulation.py
+-- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/rviz

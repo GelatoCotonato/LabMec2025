@@ -1,8 +1,8 @@
-# Install script for directory: /home/luca002/proj_ws/src/wamv_gazebo
+# Install script for directory: /home/gelatocotonato/LabMec2025/src/wamv_gazebo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/luca002/proj_ws/install/wamv_gazebo")
+  set(CMAKE_INSTALL_PREFIX "/home/gelatocotonato/LabMec2025/install/wamv_gazebo")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/luca002/proj_ws/build/wamv_gazebo/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/gelatocotonato/LabMec2025/build/wamv_gazebo/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/luca002/proj_ws/build/wamv_gazebo/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/gelatocotonato/LabMec2025/build/wamv_gazebo/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

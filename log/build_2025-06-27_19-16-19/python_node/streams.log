@@ -1,0 +1,20 @@
+[5.164s] Invoking command in '/home/gelatocotonato/LabMec2025/build/python_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/gelatocotonato/LabMec2025/build/python_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gelatocotonato/LabMec2025/install/python_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/gelatocotonato/LabMec2025/build/python_node/build --no-deps symlink_data
+[7.148s] running develop
+[8.089s] running egg_info
+[8.213s] writing python_node.egg-info/PKG-INFO
+[8.305s] writing dependency_links to python_node.egg-info/dependency_links.txt
+[8.309s] writing entry points to python_node.egg-info/entry_points.txt
+[8.313s] writing requirements to python_node.egg-info/requires.txt
+[8.314s] writing top-level names to python_node.egg-info/top_level.txt
+[8.539s] reading manifest file 'python_node.egg-info/SOURCES.txt'
+[8.546s] writing manifest file 'python_node.egg-info/SOURCES.txt'
+[8.719s] running build_ext
+[8.723s] Creating /home/gelatocotonato/LabMec2025/install/python_node/lib/python3.12/site-packages/python-node.egg-link (link to .)
+[8.728s] Installing coast_follower script to /home/gelatocotonato/LabMec2025/install/python_node/lib/python_node
+[8.729s] Installing gui_teleop script to /home/gelatocotonato/LabMec2025/install/python_node/lib/python_node
+[8.729s] Installing keyboard_teleop script to /home/gelatocotonato/LabMec2025/install/python_node/lib/python_node
+[8.729s] Installing wamv_controller script to /home/gelatocotonato/LabMec2025/install/python_node/lib/python_node
+[8.729s] 
+[8.729s] Installed /home/gelatocotonato/LabMec2025/build/python_node
+[8.730s] running symlink_data
+[8.976s] Invoked command in '/home/gelatocotonato/LabMec2025/build/python_node' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/gelatocotonato/LabMec2025/build/python_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gelatocotonato/LabMec2025/install/python_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/gelatocotonato/LabMec2025/build/python_node/build --no-deps symlink_data

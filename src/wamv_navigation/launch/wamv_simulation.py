@@ -49,7 +49,7 @@ def generate_launch_description():
             'ros2', 'run', 'ros_gz_sim', 'create',
             '-topic', '/robot_description',
             '-name', 'wamv',
-            '-x', '0.0', '-y', '0.0', '-z', '0.2',
+            '-x', '0.0', '-y', '-5.0', '-z', '0.2',
             '--wait', '5'  
         ],
         output='screen'
@@ -139,6 +139,13 @@ def generate_launch_description():
         executable='rviz2',
         name='rviz2',
         arguments=['-d' + rviz_config_path],
+        parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
+    )
+
+    guardian = Node(
+        package='python_node',
+        executable='thruster_guardian', 
+        name='thruster_guardian',
         parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
 

@@ -1,5 +1,5 @@
 CMakeFiles/ScoringPlugin.dir/src/ScoringPlugin.cc.o: \
- /home/luca002/proj_ws/src/wamv_gazebo/src/ScoringPlugin.cc \
+ /home/gelatocotonato/LabMec2025/src/wamv_gazebo/src/ScoringPlugin.cc \
  /usr/include/stdc-predef.h \
  /opt/ros/jazzy/opt/gz_msgs_vendor/include/gz/msgs10/gz/msgs/contacts.pb.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
@@ -554,7 +554,7 @@ CMakeFiles/ScoringPlugin.dir/src/ScoringPlugin.cc.o: \
  /opt/ros/jazzy/opt/sdformat_vendor/include/gz/sdformat14/sdf/Surface.hh \
  /opt/ros/jazzy/opt/sdformat_vendor/include/gz/sdformat14/sdf/Visual.hh \
  /opt/ros/jazzy/opt/sdformat_vendor/include/gz/sdformat14/sdf/World.hh \
- /home/luca002/proj_ws/src/wamv_gazebo/src/ScoringPlugin.hh \
+ /home/gelatocotonato/LabMec2025/src/wamv_gazebo/src/ScoringPlugin.hh \
  /opt/ros/jazzy/opt/gz_sim_vendor/include/gz/sim8/gz/sim/System.hh \
  /opt/ros/jazzy/opt/gz_sim_vendor/include/gz/sim8/gz/sim/EventManager.hh \
  /opt/ros/jazzy/opt/gz_transport_vendor/include/gz/transport13/gz/transport/parameters/Registry.hh \

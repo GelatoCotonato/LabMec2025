@@ -1,1 +1,1 @@
-/home/luca002/proj_ws/build/wamv_navigation/ament_cmake_environment_hooks/local_setup.zsh
+/home/gelatocotonato/LabMec2025/build/wamv_navigation/ament_cmake_environment_hooks/local_setup.zsh

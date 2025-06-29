@@ -1,0 +1,976 @@
+[0.000000] (-) TimerEvent: {}
+[0.000217] (python_node) JobQueued: {'identifier': 'python_node', 'dependencies': OrderedDict()}
+[0.000546] (wamv_gazebo) JobQueued: {'identifier': 'wamv_gazebo', 'dependencies': OrderedDict()}
+[0.000561] (wamv_navigation) JobQueued: {'identifier': 'wamv_navigation', 'dependencies': OrderedDict()}
+[0.000572] (python_node) JobStarted: {'identifier': 'python_node'}
+[0.014677] (wamv_gazebo) JobStarted: {'identifier': 'wamv_gazebo'}
+[0.018720] (wamv_navigation) JobStarted: {'identifier': 'wamv_navigation'}
+[0.099886] (-) TimerEvent: {}
+[0.200197] (-) TimerEvent: {}
+[0.201842] (wamv_gazebo) JobProgress: {'identifier': 'wamv_gazebo', 'progress': 'cmake'}
+[0.202189] (wamv_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/gelatocotonato/LabMec2025/src/wamv_gazebo', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/gelatocotonato/LabMec2025/install/wamv_gazebo'], 'cwd': '/home/gelatocotonato/LabMec2025/build/wamv_gazebo', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib:/home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib:/opt/ros//lib:', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models:/home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/worlds:/home/gelatocotonato/LabMec2025/src/wamv_gazebo/models', 'USER': 'gelatocotonato', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIO_MODULE_DIR': '/home/gelatocotonato/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/196/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/gelatocotonato', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/gelatocotonato', 'TERM_PROGRAM_VERSION': '1.101.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/196/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/gelatocotonato/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/196/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/196/usr/share/code/code', 'MANAGERPID': '2026', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2308', 'BUNDLED_DEBUGPY_PATH': '/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3139', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'gelatocotonato', 'JOURNAL_STREAM': '9:18201', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'gelatocotonato', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/home/gelatocotonato/LabMec2025/src/wamv_gazebo/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/gelatocotonato/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/gelatocotonato/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts:/home/gelatocotonato/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/gelatoASUS:@/tmp/.ICE-unix/2260,unix/gelatoASUS:/tmp/.ICE-unix/2260', 'GTK_EXE_PREFIX': '/snap/code/196/usr', 'INVOCATION_ID': '79d70215556948b2af6eb28fd5ed7ea9', 'XDG_MENU_PREFIX': 'gnome-', 'BAMF_DESKTOP_FILE_HINT': '/var/lib/snapd/desktop/applications/code_code.desktop', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/196/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d9ba604260f6dcd9.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/gelatocotonato/snap/code/196/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.L0LE82', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-5f69965ff6.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/gelatocotonato/snap/code/196/.local/share/glib-2.0/schemas', 'ROS_DOMAIN_ID': '4', 'AMENT_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_navigation:/home/gelatocotonato/LabMec2025/install/wamv_gazebo:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/gelatocotonato/LabMec2025/build/wamv_gazebo', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/gelatocotonato/snap/code/196/.local/share:/home/gelatocotonato/snap/code/196:/snap/code/196/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/gelatocotonato/LabMec2025/build/python_node:/home/gelatocotonato/LabMec2025/install/python_node/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_navigation:/home/gelatocotonato/LabMec2025/install/wamv_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy'}), 'shell': False}
+[0.205712] (wamv_navigation) JobProgress: {'identifier': 'wamv_navigation', 'progress': 'cmake'}
+[0.206257] (wamv_navigation) Command: {'cmd': ['/usr/bin/cmake', '/home/gelatocotonato/LabMec2025/src/wamv_navigation', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/gelatocotonato/LabMec2025/install/wamv_navigation'], 'cwd': '/home/gelatocotonato/LabMec2025/build/wamv_navigation', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib:/home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib:/opt/ros//lib:', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models:/home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/worlds:/home/gelatocotonato/LabMec2025/src/wamv_gazebo/models', 'USER': 'gelatocotonato', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIO_MODULE_DIR': '/home/gelatocotonato/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/196/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/gelatocotonato', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/gelatocotonato', 'TERM_PROGRAM_VERSION': '1.101.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/196/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/gelatocotonato/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/196/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/196/usr/share/code/code', 'MANAGERPID': '2026', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2308', 'BUNDLED_DEBUGPY_PATH': '/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3139', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'gelatocotonato', 'JOURNAL_STREAM': '9:18201', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'gelatocotonato', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/home/gelatocotonato/LabMec2025/src/wamv_gazebo/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/gelatocotonato/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/gelatocotonato/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts:/home/gelatocotonato/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/gelatoASUS:@/tmp/.ICE-unix/2260,unix/gelatoASUS:/tmp/.ICE-unix/2260', 'GTK_EXE_PREFIX': '/snap/code/196/usr', 'INVOCATION_ID': '79d70215556948b2af6eb28fd5ed7ea9', 'XDG_MENU_PREFIX': 'gnome-', 'BAMF_DESKTOP_FILE_HINT': '/var/lib/snapd/desktop/applications/code_code.desktop', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/196/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d9ba604260f6dcd9.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/gelatocotonato/snap/code/196/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.L0LE82', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-5f69965ff6.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/gelatocotonato/snap/code/196/.local/share/glib-2.0/schemas', 'ROS_DOMAIN_ID': '4', 'AMENT_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_navigation:/home/gelatocotonato/LabMec2025/install/wamv_gazebo:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/gelatocotonato/LabMec2025/build/wamv_navigation', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/gelatocotonato/snap/code/196/.local/share:/home/gelatocotonato/snap/code/196:/snap/code/196/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/gelatocotonato/LabMec2025/build/python_node:/home/gelatocotonato/LabMec2025/install/python_node/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_navigation:/home/gelatocotonato/LabMec2025/install/wamv_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy'}), 'shell': False}
+[0.300296] (-) TimerEvent: {}
+[0.332664] (wamv_navigation) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.335714] (wamv_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.400406] (-) TimerEvent: {}
+[0.435658] (wamv_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.436083] (wamv_navigation) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.454441] (wamv_navigation) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.454659] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.500501] (-) TimerEvent: {}
+[0.540260] (wamv_navigation) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.540755] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.547729] (wamv_navigation) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.548110] (wamv_navigation) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.548648] (wamv_navigation) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.548790] (wamv_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.548998] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.549353] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.556705] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.556931] (wamv_navigation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600610] (-) TimerEvent: {}
+[0.641371] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.643127] (wamv_navigation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.649292] (wamv_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.649518] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.649937] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.651673] (wamv_navigation) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.651924] (wamv_navigation) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.652341] (wamv_navigation) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.663076] (wamv_navigation) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.663208] (wamv_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.700708] (-) TimerEvent: {}
+[0.799140] (wamv_navigation) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.800768] (-) TimerEvent: {}
+[0.801939] (wamv_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.872918] (wamv_gazebo) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.873058] (wamv_navigation) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.900877] (-) TimerEvent: {}
+[0.941714] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sim8 -- found version 8.9.0\n'}
+[0.942391] (wamv_navigation) StdoutLine: {'line': b'-- Found nav2_common: 1.3.6 (/opt/ros/jazzy/share/nav2_common/cmake)\n'}
+[0.947013] (python_node) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/gelatocotonato/LabMec2025/build/python_node/build', '--no-deps', 'symlink_data'], 'cwd': '/home/gelatocotonato/LabMec2025/build/python_node', 'env': {'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib:/home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib:/opt/ros//lib:', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models:/home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/worlds:/home/gelatocotonato/LabMec2025/src/wamv_gazebo/models', 'USER': 'gelatocotonato', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIO_MODULE_DIR': '/home/gelatocotonato/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/196/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/gelatocotonato', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/gelatocotonato', 'TERM_PROGRAM_VERSION': '1.101.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/196/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/gelatocotonato/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/196/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/196/usr/share/code/code', 'MANAGERPID': '2026', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2308', 'BUNDLED_DEBUGPY_PATH': '/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3139', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'gelatocotonato', 'JOURNAL_STREAM': '9:18201', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'gelatocotonato', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/home/gelatocotonato/LabMec2025/src/wamv_gazebo/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/gelatocotonato/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/gelatocotonato/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts:/home/gelatocotonato/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/gelatoASUS:@/tmp/.ICE-unix/2260,unix/gelatoASUS:/tmp/.ICE-unix/2260', 'GTK_EXE_PREFIX': '/snap/code/196/usr', 'INVOCATION_ID': '79d70215556948b2af6eb28fd5ed7ea9', 'XDG_MENU_PREFIX': 'gnome-', 'BAMF_DESKTOP_FILE_HINT': '/var/lib/snapd/desktop/applications/code_code.desktop', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/196/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d9ba604260f6dcd9.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/gelatocotonato/snap/code/196/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.L0LE82', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-5f69965ff6.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/gelatocotonato/snap/code/196/.local/share/glib-2.0/schemas', 'ROS_DOMAIN_ID': '4', 'AMENT_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_navigation:/home/gelatocotonato/LabMec2025/install/wamv_gazebo:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/gelatocotonato/LabMec2025/build/python_node', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/gelatocotonato/snap/code/196/.local/share:/home/gelatocotonato/snap/code/196:/snap/code/196/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/gelatocotonato/LabMec2025/build/python_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gelatocotonato/LabMec2025/install/python_node/lib/python3.12/site-packages:/home/gelatocotonato/LabMec2025/build/python_node:/home/gelatocotonato/LabMec2025/install/python_node/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_navigation:/home/gelatocotonato/LabMec2025/install/wamv_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[0.948428] (wamv_navigation) StdoutLine: {'line': b'-- Found ros_gz_bridge: 1.0.12 (/opt/ros/jazzy/share/ros_gz_bridge/cmake)\n'}
+[0.954222] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sim8\n'}
+[0.955665] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.7.0\n'}
+[0.955851] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of sdformat14\n'}
+[0.961508] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[0.975379] (wamv_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 10.0.0\n'}
+[1.000351] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.000571] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[1.000938] (-) TimerEvent: {}
+[1.002619] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.002808] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[1.004621] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.004772] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[1.004866] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-utils2> component [cli]\n'}
+[1.006711] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2-cli -- found version 2.2.1\n'}
+[1.006877] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2-cli\n'}
+[1.012529] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.013048] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[1.013159] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.016098] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [loader]\n'}
+[1.019318] (wamv_navigation) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.020089] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2-loader -- found version 2.0.4\n'}
+[1.020267] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-loader\n'}
+[1.021468] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [register]\n'}
+[1.023421] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2-register -- found version 2.0.4\n'}
+[1.023578] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-register\n'}
+[1.026008] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.4.1\n'}
+[1.026204] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13\n'}
+[1.038316] (wamv_navigation) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.060294] (wamv_navigation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.085471] (wamv_navigation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.101056] (-) TimerEvent: {}
+[1.148132] (wamv_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.21.12") \n'}
+[1.158348] (wamv_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.161981] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.172529] (wamv_gazebo) StdoutLine: {'line': b'--   Found libzmq, version 4.3.5\n'}
+[1.185187] (wamv_navigation) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.190056] (wamv_navigation) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.201152] (-) TimerEvent: {}
+[1.201348] (wamv_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.206182] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.223322] (wamv_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.39.3\n'}
+[1.248235] (wamv_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.248586] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.250359] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.250484] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-msgs10\n'}
+[1.255338] (python_node) StdoutLine: {'line': b'running develop\n'}
+[1.266246] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.266455] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.273815] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-transport13> component [log]\n'}
+[1.275514] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13-log -- found version 13.4.1\n'}
+[1.275684] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13-log\n'}
+[1.276354] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-transport13> component [parameters]\n'}
+[1.278005] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13-parameters -- found version 13.4.1\n'}
+[1.278163] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13-parameters\n'}
+[1.279031] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.281219] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.281320] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.281701] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.282258] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.283481] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.284615] (wamv_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[1.288889] (wamv_navigation) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[1.289971] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [av]\n'}
+[1.291765] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-av -- found version 5.7.1\n'}
+[1.291927] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-av\n'}
+[1.295884] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[1.301242] (-) TimerEvent: {}
+[1.306716] (wamv_gazebo) StdoutLine: {'line': b'--   Found libswscale, version 7.5.100\n'}
+[1.309936] (wamv_navigation) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[1.335310] (wamv_navigation) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.337713] (wamv_gazebo) StdoutLine: {'line': b'-- Found SWSCALE: TRUE  \n'}
+[1.341689] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[1.352787] (wamv_gazebo) StdoutLine: {'line': b'--   Found libavdevice, version 60.3.100\n'}
+[1.390725] (wamv_gazebo) StdoutLine: {'line': b'-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") \n'}
+[1.396196] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[1.401325] (-) TimerEvent: {}
+[1.411063] (wamv_gazebo) StdoutLine: {'line': b'--   Found libavformat, version 60.16.100\n'}
+[1.444870] (wamv_gazebo) StdoutLine: {'line': b'-- Found AVFORMAT: TRUE  \n'}
+[1.450441] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[1.463842] (python_node) StdoutLine: {'line': b'running egg_info\n'}
+[1.463997] (python_node) StdoutLine: {'line': b'creating python_node.egg-info\n'}
+[1.464356] (wamv_gazebo) StdoutLine: {'line': b'--   Found libavcodec, version 60.31.102\n'}
+[1.484607] (python_node) StdoutLine: {'line': b'writing python_node.egg-info/PKG-INFO\n'}
+[1.484832] (python_node) StdoutLine: {'line': b'writing dependency_links to python_node.egg-info/dependency_links.txt\n'}
+[1.484944] (python_node) StdoutLine: {'line': b'writing entry points to python_node.egg-info/entry_points.txt\n'}
+[1.485064] (python_node) StdoutLine: {'line': b'writing requirements to python_node.egg-info/requires.txt\n'}
+[1.485156] (python_node) StdoutLine: {'line': b'writing top-level names to python_node.egg-info/top_level.txt\n'}
+[1.485260] (python_node) StdoutLine: {'line': b"writing manifest file 'python_node.egg-info/SOURCES.txt'\n"}
+[1.495222] (wamv_gazebo) StdoutLine: {'line': b'-- Found AVCODEC: TRUE  \n'}
+[1.498658] (wamv_navigation) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.500718] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[1.501411] (-) TimerEvent: {}
+[1.504765] (wamv_navigation) StdoutLine: {'line': b'-- Searching for dependencies of gz-msgs10\n'}
+[1.516109] (wamv_gazebo) StdoutLine: {'line': b'--   Found libavutil, version 58.29.100\n'}
+[1.536993] (python_node) StdoutLine: {'line': b"reading manifest file 'python_node.egg-info/SOURCES.txt'\n"}
+[1.537870] (python_node) StdoutLine: {'line': b"writing manifest file 'python_node.egg-info/SOURCES.txt'\n"}
+[1.548977] (wamv_gazebo) StdoutLine: {'line': b'-- Found AVUTIL: TRUE  \n'}
+[1.549786] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[1.551647] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-events -- found version 5.7.1\n'}
+[1.551841] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-events\n'}
+[1.552191] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.552963] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[1.554673] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-graphics -- found version 5.7.1\n'}
+[1.554838] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-graphics\n'}
+[1.555189] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.560097] (python_node) StdoutLine: {'line': b'running build_ext\n'}
+[1.560304] (python_node) StdoutLine: {'line': b'Creating /home/gelatocotonato/LabMec2025/install/python_node/lib/python3.12/site-packages/python-node.egg-link (link to .)\n'}
+[1.560514] (wamv_gazebo) StdoutLine: {'line': b'-- Found GzAssimp: TRUE (found version "5.3.0") \n'}
+[1.560674] (python_node) StdoutLine: {'line': b'Installing coast_follower script to /home/gelatocotonato/LabMec2025/install/python_node/lib/python_node\n'}
+[1.560838] (python_node) StdoutLine: {'line': b'Installing gui_teleop script to /home/gelatocotonato/LabMec2025/install/python_node/lib/python_node\n'}
+[1.560948] (python_node) StdoutLine: {'line': b'Installing keyboard_teleop script to /home/gelatocotonato/LabMec2025/install/python_node/lib/python_node\n'}
+[1.561048] (python_node) StdoutLine: {'line': b'Installing wamv_controller script to /home/gelatocotonato/LabMec2025/install/python_node/lib/python_node\n'}
+[1.561153] (python_node) StdoutLine: {'line': b'\n'}
+[1.561245] (python_node) StdoutLine: {'line': b'Installed /home/gelatocotonato/LabMec2025/build/python_node\n'}
+[1.561363] (python_node) StdoutLine: {'line': b'running symlink_data\n'}
+[1.561451] (python_node) StdoutLine: {'line': b'creating /home/gelatocotonato/LabMec2025/install/python_node/share/ament_index\n'}
+[1.561540] (python_node) StdoutLine: {'line': b'creating /home/gelatocotonato/LabMec2025/install/python_node/share/ament_index/resource_index\n'}
+[1.561630] (python_node) StdoutLine: {'line': b'creating /home/gelatocotonato/LabMec2025/install/python_node/share/ament_index/resource_index/packages\n'}
+[1.561748] (python_node) StdoutLine: {'line': b'symbolically linking /home/gelatocotonato/LabMec2025/build/python_node/resource/python_node -> /home/gelatocotonato/LabMec2025/install/python_node/share/ament_index/resource_index/packages\n'}
+[1.561871] (python_node) StdoutLine: {'line': b'symbolically linking /home/gelatocotonato/LabMec2025/build/python_node/package.xml -> /home/gelatocotonato/LabMec2025/install/python_node/share/python_node\n'}
+[1.561985] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [io]\n'}
+[1.563652] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-io -- found version 5.7.1\n'}
+[1.563868] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-io\n'}
+[1.564476] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [profiler]\n'}
+[1.566185] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-profiler -- found version 5.7.1\n'}
+[1.566371] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-profiler\n'}
+[1.568712] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-fuel_tools9 -- found version 9.1.1\n'}
+[1.568933] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-fuel_tools9\n'}
+[1.595241] (python_node) CommandEnded: {'returncode': 0}
+[1.601525] (-) TimerEvent: {}
+[1.607123] (python_node) JobEnded: {'identifier': 'python_node', 'rc': 0}
+[1.618624] (wamv_navigation) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.21.12") \n'}
+[1.620959] (wamv_navigation) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.621144] (wamv_navigation) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[1.623492] (wamv_navigation) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.623654] (wamv_navigation) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[1.623904] (wamv_navigation) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.628378] (wamv_navigation) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[1.643908] (wamv_navigation) StdoutLine: {'line': b'--   Found tinyxml2, version 10.0.0\n'}
+[1.650765] (wamv_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "8.5.0")  \n'}
+[1.659898] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[1.671130] (wamv_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[1.677208] (wamv_navigation) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.4.1\n'}
+[1.677377] (wamv_navigation) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13\n'}
+[1.695398] (wamv_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[1.701615] (-) TimerEvent: {}
+[1.703610] (wamv_navigation) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.707424] (wamv_navigation) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.709036] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'yaml-0.1'\n"}
+[1.723693] (wamv_navigation) StdoutLine: {'line': b'--   Found libzmq, version 4.3.5\n'}
+[1.725164] (wamv_gazebo) StdoutLine: {'line': b'--   Found yaml-0.1, version 0.2.5\n'}
+[1.750976] (wamv_gazebo) StdoutLine: {'line': b'-- Found YAML: TRUE  \n'}
+[1.756070] (wamv_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[1.756681] (wamv_navigation) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.762076] (wamv_navigation) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.767700] (wamv_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[1.773428] (wamv_navigation) StdoutLine: {'line': b'--   Found uuid, version 2.39.3\n'}
+[1.796972] (wamv_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[1.797500] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.798016] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.798236] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.798677] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.798875] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.799014] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.801707] (-) TimerEvent: {}
+[1.803895] (wamv_navigation) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.804279] (wamv_navigation) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.804452] (wamv_navigation) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[1.804574] (wamv_navigation) StdoutLine: {'line': b'-- Searching for <gz-utils2> component [cli]\n'}
+[1.806331] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [testing]\n'}
+[1.806742] (wamv_navigation) StdoutLine: {'line': b'-- Looking for gz-utils2-cli -- found version 2.2.1\n'}
+[1.806952] (wamv_navigation) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2-cli\n'}
+[1.809312] (wamv_navigation) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.809498] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-testing -- found version 5.7.1\n'}
+[1.809579] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-testing\n'}
+[1.810302] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.810877] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.814442] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-gui8 -- found version 8.4.0\n'}
+[1.814596] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-gui8\n'}
+[1.837535] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.837702] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.837938] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.838243] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.838572] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.4.1\n'}
+[1.840572] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.2\n'}
+[1.840676] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering8\n'}
+[1.840979] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.841095] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[1.841361] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.841495] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-math7> component [eigen3]\n'}
+[1.843219] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7-eigen3 -- found version 7.5.2\n'}
+[1.843315] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7-eigen3\n'}
+[1.852421] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.852556] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.852715] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.852836] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.852891] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.859260] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[1.859397] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[1.859452] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [geospatial]\n'}
+[1.860832] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-geospatial -- found version 5.7.1\n'}
+[1.860941] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-geospatial\n'}
+[1.861207] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.861601] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.862573] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.862667] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[1.862850] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.862962] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [all]\n'}
+[1.864949] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for all libraries of gz-plugin2 -- found version 2.0.4\n'}
+[1.865280] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.866019] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.876032] (wamv_gazebo) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL \n'}
+[1.877387] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.901895] (-) TimerEvent: {}
+[1.914645] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics7 -- found version 7.5.0\n'}
+[1.915208] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7\n'}
+[1.915327] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.915806] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.916168] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.916641] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.918906] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [heightmap]\n'}
+[1.920596] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics7-heightmap -- found version 7.5.0\n'}
+[1.920738] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-heightmap\n'}
+[1.921085] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.921876] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [mesh]\n'}
+[1.923234] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics7-mesh -- found version 7.5.0\n'}
+[1.923475] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-mesh\n'}
+[1.923655] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.924271] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [sdf]\n'}
+[1.925788] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics7-sdf -- found version 7.5.0\n'}
+[1.925951] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-sdf\n'}
+[1.926234] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.7.0\n'}
+[1.928431] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.928534] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8\n'}
+[1.944425] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.944808] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.945233] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.4.1\n'}
+[1.945545] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.2\n'}
+[1.945872] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.946204] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.7.0\n'}
+[1.947437] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [air_pressure]\n'}
+[1.948805] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-air_pressure -- found version 8.2.2\n'}
+[1.948900] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-air_pressure\n'}
+[1.949539] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [air_speed]\n'}
+[1.950495] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-air_speed -- found version 8.2.2\n'}
+[1.950584] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-air_speed\n'}
+[1.951042] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [altimeter]\n'}
+[1.952373] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-altimeter -- found version 8.2.2\n'}
+[1.952491] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-altimeter\n'}
+[1.952959] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [imu]\n'}
+[1.954249] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-imu -- found version 8.2.2\n'}
+[1.954425] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-imu\n'}
+[1.954866] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [force_torque]\n'}
+[1.956141] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-force_torque -- found version 8.2.2\n'}
+[1.956257] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-force_torque\n'}
+[1.956741] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [logical_camera]\n'}
+[1.957834] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-logical_camera -- found version 8.2.2\n'}
+[1.957931] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-logical_camera\n'}
+[1.958441] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [magnetometer]\n'}
+[1.959623] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-magnetometer -- found version 8.2.2\n'}
+[1.959720] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-magnetometer\n'}
+[1.960515] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [navsat]\n'}
+[1.961575] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-navsat -- found version 8.2.2\n'}
+[1.961702] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-navsat\n'}
+[1.962504] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [dvl]\n'}
+[1.963657] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-dvl -- found version 8.2.2\n'}
+[1.963748] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-dvl\n'}
+[1.964063] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.964162] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8\n'}
+[1.979924] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[1.980137] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.980467] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.4.1\n'}
+[1.980744] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.2\n'}
+[1.980987] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.981410] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.7.0\n'}
+[1.981487] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rendering]\n'}
+[1.983095] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-rendering -- found version 8.2.2\n'}
+[1.983211] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-rendering\n'}
+[1.984656] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rendering]\n'}
+[1.984710] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [lidar]\n'}
+[1.985867] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-lidar -- found version 8.2.2\n'}
+[1.986002] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-lidar\n'}
+[1.986256] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.986883] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [gpu_lidar]\n'}
+[1.988135] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-gpu_lidar -- found version 8.2.2\n'}
+[1.988258] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-gpu_lidar\n'}
+[1.988475] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.989016] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [camera]\n'}
+[1.990246] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-camera -- found version 8.2.2\n'}
+[1.990365] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-camera\n'}
+[1.990656] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.991537] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [boundingbox_camera]\n'}
+[1.992900] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-boundingbox_camera -- found version 8.2.2\n'}
+[1.993001] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-boundingbox_camera\n'}
+[1.993875] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [segmentation_camera]\n'}
+[1.995008] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-segmentation_camera -- found version 8.2.2\n'}
+[1.995117] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-segmentation_camera\n'}
+[1.995623] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [depth_camera]\n'}
+[1.996774] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-depth_camera -- found version 8.2.2\n'}
+[1.996872] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-depth_camera\n'}
+[1.997129] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.997731] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rgbd_camera]\n'}
+[1.998774] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-rgbd_camera -- found version 8.2.2\n'}
+[1.998874] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-rgbd_camera\n'}
+[1.999135] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.999819] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [thermal_camera]\n'}
+[2.000975] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-thermal_camera -- found version 8.2.2\n'}
+[2.001077] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-thermal_camera\n'}
+[2.001378] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[2.001968] (-) TimerEvent: {}
+[2.002071] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [wide_angle_camera]\n'}
+[2.003200] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-wide_angle_camera -- found version 8.2.2\n'}
+[2.003334] (wamv_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-wide_angle_camera\n'}
+[2.004281] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.2\n'}
+[2.004598] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[2.004873] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[2.028212] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[2.028532] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-fuel_tools9 -- found version 9.1.1\n'}
+[2.029027] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.2\n'}
+[2.029476] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[2.030057] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.4.1\n'}
+[2.030514] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[2.031012] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.2\n'}
+[2.031572] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[2.032051] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[2.032438] (wamv_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.7.0\n'}
+[2.036395] (wamv_gazebo) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[2.080624] (wamv_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.095958] (wamv_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[2.102162] (-) TimerEvent: {}
+[2.115447] (wamv_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.136244] (wamv_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.140420] (wamv_navigation) StdoutLine: {'line': b'-- Found ros_gz_image: 1.0.12 (/opt/ros/jazzy/share/ros_gz_image/cmake)\n'}
+[2.144354] (wamv_navigation) StdoutLine: {'line': b'-- Found ros_gz_sim: 1.0.12 (/opt/ros/jazzy/share/ros_gz_sim/cmake)\n'}
+[2.192405] (wamv_navigation) StdoutLine: {'line': b'-- Found robot_state_publisher: 3.3.3 (/opt/ros/jazzy/share/robot_state_publisher/cmake)\n'}
+[2.202341] (-) TimerEvent: {}
+[2.246141] (wamv_navigation) StdoutLine: {'line': b'-- Found xacro: 2.0.13 (/opt/ros/jazzy/share/xacro/cmake)\n'}
+[2.250186] (wamv_gazebo) StdoutLine: {'line': b'-- Configuring done (2.0s)\n'}
+[2.302444] (-) TimerEvent: {}
+[2.325490] (wamv_navigation) StdoutLine: {'line': b'-- Configuring done (2.1s)\n'}
+[2.330197] (wamv_navigation) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.332682] (wamv_navigation) StdoutLine: {'line': b'-- Build files have been written to: /home/gelatocotonato/LabMec2025/build/wamv_navigation\n'}
+[2.342709] (wamv_navigation) CommandEnded: {'returncode': 0}
+[2.343287] (wamv_navigation) JobProgress: {'identifier': 'wamv_navigation', 'progress': 'build'}
+[2.343976] (wamv_navigation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/gelatocotonato/LabMec2025/build/wamv_navigation', '--', '-j8', '-l8'], 'cwd': '/home/gelatocotonato/LabMec2025/build/wamv_navigation', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib:/home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib:/opt/ros//lib:', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models:/home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/worlds:/home/gelatocotonato/LabMec2025/src/wamv_gazebo/models', 'USER': 'gelatocotonato', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIO_MODULE_DIR': '/home/gelatocotonato/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/196/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/gelatocotonato', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/gelatocotonato', 'TERM_PROGRAM_VERSION': '1.101.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/196/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/gelatocotonato/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/196/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/196/usr/share/code/code', 'MANAGERPID': '2026', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2308', 'BUNDLED_DEBUGPY_PATH': '/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3139', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'gelatocotonato', 'JOURNAL_STREAM': '9:18201', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'gelatocotonato', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/home/gelatocotonato/LabMec2025/src/wamv_gazebo/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/gelatocotonato/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/gelatocotonato/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts:/home/gelatocotonato/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/gelatoASUS:@/tmp/.ICE-unix/2260,unix/gelatoASUS:/tmp/.ICE-unix/2260', 'GTK_EXE_PREFIX': '/snap/code/196/usr', 'INVOCATION_ID': '79d70215556948b2af6eb28fd5ed7ea9', 'XDG_MENU_PREFIX': 'gnome-', 'BAMF_DESKTOP_FILE_HINT': '/var/lib/snapd/desktop/applications/code_code.desktop', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/196/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d9ba604260f6dcd9.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/gelatocotonato/snap/code/196/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.L0LE82', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-5f69965ff6.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/gelatocotonato/snap/code/196/.local/share/glib-2.0/schemas', 'ROS_DOMAIN_ID': '4', 'AMENT_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_navigation:/home/gelatocotonato/LabMec2025/install/wamv_gazebo:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/gelatocotonato/LabMec2025/build/wamv_navigation', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/gelatocotonato/snap/code/196/.local/share:/home/gelatocotonato/snap/code/196:/snap/code/196/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/gelatocotonato/LabMec2025/build/python_node:/home/gelatocotonato/LabMec2025/install/python_node/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_navigation:/home/gelatocotonato/LabMec2025/install/wamv_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy'}), 'shell': False}
+[2.360789] (wamv_gazebo) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[2.379220] (wamv_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/gelatocotonato/LabMec2025/build/wamv_gazebo\n'}
+[2.382932] (wamv_navigation) CommandEnded: {'returncode': 0}
+[2.383529] (wamv_navigation) JobProgress: {'identifier': 'wamv_navigation', 'progress': 'install'}
+[2.391457] (wamv_navigation) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/gelatocotonato/LabMec2025/build/wamv_navigation'], 'cwd': '/home/gelatocotonato/LabMec2025/build/wamv_navigation', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib:/home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib:/opt/ros//lib:', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models:/home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/worlds:/home/gelatocotonato/LabMec2025/src/wamv_gazebo/models', 'USER': 'gelatocotonato', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIO_MODULE_DIR': '/home/gelatocotonato/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/196/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/gelatocotonato', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/gelatocotonato', 'TERM_PROGRAM_VERSION': '1.101.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/196/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/gelatocotonato/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/196/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/196/usr/share/code/code', 'MANAGERPID': '2026', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2308', 'BUNDLED_DEBUGPY_PATH': '/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3139', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'gelatocotonato', 'JOURNAL_STREAM': '9:18201', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'gelatocotonato', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/home/gelatocotonato/LabMec2025/src/wamv_gazebo/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/gelatocotonato/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/gelatocotonato/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts:/home/gelatocotonato/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/gelatoASUS:@/tmp/.ICE-unix/2260,unix/gelatoASUS:/tmp/.ICE-unix/2260', 'GTK_EXE_PREFIX': '/snap/code/196/usr', 'INVOCATION_ID': '79d70215556948b2af6eb28fd5ed7ea9', 'XDG_MENU_PREFIX': 'gnome-', 'BAMF_DESKTOP_FILE_HINT': '/var/lib/snapd/desktop/applications/code_code.desktop', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/196/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d9ba604260f6dcd9.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/gelatocotonato/snap/code/196/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.L0LE82', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-5f69965ff6.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/gelatocotonato/snap/code/196/.local/share/glib-2.0/schemas', 'ROS_DOMAIN_ID': '4', 'AMENT_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_navigation:/home/gelatocotonato/LabMec2025/install/wamv_gazebo:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/gelatocotonato/LabMec2025/build/wamv_navigation', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/gelatocotonato/snap/code/196/.local/share:/home/gelatocotonato/snap/code/196:/snap/code/196/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/gelatocotonato/LabMec2025/build/python_node:/home/gelatocotonato/LabMec2025/install/python_node/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_navigation:/home/gelatocotonato/LabMec2025/install/wamv_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy'}), 'shell': False}
+[2.392501] (wamv_gazebo) CommandEnded: {'returncode': 0}
+[2.392929] (wamv_gazebo) JobProgress: {'identifier': 'wamv_gazebo', 'progress': 'build'}
+[2.393283] (wamv_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/gelatocotonato/LabMec2025/build/wamv_gazebo', '--', '-j8', '-l8'], 'cwd': '/home/gelatocotonato/LabMec2025/build/wamv_gazebo', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib:/home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib:/opt/ros//lib:', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models:/home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/worlds:/home/gelatocotonato/LabMec2025/src/wamv_gazebo/models', 'USER': 'gelatocotonato', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIO_MODULE_DIR': '/home/gelatocotonato/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/196/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/gelatocotonato', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/gelatocotonato', 'TERM_PROGRAM_VERSION': '1.101.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/196/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/gelatocotonato/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/196/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/196/usr/share/code/code', 'MANAGERPID': '2026', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2308', 'BUNDLED_DEBUGPY_PATH': '/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3139', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'gelatocotonato', 'JOURNAL_STREAM': '9:18201', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'gelatocotonato', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/home/gelatocotonato/LabMec2025/src/wamv_gazebo/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/gelatocotonato/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/gelatocotonato/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts:/home/gelatocotonato/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/gelatoASUS:@/tmp/.ICE-unix/2260,unix/gelatoASUS:/tmp/.ICE-unix/2260', 'GTK_EXE_PREFIX': '/snap/code/196/usr', 'INVOCATION_ID': '79d70215556948b2af6eb28fd5ed7ea9', 'XDG_MENU_PREFIX': 'gnome-', 'BAMF_DESKTOP_FILE_HINT': '/var/lib/snapd/desktop/applications/code_code.desktop', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/196/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d9ba604260f6dcd9.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/gelatocotonato/snap/code/196/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.L0LE82', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-5f69965ff6.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/gelatocotonato/snap/code/196/.local/share/glib-2.0/schemas', 'ROS_DOMAIN_ID': '4', 'AMENT_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_navigation:/home/gelatocotonato/LabMec2025/install/wamv_gazebo:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/gelatocotonato/LabMec2025/build/wamv_gazebo', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/gelatocotonato/snap/code/196/.local/share:/home/gelatocotonato/snap/code/196:/snap/code/196/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/gelatocotonato/LabMec2025/build/python_node:/home/gelatocotonato/LabMec2025/install/python_node/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_navigation:/home/gelatocotonato/LabMec2025/install/wamv_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy'}), 'shell': False}
+[2.397937] (wamv_navigation) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.398262] (wamv_navigation) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.398582] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/config/wamv_mapping.lua\n'}
+[2.402551] (-) TimerEvent: {}
+[2.405776] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/launch/__init__.py\n'}
+[2.415033] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/launch/cartographer.launch.py\n'}
+[2.423906] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/launch/occupancy_grid.launch.py\n'}
+[2.431960] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/launch/wamv_localization.py\n'}
+[2.439159] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/launch/wamv_simulation.py\n'}
+[2.441806] (wamv_gazebo) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/ScoringPlugin.dir/src/ScoringPlugin.cc.o\x1b[0m\n'}
+[2.442003] (wamv_gazebo) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/Waves.dir/src/Wavefield.cc.o\x1b[0m\n'}
+[2.447030] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/maps/sydney_map.pgm\n'}
+[2.454376] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/maps/sydney_map.yaml\n'}
+[2.461690] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/params/wamv_nav2_params.yaml\n'}
+[2.469110] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/rviz/wamv_cartographer.rviz\n'}
+[2.476419] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/rviz/wamv_navigation.rviz\n'}
+[2.483745] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/ament_index/resource_index/package_run_dependencies/wamv_navigation\n'}
+[2.490911] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/ament_index/resource_index/parent_prefix_path/wamv_navigation\n'}
+[2.498284] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/environment/ament_prefix_path.sh\n'}
+[2.502655] (-) TimerEvent: {}
+[2.505704] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/environment/ament_prefix_path.dsv\n'}
+[2.514796] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/environment/path.sh\n'}
+[2.525081] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/environment/path.dsv\n'}
+[2.532767] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/local_setup.bash\n'}
+[2.539681] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/local_setup.sh\n'}
+[2.546858] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/local_setup.zsh\n'}
+[2.553977] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/local_setup.dsv\n'}
+[2.561139] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/package.dsv\n'}
+[2.568328] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/ament_index/resource_index/packages/wamv_navigation\n'}
+[2.575365] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/cmake/wamv_navigationConfig.cmake\n'}
+[2.582395] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/cmake/wamv_navigationConfig-version.cmake\n'}
+[2.589402] (wamv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/package.xml\n'}
+[2.596536] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation\n'}
+[2.596697] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/config\n'}
+[2.596753] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/maps\n'}
+[2.596834] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/params\n'}
+[2.596958] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/hooks\n'}
+[2.597054] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch\n'}
+[2.597124] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch/cartographer.launch.py\n'}
+[2.597182] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch/__init__.py\n'}
+[2.597238] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch/occupancy_grid.launch.py\n'}
+[2.597319] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch/wamv_localization.py\n'}
+[2.597396] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch/wamv_simulation.py\n'}
+[2.597473] (wamv_navigation) StdoutLine: {'line': b'-- Installing: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/rviz\n'}
+[2.598607] (wamv_navigation) CommandEnded: {'returncode': 0}
+[2.602746] (-) TimerEvent: {}
+[2.611486] (wamv_navigation) JobEnded: {'identifier': 'wamv_navigation', 'rc': 0}
+[2.702846] (-) TimerEvent: {}
+[2.803097] (-) TimerEvent: {}
+[2.903490] (-) TimerEvent: {}
+[3.003743] (-) TimerEvent: {}
+[3.104046] (-) TimerEvent: {}
+[3.204297] (-) TimerEvent: {}
+[3.304563] (-) TimerEvent: {}
+[3.404841] (-) TimerEvent: {}
+[3.505099] (-) TimerEvent: {}
+[3.605442] (-) TimerEvent: {}
+[3.705703] (-) TimerEvent: {}
+[3.806055] (-) TimerEvent: {}
+[3.906406] (-) TimerEvent: {}
+[4.006678] (-) TimerEvent: {}
+[4.106939] (-) TimerEvent: {}
+[4.207201] (-) TimerEvent: {}
+[4.307549] (-) TimerEvent: {}
+[4.407859] (-) TimerEvent: {}
+[4.508111] (-) TimerEvent: {}
+[4.608455] (-) TimerEvent: {}
+[4.708798] (-) TimerEvent: {}
+[4.809142] (-) TimerEvent: {}
+[4.909487] (-) TimerEvent: {}
+[5.009834] (-) TimerEvent: {}
+[5.110198] (-) TimerEvent: {}
+[5.210539] (-) TimerEvent: {}
+[5.310864] (-) TimerEvent: {}
+[5.411096] (-) TimerEvent: {}
+[5.480088] (wamv_gazebo) StdoutLine: {'line': b'[  6%] \x1b[32m\x1b[1mLinking CXX shared library libWaves.so\x1b[0m\n'}
+[5.511200] (-) TimerEvent: {}
+[5.611426] (-) TimerEvent: {}
+[5.711672] (-) TimerEvent: {}
+[5.713267] (wamv_gazebo) StdoutLine: {'line': b'[  6%] Built target Waves\n'}
+[5.736835] (wamv_gazebo) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/PolyhedraBuoyancyDrag.dir/src/ShapeVolume.cc.o\x1b[0m\n'}
+[5.737076] (wamv_gazebo) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/PolyhedraBuoyancyDrag.dir/src/PolyhedraBuoyancyDrag.cc.o\x1b[0m\n'}
+[5.738103] (wamv_gazebo) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/PolyhedraBuoyancyDrag.dir/src/PolyhedronVolume.cc.o\x1b[0m\n'}
+[5.811796] (-) TimerEvent: {}
+[5.912097] (-) TimerEvent: {}
+[6.012435] (-) TimerEvent: {}
+[6.112711] (-) TimerEvent: {}
+[6.212984] (-) TimerEvent: {}
+[6.313311] (-) TimerEvent: {}
+[6.413625] (-) TimerEvent: {}
+[6.513928] (-) TimerEvent: {}
+[6.614235] (-) TimerEvent: {}
+[6.700661] (wamv_gazebo) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking CXX shared library libScoringPlugin.so\x1b[0m\n'}
+[6.714335] (-) TimerEvent: {}
+[6.814677] (-) TimerEvent: {}
+[6.914611] (wamv_gazebo) StdoutLine: {'line': b'[ 14%] Built target ScoringPlugin\n'}
+[6.914824] (-) TimerEvent: {}
+[6.948409] (wamv_gazebo) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/BallShooterPlugin.dir/src/BallShooterPlugin.cc.o\x1b[0m\n'}
+[6.955040] (wamv_gazebo) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/AcousticTrackingScoringPlugin.dir/src/AcousticTrackingScoringPlugin.cc.o\x1b[0m\n'}
+[6.955292] (wamv_gazebo) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/AcousticPingerPlugin.dir/src/AcousticPingerPlugin.cc.o\x1b[0m\n'}
+[6.957096] (wamv_gazebo) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/AcousticPerceptionScoringPlugin.dir/src/AcousticPerceptionScoringPlugin.cc.o\x1b[0m\n'}
+[6.957354] (wamv_gazebo) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/WayfindingScoringPlugin.dir/src/WayfindingScoringPlugin.cc.o\x1b[0m\n'}
+[6.961336] (wamv_gazebo) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/StationkeepingScoringPlugin.dir/src/StationkeepingScoringPlugin.cc.o\x1b[0m\n'}
+[7.017096] (-) TimerEvent: {}
+[7.117417] (-) TimerEvent: {}
+[7.217784] (-) TimerEvent: {}
+[7.260798] (wamv_gazebo) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/WayfindingScoringPlugin.dir/src/WaypointMarkers.cc.o\x1b[0m\n'}
+[7.317904] (-) TimerEvent: {}
+[7.418255] (-) TimerEvent: {}
+[7.518639] (-) TimerEvent: {}
+[7.619126] (-) TimerEvent: {}
+[7.719462] (-) TimerEvent: {}
+[7.822116] (-) TimerEvent: {}
+[7.922456] (-) TimerEvent: {}
+[8.022833] (-) TimerEvent: {}
+[8.127109] (-) TimerEvent: {}
+[8.227461] (-) TimerEvent: {}
+[8.327864] (-) TimerEvent: {}
+[8.428245] (-) TimerEvent: {}
+[8.528599] (-) TimerEvent: {}
+[8.628937] (-) TimerEvent: {}
+[8.729287] (-) TimerEvent: {}
+[8.829648] (-) TimerEvent: {}
+[8.933112] (-) TimerEvent: {}
+[9.034304] (-) TimerEvent: {}
+[9.134736] (-) TimerEvent: {}
+[9.235391] (-) TimerEvent: {}
+[9.339383] (-) TimerEvent: {}
+[9.439778] (-) TimerEvent: {}
+[9.540365] (-) TimerEvent: {}
+[9.645102] (-) TimerEvent: {}
+[9.745435] (-) TimerEvent: {}
+[9.845757] (-) TimerEvent: {}
+[9.946094] (-) TimerEvent: {}
+[10.046451] (-) TimerEvent: {}
+[10.146807] (-) TimerEvent: {}
+[10.247178] (-) TimerEvent: {}
+[10.349266] (-) TimerEvent: {}
+[10.451142] (-) TimerEvent: {}
+[10.551566] (-) TimerEvent: {}
+[10.653110] (-) TimerEvent: {}
+[10.753454] (-) TimerEvent: {}
+[10.856102] (-) TimerEvent: {}
+[10.958103] (-) TimerEvent: {}
+[11.058420] (-) TimerEvent: {}
+[11.158747] (-) TimerEvent: {}
+[11.259115] (-) TimerEvent: {}
+[11.359811] (-) TimerEvent: {}
+[11.460775] (-) TimerEvent: {}
+[11.561190] (-) TimerEvent: {}
+[11.661519] (-) TimerEvent: {}
+[11.764270] (-) TimerEvent: {}
+[11.865014] (-) TimerEvent: {}
+[11.965680] (-) TimerEvent: {}
+[12.070296] (-) TimerEvent: {}
+[12.170642] (-) TimerEvent: {}
+[12.270980] (-) TimerEvent: {}
+[12.371370] (-) TimerEvent: {}
+[12.471683] (-) TimerEvent: {}
+[12.572052] (-) TimerEvent: {}
+[12.676118] (-) TimerEvent: {}
+[12.776498] (-) TimerEvent: {}
+[12.845436] (wamv_gazebo) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/StationkeepingScoringPlugin.dir/src/WaypointMarkers.cc.o\x1b[0m\n'}
+[12.876629] (-) TimerEvent: {}
+[12.977484] (-) TimerEvent: {}
+[13.079682] (-) TimerEvent: {}
+[13.180105] (-) TimerEvent: {}
+[13.281109] (-) TimerEvent: {}
+[13.381825] (-) TimerEvent: {}
+[13.482431] (-) TimerEvent: {}
+[13.584115] (-) TimerEvent: {}
+[13.684464] (-) TimerEvent: {}
+[13.784820] (-) TimerEvent: {}
+[13.792933] (wamv_gazebo) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX shared library libPolyhedraBuoyancyDrag.so\x1b[0m\n'}
+[13.884957] (-) TimerEvent: {}
+[13.987136] (-) TimerEvent: {}
+[14.087536] (-) TimerEvent: {}
+[14.188312] (-) TimerEvent: {}
+[14.288640] (-) TimerEvent: {}
+[14.380216] (wamv_gazebo) StdoutLine: {'line': b'[ 33%] Built target PolyhedraBuoyancyDrag\n'}
+[14.389135] (-) TimerEvent: {}
+[14.416816] (wamv_gazebo) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/LightBuoyPlugin.dir/src/LightBuoyPlugin.cc.o\x1b[0m\n'}
+[14.489247] (-) TimerEvent: {}
+[14.589574] (-) TimerEvent: {}
+[14.689877] (-) TimerEvent: {}
+[14.791209] (-) TimerEvent: {}
+[14.891527] (-) TimerEvent: {}
+[14.991860] (-) TimerEvent: {}
+[15.094103] (-) TimerEvent: {}
+[15.107369] (wamv_gazebo) StdoutLine: {'line': b'[ 37%] \x1b[32m\x1b[1mLinking CXX shared library libAcousticPingerPlugin.so\x1b[0m\n'}
+[15.194226] (-) TimerEvent: {}
+[15.254476] (wamv_gazebo) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/AcousticPerceptionScoringPlugin.dir/src/WaypointMarkers.cc.o\x1b[0m\n'}
+[15.294349] (-) TimerEvent: {}
+[15.394722] (-) TimerEvent: {}
+[15.499303] (-) TimerEvent: {}
+[15.578130] (wamv_gazebo) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/AcousticTrackingScoringPlugin.dir/src/WaypointMarkers.cc.o\x1b[0m\n'}
+[15.596583] (wamv_gazebo) StdoutLine: {'line': b'[ 41%] Built target AcousticPingerPlugin\n'}
+[15.599415] (-) TimerEvent: {}
+[15.641595] (wamv_gazebo) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/NavigationScoringPlugin.dir/src/NavigationScoringPlugin.cc.o\x1b[0m\n'}
+[15.699534] (-) TimerEvent: {}
+[15.799859] (-) TimerEvent: {}
+[15.900171] (-) TimerEvent: {}
+[16.004107] (-) TimerEvent: {}
+[16.104459] (-) TimerEvent: {}
+[16.107096] (wamv_gazebo) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libWayfindingScoringPlugin.so\x1b[0m\n'}
+[16.156244] (wamv_gazebo) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/GymkhanaScoringPlugin.dir/src/GymkhanaScoringPlugin.cc.o\x1b[0m\n'}
+[16.204586] (-) TimerEvent: {}
+[16.304961] (-) TimerEvent: {}
+[16.405412] (-) TimerEvent: {}
+[16.505747] (-) TimerEvent: {}
+[16.575043] (wamv_gazebo) StdoutLine: {'line': b'[ 47%] Built target WayfindingScoringPlugin\n'}
+[16.604766] (wamv_gazebo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/PerceptionScoringPlugin.dir/src/PerceptionScoringPlugin.cc.o\x1b[0m\n'}
+[16.607038] (-) TimerEvent: {}
+[16.707361] (-) TimerEvent: {}
+[16.807703] (-) TimerEvent: {}
+[16.908047] (-) TimerEvent: {}
+[17.008391] (-) TimerEvent: {}
+[17.110282] (-) TimerEvent: {}
+[17.144122] (wamv_gazebo) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX shared library libBallShooterPlugin.so\x1b[0m\n'}
+[17.210407] (-) TimerEvent: {}
+[17.311125] (-) TimerEvent: {}
+[17.413387] (-) TimerEvent: {}
+[17.514302] (-) TimerEvent: {}
+[17.595698] (wamv_gazebo) StdoutLine: {'line': b'[ 52%] Built target BallShooterPlugin\n'}
+[17.614416] (-) TimerEvent: {}
+[17.625974] (wamv_gazebo) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/PlacardPlugin.dir/src/PlacardPlugin.cc.o\x1b[0m\n'}
+[17.714532] (-) TimerEvent: {}
+[17.818103] (-) TimerEvent: {}
+[17.918426] (-) TimerEvent: {}
+[18.018739] (-) TimerEvent: {}
+[18.119087] (-) TimerEvent: {}
+[18.219427] (-) TimerEvent: {}
+[18.319756] (-) TimerEvent: {}
+[18.420101] (-) TimerEvent: {}
+[18.520503] (-) TimerEvent: {}
+[18.570442] (wamv_gazebo) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libStationkeepingScoringPlugin.so\x1b[0m\n'}
+[18.620637] (-) TimerEvent: {}
+[18.721726] (-) TimerEvent: {}
+[18.822067] (-) TimerEvent: {}
+[18.926329] (-) TimerEvent: {}
+[19.026735] (-) TimerEvent: {}
+[19.095936] (wamv_gazebo) StdoutLine: {'line': b'[ 56%] Built target StationkeepingScoringPlugin\n'}
+[19.125447] (wamv_gazebo) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o\x1b[0m\n'}
+[19.126848] (-) TimerEvent: {}
+[19.227208] (-) TimerEvent: {}
+[19.327524] (-) TimerEvent: {}
+[19.427826] (-) TimerEvent: {}
+[19.528103] (-) TimerEvent: {}
+[19.628422] (-) TimerEvent: {}
+[19.728756] (-) TimerEvent: {}
+[19.829103] (-) TimerEvent: {}
+[19.836103] (wamv_gazebo) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libAcousticPerceptionScoringPlugin.so\x1b[0m\n'}
+[19.929218] (-) TimerEvent: {}
+[20.029554] (-) TimerEvent: {}
+[20.129878] (-) TimerEvent: {}
+[20.230216] (-) TimerEvent: {}
+[20.299160] (wamv_gazebo) StdoutLine: {'line': b'[ 60%] Built target AcousticPerceptionScoringPlugin\n'}
+[20.330354] (-) TimerEvent: {}
+[20.359489] (wamv_gazebo) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/ScanDockScoringPlugin.dir/src/ScanDockScoringPlugin.cc.o\x1b[0m\n'}
+[20.430470] (-) TimerEvent: {}
+[20.530801] (-) TimerEvent: {}
+[20.540295] (wamv_gazebo) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libLightBuoyPlugin.so\x1b[0m\n'}
+[20.630930] (-) TimerEvent: {}
+[20.731269] (-) TimerEvent: {}
+[20.831541] (-) TimerEvent: {}
+[20.853622] (wamv_gazebo) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libAcousticTrackingScoringPlugin.so\x1b[0m\n'}
+[20.905474] (wamv_gazebo) StdoutLine: {'line': b'[ 66%] Built target LightBuoyPlugin\n'}
+[20.931684] (-) TimerEvent: {}
+[20.936041] (wamv_gazebo) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/SimpleHydrodynamics.dir/src/SimpleHydrodynamics.cc.o\x1b[0m\n'}
+[21.031820] (-) TimerEvent: {}
+[21.132259] (-) TimerEvent: {}
+[21.232641] (-) TimerEvent: {}
+[21.316887] (wamv_gazebo) StdoutLine: {'line': b'[ 68%] Built target AcousticTrackingScoringPlugin\n'}
+[21.332757] (-) TimerEvent: {}
+[21.348338] (wamv_gazebo) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/Surface.dir/src/Surface.cc.o\x1b[0m\n'}
+[21.435121] (-) TimerEvent: {}
+[21.535456] (-) TimerEvent: {}
+[21.635783] (-) TimerEvent: {}
+[21.736110] (-) TimerEvent: {}
+[21.836445] (-) TimerEvent: {}
+[21.936776] (-) TimerEvent: {}
+[22.037102] (-) TimerEvent: {}
+[22.139114] (-) TimerEvent: {}
+[22.239482] (-) TimerEvent: {}
+[22.339809] (-) TimerEvent: {}
+[22.440126] (-) TimerEvent: {}
+[22.540483] (-) TimerEvent: {}
+[22.640552] (wamv_gazebo) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libGymkhanaScoringPlugin.so\x1b[0m\n'}
+[22.640798] (-) TimerEvent: {}
+[22.743277] (-) TimerEvent: {}
+[22.843640] (-) TimerEvent: {}
+[22.946127] (-) TimerEvent: {}
+[23.046475] (-) TimerEvent: {}
+[23.076820] (wamv_gazebo) StdoutLine: {'line': b'[ 72%] Built target GymkhanaScoringPlugin\n'}
+[23.110162] (wamv_gazebo) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/USVWind.dir/src/USVWind.cc.o\x1b[0m\n'}
+[23.146614] (-) TimerEvent: {}
+[23.247296] (-) TimerEvent: {}
+[23.348435] (-) TimerEvent: {}
+[23.448765] (-) TimerEvent: {}
+[23.549098] (-) TimerEvent: {}
+[23.649426] (-) TimerEvent: {}
+[23.751257] (-) TimerEvent: {}
+[23.851575] (-) TimerEvent: {}
+[23.951899] (-) TimerEvent: {}
+[24.055124] (-) TimerEvent: {}
+[24.062316] (wamv_gazebo) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libPlacardPlugin.so\x1b[0m\n'}
+[24.155244] (-) TimerEvent: {}
+[24.255579] (-) TimerEvent: {}
+[24.355939] (-) TimerEvent: {}
+[24.456333] (-) TimerEvent: {}
+[24.556684] (-) TimerEvent: {}
+[24.604929] (wamv_gazebo) StdoutLine: {'line': b'[ 77%] Built target PlacardPlugin\n'}
+[24.656803] (-) TimerEvent: {}
+[24.678607] (wamv_gazebo) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o\x1b[0m\n'}
+[24.756925] (-) TimerEvent: {}
+[24.857260] (-) TimerEvent: {}
+[24.868959] (wamv_gazebo) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libPublisherPlugin.so\x1b[0m\n'}
+[24.957385] (-) TimerEvent: {}
+[25.057747] (-) TimerEvent: {}
+[25.161415] (-) TimerEvent: {}
+[25.186101] (wamv_gazebo) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library libNavigationScoringPlugin.so\x1b[0m\n'}
+[25.230107] (wamv_gazebo) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libPerceptionScoringPlugin.so\x1b[0m\n'}
+[25.261561] (-) TimerEvent: {}
+[25.362008] (-) TimerEvent: {}
+[25.429807] (wamv_gazebo) StdoutLine: {'line': b'[ 85%] Built target PublisherPlugin\n'}
+[25.462143] (-) TimerEvent: {}
+[25.479068] (wamv_gazebo) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/WildlifeScoringPlugin.dir/src/WildlifeScoringPlugin.cc.o\x1b[0m\n'}
+[25.562278] (-) TimerEvent: {}
+[25.633887] (wamv_gazebo) StdoutLine: {'line': b'[ 87%] Built target NavigationScoringPlugin\n'}
+[25.662420] (-) TimerEvent: {}
+[25.762887] (-) TimerEvent: {}
+[25.831997] (wamv_gazebo) StdoutLine: {'line': b'[ 87%] Built target PerceptionScoringPlugin\n'}
+[25.863132] (-) TimerEvent: {}
+[25.963773] (-) TimerEvent: {}
+[26.064121] (-) TimerEvent: {}
+[26.164460] (-) TimerEvent: {}
+[26.264816] (-) TimerEvent: {}
+[26.365115] (-) TimerEvent: {}
+[26.465450] (-) TimerEvent: {}
+[26.565778] (-) TimerEvent: {}
+[26.666106] (-) TimerEvent: {}
+[26.766419] (-) TimerEvent: {}
+[26.866743] (-) TimerEvent: {}
+[26.967087] (-) TimerEvent: {}
+[27.067398] (-) TimerEvent: {}
+[27.168099] (-) TimerEvent: {}
+[27.268861] (-) TimerEvent: {}
+[27.369202] (-) TimerEvent: {}
+[27.430619] (wamv_gazebo) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking CXX shared library libSimpleHydrodynamics.so\x1b[0m\n'}
+[27.469330] (-) TimerEvent: {}
+[27.569677] (-) TimerEvent: {}
+[27.670038] (-) TimerEvent: {}
+[27.743776] (wamv_gazebo) StdoutLine: {'line': b'[ 89%] Built target SimpleHydrodynamics\n'}
+[27.753493] (wamv_gazebo) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX shared library libSurface.so\x1b[0m\n'}
+[27.770101] (-) TimerEvent: {}
+[27.870423] (-) TimerEvent: {}
+[27.970744] (-) TimerEvent: {}
+[28.071103] (-) TimerEvent: {}
+[28.144865] (wamv_gazebo) StdoutLine: {'line': b'[ 91%] Built target Surface\n'}
+[28.171222] (-) TimerEvent: {}
+[28.271538] (-) TimerEvent: {}
+[28.371863] (-) TimerEvent: {}
+[28.472190] (-) TimerEvent: {}
+[28.572507] (-) TimerEvent: {}
+[28.672828] (-) TimerEvent: {}
+[28.773103] (-) TimerEvent: {}
+[28.873420] (-) TimerEvent: {}
+[28.973740] (-) TimerEvent: {}
+[29.074069] (-) TimerEvent: {}
+[29.174399] (-) TimerEvent: {}
+[29.274746] (-) TimerEvent: {}
+[29.329121] (wamv_gazebo) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX shared library libScanDockScoringPlugin.so\x1b[0m\n'}
+[29.374878] (-) TimerEvent: {}
+[29.475267] (-) TimerEvent: {}
+[29.575740] (-) TimerEvent: {}
+[29.613068] (wamv_gazebo) StdoutLine: {'line': b'[ 93%] Built target ScanDockScoringPlugin\n'}
+[29.675856] (-) TimerEvent: {}
+[29.776154] (-) TimerEvent: {}
+[29.876470] (-) TimerEvent: {}
+[29.976802] (-) TimerEvent: {}
+[30.077094] (-) TimerEvent: {}
+[30.177396] (-) TimerEvent: {}
+[30.277700] (-) TimerEvent: {}
+[30.377992] (-) TimerEvent: {}
+[30.478301] (-) TimerEvent: {}
+[30.484895] (wamv_gazebo) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX shared library libUSVWind.so\x1b[0m\n'}
+[30.578422] (-) TimerEvent: {}
+[30.678727] (-) TimerEvent: {}
+[30.771841] (wamv_gazebo) StdoutLine: {'line': b'[ 95%] Built target USVWind\n'}
+[30.781043] (-) TimerEvent: {}
+[30.881350] (-) TimerEvent: {}
+[30.981632] (-) TimerEvent: {}
+[31.081918] (-) TimerEvent: {}
+[31.125225] (wamv_gazebo) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX shared library libWildlifeScoringPlugin.so\x1b[0m\n'}
+[31.182047] (-) TimerEvent: {}
+[31.282283] (-) TimerEvent: {}
+[31.366590] (wamv_gazebo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libWaveVisual.so\x1b[0m\n'}
+[31.366743] (wamv_gazebo) StdoutLine: {'line': b'[100%] Built target WildlifeScoringPlugin\n'}
+[31.382381] (-) TimerEvent: {}
+[31.482713] (-) TimerEvent: {}
+[31.582976] (-) TimerEvent: {}
+[31.597965] (wamv_gazebo) StdoutLine: {'line': b'[100%] Built target WaveVisual\n'}
+[31.610523] (wamv_gazebo) CommandEnded: {'returncode': 0}
+[31.611631] (wamv_gazebo) JobProgress: {'identifier': 'wamv_gazebo', 'progress': 'install'}
+[31.612377] (wamv_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/gelatocotonato/LabMec2025/build/wamv_gazebo'], 'cwd': '/home/gelatocotonato/LabMec2025/build/wamv_gazebo', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib:/home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib:/opt/ros//lib:', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models:/home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/worlds:/home/gelatocotonato/LabMec2025/src/wamv_gazebo/models', 'USER': 'gelatocotonato', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIO_MODULE_DIR': '/home/gelatocotonato/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/196/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/gelatocotonato', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/gelatocotonato', 'TERM_PROGRAM_VERSION': '1.101.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/196/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/gelatocotonato/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/196/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/196/usr/share/code/code', 'MANAGERPID': '2026', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2308', 'BUNDLED_DEBUGPY_PATH': '/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3139', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'gelatocotonato', 'JOURNAL_STREAM': '9:18201', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'gelatocotonato', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/home/gelatocotonato/LabMec2025/src/wamv_gazebo/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/gelatocotonato/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/gelatocotonato/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts:/home/gelatocotonato/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/gelatoASUS:@/tmp/.ICE-unix/2260,unix/gelatoASUS:/tmp/.ICE-unix/2260', 'GTK_EXE_PREFIX': '/snap/code/196/usr', 'INVOCATION_ID': '79d70215556948b2af6eb28fd5ed7ea9', 'XDG_MENU_PREFIX': 'gnome-', 'BAMF_DESKTOP_FILE_HINT': '/var/lib/snapd/desktop/applications/code_code.desktop', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/196/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/gelatocotonato/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d9ba604260f6dcd9.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/gelatocotonato/snap/code/196/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.L0LE82', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-5f69965ff6.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/gelatocotonato/snap/code/196/.local/share/glib-2.0/schemas', 'ROS_DOMAIN_ID': '4', 'AMENT_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_navigation:/home/gelatocotonato/LabMec2025/install/wamv_gazebo:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/gelatocotonato/LabMec2025/build/wamv_gazebo', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/gelatocotonato/snap/code/196/.local/share:/home/gelatocotonato/snap/code/196:/snap/code/196/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/gelatocotonato/LabMec2025/build/python_node:/home/gelatocotonato/LabMec2025/install/python_node/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/gelatocotonato/LabMec2025/install/wamv_navigation:/home/gelatocotonato/LabMec2025/install/wamv_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy'}), 'shell': False}
+[31.619462] (wamv_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[31.619767] (wamv_gazebo) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[31.619968] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/environment/resource_paths.dsv\n'}
+[31.627156] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/environment/resource_paths.sh\n'}
+[31.634333] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libWaves.so\n'}
+[31.641654] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libPolyhedraBuoyancyDrag.so\n'}
+[31.648771] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libScoringPlugin.so\n'}
+[31.655842] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libStationkeepingScoringPlugin.so\n'}
+[31.662854] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libWayfindingScoringPlugin.so\n'}
+[31.669755] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libAcousticPerceptionScoringPlugin.so\n'}
+[31.676605] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libAcousticTrackingScoringPlugin.so\n'}
+[31.683084] (-) TimerEvent: {}
+[31.683699] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libAcousticPingerPlugin.so\n'}
+[31.691917] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libBallShooterPlugin.so\n'}
+[31.701733] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libLightBuoyPlugin.so\n'}
+[31.709659] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libNavigationScoringPlugin.so\n'}
+[31.717129] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libGymkhanaScoringPlugin.so\n'}
+[31.724336] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libPerceptionScoringPlugin.so\n'}
+[31.731429] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libPlacardPlugin.so\n'}
+[31.738410] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libPublisherPlugin.so\n'}
+[31.745327] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libScanDockScoringPlugin.so\n'}
+[31.752252] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libSimpleHydrodynamics.so\n'}
+[31.759006] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libSurface.so\n'}
+[31.765957] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libUSVWind.so\n'}
+[31.772945] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libWaveVisual.so\n'}
+[31.779889] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libWildlifeScoringPlugin.so\n'}
+[31.783155] (-) TimerEvent: {}
+[31.787056] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/config/ekf.yaml\n'}
+[31.796699] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/launch/__init__.py\n'}
+[31.804876] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/launch/wamv_gz_rviz.py\n'}
+[31.811774] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/launch/wamv_keyboard_control.py\n'}
+[31.818795] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/launch/wamv_rviz.py\n'}
+[31.826305] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/programs/GerstnerWaves_fs_330.glsl\n'}
+[31.833319] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/programs/GerstnerWaves_vs_330.glsl\n'}
+[31.840117] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/textures/skybox_lowres.dds\n'}
+[31.846874] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/textures/wave_normals.dds\n'}
+[31.853570] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/meshes/waterlow.dae\n'}
+[31.860018] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/model.config\n'}
+[31.866913] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/model.sdf\n'}
+[31.873740] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/DockCubes_Albedo.png\n'}
+[31.880221] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/DockCubes_Metalness.png\n'}
+[31.883274] (-) TimerEvent: {}
+[31.887166] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/DockCubes_Normal.png\n'}
+[31.896832] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/DockCubes_Roughness.png\n'}
+[31.904701] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/dock_block_4x4.dae\n'}
+[31.911377] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/model.config\n'}
+[31.918699] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/model.sdf\n'}
+[31.925566] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitor.png\n'}
+[31.932221] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitorStatic.mtl\n'}
+[31.938742] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitorStatic.obj\n'}
+[31.945781] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitorStatic_Col.mtl\n'}
+[31.952558] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitorStatic_Col.obj\n'}
+[31.959145] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/Phone.png\n'}
+[31.965492] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/model.config\n'}
+[31.971741] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/model.sdf\n'}
+[31.978077] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/1.png\n'}
+[31.983407] (-) TimerEvent: {}
+[31.984574] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/2.png\n'}
+[31.992150] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/3.png\n'}
+[32.002359] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/4.png\n'}
+[32.009922] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/5.png\n'}
+[32.017626] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/eyebrow001-unmodified.png\n'}
+[32.024696] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/eyebrow001.png\n'}
+[32.031680] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/green_eye.png\n'}
+[32.038431] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/jeans01_normals.png\n'}
+[32.045244] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/jeans_basic_diffuse.png\n'}
+[32.051994] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/male02_diffuse_black-unmodified.png\n'}
+[32.058393] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/male02_diffuse_black.png\n'}
+[32.064982] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/teeth.png\n'}
+[32.072013] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/tshirt02_normals.png\n'}
+[32.079378] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/tshirt02_texture.png\n'}
+[32.083508] (-) TimerEvent: {}
+[32.086687] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/young_lightskinned_male_diffuse.png\n'}
+[32.095862] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/meshes/standing.dae\n'}
+[32.105677] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/model.config\n'}
+[32.113184] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/model.sdf\n'}
+[32.120263] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/1.png\n'}
+[32.126696] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/2.png\n'}
+[32.133534] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/3.png\n'}
+[32.140120] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/4.png\n'}
+[32.146963] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/5.png\n'}
+[32.153630] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/materials/textures/RoundBarrierBuoy_Base_Color.png\n'}
+[32.160531] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/materials/textures/RoundBarrierBuoy_Roughness.png\n'}
+[32.167352] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/meshes/mb_round_buoy.dae\n'}
+[32.174006] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/model.config\n'}
+[32.180691] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/model.sdf\n'}
+[32.183602] (-) TimerEvent: {}
+[32.187464] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/1.png\n'}
+[32.194402] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/2.png\n'}
+[32.204523] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/3.png\n'}
+[32.211948] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/4.png\n'}
+[32.219150] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/5.png\n'}
+[32.226202] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/materials/textures/Boat05_Albedo.jpg\n'}
+[32.233054] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/materials/textures/Boat05_Metalness.png\n'}
+[32.239506] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/materials/textures/Boat05_Normal.png\n'}
+[32.246273] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/materials/textures/Boat05_Roughness.jpg\n'}
+[32.253057] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/meshes/Boat05.dae\n'}
+[32.259501] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/model.config\n'}
+[32.265882] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/model.sdf\n'}
+[32.272398] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/thumbnails/1.png\n'}
+[32.279168] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/materials/textures/Boat06_Albedo.jpg\n'}
+[32.283702] (-) TimerEvent: {}
+[32.286005] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/materials/textures/Boat06_Metalness.png\n'}
+[32.294526] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/materials/textures/Boat06_Normal.jpg\n'}
+[32.303765] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/materials/textures/Boat06_Roughness.jpg\n'}
+[32.310742] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/meshes/Boat06.dae\n'}
+[32.317993] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/model.config\n'}
+[32.325031] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/model.sdf\n'}
+[32.331714] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/thumbnails/1.png\n'}
+[32.338610] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/materials/textures/Boat07_Albedo.jpg\n'}
+[32.345804] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/materials/textures/Boat07_Normal.jpg\n'}
+[32.352895] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/materials/textures/Boat07_Roughness.jpg\n'}
+[32.359563] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/meshes/Boat07.dae\n'}
+[32.366179] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/model.config\n'}
+[32.372740] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/model.sdf\n'}
+[32.379221] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/thumbnails/1.png\n'}
+[32.383798] (-) TimerEvent: {}
+[32.386371] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/worlds/sydney.sdf\n'}
+[32.394915] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/rviz/wamv_gz_rviz.rviz\n'}
+[32.404381] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/rviz/wamv_keyboard_control.rviz\n'}
+[32.411766] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/rviz/wamv_rviz.rviz\n'}
+[32.419426] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery.dae\n'}
+[32.426164] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery.png\n'}
+[32.432980] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery_Albedo.png\n'}
+[32.439586] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery_Metalness.png\n'}
+[32.446599] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery_Normal.png\n'}
+[32.453601] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery_Roughness.png\n'}
+[32.460312] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases.dae\n'}
+[32.467208] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases.png\n'}
+[32.474150] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases_Albedo.png\n'}
+[32.480696] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases_Metalness.png\n'}
+[32.483893] (-) TimerEvent: {}
+[32.487542] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases_Normal.png\n'}
+[32.496586] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases_Roughness.png\n'}
+[32.505136] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/lidar/lidar_3d_v1 copy.png\n'}
+[32.512299] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/lidar/lidar_3d_v1.dae\n'}
+[32.519534] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/lidar/lidar_3d_v1.png\n'}
+[32.526536] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/tripod/legs.dae\n'}
+[32.533740] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/tripod/ring.dae\n'}
+[32.540300] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/wamv/WAM-V-Base.dae\n'}
+[32.547367] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/wamv/WamV.png\n'}
+[32.554295] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/wamv/engine.dae\n'}
+[32.560903] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/wamv/propeller.dae\n'}
+[32.568039] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/model.urdf.xacro\n'}
+[32.575168] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo\n'}
+[32.583448] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/ament_index/resource_index/parent_prefix_path/wamv_gazebo\n'}
+[32.583975] (-) TimerEvent: {}
+[32.591214] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/environment/ament_prefix_path.sh\n'}
+[32.600182] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/environment/ament_prefix_path.dsv\n'}
+[32.613028] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/environment/path.sh\n'}
+[32.620607] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/environment/path.dsv\n'}
+[32.627462] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/local_setup.bash\n'}
+[32.636667] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/local_setup.sh\n'}
+[32.645588] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/local_setup.zsh\n'}
+[32.654117] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/local_setup.dsv\n'}
+[32.661366] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/package.dsv\n'}
+[32.668820] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/ament_index/resource_index/packages/wamv_gazebo\n'}
+[32.675756] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/cmake/wamv_gazeboConfig.cmake\n'}
+[32.682618] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/cmake/wamv_gazeboConfig-version.cmake\n'}
+[32.684072] (-) TimerEvent: {}
+[32.689579] (wamv_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/package.xml\n'}
+[32.700642] (wamv_gazebo) CommandEnded: {'returncode': 0}
+[32.715424] (wamv_gazebo) JobEnded: {'identifier': 'wamv_gazebo', 'rc': 0}
+[32.716067] (-) EventReactorShutdown: {}

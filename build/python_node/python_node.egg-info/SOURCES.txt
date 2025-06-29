@@ -8,6 +8,7 @@ python_node/PIDController.py
 python_node/RLS.py
 python_node/WamvController.py
 python_node/__init__.py
+python_node/thruster_guardian.py
 python_node.egg-info/PKG-INFO
 python_node.egg-info/SOURCES.txt
 python_node.egg-info/dependency_links.txt

@@ -1,1 +1,1 @@
-/home/luca002/proj_ws/src/wamv_navigation/config/wamv_mapping.lua
+/home/gelatocotonato/LabMec2025/src/wamv_navigation/config/wamv_mapping.lua

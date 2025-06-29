@@ -1,1 +1,1 @@
-/home/luca002/proj_ws/src/wamv_navigation/launch/wamv_localization.py
+/home/gelatocotonato/LabMec2025/src/wamv_navigation/launch/wamv_localization.py

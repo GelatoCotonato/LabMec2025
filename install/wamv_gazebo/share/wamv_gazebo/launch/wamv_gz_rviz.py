@@ -1,1 +1,1 @@
-/home/luca002/proj_ws/src/wamv_gazebo/launch/wamv_gz_rviz.py
+/home/gelatocotonato/LabMec2025/src/wamv_gazebo/launch/wamv_gz_rviz.py

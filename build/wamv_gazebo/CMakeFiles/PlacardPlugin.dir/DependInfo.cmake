@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/luca002/proj_ws/src/wamv_gazebo/src/PlacardPlugin.cc" "CMakeFiles/PlacardPlugin.dir/src/PlacardPlugin.cc.o" "gcc" "CMakeFiles/PlacardPlugin.dir/src/PlacardPlugin.cc.o.d"
+  "/home/gelatocotonato/LabMec2025/src/wamv_gazebo/src/PlacardPlugin.cc" "CMakeFiles/PlacardPlugin.dir/src/PlacardPlugin.cc.o" "gcc" "CMakeFiles/PlacardPlugin.dir/src/PlacardPlugin.cc.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

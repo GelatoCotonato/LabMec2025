@@ -1,0 +1,175 @@
+[1.235s] Invoking command in '/home/gelatocotonato/LabMec2025/build/wamv_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gelatocotonato/LabMec2025/build/wamv_gazebo -- -j8 -l8
+[1.942s] [  4%] Built target Waves
+[2.104s] [  8%] Built target ScoringPlugin
+[2.253s] [ 16%] Built target PolyhedraBuoyancyDrag
+[2.394s] [ 20%] Built target LightBuoyPlugin
+[2.563s] [ 25%] Built target NavigationScoringPlugin
+[2.645s] [ 29%] Built target GymkhanaScoringPlugin
+[2.753s] [ 33%] Built target PerceptionScoringPlugin
+[2.868s] [ 37%] Built target PlacardPlugin
+[2.958s] [ 41%] Built target PublisherPlugin
+[3.072s] [ 45%] Built target ScanDockScoringPlugin
+[3.216s] [ 50%] Built target SimpleHydrodynamics
+[3.330s] [ 54%] Built target Surface
+[3.705s] [ 58%] Built target USVWind
+[3.881s] [ 62%] Built target WaveVisual
+[4.015s] [ 66%] Built target WildlifeScoringPlugin
+[4.136s] [ 70%] Built target BallShooterPlugin
+[4.272s] [ 75%] Built target AcousticPingerPlugin
+[4.430s] [ 81%] Built target AcousticTrackingScoringPlugin
+[4.550s] [ 87%] Built target AcousticPerceptionScoringPlugin
+[4.653s] [ 93%] Built target WayfindingScoringPlugin
+[4.766s] [100%] Built target StationkeepingScoringPlugin
+[4.800s] Invoked command in '/home/gelatocotonato/LabMec2025/build/wamv_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gelatocotonato/LabMec2025/build/wamv_gazebo -- -j8 -l8
+[4.808s] Invoking command in '/home/gelatocotonato/LabMec2025/build/wamv_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gelatocotonato/LabMec2025/build/wamv_gazebo
+[4.833s] -- Install configuration: ""
+[4.836s] -- Execute custom install script
+[4.839s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/environment/resource_paths.dsv
+[4.844s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/environment/resource_paths.sh
+[4.847s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libWaves.so
+[4.847s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libPolyhedraBuoyancyDrag.so
+[4.850s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libScoringPlugin.so
+[4.852s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libStationkeepingScoringPlugin.so
+[4.862s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libWayfindingScoringPlugin.so
+[4.871s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libAcousticPerceptionScoringPlugin.so
+[4.877s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libAcousticTrackingScoringPlugin.so
+[4.881s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libAcousticPingerPlugin.so
+[4.884s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libBallShooterPlugin.so
+[4.886s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libLightBuoyPlugin.so
+[4.886s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libNavigationScoringPlugin.so
+[4.891s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libGymkhanaScoringPlugin.so
+[4.891s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libPerceptionScoringPlugin.so
+[4.894s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libPlacardPlugin.so
+[4.901s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libPublisherPlugin.so
+[4.905s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libScanDockScoringPlugin.so
+[4.908s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libSimpleHydrodynamics.so
+[4.918s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libSurface.so
+[4.919s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libUSVWind.so
+[4.919s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libWaveVisual.so
+[4.922s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/lib/libWildlifeScoringPlugin.so
+[4.928s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/config/ekf.yaml
+[4.930s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/launch/__init__.py
+[4.930s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/launch/wamv_gz_rviz.py
+[4.937s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/launch/wamv_keyboard_control.py
+[4.939s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/launch/wamv_rviz.py
+[4.964s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/programs/GerstnerWaves_fs_330.glsl
+[4.964s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/programs/GerstnerWaves_vs_330.glsl
+[4.965s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/textures/skybox_lowres.dds
+[4.971s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/materials/textures/wave_normals.dds
+[4.974s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/meshes/waterlow.dae
+[4.974s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/model.config
+[4.974s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/coast_waves/model.sdf
+[4.974s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/DockCubes_Albedo.png
+[4.975s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/DockCubes_Metalness.png
+[4.975s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/DockCubes_Normal.png
+[4.975s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/DockCubes_Roughness.png
+[4.975s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/meshes/dock_block_4x4.dae
+[4.975s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/model.config
+[4.975s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/dock_block/model.sdf
+[4.975s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitor.png
+[4.975s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitorStatic.mtl
+[4.976s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitorStatic.obj
+[4.986s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitorStatic_Col.mtl
+[4.986s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/MaleVisitorStatic_Col.obj
+[4.987s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/meshes/Phone.png
+[4.987s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/model.config
+[4.998s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/model.sdf
+[4.998s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/1.png
+[4.999s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/2.png
+[4.999s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/3.png
+[5.000s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/4.png
+[5.000s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/male/thumbnails/5.png
+[5.001s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/eyebrow001-unmodified.png
+[5.001s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/eyebrow001.png
+[5.001s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/green_eye.png
+[5.007s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/jeans01_normals.png
+[5.008s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/jeans_basic_diffuse.png
+[5.011s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/male02_diffuse_black-unmodified.png
+[5.013s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/male02_diffuse_black.png
+[5.014s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/teeth.png
+[5.015s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/tshirt02_normals.png
+[5.018s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/tshirt02_texture.png
+[5.020s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/materials/textures/young_lightskinned_male_diffuse.png
+[5.023s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/meshes/standing.dae
+[5.029s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/model.config
+[5.029s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/model.sdf
+[5.029s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/1.png
+[5.029s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/2.png
+[5.030s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/3.png
+[5.035s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/4.png
+[5.035s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/person/thumbnails/5.png
+[5.035s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/materials/textures/RoundBarrierBuoy_Base_Color.png
+[5.037s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/materials/textures/RoundBarrierBuoy_Roughness.png
+[5.038s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/meshes/mb_round_buoy.dae
+[5.043s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/model.config
+[5.046s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/model.sdf
+[5.057s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/1.png
+[5.057s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/2.png
+[5.058s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/3.png
+[5.058s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/4.png
+[5.058s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/round_buoy_black/thumbnails/5.png
+[5.058s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/materials/textures/Boat05_Albedo.jpg
+[5.058s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/materials/textures/Boat05_Metalness.png
+[5.060s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/materials/textures/Boat05_Normal.png
+[5.060s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/materials/textures/Boat05_Roughness.jpg
+[5.061s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/meshes/Boat05.dae
+[5.061s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/model.config
+[5.061s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/model.sdf
+[5.063s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_a/thumbnails/1.png
+[5.067s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/materials/textures/Boat06_Albedo.jpg
+[5.067s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/materials/textures/Boat06_Metalness.png
+[5.069s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/materials/textures/Boat06_Normal.jpg
+[5.069s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/materials/textures/Boat06_Roughness.jpg
+[5.072s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/meshes/Boat06.dae
+[5.073s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/model.config
+[5.073s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/model.sdf
+[5.074s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_b/thumbnails/1.png
+[5.079s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/materials/textures/Boat07_Albedo.jpg
+[5.081s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/materials/textures/Boat07_Normal.jpg
+[5.082s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/materials/textures/Boat07_Roughness.jpg
+[5.082s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/meshes/Boat07.dae
+[5.085s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/model.config
+[5.091s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/model.sdf
+[5.098s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/models/vessel_c/thumbnails/1.png
+[5.100s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/worlds/sydney.sdf
+[5.117s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/rviz/wamv_gz_rviz.rviz
+[5.117s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/rviz/wamv_keyboard_control.rviz
+[5.122s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/rviz/wamv_rviz.rviz
+[5.130s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery.dae
+[5.130s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery.png
+[5.130s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery_Albedo.png
+[5.132s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery_Metalness.png
+[5.132s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery_Normal.png
+[5.132s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/battery/battery_Roughness.png
+[5.141s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases.dae
+[5.141s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases.png
+[5.141s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases_Albedo.png
+[5.141s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases_Metalness.png
+[5.141s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases_Normal.png
+[5.147s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/cpu_cases/cpu_cases_Roughness.png
+[5.147s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/lidar/lidar_3d_v1 copy.png
+[5.148s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/lidar/lidar_3d_v1.dae
+[5.150s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/lidar/lidar_3d_v1.png
+[5.151s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/tripod/legs.dae
+[5.154s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/tripod/ring.dae
+[5.154s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/wamv/WAM-V-Base.dae
+[5.154s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/wamv/WamV.png
+[5.158s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/wamv/engine.dae
+[5.159s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/meshes/wamv/propeller.dae
+[5.160s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/urdf/model.urdf.xacro
+[5.167s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo
+[5.174s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/ament_index/resource_index/parent_prefix_path/wamv_gazebo
+[5.174s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/environment/ament_prefix_path.sh
+[5.174s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/environment/ament_prefix_path.dsv
+[5.174s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/environment/path.sh
+[5.174s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/environment/path.dsv
+[5.175s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/local_setup.bash
+[5.175s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/local_setup.sh
+[5.176s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/local_setup.zsh
+[5.179s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/local_setup.dsv
+[5.180s] -- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/package.dsv
+[5.214s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/ament_index/resource_index/packages/wamv_gazebo
+[5.214s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/cmake/wamv_gazeboConfig.cmake
+[5.214s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/cmake/wamv_gazeboConfig-version.cmake
+[5.215s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_gazebo/share/wamv_gazebo/package.xml
+[5.225s] Invoked command in '/home/gelatocotonato/LabMec2025/build/wamv_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gelatocotonato/LabMec2025/build/wamv_gazebo

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <robot name="wamv" xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <xacro:property name="user_path" value="file:///home/luca002/proj_ws/src/wamv_gazebo/urdf/meshes"/>
+  <xacro:property name="user_path" value="file:///home/gelatocotonato/LabMec2025/src/wamv_gazebo/urdf/meshes"/>
 
   <!-- BASE FOOTPRINT -->
   <link name="base_footprint" />

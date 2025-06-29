@@ -1,0 +1,44 @@
+[1.270s] Invoking command in '/home/gelatocotonato/LabMec2025/build/wamv_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gelatocotonato/LabMec2025/build/wamv_navigation -- -j8 -l8
+[1.825s] Invoked command in '/home/gelatocotonato/LabMec2025/build/wamv_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gelatocotonato/LabMec2025/build/wamv_navigation -- -j8 -l8
+[1.880s] Invoking command in '/home/gelatocotonato/LabMec2025/build/wamv_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gelatocotonato/LabMec2025/build/wamv_navigation
+[1.904s] -- Install configuration: ""
+[1.909s] -- Execute custom install script
+[1.913s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/config/wamv_mapping.lua
+[1.916s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/launch/__init__.py
+[1.919s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/launch/cartographer.launch.py
+[1.922s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/launch/occupancy_grid.launch.py
+[1.925s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/launch/wamv_localization.py
+[1.940s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/launch/wamv_simulation.py
+[1.940s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/maps/sydney_map.pgm
+[1.940s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/maps/sydney_map.yaml
+[1.940s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/params/wamv_nav2_params.yaml
+[1.941s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/rviz/wamv_cartographer.rviz
+[1.941s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/rviz/wamv_navigation.rviz
+[1.944s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/ament_index/resource_index/package_run_dependencies/wamv_navigation
+[1.952s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/ament_index/resource_index/parent_prefix_path/wamv_navigation
+[1.956s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/environment/ament_prefix_path.sh
+[1.960s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/environment/ament_prefix_path.dsv
+[1.962s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/environment/path.sh
+[1.965s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/environment/path.dsv
+[1.966s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/local_setup.bash
+[1.969s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/local_setup.sh
+[1.970s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/local_setup.zsh
+[1.976s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/local_setup.dsv
+[1.983s] -- Symlinking: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/package.dsv
+[2.018s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/ament_index/resource_index/packages/wamv_navigation
+[2.023s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/cmake/wamv_navigationConfig.cmake
+[2.028s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/cmake/wamv_navigationConfig-version.cmake
+[2.029s] -- Up-to-date symlink: /home/gelatocotonato/LabMec2025/install/wamv_navigation/share/wamv_navigation/package.xml
+[2.029s] -- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation
+[2.029s] -- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/config
+[2.029s] -- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/maps
+[2.030s] -- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/params
+[2.030s] -- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/hooks
+[2.031s] -- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch
+[2.041s] -- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch/cartographer.launch.py
+[2.042s] -- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch/__init__.py
+[2.042s] -- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch/occupancy_grid.launch.py
+[2.042s] -- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch/wamv_localization.py
+[2.042s] -- Installing: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/launch/wamv_simulation.py
+[2.042s] -- Up-to-date: /home/gelatocotonato/LabMec2025/install/wamv_navigation/lib/wamv_navigation/rviz
+[2.059s] Invoked command in '/home/gelatocotonato/LabMec2025/build/wamv_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gelatocotonato/LabMec2025/install/python_node:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gelatocotonato/LabMec2025/build/wamv_navigation

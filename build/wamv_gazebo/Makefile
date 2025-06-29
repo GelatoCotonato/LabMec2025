@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luca002/proj_ws/src/wamv_gazebo
+CMAKE_SOURCE_DIR = /home/gelatocotonato/LabMec2025/src/wamv_gazebo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luca002/proj_ws/build/wamv_gazebo
+CMAKE_BINARY_DIR = /home/gelatocotonato/LabMec2025/build/wamv_gazebo
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luca002/proj_ws/build/wamv_gazebo/CMakeFiles /home/luca002/proj_ws/build/wamv_gazebo//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gelatocotonato/LabMec2025/build/wamv_gazebo/CMakeFiles /home/gelatocotonato/LabMec2025/build/wamv_gazebo//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luca002/proj_ws/build/wamv_gazebo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gelatocotonato/LabMec2025/build/wamv_gazebo/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
